@@ -5,8 +5,65 @@ title: Faculty
 
 # Meet Our Faculty
 
-Our department is led by experienced professors and researchers specializing in various fields of astronomy and astrophysics.
+## Dr. Nitesh Kumar
+**Key Research Areas:**
+- Stellar Astrophysics: Study of stellar structure, evolution, and modeling.
+- Galactic Globular Clusters: Observational and theoretical studies of globular clusters.
+- Variable Stars: Analysis of light curves and variability mechanisms.
+- RR Lyrae Stars: Multiwavelength photometry and pulsation modeling.
+- Stellar Evolution and Modeling: Computational approaches to stellar interiors and evolution.
 
-- Dr. A. Sharma - Stellar Physics
-- Dr. B. Verma - Cosmology
-- Dr. C. Gupta - Observational Astronomy
+**Publications:**
+- *"Multiwavelength photometric study of RR Lyrae variables in the globular cluster NGC 5272 (Messier 3)"*, Monthly Notices of the Royal Astronomical Society, May 2024. DOI: [10.1093/mnras/stae1334](https://doi.org/10.1093/mnras/stae1334)
+- *"Predicting light curves of RR Lyrae variables using artificial neural network-based interpolation of a grid of pulsation models"*, Monthly Notices of the Royal Astronomical Society, March 2023. DOI: [10.1093/mnras/stad937](https://doi.org/10.1093/mnras/stad937)
+
+---
+
+## Dr. Prince Sharma
+**Key Research Areas:**
+- Timing and Spectral Analysis of High-Mass X-ray Binaries (HMXBs).
+- Spectral Studies of Low-Mass X-ray Binaries (LMXBs).
+- X-ray Timing Properties and Variability of Be/X-ray Transients.
+
+**Publications:**
+- *"Torque reversal and cyclotron absorption feature in HMXB 4U 1538-522"*, Monthly Notices of the Royal Astronomical Society, 2023. DOI: [10.1093/mnras/stad1285](https://doi.org/10.1093/mnras/stad1285)
+- *"Broad-band spectral analysis of LMXB 2S 0921-63 with Suzaku"*, Monthly Notices of the Royal Astronomical Society, 2022. DOI: [10.1093/mnras/stac2698](https://doi.org/10.1093/mnras/stac2698)
+
+---
+
+## Dr. Balendra Pratap Singh
+**Key Research Areas:**
+- Black Hole Physics: Study of black hole shadow, thermodynamic properties, and quasinormal modes.
+- Solar Physics: Solar flares and Coronal Mass Ejection.
+
+---
+
+## Dr. Prashant Rawat
+**Key Research Areas:**
+- Laboratory Astrophysics: Experiments related to planetary and space physics.
+- Solar Physics: Collaboration with ARIES on the Coronal heating problem.
+
+---
+
+## Dr. Arka Chatterjee
+**Key Research Areas:**
+- X-ray Images of Black Holes.
+- Timing Analysis of Black Hole Accretion.
+- Active Galactic Nuclei.
+
+**Publications:**
+- *"Images and spectral properties of two-component advective flows around black holes: effects of photon bending"*, Monthly Notices of the Royal Astronomical Society, 2017. DOI: [10.1093/mnras/stw2975](https://doi.org/10.1093/mnras/stw2975)
+- *"Time-domain variability properties of XTE J1650-500 during its 2001 outburst: Evidence of disc-jet connection"*, Monthly Notices of the Royal Astronomical Society, 2020. DOI: [10.1093/mnras/staa2263](https://doi.org/10.1093/mnras/staa2263)
+
+---
+
+## Dr. Raju Roychowdhury
+**Key Research Areas:**
+- Extremal Black Holes and Attractor Mechanism.
+- Gauge/Gravity Correspondence.
+- Gravitino and Cosmology.
+
+**Publication Journals:**
+- Journal of High Energy Physics (JHEP).
+- General Relativity and Gravitation (GRG).
+- International Journal of Modern Physics A (IJMPA).

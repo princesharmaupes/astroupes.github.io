@@ -1,7 +1,8 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
+    font-size: 18px; /* Increased font size for readability */
     background: url('assests/images/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
@@ -10,7 +11,8 @@ body {
 
 /* Header Styles */
 header {
-    background: rgba(0, 0, 0, 0.9);
+    background: #fff; /* Changed navigation panel color to white */
+    color: #000; /* Updated text color for contrast */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 15px 20px;
 }
@@ -28,14 +30,14 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #000; /* Updated link color for contrast */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #00bcd4;
+    color: #00bcd4; /* Retained hover effect */
 }
 
 /* Main Content Styles */
@@ -46,6 +48,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
     max-width: 1200px;
+    font-size: 18px; /* Ensure consistent font size in main content */
 }
 
 /* Footer Styles */
@@ -54,7 +57,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px 10px;
-    font-size: 0.9em;
+    font-size: 16px; /* Slightly smaller font size for footer */
     border-top: 2px solid #00bcd4;
 }
 
@@ -69,6 +72,7 @@ button, a.button {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-size: 16px; /* Adjusted button font size */
 }
 
 button:hover, a.button:hover {
@@ -80,6 +84,7 @@ a {
     color: #00bcd4;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 18px; /* Ensure consistent font size for links */
 }
 
 a:hover {

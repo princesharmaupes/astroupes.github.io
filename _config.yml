@@ -1,0 +1,51 @@
+title: Astronomy & Astrophysics @ UPES
+email: astro.nitesh@upes.ac.in
+description: >-
+  Official website of the Astronomy and Astrophysics Department at UPES, Dehradun. 
+  Explore B.Sc. and M.Sc. Physics programs with majors in Astronomy. Sky-gazing, 
+  research, and hands-on observational experience await you.
+baseurl: "" # Keep this empty for GitHub Pages at root
+url: "https://astroupes.github.io"
+
+twitter_username: astro_nitesh
+github_username: astroupes
+
+theme: minima
+
+# Navigation menu
+header_pages:
+  - index.md
+  - about.md
+  - programs.md
+  - faculty.md
+  - publications.md
+  - activities.md
+  - contact.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO and analytics
+google_analytics: UA-XXXXXXXXX-X  # Replace with your GA code
+
+# Social links
+social_links:
+  twitter: https://twitter.com/astro_nitesh
+  github: https://github.com/astroupes
+
+# Optional markdown configuration
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+# Exclude unnecessary files/folders from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+  - .gitignore
+  - LICENSE

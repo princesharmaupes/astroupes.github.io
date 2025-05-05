@@ -61,6 +61,72 @@ footer {
     border-top: 2px solid #00bcd4;
 }
 
+#floating-news {
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    width: 250px;
+    background: #f4f4f4;
+    border-left: 3px solid #007acc;
+    padding: 10px;
+    font-size: 0.9rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  #floating-news h4 {
+    margin-top: 0;
+  }
+  #floating-news ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  #floating-news li {
+    margin-bottom: 8px;
+  }
+  #floating-news a {
+    text-decoration: none;
+    color: #007acc;
+  }#floating-news {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    width: 280px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 3px solid #007acc;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    font-size: 0.9em;
+    z-index: 1000;
+  }
+  
+  #floating-news select {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+  }
+  
+  #floating-news ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  #floating-news li {
+    margin-bottom: 8px;
+  }
+  
+  #floating-news a {
+    text-decoration: none;
+    color: #007acc;
+  }
+  
+  #floating-news a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
 /* Buttons */
 button, a.button {
     background: #00bcd4;

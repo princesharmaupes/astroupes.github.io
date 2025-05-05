@@ -1,0 +1,6 @@
+body {
+    background: url('/assets/images/galaxy.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.9; /* Adjust transparency */
+    color: #fff; /* Ensure text is readable */
+  }

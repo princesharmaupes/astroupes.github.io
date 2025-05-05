@@ -5,6 +5,20 @@ title: Faculty
 
 # Meet Our Faculty
 
+## Dr. Prashant Rawat
+**Key Research Areas:**
+- Laboratory Astrophysics: Experiments related to planetary and space physics.
+- Solar Physics: Collaboration with ARIES on the Coronal heating problem.
+
+---
+
+## Dr. Balendra Pratap Singh
+**Key Research Areas:**
+- Black Hole Physics: Study of black hole shadow, thermodynamic properties, and quasinormal modes.
+- Solar Physics: Solar flares and Coronal Mass Ejection.
+
+---
+
 ## Dr. Nitesh Kumar
 **Key Research Areas:**
 - Stellar Astrophysics: Study of stellar structure, evolution, and modeling.
@@ -28,20 +42,6 @@ title: Faculty
 **Publications:**
 - *"Torque reversal and cyclotron absorption feature in HMXB 4U 1538-522"*, Monthly Notices of the Royal Astronomical Society, 2023. DOI: [10.1093/mnras/stad1285](https://doi.org/10.1093/mnras/stad1285)
 - *"Broad-band spectral analysis of LMXB 2S 0921-63 with Suzaku"*, Monthly Notices of the Royal Astronomical Society, 2022. DOI: [10.1093/mnras/stac2698](https://doi.org/10.1093/mnras/stac2698)
-
----
-
-## Dr. Balendra Pratap Singh
-**Key Research Areas:**
-- Black Hole Physics: Study of black hole shadow, thermodynamic properties, and quasinormal modes.
-- Solar Physics: Solar flares and Coronal Mass Ejection.
-
----
-
-## Dr. Prashant Rawat
-**Key Research Areas:**
-- Laboratory Astrophysics: Experiments related to planetary and space physics.
-- Solar Physics: Collaboration with ARIES on the Coronal heating problem.
 
 ---
 

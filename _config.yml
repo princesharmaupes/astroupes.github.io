@@ -50,3 +50,5 @@ exclude:
   - README.md
   - .gitignore
   - LICENSE
+
+# Note: Replace DEMO_KEY in the default.html file with your actual NASA API key.

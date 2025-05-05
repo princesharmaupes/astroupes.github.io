@@ -5,37 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* Add animation for buttons */
+    button, a.button {
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    button:hover, a.button:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
   <!-- Background -->
-  <div style="background: url('/assests/images/galaxy.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh;">
+  <div style="background: url('/assets/images/jwst-hubble.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh;">
 
     <!-- Navigation Panel -->
-    <header style="background: rgba(255, 255, 255, 1.0); padding: 10px;">
-      <div style="display: flex; align-items: center;">
-        <img src="/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
+    <header style="background: rgba(255, 255, 255, 1.0); padding: 10px; position: fixed; right: 0; top: 0; height: 100%; width: 200px; box-shadow: -4px 0 6px rgba(0, 0, 0, 0.3);">
+      <div style="display: flex; flex-direction: column; align-items: flex-start;">
+        <img src="/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-bottom: 20px;">
         <nav>
-          <ul style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 15px; margin: 0; padding: 0;">
             <li><a href="/" style="color: #000; text-decoration: none;">Home</a></li>
             <li><a href="/about" style="color: #000; text-decoration: none;">About</a></li>
             <li><a href="/programs" style="color: #000; text-decoration: none;">Programs</a></li>
             <li><a href="/faculty" style="color: #000; text-decoration: none;">Faculty</a></li>
             <li><a href="/publications" style="color: #000; text-decoration: none;">Publications</a></li>
             <li><a href="/activities" style="color: #000; text-decoration: none;">Activities</a></li>
+            <li><a href="/gallery" style="color: #000; text-decoration: none;">Gallery</a></li>
             <li><a href="/contact" style="color: #000; text-decoration: none;">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-        <!-- Floating column -->
-
+    <!-- Floating column -->
     <div id="floating-news">
       <h4>🛰️ Latest in Space</h4>
     </div>
     <script src="/assets/js/rss-news.js"></script>
     
-
     <!-- Main Content -->
     <main>
       <div style="padding: 20px; background: rgba(255, 255, 255, 0.8);">

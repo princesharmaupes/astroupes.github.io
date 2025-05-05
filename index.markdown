@@ -3,25 +3,28 @@ layout: default
 title: Home
 ---
 
-# 🌌 Welcome to the Astronomy & Astrophysics Department @ UPES
+# 🌌 Welcome to the Astronomy & Astrophysics Department @ UPESWhere curiosity meets the cosmos — explore the science of stars, space, and time at UPES
 
-Explore the cosmos through our **B.Sc.** and **M.Sc.** Physics programs with a specialization in **Astronomy and Astrophysics** at the University of Petroleum and Energy Studies (UPES), Dehradun.
+
+Stars have always called to the curious. At UPES, we turn that call into a career.  
+Our BSc in Astronomy and Astrophysics takes you from the fundamentals of physics to the frontiers of space science.  
+Learn to read the universe through data, decode cosmic phenomena, and contribute to real astronomical research — all as part of a dynamic and forward-looking academic environment.
 
 ---
 
 ## 🔭 What We Offer
 
 - 🎓 **Undergraduate & Postgraduate Programs**  
-  Specialization in Astronomy and Astrophysics with hands-on observational training.
+  Dive into Astronomy and Astrophysics through specialized degree tracks with hands-on training in data analysis, simulation, and observational techniques.
 
 - 🛰 **Research Opportunities**  
-  Collaborate with national observatories and institutes like ARIES, IUCAA, and PRL.
+  Work on real-world projects alongside faculty and researchers, with collaborations across premier institutions like ARIES, IUCAA, and PRL.
 
 - 🌠 **Sky-Gazing & Workshops**  
-  Regular events for the public and students using department telescopes.
+  Experience the mysteries beyond Earth firsthand through regular public outreach events, night-sky observations, and hands-on sessions with department telescopes.
 
 - 🏛 **Academic Excellence**  
-  Learn from experienced faculty and guest researchers in cutting-edge topics.
+Learn from leading researchers and visiting scientists engaged in cutting-edge work on cosmology, high-energy astrophysics, X-ray accretion in compact objects, AI-based stellar cluster analysis and theoretical black hole physics.
 
 ---
 

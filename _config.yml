@@ -10,7 +10,7 @@ url: "https://astroupes.github.io"
 twitter_username: astro_nitesh
 github_username: astroupes
 
-theme: minima
+theme: jekyll-theme-cayman
 
 # Navigation menu
 header_pages:
@@ -20,6 +20,7 @@ header_pages:
   - faculty.md
   - publications.md
   - activities.md
+  - gallery.md
   - contact.md
 
 plugins:
@@ -49,3 +50,5 @@ exclude:
   - README.md
   - .gitignore
   - LICENSE
+
+# Note: Replace DEMO_KEY in the default.html file with your actual NASA API key.

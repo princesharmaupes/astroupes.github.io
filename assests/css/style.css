@@ -2,35 +2,41 @@
 body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
-    font-size: 18px; /* Increased font size for readability */
-    background: url('assests/images/galaxy.jpg') no-repeat center center fixed;
+    font-size: 20px; /* Increased font size */
+    background: url('assests/images/jwst-hubble.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     line-height: 1.6;
 }
 
-/* Header Styles */
+/* Navigation Panel */
 header {
-    background: #fff; /* Changed navigation panel color to white */
-    color: #000; /* Updated text color for contrast */
+    background: #fff;
+    color: #000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    padding: 15px 20px;
-}
-
-header img {
-    height: 60px;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: flex-end;
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
 
 header nav ul li a {
+<<<<<<< HEAD
     color: #000; /* Original color for the text */
+=======
+    color: #000;
+>>>>>>> 7bc72fddd1e044bfff3b2708a3380cd625fa7df7
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px; /* Added padding for the button effect */
@@ -53,10 +59,12 @@ header nav ul li a:hover {
 header nav ul li a:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4); /* Shadow when clicked */
     transform: translateY(1px); /* Indentation on click */
+    color: #00bcd4;
 }
 
-/* Main Content Styles */
+/* Adjust main content to avoid overlap with fixed header */
 main {
+    padding-top: 80px;
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -180,12 +188,13 @@ button, a.button {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease;
     font-size: 16px; /* Adjusted button font size */
 }
 
 button:hover, a.button:hover {
     background: #008c9e;
+    transform: scale(1.1);
 }
 
 /* Links */
@@ -206,6 +215,42 @@ a:hover {
     padding: 10px;
     border-left: 5px solid #00bcd4;
     margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.gallery-tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-tile:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-tile h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
     border-radius: 5px;
 }
 

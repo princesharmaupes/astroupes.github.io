@@ -44,23 +44,21 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #ffffff; /* Updated text color to white */
+    color: #ffffff; /* Change text color to white */
     text-decoration: none;
     font-weight: bold; /* Ensure text is bold */
     padding: 10px 20px; /* Added padding for the button effect */
     margin: 0 5px;
-    background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Updated gradient for a vibrant look */
-    border: 1px solid #ff7e5f; /* Border to enhance 3D box appearance */
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.2); /* Dual shadow for 3D effect */
+    background: none; /* Remove the background box */
+    border: none; /* Remove the border */
+    box-shadow: none; /* Remove the shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for 3D effect */
     display: inline-block;
     transform: perspective(500px) translateZ(0) scale(1); /* Initial 3D perspective */
 }
 
 header nav ul li a:hover {
-    background: linear-gradient(145deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.3); /* Enhanced shadow on hover */
-    color: #00bcd4; /* Retained hover color */
+    color: #00bcd4; /* Retain hover color */
     font-weight: bolder; /* Make text bolder on hover */
     transform: perspective(500px) translateZ(10px) scale(1.05); /* Pop-up and slight enlargement */
 }

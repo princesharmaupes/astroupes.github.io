@@ -32,15 +32,20 @@
 </head>
 
 <body>
+  <!-- Add a ribbon for development notice -->
+  <div style="position: fixed; top: 0; left: 0; width: 100%; background: red; color: white; text-align: center; z-index: 1000;">
+    The website is currently under development
+  </div>
+
   <!-- Background -->
   <div style="background: url('/assests/images/galaxy.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh;">
 
     <!-- Navigation Panel -->
     <header style="background: rgba(255, 255, 255, 1.0); padding: 10px;">
-      <div style="display: flex; align-items: center; justify-content: flex-start;">
-        <a href="/"><img src="/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: auto;"></a>
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+        <a href="/"><img src="/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;"></a>
         <nav>
-          <ul style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+          <ul style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0; flex-wrap: wrap; justify-content: flex-end;">
             <li><a href="/" style="color: #000; text-decoration: none;">Home</a></li>
             <li><a href="/about" style="color: #000; text-decoration: none;">About</a></li>
             <li><a href="/programs" style="color: #000; text-decoration: none;">Programs</a></li>

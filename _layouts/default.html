@@ -44,6 +44,20 @@
       z-index: 1000;
       padding: 5px 0;
     }
+
+    /* Background video styles */
+    #bg-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      opacity: 0.15; /* Adjust opacity for watermark effect */
+    }
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -67,6 +81,12 @@
   <div class="development-ribbon">
     The website is currently under development
   </div>
+
+  <!-- Background Video -->
+  <video id="bg-video" autoplay loop muted>
+    <source src="/assets/videos/timelapse_S1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
   <!-- Background -->
   <div style="background: url('/assests/images/galaxy.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh;">

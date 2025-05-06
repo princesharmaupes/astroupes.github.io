@@ -3,11 +3,23 @@ body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
     font-size: 20px; /* Increased font size */
-    background: url('assests/images/jwst-hubble.jpg') no-repeat center center fixed;
-    background-size: cover;
+    /* Removed background image */
     color: #fff;
     line-height: 1.6;
 }
+
+/* Background Video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Push it behind everything */
+    opacity: 0.2; /* Makes it subtle like a watermark */
+    pointer-events: none; /* Prevent interaction */
+  }
 
 /* Navigation Panel */
 header {
@@ -69,18 +81,6 @@ main {
     max-width: 1200px;
     font-size: 18px; /* Ensure consistent font size in main content */
 }
-
-#bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Push it behind everything */
-    opacity: 0.2; /* Makes it subtle like a watermark */
-    pointer-events: none; /* Prevent interaction */
-  }
 
 /* Footer Styles */
 footer {

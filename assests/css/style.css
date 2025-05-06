@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
     font-size: 20px; /* Increased font size */
-    background: url('/assets/images/galaxy.jpg') no-repeat center center fixed;
+    background: url('/assests/images/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     line-height: 1.6;
@@ -101,12 +101,12 @@ footer {
     position: fixed;
     top: 100px;
     right: 10px;
-    width: 280px;
-    background: rgba(20, 20, 30, 0.95);
-    padding: 10px;
-    border-left: 3px solid #007acc;
-    box-shadow: 0 0 6px rgba(0,0,0,0.1);
-    font-family: sans-serif;
+    width: 300px;
+    background: rgba(15, 15, 30, 0.95); /* Dark astro theme */
+    padding: 15px;
+    border-left: 3px solid #007acc; /* Blue accent */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 0.9em;
     z-index: 1000;
     color: #eee;
@@ -114,31 +114,37 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#floating-news:hover {
-    transform: translateX(10px); /* Slide the box slightly to the right */
-    box-shadow: 0 0 15px rgba(255, 215, 87, 0.7); /* Glow effect */
-}
-
 #floating-news h4 {
     margin-top: 0;
+    color: #00bcd4; /* Blue heading */
+    font-size: 1.2em;
+    text-align: center;
 }
 
 #floating-news ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 #floating-news li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 #floating-news a {
     text-decoration: none;
-    color: #007acc;
+    color: #007acc; /* Link color */
+    transition: color 0.3s ease;
 }
 
 #floating-news a:hover {
+    color: #00bcd4; /* Hover color */
     text-decoration: underline;
+}
+
+#floating-news:hover {
+    transform: translateX(-5px); /* Slight slide effect on hover */
+    box-shadow: 0 0 15px rgba(255, 215, 87, 0.7); /* Glow effect */
 }
 
 /* Content inside Floating News */

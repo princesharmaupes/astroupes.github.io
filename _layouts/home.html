@@ -6,6 +6,12 @@
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
+    :root {
+      --header-bg-opacity: 0.4;
+      --main-bg-opacity: 0.3;
+      --footer-bg-opacity: 0.3;
+    }
+
     /* Optimize navigation for mobile */
     header nav ul {
       display: flex;
@@ -45,7 +51,28 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: -1;
+      z-index: 0;
+    }
+
+    header {
+      background: rgba(255, 255, 255, var(--header-bg-opacity));
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    main > div {
+      padding: 20px;
+      background: rgba(255, 255, 255, var(--main-bg-opacity));
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: rgba(0, 0, 0, var(--footer-bg-opacity));
+      color: #fff;
     }
   </style>
 </head>
@@ -58,14 +85,14 @@
   <!-- Background Video -->
   <video id="bg-video" autoplay loop muted>
     <source src="/assets/videos/timelapse_S1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <span style="color: red; position: relative; z-index: 1;">Your browser does not support the video tag.</span>
   </video>
 
   <!-- Background -->
   <div style="min-height: 100vh;">
 
     <!-- Navigation Panel -->
-    <header style="background: rgba(255, 255, 255, 1.0); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+    <header>
       <a href="/"><img src="/assets/images/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;"></a>
       <nav>
         <ul style="list-style: none; margin: 0; padding: 0;">
@@ -82,13 +109,13 @@
 
     <!-- Main Content -->
     <main>
-      <div style="padding: 20px; background: rgba(255, 255, 255, 0.8);">
+      <div>
         {{ content }}
       </div>
     </main>
 
     <!-- Footer -->
-    <footer style="text-align: center; padding: 10px; background: rgba(0, 0, 0, 0.8); color: #fff;">
+    <footer>
       <p>&copy; {{ site.title }} - {{ site.description }}</p>
     </footer>
   </div>

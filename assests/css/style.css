@@ -9,6 +9,18 @@ body {
     line-height: 1.6;
 }
 
+/* Video Background */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire viewport */
+    z-index: -1; /* Places the video behind other content */
+    opacity: 0.2; /* Adds a faded effect */
+}
+
 /* Navigation Panel */
 header {
     background: linear-gradient(145deg, #4caf50, #388e3c); /* Updated menu bar color to green gradient */

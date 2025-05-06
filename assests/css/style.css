@@ -32,11 +32,7 @@ header nav ul {
 }
 
 header nav ul li a {
-<<<<<<< HEAD
-    color: #000; /* Original color for the text */
-=======
     color: #000;
->>>>>>> 7bc72fddd1e044bfff3b2708a3380cd625fa7df7
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px; /* Added padding for the button effect */

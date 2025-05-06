@@ -23,7 +23,7 @@ body {
 
 /* Navigation Panel */
 header {
-    background: linear-gradient(145deg, #1a1a1a, #4d4d4d); /* More prominent gradient for menu bar */
+    background: rgba(26, 26, 26, 0.6); /* Adjusted to a semi-transparent black */
     color: #000;
     width: 100%;
     position: fixed;
@@ -53,18 +53,18 @@ header nav ul li a {
     border: none; /* Remove border */
     box-shadow: none; /* Remove shadow box */
     transform: none; /* Remove 3D perspective */
-    transition: color 0.3s ease, text-shadow 0.8s ease; /* Smooth transition for color and shadow change */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Ensure smooth transition for both color and shadow */
     display: inline-block;
     border-radius: 8px; /* Rounded corners */
 }
 
 header nav ul li a:hover {
-    color: #ff9800; /* Change text color to orange on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a stronger shadow for better visibility */
+    color: #ffffff; /* Ensure the text color remains white */
     background: none; /* Ensure no background on hover */
     font-weight: bolder; /* Make text bolder on hover */
     transform: none; /* Remove hover 3D effect */
     box-shadow: none; /* Ensure no shadow on hover */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to make text appear more bold */
 }
 
 /* Active effect (when clicked) */

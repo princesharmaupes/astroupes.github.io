@@ -35,10 +35,26 @@ header nav ul li a {
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    padding: 10px 20px; /* Added padding for the button effect */
+    margin: 0 5px;
+    background: linear-gradient(145deg, #007acc, #005fa3); /* 3D effect: Gradient for depth */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 5px rgba(255, 255, 255, 0.4); /* 3D shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+    display: inline-block;
 }
 
 header nav ul li a:hover {
+    background: linear-gradient(145deg, #005fa3, #007acc); /* Reverse gradient on hover */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(255, 255, 255, 0.6); /* More pronounced shadow */
+    color: #00bcd4; /* Retained hover color */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Active effect (when clicked) */
+header nav ul li a:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4); /* Shadow when clicked */
+    transform: translateY(1px); /* Indentation on click */
     color: #00bcd4;
 }
 
@@ -54,6 +70,18 @@ main {
     font-size: 18px; /* Ensure consistent font size in main content */
 }
 
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Push it behind everything */
+    opacity: 0.2; /* Makes it subtle like a watermark */
+    pointer-events: none; /* Prevent interaction */
+  }
+
 /* Footer Styles */
 footer {
     background: rgba(0, 0, 0, 0.9);
@@ -64,69 +92,85 @@ footer {
     border-top: 2px solid #00bcd4;
 }
 
+/* Floating News Styles */
 #floating-news {
-    position: fixed;
-    right: 10px;
-    top: 100px;
-    width: 250px;
-    background: #f4f4f4;
-    border-left: 3px solid #007acc;
-    padding: 10px;
-    font-size: 0.9rem;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    z-index: 999;
-  }
-  #floating-news h4 {
-    margin-top: 0;
-  }
-  #floating-news ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  #floating-news li {
-    margin-bottom: 8px;
-  }
-  #floating-news a {
-    text-decoration: none;
-    color: #007acc;
-  }#floating-news {
     position: fixed;
     top: 100px;
     right: 10px;
     width: 280px;
-    background: #f9f9f9;
+    background: rgba(20, 20, 30, 0.95);
     padding: 10px;
     border-left: 3px solid #007acc;
     box-shadow: 0 0 6px rgba(0,0,0,0.1);
     font-family: sans-serif;
     font-size: 0.9em;
     z-index: 1000;
-  }
-  
-  #floating-news select {
+    color: #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#floating-news:hover {
+    transform: translateX(10px); /* Slide the box slightly to the right */
+    box-shadow: 0 0 15px rgba(255, 215, 87, 0.7); /* Glow effect */
+}
+
+#floating-news h4 {
+    margin-top: 0;
+}
+
+#floating-news ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#floating-news li {
+    margin-bottom: 8px;
+}
+
+#floating-news a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+#floating-news a:hover {
+    text-decoration: underline;
+}
+
+/* Content inside Floating News */
+#news-content {
+    transition: transform 0.3s ease-in-out;
+}
+
+#floating-news:hover #news-content {
+    transform: translateX(20px); /* Content slides to the right on hover */
+}
+
+/* Dropdown Styles */
+#floating-news select {
     width: 100%;
     margin-bottom: 8px;
     font-size: 0.9em;
-  }
-  
-  #floating-news ul {
+}
+
+#floating-news ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-  }
-  
-  #floating-news li {
+}
+
+#floating-news li {
     margin-bottom: 8px;
-  }
-  
-  #floating-news a {
+}
+
+#floating-news a {
     text-decoration: none;
     color: #007acc;
-  }
-  
-  #floating-news a:hover {
+}
+
+#floating-news a:hover {
     text-decoration: underline;
-  }
+}
   
   
 
@@ -215,5 +259,9 @@ a:hover {
 
     main {
         padding: 20px;
+    }
+
+    #floating-news {
+        width: 250px; /* Slightly smaller on mobile */
     }
 }

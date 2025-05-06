@@ -35,13 +35,33 @@ title: Faculty
 
 ## Dr. Prince Sharma
 **Key Research Areas:**
-- Timing and Spectral Analysis of High-Mass X-ray Binaries (HMXBs).
-- Spectral Studies of Low-Mass X-ray Binaries (LMXBs).
-- X-ray Timing Properties and Variability of Be/X-ray Transients.
+- Compact Object Astrophysics: Studying neutron stars and black holes in X-ray binary systems.
+
+- X-ray Spectroscopy: Analyzing high-energy spectra to understand accretion and emission processes.
+
+- Timing Analysis: Investigating variability and pulsations to probe spin and accretion dynamics.
+
+- Cyclotron Line Studies: Using spectral features to measure magnetic fields in neutron stars.
+
+- Broadband X-ray Observations: Combining data from multiple missions to study accreting systems.
 
 **Publications:**
-- *"Torque reversal and cyclotron absorption feature in HMXB 4U 1538-522"*, Monthly Notices of the Royal Astronomical Society, 2023. DOI: [10.1093/mnras/stad1285](https://doi.org/10.1093/mnras/stad1285)
-- *"Broad-band spectral analysis of LMXB 2S 0921-63 with Suzaku"*, Monthly Notices of the Royal Astronomical Society, 2022. DOI: [10.1093/mnras/stac2698](https://doi.org/10.1093/mnras/stac2698)
+### Selected Publications
+
+- *Timing analysis of Be/X-ray transient 4U 0115+63 during Type II outburst of 2023 using NuSTAR observations*, *Advances in Space Research*, 2024. DOI: [10.1016/j.asr.2024.10.021](https://doi.org/10.1016/j.asr.2024.10.021)
+
+- *Torque reversal and cyclotron absorption feature in HMXB 4U 1538-522*, *Monthly Notices of the Royal Astronomical Society*, 2023. DOI: [10.1093/mnras/stad1285](https://doi.org/10.1093/mnras/stad1285)
+
+- *Broad-band spectral analysis of LMXB 2S 0921-63 with Suzaku*, *Monthly Notices of the Royal Astronomical Society*, 2022. DOI: [10.1093/mnras/stac2698](https://doi.org/10.1093/mnras/stac2698)
+
+- *Discovery of cyclotron and narrow Fe Kα lines in HMXB GRO J1750-27*, *Monthly Notices of the Royal Astronomical Society: Letters*, 2022. DOI: [10.1093/mnrasl/slac041](https://doi.org/10.1093/mnrasl/slac041)
+
+- *Timing and spectral analysis of HMXB OAO 1657-415 with NuSTAR*, *Monthly Notices of the Royal Astronomical Society*, 2022. DOI: [10.1093/mnras/stab3436](https://doi.org/10.1093/mnras/stab3436)
+
+- *Broad-band spectral study of LMXB black hole candidate 4U 1957+11 with NuSTAR*, *Research in Astronomy and Astrophysics*, 2021. DOI: [10.1088/1674-4527/21/9/214](https://doi.org/10.1088/1674-4527/21/9/214)
+
+- *Broad-band spectral analysis of LMXB XTE J1710-281 with Suzaku*, *Monthly Notices of the Royal Astronomical Society*, 2020. DOI: [10.1093/mnras/staa1516](https://doi.org/10.1093/mnras/staa1516)
+
 
 ---
 

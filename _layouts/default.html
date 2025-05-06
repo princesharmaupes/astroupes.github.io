@@ -13,6 +13,37 @@
     button:hover, a.button:hover {
       transform: scale(1.1);
     }
+
+    /* Optimize navigation for mobile */
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header nav ul {
+        justify-content: flex-start;
+      }
+    }
+
+    /* Development ribbon */
+    .development-ribbon {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: red;
+      color: white;
+      text-align: center;
+      z-index: 1000;
+      padding: 5px 0;
+    }
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -32,31 +63,25 @@
 </head>
 
 <body>
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="/assets/video/timelapse_S1.mp4" type="video/mp4">
-  </video>
-  
 
   <!-- Background -->
   <div style="background: url('/assests/images/galaxy.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh;">
 
     <!-- Navigation Panel -->
-    <header style="background: rgba(255, 255, 255, 1.0); padding: 10px;">
-      <div style="display: flex; align-items: center; justify-content: flex-start;">
-        <a href="/"><img src="/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: auto;"></a>
-        <nav>
-          <ul style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
-            <li><a href="/" style="color: #000; text-decoration: none;">Home</a></li>
-            <li><a href="/about" style="color: #000; text-decoration: none;">About</a></li>
-            <li><a href="/programs" style="color: #000; text-decoration: none;">Programs</a></li>
-            <li><a href="/faculty" style="color: #000; text-decoration: none;">Faculty</a></li>
-            <li><a href="/publications" style="color: #000; text-decoration: none;">Publications</a></li>
-            <li><a href="/activities" style="color: #000; text-decoration: none;">Activities</a></li>
-            <li><a href="/gallery" style="color: #000; text-decoration: none;">Gallery</a></li>
-            <li><a href="/contact" style="color: #000; text-decoration: none;">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header style="background: rgba(255, 255, 255, 1.0); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+      <a href="/"><img src="/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;"></a>
+      <nav>
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="/" style="color: #000; text-decoration: none;">Home</a></li>
+          <li><a href="/about" style="color: #000; text-decoration: none;">About</a></li>
+          <li><a href="/programs" style="color: #000; text-decoration: none;">Programs</a></li>
+          <li><a href="/faculty" style="color: #000; text-decoration: none;">Faculty</a></li>
+          <li><a href="/publications" style="color: #000; text-decoration: none;">Publications</a></li>
+          <li><a href="/activities" style="color: #000; text-decoration: none;">Activities</a></li>
+          <li><a href="/gallery" style="color: #000; text-decoration: none;">Gallery</a></li>
+          <li><a href="/contact" style="color: #000; text-decoration: none;">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Floating column

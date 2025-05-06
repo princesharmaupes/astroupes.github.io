@@ -40,15 +40,16 @@ header nav ul li a {
     background: linear-gradient(145deg, #007acc, #005fa3); /* 3D effect: Gradient for depth */
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 5px rgba(255, 255, 255, 0.4); /* 3D shadow */
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for 3D effect */
     display: inline-block;
+    transform: perspective(500px) translateZ(0); /* Initial 3D perspective */
 }
 
 header nav ul li a:hover {
     background: linear-gradient(145deg, #005fa3, #007acc); /* Reverse gradient on hover */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(255, 255, 255, 0.6); /* More pronounced shadow */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6); /* Enhanced shadow */
     color: #00bcd4; /* Retained hover color */
-    transform: translateY(-3px); /* Lift effect on hover */
+    transform: perspective(500px) translateZ(10px); /* Pop-up effect */
 }
 
 /* Active effect (when clicked) */

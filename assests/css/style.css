@@ -9,11 +9,6 @@ body {
     line-height: 1.6;
 }
 
-/* Remove video background styles */
-#bg-video {
-    display: none;
-}
-
 /* Navigation Panel */
 header {
     background: #fff;

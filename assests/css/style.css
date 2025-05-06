@@ -3,15 +3,27 @@ body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
     font-size: 20px; /* Increased font size */
-    background: url('assests/images/jwst-hubble.jpg') no-repeat center center fixed;
+    background: url('/assets/images/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     line-height: 1.6;
 }
 
+/* Video Background */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire viewport */
+    z-index: -1; /* Places the video behind other content */
+    opacity: 0.2; /* Adds a faded effect */
+}
+
 /* Navigation Panel */
 header {
-    background: #fff;
+    background: linear-gradient(145deg, #1a1a1a, #4d4d4d); /* More prominent gradient for menu bar */
     color: #000;
     width: 100%;
     position: fixed;
@@ -32,29 +44,32 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #000;
+    color: #ffffff; /* Change text color to white */
     text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px; /* Added padding for the button effect */
+    font-family: Arial, sans-serif;
+    font-weight: bold; /* Ensure text is bold */
     margin: 0 5px;
-    background: linear-gradient(145deg, #007acc, #005fa3); /* 3D effect: Gradient for depth */
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 5px rgba(255, 255, 255, 0.4); /* 3D shadow */
-    transition: all 0.3s ease; /* Smooth transition */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow box */
+    transform: none; /* Remove 3D perspective */
+    transition: color 0.3s ease; /* Smooth transition for color change */
     display: inline-block;
+    border-radius: 8px; /* Rounded corners */
 }
 
 header nav ul li a:hover {
-    background: linear-gradient(145deg, #005fa3, #007acc); /* Reverse gradient on hover */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(255, 255, 255, 0.6); /* More pronounced shadow */
-    color: #00bcd4; /* Retained hover color */
-    transform: translateY(-3px); /* Lift effect on hover */
+    color: #ff9800; /* Change text color to orange on hover */
+    background: none; /* Ensure no background on hover */
+    font-weight: bolder; /* Make text bolder on hover */
+    transform: none; /* Remove hover 3D effect */
+    box-shadow: none; /* Ensure no shadow on hover */
 }
 
 /* Active effect (when clicked) */
 header nav ul li a:active {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4); /* Shadow when clicked */
-    transform: translateY(1px); /* Indentation on click */
+    box-shadow: none; /* Remove shadow when clicked */
+    transform: none; /* Remove indentation effect */
     color: #00bcd4;
 }
 
@@ -69,18 +84,6 @@ main {
     max-width: 1200px;
     font-size: 18px; /* Ensure consistent font size in main content */
 }
-
-#bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Push it behind everything */
-    opacity: 0.2; /* Makes it subtle like a watermark */
-    pointer-events: none; /* Prevent interaction */
-  }
 
 /* Footer Styles */
 footer {
@@ -182,10 +185,11 @@ button, a.button {
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold !important; /* Ensure text is bold */
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
     font-size: 16px; /* Adjusted button font size */
+    box-shadow: none; /* Remove shadow box */
 }
 
 button:hover, a.button:hover {

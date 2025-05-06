@@ -49,7 +49,7 @@ header nav ul li a {
     font-weight: bold; /* Ensure text is bold */
     padding: 8px 16px; /* Adjust padding for better appearance */
     margin: 0 5px;
-    background: rgba(255, 255, 255, 0.1); /* Rounded rectangle background blending with menu bar */
+    background: none; /* Remove the background box */
     border: none; /* Remove the border */
     box-shadow: none; /* Remove the shadow */
     transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
@@ -59,7 +59,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Slightly brighter background on hover */
+    background: none; /* Ensure no background on hover */
     color: #00bcd4; /* Change text color to light blue on hover */
     font-weight: bolder; /* Make text bolder on hover */
     transform: perspective(500px) translateZ(10px) scale(1.05); /* Pop-up and slight enlargement */

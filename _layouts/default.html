@@ -63,6 +63,10 @@
 </head>
 
 <body>
+  <!-- Add a ribbon for development notice -->
+  <div class="development-ribbon">
+    The website is currently under development
+  </div>
 
   <!-- Background -->
   <div style="background: url('/assests/images/galaxy.jpg') no-repeat center center fixed; background-size: cover; min-height: 100vh;">
@@ -83,12 +87,6 @@
         </ul>
       </nav>
     </header>
-
-    <!-- Floating column
-    <div id="floating-news">
-      <h4>🛰️ Latest in Space</h4>
-    </div>
-    <script src="/assets/js/rss-news.js"></script> -->
     
     <!-- Main Content -->
     <main>
@@ -102,32 +100,5 @@
       <p>&copy; {{ site.title }} - {{ site.description }}</p>
     </footer>
   </div>
-
-  <div id="floating-news" style="
-  position: fixed;
-  top: 100px;
-  right: 10px;
-  width: 320px;
-  background: rgba(20, 20, 30, 0.95);
-  border: 1px solid #444;
-  padding: 12px;
-  font-size: 0.9em;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
-  z-index: 9999;
-  color: #eee;
-  border-radius: 8px;
-  font-family: 'Segoe UI', sans-serif;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow change */
-">
-  <div id="news-content">
-    Loading space news...
-  </div>
-</div>
-
-<script src="/assets/js/rss-news.js"></script>
-
-
-
-  
 </body>
 </html>

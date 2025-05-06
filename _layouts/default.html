@@ -46,17 +46,24 @@
     }
 
     /* Background video styles */
-    #bg-video {
+    .video-background {
       position: fixed;
-      top: 50%;
-      left: 50%;
+      top: 0;
+      left: 0;
       min-width: 100%;
       min-height: 100%;
-      width: auto;
-      height: auto;
       z-index: -1;
-      transform: translate(-50%, -50%);
-      opacity: 0.1; /* Reduced opacity for a more faded watermark effect */
+      object-fit: cover;
+      opacity: 0.3; /* Adjust for watermark-like effect */
+    }
+
+    /* Ensure content is visible over the video */
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
     }
 
     /* Fallback background image */
@@ -91,14 +98,13 @@
   -->
 
   <!-- Background Video -->
-  <video id="bg-video" autoplay loop muted>
-    <source src="/assets/videos/background.mp4" type="video/mp4">
+  <video class="video-background" autoplay muted loop>
+    <source src="/assets/videos/background.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
   <!-- Background -->
   <div style="min-height: 100vh;">
-
     <!-- Navigation Panel -->
     <header style="background: rgba(255, 255, 255, 1.0); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
       <a href="/"><img src="/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;"></a>
@@ -117,10 +123,8 @@
     </header>
     
     <!-- Main Content -->
-    <main>
-      <div style="padding: 20px; background: rgba(255, 255, 255, 0.8);">
-        {{ content }}
-      </div>
+    <main class="content-wrapper">
+      {{ content }}
     </main>
 
     <!-- Footer -->

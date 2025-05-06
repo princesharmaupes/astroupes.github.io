@@ -60,7 +60,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background: none; /* Ensure no background on hover */
-    color: #00bcd4; /* Change text color to light blue on hover */
+    color: #00bcd4; /* Ensure hover color is applied */
     font-weight: bolder; /* Make text bolder on hover */
     transform: none; /* Remove hover 3D effect */
     box-shadow: none; /* Ensure no shadow on hover */

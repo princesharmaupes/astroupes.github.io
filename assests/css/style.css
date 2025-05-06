@@ -47,28 +47,28 @@ header nav ul li a {
     color: #ffffff; /* Change text color to white */
     text-decoration: none;
     font-weight: bold; /* Ensure text is bold */
-    padding: 8px 16px; /* Adjust padding for better appearance */
     margin: 0 5px;
-    background: none; /* Remove the background box */
-    border: none; /* Remove the border */
-    box-shadow: none; /* Remove the shadow */
-    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow box */
+    transform: none; /* Remove 3D perspective */
+    transition: color 0.3s ease; /* Keep only color transition */
     display: inline-block;
     border-radius: 8px; /* Rounded corners */
-    transform: perspective(500px) translateZ(0) scale(1); /* Initial 3D perspective */
 }
 
 header nav ul li a:hover {
     background: none; /* Ensure no background on hover */
     color: #00bcd4; /* Change text color to light blue on hover */
     font-weight: bolder; /* Make text bolder on hover */
-    transform: perspective(500px) translateZ(10px) scale(1.05); /* Pop-up and slight enlargement */
+    transform: none; /* Remove hover 3D effect */
+    box-shadow: none; /* Ensure no shadow on hover */
 }
 
 /* Active effect (when clicked) */
 header nav ul li a:active {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4); /* Shadow when clicked */
-    transform: translateY(1px); /* Indentation on click */
+    box-shadow: none; /* Remove shadow when clicked */
+    transform: none; /* Remove indentation effect */
     color: #00bcd4;
 }
 
@@ -188,6 +188,7 @@ button, a.button {
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
     font-size: 16px; /* Adjusted button font size */
+    box-shadow: none; /* Remove shadow box */
 }
 
 button:hover, a.button:hover {

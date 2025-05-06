@@ -53,7 +53,7 @@ header nav ul li a {
     border: none; /* Remove border */
     box-shadow: none; /* Remove shadow box */
     transform: none; /* Remove 3D perspective */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for color and shadow change */
+    transition: color 0.3s ease, text-shadow 0.8s ease; /* Smooth transition for color and shadow change */
     display: inline-block;
     border-radius: 8px; /* Rounded corners */
 }

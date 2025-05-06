@@ -38,13 +38,18 @@
     }
 
     header nav ul li a {
-      transform: perspective(500px) translateZ(0); /* Initial 3D perspective */
-      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for 3D effect */
+      background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Updated gradient for a vibrant look */
+      border: 1px solid #ff7e5f; /* Border to enhance 3D box appearance */
+      transform: perspective(500px) translateZ(0) scale(1); /* Initial 3D perspective */
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.2); /* Dual shadow for 3D effect */
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transitions */
+      font-weight: bolder; /* Make text bold */
     }
 
     header nav ul li a:hover {
-      transform: perspective(500px) translateZ(10px); /* Pop-up effect */
-      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6); /* Enhanced shadow */
+      transform: perspective(500px) translateZ(10px) scale(1.05); /* Pop-up and slight enlargement */
+      background: linear-gradient(145deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.3); /* Enhanced shadow on hover */
     }
   </style>
 </head>
@@ -59,7 +64,9 @@
 
     <!-- Navigation Panel -->
     <header style="background: rgba(255, 255, 255, 1.0); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-      <a href="/"><img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;"></a>
+      <a href="https://www.upes.ac.in" target="_blank">
+        <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
+      </a>
       <nav>
         <ul style="list-style: none; margin: 0; padding: 0;">
           <li><a href="/" style="color: #000; text-decoration: none;">Home</a></li>

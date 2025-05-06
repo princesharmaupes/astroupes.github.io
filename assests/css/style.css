@@ -34,22 +34,22 @@ header nav ul {
 header nav ul li a {
     color: #000;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder; /* Make text bold */
     padding: 10px 20px; /* Added padding for the button effect */
     margin: 0 5px;
-    background: linear-gradient(145deg, #007acc, #005fa3); /* 3D effect: Gradient for depth */
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 5px rgba(255, 255, 255, 0.4); /* 3D shadow */
+    background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Updated gradient for a vibrant look */
+    border: 1px solid #ff7e5f; /* Border to enhance 3D box appearance */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.2); /* Dual shadow for 3D effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for 3D effect */
     display: inline-block;
-    transform: perspective(500px) translateZ(0); /* Initial 3D perspective */
+    transform: perspective(500px) translateZ(0) scale(1); /* Initial 3D perspective */
 }
 
 header nav ul li a:hover {
-    background: linear-gradient(145deg, #005fa3, #007acc); /* Reverse gradient on hover */
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6); /* Enhanced shadow */
+    background: linear-gradient(145deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.3); /* Enhanced shadow on hover */
     color: #00bcd4; /* Retained hover color */
-    transform: perspective(500px) translateZ(10px); /* Pop-up effect */
+    transform: perspective(500px) translateZ(10px) scale(1.05); /* Pop-up and slight enlargement */
 }
 
 /* Active effect (when clicked) */

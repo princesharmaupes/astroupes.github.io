@@ -53,14 +53,14 @@ header nav ul li a {
     border: none; /* Remove border */
     box-shadow: none; /* Remove shadow box */
     transform: none; /* Remove 3D perspective */
-    transition: color 0.3s ease; /* Keep only color transition */
+    transition: color 0.3s ease; /* Smooth transition for color change */
     display: inline-block;
     border-radius: 8px; /* Rounded corners */
 }
 
 header nav ul li a:hover {
+    color: #ff9800; /* Change text color to orange on hover */
     background: none; /* Ensure no background on hover */
-    color: #00bcd4; /* Ensure hover color is applied */
     font-weight: bolder; /* Make text bolder on hover */
     transform: none; /* Remove hover 3D effect */
     box-shadow: none; /* Ensure no shadow on hover */

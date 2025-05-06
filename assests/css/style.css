@@ -53,14 +53,14 @@ header nav ul li a {
     border: none; /* Remove border */
     box-shadow: none; /* Remove shadow box */
     transform: none; /* Remove 3D perspective */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Ensure smooth transition for both color and shadow */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for color and shadow */
     display: inline-block;
     border-radius: 8px; /* Rounded corners */
 }
 
 header nav ul li a:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a stronger shadow for better visibility */
-    color: #ffffff; /* Ensure the text color remains white */
+    color: #007acc; /* Change text color to blue on hover */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Add shadow for better visibility */
     background: none; /* Ensure no background on hover */
     font-weight: bolder; /* Make text bolder on hover */
     transform: none; /* Remove hover 3D effect */
@@ -71,7 +71,7 @@ header nav ul li a:hover {
 header nav ul li a:active {
     box-shadow: none; /* Remove shadow when clicked */
     transform: none; /* Remove indentation effect */
-    color: #00bcd4;
+    color: #1cd9f1;
 }
 
 /* Adjust main content to avoid overlap with fixed header */

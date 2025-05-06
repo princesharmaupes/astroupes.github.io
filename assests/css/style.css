@@ -46,6 +46,7 @@ header nav ul {
 header nav ul li a {
     color: #ffffff; /* Change text color to white */
     text-decoration: none;
+    font-family: Arial, sans-serif;
     font-weight: bold; /* Ensure text is bold */
     margin: 0 5px;
     background: none; /* Remove background */

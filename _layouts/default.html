@@ -58,6 +58,12 @@
       transform: translate(-50%, -50%);
       opacity: 0.15; /* Adjust opacity for watermark effect */
     }
+
+    /* Fallback background image */
+    body {
+      background: url('/assets/images/galaxy.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", () => {

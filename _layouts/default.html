@@ -45,112 +45,32 @@
       padding: 5px 0;
     }
 
-    /* Background video styles */
-    #background-video {
+
+
     /* Background video styles */
     #background-video {
       position: fixed;
-      top: 0;100%;
-      left: 0;100%;
-      width: 100%;cover;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 100%;
       object-fit: cover;
       z-index: -1;
-    }* Floating news box styles */
-  </style>ing-news {
-  <script>tion: fixed;
+    }
+  </style>
+  <script>
     document.addEventListener("DOMContentLoaded", () => {
       const apiKey = "rGe6XI3oqugCD4gKxK8w9QPdP7CM7PfuMpy8w9OT"; // Replace with your NASA API key
       const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
-      background: rgba(0, 0, 0, 0.8);
+
       fetch(apiUrl)
         .then(response => response.json())
-        .then(data => {x;
-          if (data.media_type === "image") {2);
+        .then(data => {
+          if (data.media_type === "image") {
             document.body.style.backgroundImage = `url('${data.url}')`;
           }
-        })ing-news h4 {
-        .catch(error => console.error("Error fetching NASA APOD:", error));
-    });ont-size: 18px;
-  </script>r-bottom: 1px solid #444;
-  <script>adding-bottom: 5px;
-  document.addEventListener("DOMContentLoaded", () => {    }
-    const newsContainer = document.getElementById("news-content");ews-content {
-    const apiKey = "rGe6XI3oqugCD4gKxK8w9QPdP7CM7PfuMpy8w9OT"; // Replace with your NASA API key
-    const apiUrl = `https://api.nasa.gov/techtransfer/patent/?q=space&api_key=${apiKey}`;
-
-    fetch(apiUrl)ight: 400px;
-      .then(response => response.json())      overflow-y: auto;
-      .then(data => {
-        const newsItems = data.results.slice(0, 5); // Limit to 5 news items
-        newsItems.forEach(item => {
-          const listItem = document.createElement("li");
-          const link = document.createElement("a");content a {
-          link.href = item[10]; // Assuming the 11th field contains the URL      color: #00aaff;
-          link.target = "_blank";;
-          link.textContent = item[2]; // Assuming the 3rd field contains the title
-          listItem.appendChild(link);
-          newsContainer.appendChild(listItem);
-        });
-      })>
-      .catch(error => {
-        console.error("Error fetching NASA news:", error);
-        newsContainer.innerHTML = "<li>Unable to load news at this time.</li>";
-      });
-  });
-</script>
-</head>
-
-<body>
-  <!-- Add a ribbon for development notice -->en(data => {
-  <!-- <div class="development-ribbon>if (data.media_type === "image") {
-    The website is currently under development document.body.style.backgroundImage = `url('${data.url}')`;
-  </div> -->        }
-
-  <!-- Background Video -->.catch(error => console.error("Error fetching NASA APOD:", error));
-  <video autoplay muted loop id="background-video" poster="assests/images/galaxy.jpg">
-    <source src="assests/videos/time.mp4" type="video/mp4">st space news from NASA
-    Your browser does not support the video tag.h(newsUrl)
-  </video>then(response => response.json())
-        .then(data => {
-  <!-- Navigation Panel -->ewsContent = document.getElementById("news-content");
-  <header style="background: linear-gradient(145deg, #1a1a1a, #4d4d4d); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-    <a href="https://www.upes.ac.in" target="_blank">
-      <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;"> const a = document.createElement("a");
-    </a>     a.href = item.link;
-    <nav>     a.target = "_blank";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html></body>  </footer>    <p>&copy; {{ site.title }} - {{ site.description }}</p>  <footer style="text-align: center; padding: 10px; background: rgba(0, 0, 0, 0.8); color: #fff;">  <!-- Footer -->  </main>    </div>      {{ content }}    <div style="padding: 20px; background: rgba(255, 255, 255, 0.8);">  <main>  <!-- Main Content -->    </header>    </nav>      </ul>        <li><a href="/contact" style="color: #ffffff; text-decoration: none; font-weight: bold;">Contact</a></li>        <li><a href="/gallery" style="color: #ffffff; text-decoration: none; font-weight: bold;">Gallery</a></li>        <li><a href="/activities" style="color: #ffffff; text-decoration: none; font-weight: bold;">Activities</a></li>        <li><a href="/publications" style="color: #ffffff; text-decoration: none; font-weight: bold;">Publications</a></li>        <li><a href="/faculty" style="color: #ffffff; text-decoration: none; font-weight: bold;">Faculty</a></li>        <li><a href="/programs" style="color: #ffffff; text-decoration: none; font-weight: bold;">Program</a></li>        <li><a href="/about" style="color: #ffffff; text-decoration: none; font-weight: bold;">About</a></li>        <li><a href="/" style="color: #ffffff; text-decoration: none; font-weight: bold;">Home</a></li>      <ul style="list-style: none; margin: 0; padding: 0;">            a.textContent = item.title;
-            li.appendChild(a);
-            newsContent.appendChild(li);
-          });
         })
-        .catch(error => console.error("Error fetching NASA news:", error));
+        .catch(error => console.error("Error fetching NASA APOD:", error));
     });
   </script>
 </head>

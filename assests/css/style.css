@@ -23,7 +23,7 @@ body {
 
 /* Navigation Panel */
 header {
-    background: linear-gradient(145deg, #4caf50, #388e3c); /* Updated menu bar color to green gradient */
+    background: linear-gradient(145deg, #000000, #333333); /* Updated menu bar gradient to black */
     color: #000;
     width: 100%;
     position: fixed;
@@ -44,9 +44,9 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #fff; /* Updated text color to white for better contrast */
+    color: #ffffff; /* Updated text color to white */
     text-decoration: none;
-    font-weight: bolder; /* Make text bold */
+    font-weight: bold; /* Ensure text is bold */
     padding: 10px 20px; /* Added padding for the button effect */
     margin: 0 5px;
     background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Updated gradient for a vibrant look */
@@ -61,6 +61,7 @@ header nav ul li a:hover {
     background: linear-gradient(145deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.3); /* Enhanced shadow on hover */
     color: #00bcd4; /* Retained hover color */
+    font-weight: bolder; /* Make text bolder on hover */
     transform: perspective(500px) translateZ(10px) scale(1.05); /* Pop-up and slight enlargement */
 }
 

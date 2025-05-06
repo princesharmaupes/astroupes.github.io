@@ -66,6 +66,18 @@ main {
     font-size: 18px; /* Ensure consistent font size in main content */
 }
 
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Push it behind everything */
+    opacity: 0.2; /* Makes it subtle like a watermark */
+    pointer-events: none; /* Prevent interaction */
+  }
+
 /* Footer Styles */
 footer {
     background: rgba(0, 0, 0, 0.9);

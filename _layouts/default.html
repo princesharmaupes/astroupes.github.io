@@ -207,9 +207,10 @@
 
       if (slides.length > 0) {
         setInterval(() => {
-          slides[current].classList.remove('active');
+          slides.forEach((slide, index) => {
+            slide.style.opacity = index === current ? '1' : '0';
+          });
           current = (current + 1) % slides.length;
-          slides[current].classList.add('active');
         }, 4000);
       } else {
         console.error("No slides found for the image slider.");

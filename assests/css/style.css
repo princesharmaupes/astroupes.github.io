@@ -12,6 +12,14 @@ body, html {
     overflow-x: hidden;
 }
 
+ /* Add animation for buttons */
+ button, a.button {
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  button:hover, a.button:hover {
+    transform: scale(1.1);
+  }
+
 /* Background Video */
 .video-background {
     position: fixed;
@@ -148,10 +156,10 @@ body, html {
 .slideshow {
     position: relative;
     width: 100%;
-    max-width: 500px; /* Ensure responsiveness */
+    max-width: 500px; /* Ensure responsiveness
     height: 300px;
     overflow: hidden;
-    margin: 20px auto; /* Center the slider */
+    margin: 20px auto; /* Center the slider 
     border-radius: 10px;
 }
 
@@ -161,14 +169,14 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure images fit within the slider box */
-    opacity: 0; /* Hide all images by default */
-    transition: opacity 1s ease-in-out; /* Smooth fade-in/out effect */
+    object-fit: cover; /* Ensure images fit within the slider box 
+    opacity: 0; /* Hide all images by default 
+    transition: opacity 1s ease-in-out; /* Smooth fade-in/out effect 
     z-index: 1;
 }
 
 .slide.active {
-    opacity: 1; /* Show the active image */
+    opacity: 1; /* Show the active image 
     z-index: 2;
 } */
 

@@ -6,14 +6,6 @@
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="/assests/css/style.css">
   <style>
-    /* Add animation for buttons */
-    button, a.button {
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-    button:hover, a.button:hover {
-      transform: scale(1.1);
-    }
-
     /* Optimize navigation for mobile */
     header nav ul {
       display: flex;
@@ -45,9 +37,7 @@
       padding: 5px 0;
     }
 
-
-
-    /* Background video styles */
+    /* Background video styles
     #background-video {
       position: fixed;
       top: 0;
@@ -56,7 +46,7 @@
       height: 100%;
       object-fit: cover;
       z-index: -1;
-    }
+    } */
 
       /* Slider styles 
     .campus-section {
@@ -135,6 +125,7 @@
 
   <!-- Navigation Panel -->
   <!-- <header style="background: linear-gradient(145deg, #1a1a1a, #4d4d4d); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;"> -->
+   <header class="nav-bar">
     <a href="index.html">
       <img src="upes-logo.jpg" alt="UPES Logo" class="logo">
     </a>

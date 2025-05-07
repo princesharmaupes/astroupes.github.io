@@ -112,10 +112,10 @@
   <!-- Hero Section with Image Slider and Motto -->
   <div class="campus-section">
     <div class="slideshow">
-      <img src="assests/images/campus1.jpg" class="slide active" alt="Campus 1">
-      <img src="assests/images/campus2.jpg" class="slide" alt="Campus 2">
-      <img src="assests/images/upes-3.webp" class="slide" alt="Campus 3">
-      <img src="assests/images/upes-4.webp" class="slide" alt="Campus 4">
+      <img src="assets/images/campus1.jpg" class="slide active" alt="Campus 1">
+      <img src="assets/images/campus2.jpg" class="slide" alt="Campus 2">
+      <img src="assets/images/upes-3.webp" class="slide" alt="Campus 3">
+      <img src="assets/images/upes-4.webp" class="slide" alt="Campus 4">
     </div>
     <div class="motto-text">
       <h2>Where curiosity meets the cosmos — explore the science of stars, space, and time at UPES</h2>
@@ -136,13 +136,20 @@
 
     <!-- JS for slider -->
   <script>
-    let slides = document.querySelectorAll('.slide');
-    let current = 0;
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, 4000);
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll('.slide');
+      let current = 0;
+
+      if (slides.length > 0) {
+        setInterval(() => {
+          slides[current].classList.remove('active');
+          current = (current + 1) % slides.length;
+          slides[current].classList.add('active');
+        }, 4000);
+      } else {
+        console.error("No slides found for the image slider.");
+      }
+    });
   </script>
   
 </body>

@@ -183,8 +183,7 @@ body, html {
 }
 
 .slideshow {
-    display: flex;
-    transition: transform 1s ease;
+    position: relative;
     width: 100%;
     max-width: 800px; /* Adjust slider width */
     height: 400px; /* Adjust slider height */
@@ -193,13 +192,20 @@ body, html {
 }
 
 .slide {
-    min-width: 100%;
-    transition: opacity 1s ease;
-    opacity: 0;
+    position: absolute; /* Ensure images stack on top of each other */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fit within the slider box */
+    opacity: 0; /* Hide all images by default */
+    transition: opacity 1s ease-in-out; /* Smooth fade-in/out effect */
+    z-index: 1;
 }
 
 .slide.active {
-    opacity: 1;
+    opacity: 1; /* Show the active image */
+    z-index: 2;
 }
 
 /* Motto Text */

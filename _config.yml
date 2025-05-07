@@ -14,7 +14,7 @@ theme:
 
 # Navigation menu
 header_pages:
-  - index.md
+  # - index.md
   - about.md
   - programs.md
   - faculty.md

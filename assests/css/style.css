@@ -7,7 +7,7 @@
 
 body, html {
     height: 100%;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif; /* Updated font style */
     color: white;
     overflow-x: hidden;
 }
@@ -52,46 +52,42 @@ body, html {
 
 .navbar nav ul li a {
     color: white;
-    text-shadow: none; /* Ensure no conflicting text-shadow */
-    opacity: 1; /* Ensure full visibility */
-    filter: none; /* Remove any filters */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth hover effect */
+    text-shadow: none;
+    opacity: 1;
+    filter: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .navbar nav ul li a:hover {
     font-weight: bolder;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Ensure hover shadow is applied */
-    opacity: 1; /* Ensure hover effect is not suppressed */
-}
-
-.navbar nav ul li a:active {
-    text-shadow: 1px 1px 3px white;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+    opacity: 1;
 }
 
 /* Apply Now Button */
 .apply-now {
-    display: inline-block;
-    background: #ff6600;
-    color: white;
-    font-weight: bold;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
     position: absolute;
-    right: 2em;
-    top: 100px;
-    animation: pulse 2s infinite;
-    transition: background 0.3s;
+    top: 20px;
+    right: 30px;
+    z-index: 1000;
 }
 
-.apply-now:hover {
-    background: #ff8800;
+.apply-now a {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
 }
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+.apply-now a:hover {
+    background-color: #c62828;
+    transform: scale(1.1); /* Add hover scaling effect */
 }
 
 /* Slideshow and Motto */
@@ -129,49 +125,25 @@ body, html {
     border-left: 5px solid #ffcc00;
 }
 
-/* Apply Now Button */
-.apply-now {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    z-index: 1000;
-  }
-  
-  .apply-now a {
-    background-color: #f44336;
-    color: white;
-    padding: 10px 16px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    font-size: 14px;
-    transition: background 0.3s ease;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  }
-  
-  .apply-now a:hover {
-    background-color: #c62828;
-  }
-  
-  /* Campus Slideshow Section */
-  .campus-section {
+/* Campus Slideshow Section */
+.campus-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin: 40px 0;
-  }
-  
-  .motto-text {
+}
+
+.motto-text {
     max-width: 400px;
     font-size: 1.3rem;
     font-weight: bold;
     color: #222;
     line-height: 1.5;
-  }
-  
-  .slideshow {
+}
+
+.slideshow {
     position: relative;
     width: 100%;
     max-width: 500px; /* Ensure responsiveness */
@@ -179,9 +151,9 @@ body, html {
     overflow: hidden;
     margin: 20px auto; /* Center the slider */
     border-radius: 10px;
-  }
-  
-  .slide {
+}
+
+.slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -191,10 +163,10 @@ body, html {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     z-index: 1;
-  }
-  
-  .slide.active {
+}
+
+.slide.active {
     opacity: 1;
     z-index: 2;
-  }
+}
 

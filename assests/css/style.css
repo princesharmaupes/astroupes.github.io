@@ -25,7 +25,7 @@ body {
 
 /* Navigation Panel */
 header {
-    background: rgba(26, 26, 26, 0.6); /* Adjusted to a semi-transparent black */
+    background: rgba(221, 36, 36, 0.6); /* Adjusted to a semi-transparent black */
     color: #fff;
     width: 100%;
     position: fixed;

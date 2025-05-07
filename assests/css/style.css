@@ -22,6 +22,10 @@ body {
     pointer-events: none; /* Prevents interaction with the video */
 }
 
+body {
+    position: relative; /* Creates a stacking context for the video */
+}
+
 /* Navigation Panel */
 header {
     background: rgba(26, 26, 26, 0.6); /* Adjusted to a semi-transparent black */

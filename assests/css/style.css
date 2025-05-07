@@ -6,6 +6,7 @@ body {
     background: url('/assests/images/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
+    position: relative; /* Creates a stacking context for the video */
     line-height: 1.6;
 }
 
@@ -22,14 +23,10 @@ body {
     opacity: 0.3; /* Add transparency for better visibility of content */
 }
 
-body {
-    position: relative; /* Creates a stacking context for the video */
-}
-
 /* Navigation Panel */
 header {
     background: rgba(26, 26, 26, 0.6); /* Adjusted to a semi-transparent black */
-    color: #000;
+    color: #fff;
     width: 100%;
     position: fixed;
     top: 0;
@@ -132,7 +129,7 @@ a {
 }
 
 a:hover {
-    color: #008c9e;
+    color: #e9edee;
 }
 
 /* Highlighted Sections */
@@ -191,7 +188,7 @@ a:hover {
   .button:hover {
     background-color: #0056b3;
   }
-  
+
 /* Apply Now Button */
 #apply-now-container {
     position: fixed;
@@ -231,15 +228,15 @@ a:hover {
   }
   
   /* Slider */
-.slider {
+/* .slider {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Adjust slider width */
-    height: 400px; /* Adjust slider height */
+    max-width: 800px; /* Adjust slider width 
+    height: 400px; /* Adjust slider height 
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 auto; /* Center the slider */
-}
+    margin: 0 auto; /* Center the slider 
+} */
 
 .slide {
     position: absolute; /* Stack all slides on top of each other */

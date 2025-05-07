@@ -1,61 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astronomy & Astrophysics | UPES</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="/assests/css/style.css">
 </head>
 <body>
-    <div class="video-background">
-        <video autoplay muted loop id="bg-video">
-            <source src="assests/background.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="background-video" poster="/assests/images/galaxy.jpg">
+    <source src="/assests/videos/time.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Navigation Panel -->
+  <header>
+    <a href="/" title="Astronomy & Astrophysics at UPES">
+      <img src="/assests/images/upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="https://www.upes.ac.in/school-of-advanced-engineering/programs" target="_blank">Program</a></li>
+        <li><a href="/faculty">Faculty</a></li>
+        <li><a href="/publications">Publications</a></li>
+        <li><a href="/activities">Activities</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://www.upes.ac.in" target="_blank">UPES Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Apply Now Button -->
+  <div id="apply-now-container">
+    <a href="https://admission.upes.ac.in/Login" target="_blank" class="button">Apply Now</a>
+  </div>
+
+  <!-- Hero Section with Image Slider and Motto -->
+  <section id="hero-section">
+    <div class="slider">
+      <img src="/assests/images/campus1.jpg" alt="Campus 1" class="slide" />
+      <img src="/assests/images/campus2.jpg" alt="Campus 2" class="slide" />
+      <img src="/assests/images/upes-3.webp" alt="Campus 3" class="slide" />
+      <img src="/assests/images/upes-4.webp" alt="Campus 4" class="slide" />
     </div>
+    <div class="motto-box">
+      <h2>Where curiosity meets the cosmos</h2>
+      <p>Explore the science of stars, space, and time at UPES.</p>
+    </div>
+  </section>
 
-    <header>
-        <div class="navbar">
-            <a href="default.html" class="logo"><img src="assests/upes_logo.png" alt="UPES Logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="https://www.upes.ac.in">UPES Home</a></li>
-                    <li><a href="https://www.upes.ac.in/schools/school-of-advanced-engineering/programs">Programs</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <a href="https://admissions.upes.ac.in/apply" class="apply-now">Apply Now</a>
-    </header>
+  <!-- Main Content -->
+  <main>
+    <div class="content-box">
+      {{ content }}
+    </div>
+  </main>
 
-    <main>
-        <section class="intro-section">
-            <div class="slideshow-container">
-                <img src="assests/campus1.webp" class="slide-image active" alt="Campus 1">
-                <img src="assests/campus2.webp" class="slide-image" alt="Campus 2">
-                <img src="assests/campus3.webp" class="slide-image" alt="Campus 3">
-                <img src="assests/campus4.webp" class="slide-image" alt="Campus 4">
-            </div>
-            <div class="motto-box">
-                <h1>Where curiosity meets the cosmos — explore the science of stars, space, and time at UPES.</h1>
-            </div>
-        </section>
-    </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; {{ site.title }} - {{ site.description }}</p>
+  </footer>
 
-    <script>
-        // Slideshow logic
-        let currentSlide = 0;
-        const slides = document.querySelectorAll(".slide-image");
-
-        setInterval(() => {
-            slides[currentSlide].classList.remove("active");
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add("active");
-        }, 3000);
-    </script>
+  <!-- JS for slider -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    function showNextSlide() {
+      slides[currentSlide].style.opacity = 0;
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].style.opacity = 1;
+    }
+    slides.forEach((s, i) => s.style.opacity = i === 0 ? 1 : 0);
+    setInterval(showNextSlide, 4000);
+  </script>
 </body>
 </html>

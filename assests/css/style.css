@@ -91,7 +91,7 @@ body, html {
 }
 
 
-/* Slideshow and Motto
+/* Slideshow and Motto*/
 .intro-section {
     display: flex;
     padding: 5em 2em 2em;
@@ -125,9 +125,9 @@ body, html {
     background: rgba(0, 0, 0, 0.6);
     padding: 1.5em;
     border-left: 5px solid #ffcc00;
-} */
+} 
 
-/* Campus Slideshow Section */
+/* Campus Slideshow Section
 .campus-section {
     display: flex;
     flex-direction: row;
@@ -170,5 +170,5 @@ body, html {
 .slide.active {
     opacity: 1; /* Show the active image */
     z-index: 2;
-}
+} */
 

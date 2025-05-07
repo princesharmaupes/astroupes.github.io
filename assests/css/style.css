@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
+    font-family: Arial, sans-serif; /* Updated font style */
     font-size: 20px; /* Increased font size */
     background: url('/assests/images/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -98,27 +98,7 @@ footer {
 /* Remove Floating News Styles */
 /* No floating news box styles in the previous version */
 
-/* Buttons */
-button, header nav ul li a.button {
-    display: inline-block; /* Ensures the links appear as buttons */
-    background: #696f70; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 20px; /* Add padding for box-like appearance */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: transform 0.3s ease, background 0.3s ease; /* Smooth hover effect */
-    font-size: 16px; /* Adjusted button font size */
-    text-align: center; /* Center text inside the button */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-}
 
-button:hover, a.button:hover {
-    background: #008c9e; /* Change background color on hover */
-    transform: scale(1.1); /* Slightly enlarge button on hover */
-}
 
 /* Links */
 a {

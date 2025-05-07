@@ -1,99 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="/assests/css/style.css">
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const apiKey = "rGe6XI3oqugCD4gKxK8w9QPdP7CM7PfuMpy8w9OT"; // Replace with your NASA API key
-      const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
-
-      fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-          if (data.media_type === "image") {
-            document.body.style.backgroundImage = `url('${data.url}')`;
-          }
-        })
-        .catch(error => console.error("Error fetching NASA APOD:", error));
-    });
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy & Astrophysics | UPES</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Panel -->
-  <header class="nav-bar">
-    <a href="index.html">
-      <img src="upes-logo.jpg" alt="UPES Logo" class="logo">
-    </a>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/about" class="nav-link">About</a></li>
-        <li><a href="https://www.upes.ac.in/school-of-advanced-engineering" class="nav-link">Program</a></li>
-        <li><a href="/faculty" class="nav-link">Faculty</a></li>
-        <li><a href="/publications" class="nav-link">Publications</a></li>
-        <li><a href="/activities" class="nav-link">Activities</a></li>
-        <li><a href="/gallery" class="nav-link">Gallery</a></li>
-        <li><a href="/contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Background Video -->
-  <video autoplay muted loop id="background-video">
-    <source src="assests/videos/time.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Apply Now Button -->
-  <div class="apply-container">
-    <a href="https://admission.upes.ac.in/Login" class="apply-now">Apply Now</a>
-  </div>
-
-  <!-- Hero Section with Image Slider and Motto -->
-  <div class="campus-section">
-    <div class="slideshow">
-      <img src="assests/images/campus1.jpg" class="slide active" alt="Campus 1">
-      <img src="assests/images/campus2.jpg" class="slide" alt="Campus 2">
-      <img src="assests/images/upes-3.webp" class="slide" alt="Campus 3">
-      <img src="assests/images/upes-4.webp" class="slide" alt="Campus 4">
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="assests/background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
     </div>
-    <div class="motto-text">
-      <h2>Where curiosity meets the cosmos — explore the science of stars, space, and time at UPES</h2>
-    </div>
-  </div>
 
-  <!-- Main Content -->
-  <main>
-    <div class="main-content">
-      {{ content }}
-    </div>
-  </main>
+    <header>
+        <div class="navbar">
+            <a href="default.html" class="logo"><img src="assests/upes_logo.png" alt="UPES Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://www.upes.ac.in">UPES Home</a></li>
+                    <li><a href="https://www.upes.ac.in/schools/school-of-advanced-engineering/programs">Programs</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="https://admissions.upes.ac.in/apply" class="apply-now">Apply Now</a>
+    </header>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; {{ site.title }} - {{ site.description }}</p>
-  </footer>
+    <main>
+        <section class="intro-section">
+            <div class="slideshow-container">
+                <img src="assests/campus1.webp" class="slide-image active" alt="Campus 1">
+                <img src="assests/campus2.webp" class="slide-image" alt="Campus 2">
+                <img src="assests/campus3.webp" class="slide-image" alt="Campus 3">
+                <img src="assests/campus4.webp" class="slide-image" alt="Campus 4">
+            </div>
+            <div class="motto-box">
+                <h1>Where curiosity meets the cosmos — explore the science of stars, space, and time at UPES.</h1>
+            </div>
+        </section>
+    </main>
 
-  <!-- JS for slider -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const slides = document.querySelectorAll('.slide');
-      let current = 0;
+    <script>
+        // Slideshow logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide-image");
 
-      if (slides.length > 0) {
         setInterval(() => {
-          slides.forEach((slide, index) => {
-            slide.classList.toggle('active', index === current);
-          });
-          current = (current + 1) % slides.length;
-        }, 4000);
-      } else {
-        console.error("No slides found for the image slider.");
-      }
-    });
-  </script>
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+        }, 3000);
+    </script>
 </body>
 </html>

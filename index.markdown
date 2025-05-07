@@ -6,7 +6,7 @@ title: Home
 # ✨ Astronomy & Astrophysics Department 
 # Where curiosity meets the cosmos — explore the science of stars, space, and time at UPES
 
-<div style="color: black;">
+
 Stars have always called to the curious. At UPES, we turn that call into a career.  
 Our BSc in Astronomy and Astrophysics takes you from the fundamentals of physics to the frontiers of space science.  
 Explore the mysteries of the universe through data, decode cosmic phenomena, and contribute to real astronomical research — all as part of a dynamic and forward-looking academic environment.
@@ -50,4 +50,3 @@ Build your career in **Astronomy** and **Astrophysics**.
 
 > _"Somewhere, something incredible is waiting to be known."_  
 > — Carl Sagan
-</div>

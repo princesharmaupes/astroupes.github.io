@@ -18,7 +18,7 @@ body {
     height: 100vh; /* Ensures the video covers the full viewport height */
     object-fit: cover; /* Ensures the video scales to cover the entire viewport */
     z-index: -1; /* Places the video behind other content */
-    opacity: 0.2; /* Adds a transparent watermark effect */
+    opacity: 0.3; /* Adds a transparent watermark effect */
     pointer-events: none; /* Prevents interaction with the video */
 }
 
@@ -274,4 +274,18 @@ a:hover {
     max-width: 100%;
 }
 
+}/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #floating-news {
+        width: 250px; /* Slightly smaller on mobile */
+    }
 }

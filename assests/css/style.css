@@ -157,7 +157,7 @@ a:hover {
     border-radius: 5px;
 }
 
-.button {
+/* .button {
     padding: 10px 15px;
     background-color: #00eeff;
     color: white;
@@ -167,7 +167,7 @@ a:hover {
   }
   .button:hover {
     background-color: #a282ee;
-  }
+  } */
 
 /* Apply Now Button */
 #apply-now-container {

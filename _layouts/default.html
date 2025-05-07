@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assests/css/style.css">
   <style>
     /* Add animation for buttons */
     button, a.button {
@@ -89,14 +89,14 @@
 
   <!-- Navigation Panel -->
   <header style="background: linear-gradient(145deg, #1a1a1a, #4d4d4d); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-    <a href="https://www.upes.ac.in" target="_blank">
-      <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
+    <a href="index.html">
+      <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;" class="logo">
     </a>
     <nav>
       <ul style="list-style: none; margin: 0; padding: 0;">
         <li><a href="/" style="color: #ffffff; text-decoration: none; font-weight: bold;">Home</a></li>
         <li><a href="/about" style="color: #ffffff; text-decoration: none; font-weight: bold;">About</a></li>
-        <li><a href="/programs" style="color: #ffffff; text-decoration: none; font-weight: bold;">Program</a></li>
+        <li><a href="https://www.upes.ac.in/school-of-advanced-engineering" style="color: #ffffff; text-decoration: none; font-weight: bold;">Program</a></li>
         <li><a href="/faculty" style="color: #ffffff; text-decoration: none; font-weight: bold;">Faculty</a></li>
         <li><a href="/publications" style="color: #ffffff; text-decoration: none; font-weight: bold;">Publications</a></li>
         <li><a href="/activities" style="color: #ffffff; text-decoration: none; font-weight: bold;">Activities</a></li>
@@ -105,6 +105,22 @@
       </ul>
     </nav>
   </header>
+  <div class="apply-now">
+    <a href="https://admissions.upes.ac.in/apply" target="_blank">Apply Now</a>
+  </div>
+  
+  <!-- Hero Section with Image Slider and Motto -->
+  <div class="campus-section">
+    <div class="slideshow">
+      <img src="assests/images/campus1.jpg" class="slide active" alt="Campus 1">
+      <img src="assests/images/campus2.jpg" class="slide" alt="Campus 2">
+      <img src="assests/images/upes-3.webp" class="slide" alt="Campus 3">
+      <img src="assests/images/upes-4.webp" class="slide" alt="Campus 4">
+    </div>
+    <div class="motto-text">
+      <h2>Where curiosity meets the cosmos — explore the science of stars, space, and time at UPES</h2>
+    </div>
+  </div>
   
   <!-- Main Content -->
   <main>
@@ -117,5 +133,17 @@
   <footer style="text-align: center; padding: 10px; background: rgba(0, 0, 0, 0.8); color: #fff;">
     <p>&copy; {{ site.title }} - {{ site.description }}</p>
   </footer>
+
+    <!-- JS for slider -->
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+  </script>
+  
 </body>
 </html>

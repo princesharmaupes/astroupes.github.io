@@ -4,16 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="assests/css/style.css">
   <style>
-    /* Add animation for buttons */
-    button, a.button {
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-    button:hover, a.button:hover {
-      transform: scale(1.1);
-    }
-
+  
     /* Optimize navigation for mobile */
     header nav ul {
       display: flex;
@@ -31,22 +24,6 @@
         justify-content: flex-start;
       }
     }
-
-    /* Development ribbon */
-    .development-ribbon {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: red;
-      color: white;
-      text-align: center;
-      z-index: 1000;
-      padding: 5px 0;
-    }
-
-
-
     /* Background video styles */
     #background-video {
       position: fixed;
@@ -57,8 +34,21 @@
       object-fit: cover;
       z-index: -1;
     }
+    /* Development ribbon
+    .development-ribbon {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: red;
+      color: white;
+      text-align: center;
+      z-index: 1000;
+      padding: 5px 0;
+    } */
+
   </style>
-  <script>
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", () => {
       const apiKey = "rGe6XI3oqugCD4gKxK8w9QPdP7CM7PfuMpy8w9OT"; // Replace with your NASA API key
       const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
@@ -72,40 +62,64 @@
         })
         .catch(error => console.error("Error fetching NASA APOD:", error));
     });
-  </script>
+  </script> -->
 </head>
 
 <body>
   <!-- Add a ribbon for development notice -->
-  <div class="development-ribbon">
+  <!-- <div class="development-ribbon">
     The website is currently under development
-  </div>
+  </div> -->
+  
 
+  
   <!-- Background Video -->
-  <video autoplay muted loop id="background-video" poster="assests/images/galaxy.jpg">
+  <video autoplay muted loop id="background-video" poster="/assests/images/galaxy.jpg">
     <source src="assests/videos/time.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
   <!-- Navigation Panel -->
   <header style="background: linear-gradient(145deg, #1a1a1a, #4d4d4d); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-    <a href="https://www.upes.ac.in" target="_blank">
+    <a href="/" target="_blank">
       <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
     </a>
     <nav>
-      <ul style="list-style: none; margin: 0; padding: 0;">
-        <li><a href="/" style="color: #ffffff; text-decoration: none; font-weight: bold;">Home</a></li>
-        <li><a href="/about" style="color: #ffffff; text-decoration: none; font-weight: bold;">About</a></li>
-        <li><a href="/programs" style="color: #ffffff; text-decoration: none; font-weight: bold;">Program</a></li>
-        <li><a href="/faculty" style="color: #ffffff; text-decoration: none; font-weight: bold;">Faculty</a></li>
-        <li><a href="/publications" style="color: #ffffff; text-decoration: none; font-weight: bold;">Publications</a></li>
-        <li><a href="/activities" style="color: #ffffff; text-decoration: none; font-weight: bold;">Activities</a></li>
-        <li><a href="/gallery" style="color: #ffffff; text-decoration: none; font-weight: bold;">Gallery</a></li>
-        <li><a href="/contact" style="color: #ffffff; text-decoration: none; font-weight: bold;">Contact</a></li>
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px;">
+        <li><a href="/" class="button">Home</a></li>
+        <li><a href="/about" class="button">About</a></li>
+        <li><a href="https://www.upes.ac.in/school-of-advanced-engineering" class="button">Program</a></li>
+        <li><a href="/faculty" class="button">Faculty</a></li>
+        <li><a href="/publications" class="button">Publications</a></li>
+        <li><a href="/activities" class="button">Activities</a></li>
+        <li><a href="/gallery" class="button">Gallery</a></li>
+        <li><a href="/contact" class="button" >Contact</a></li>
+        <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li>
       </ul>
     </nav>
   </header>
+
+
+  <!-- Apply Now Button -->
+  <div id="apply-now-container" style="text-align: right; margin: 10px;">
+    <a href="https://admission.upes.ac.in/Login" target="_blank" class="button" >Apply Now</a>
+  </div>
+  </div>
   
+  <!-- Hero Section with Image Slider and Motto -->
+  <section id="hero-section">
+   <div class="slider" style="position: relative; width: 100%; height: 400px; overflow: hidden;">
+    <img src="assests/images/campus1.jpg" alt="Campus 1" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
+    <img src="assests/images/campus2.jpg" alt="Campus 2" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
+    <img src="assests/images/upes-3.webp" alt="Campus 3" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
+    <img src="assests/images/upes-4.webp" alt="Campus 4" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
+   </div>
+    <div class="motto-box">
+      <h2>Where curiosity meets the cosmos</h2>
+      <p>Explore the science of stars, space, and time at UPES.</p>
+    </div>
+  </section>
+
   <!-- Main Content -->
   <main>
     <div style="padding: 20px; background: rgba(255, 255, 255, 0.8);">
@@ -117,5 +131,18 @@
   <footer style="text-align: center; padding: 10px; background: rgba(0, 0, 0, 0.8); color: #fff;">
     <p>&copy; {{ site.title }} - {{ site.description }}</p>
   </footer>
+
+    <!-- JS for slider -->
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.slide');
+      function showNextSlide() {
+        slides[currentSlide].style.opacity = 0;
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.opacity = 1;
+      }
+      slides.forEach((s, i) => s.style.opacity = i === 0 ? 1 : 0);
+      setInterval(showNextSlide, 3000);
+    </script>
 </body>
 </html>

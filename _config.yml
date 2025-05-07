@@ -10,11 +10,11 @@ url: "https://astroupes.github.io"
 twitter_username: astro_nitesh
 github_username: astroupes
 
-theme: jekyll-theme-cayman
+theme:
 
 # Navigation menu
 header_pages:
-  - index.md
+  # - index.md
   - about.md
   - programs.md
   - faculty.md

@@ -1,12 +1,11 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif; /* Updated font style */
+    font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
     font-size: 20px; /* Increased font size */
     background: url('/assests/images/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #000000;
-    position: relative; /* Creates a stacking context for the video */
+    color: #fff;
     line-height: 1.6;
 }
 
@@ -17,16 +16,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the video covers the entire page */
-    z-index: -1; /* Place the video behind other content */
-    pointer-events: none; /* Prevent interaction with the video */
-    opacity: 0.3; /* Add transparency for better visibility of content */
+    object-fit: cover; /* Ensures the video covers the entire viewport */
+    z-index: -1; /* Places the video behind other content */
+    opacity: 0.2; /* Adds a faded effect */
 }
 
 /* Navigation Panel */
 header {
-    background: rgba(221, 36, 36, 0.6); /* Adjusted to a semi-transparent black */
-    color: #fff;
+    background: rgba(26, 26, 26, 0.6); /* Adjusted to a semi-transparent black */
+    color: #000;
     width: 100%;
     position: fixed;
     top: 0;
@@ -45,11 +43,6 @@ header nav ul {
     padding: 0;
 }
 
-header nav ul li a:hover {
-    font-weight: bolder; /* Make text bolder on hover */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
-}
-
 header nav ul li a {
     color: #ffffff; /* Change text color to white */
     text-decoration: none;
@@ -65,6 +58,14 @@ header nav ul li a {
     border-radius: 8px; /* Rounded corners */
 }
 
+header nav ul li a:hover {
+    color: #007acc; /* Change text color to blue on hover */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Add shadow for better visibility */
+    background: none; /* Ensure no background on hover */
+    font-weight: bolder; /* Make text bolder on hover */
+    transform: none; /* Remove hover 3D effect */
+    box-shadow: none; /* Ensure no shadow on hover */
+}
 
 /* Active effect (when clicked) */
 header nav ul li a:active {
@@ -98,23 +99,41 @@ footer {
 /* Remove Floating News Styles */
 /* No floating news box styles in the previous version */
 
+/* Buttons */
+button, a.button {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold !important; /* Ensure text is bold */
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    font-size: 16px; /* Adjusted button font size */
+    box-shadow: none; /* Remove shadow box */
+}
 
+button:hover, a.button:hover {
+    background: #008c9e;
+    transform: scale(1.1);
+}
 
 /* Links */
 a {
-    color: #ffffff;
+    color: #00bcd4;
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 18px; /* Ensure consistent font size for links */
 }
 
 a:hover {
-    color: #bae3ee;
+    color: #008c9e;
 }
 
 /* Highlighted Sections */
 .highlight {
-    background: rgb(255, 255, 255);
+    background: rgba(0, 188, 212, 0.2);
     padding: 10px;
     border-left: 5px solid #00bcd4;
     margin: 20px 0;
@@ -157,42 +176,39 @@ a:hover {
     border-radius: 5px;
 }
 
-/* .button {
-    padding: 10px 15px;
-    background-color: #00eeff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
-  .button:hover {
-    background-color: #a282ee;
-  } */
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #floating-news {
+        width: 250px; /* Slightly smaller on mobile */
+    }
+}
 
 /* Apply Now Button */
 #apply-now-container {
     position: fixed;
-    top: 80px; /* Adjusted to appear below the navigation bar */
+    top: 70px;
     right: 20px;
     z-index: 1001;
-}
-
-#apply-now-container .button {
-    display: inline-block; /* Ensures it appears as a button */
-    background-color: #ace91e;
+  }
+  
+  #apply-now-container .button {
+    background-color: #e91e63;
     color: white;
     padding: 10px 18px;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    text-align: center; /* Centers text inside the button */
-    cursor: pointer;
-}
-
-#apply-now-container .button:hover {
-    background-color: #95c218; /* Darker shade on hover */
-}
+  }
   
   /* Hero Section with Slider and Motto */
   #hero-section {
@@ -205,37 +221,17 @@ a:hover {
     padding: 20px;
     border-radius: 10px;
     gap: 20px;
-    opacity: 0.5;
   }
   
-  /* Slider */
- .slider {
+  .slider {
+    flex: 1;
+    max-width: 500px;
     position: relative;
-    width: 100%;
-    max-width: 800px;
-    height: 400px;  
-    border-radius: 10px;
+    height: 300px;
     overflow: hidden;
-    margin: 0 auto; 
-} 
-
-/*.slide {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    opacity: 0; 
-    transition: opacity 1s ease-in-out; 
-    z-index: 1;
-}*/
-
-.slide.active {
-    opacity: 1; /* Show the active slide */
-    z-index: 2;
-}
-
+    border-radius: 10px;
+  }
+  
   .slider .slide {
     position: absolute;
     top: 0;
@@ -263,40 +259,15 @@ a:hover {
     font-size: 18px;
     color: #555;
   }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    main {
-        padding: 20px;
-    }
-
+  
+  /* Responsive */
+  @media (max-width: 768px) {
     #hero-section {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
-
-.slider, .motto-box {
-    max-width: 100%;
-}
-
-}/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
+    .slider, .motto-box {
+      max-width: 100%;
     }
-
-    main {
-        padding: 20px;
-    }
-
-    #floating-news {
-        width: 250px; /* Slightly smaller on mobile */
-    }
-}
+  }
+  

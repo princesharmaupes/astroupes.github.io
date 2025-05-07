@@ -1,50 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Background Video Watermark Test</title>
+  <meta charset="UTF-8">
+  <title>Live Space News Box</title>
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
     }
 
-    video#background-video {
+    #news-box {
       position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      opacity: 0.5;
+      bottom: 20px;
+      right: 20px;
+      width: 320px;
+      max-height: 400px;
+      overflow-y: auto;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      font-family: sans-serif;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+      z-index: 1000;
     }
 
-    .content {
-      position: relative;
-      z-index: 1;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.8);
-      max-width: 600px;
-      margin: 100px auto;
-      border-radius: 12px;
-      text-align: center;
+    #news-box h3 {
+      margin-top: 0;
+      font-size: 18px;
+      border-bottom: 1px solid #888;
+      padding-bottom: 5px;
+    }
+
+    #news-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 14px;
+    }
+
+    #news-list li {
+      margin-bottom: 10px;
+    }
+
+    #news-list li a {
+      color: #ffa;
+      text-decoration: none;
+    }
+
+    #news-list li a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <video autoplay muted loop id="background-video">
-    <source src="assests/videos/output.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<div id="news-box">
+  <h3>🚀 Latest Space News</h3>
+  <ul id="news-list">
+    <li>Loading latest headlines...</li>
+  </ul>
+</div>
 
-  <div class="content">
-    <h1>Video Background Test</h1>
-    <p>If you see falling rain behind this box, your setup is working!</p>
-  </div>
+<script>
+  const rssFeeds = [
+    'https://www.nasa.gov/rss/dyn/breaking_news.rss',
+    'https://webbtelescope.org/rss/news-releases',
+    'https://hubblesite.org/rss/news',
+    'https://fermi.gsfc.nasa.gov/rss/fermi_news.rss'
+  ];
+
+  const newsList = document.getElementById('news-list');
+  newsList.innerHTML = ''; // Clear loading message
+
+  rssFeeds.forEach(feedUrl => {
+    fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`)
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'ok') {
+          data.items.slice(0, 3).forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+            newsList.appendChild(li);
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching RSS feed:', error);
+      });
+  });
+</script>
 
 </body>
 </html>

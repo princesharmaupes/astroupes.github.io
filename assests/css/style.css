@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif; /* Updated font style */
     font-size: 20px; /* Increased font size */
-    background: url('/assests/images/galaxy.jpg') no-repeat center center fixed;
+    /* background: url('assests/images/galaxy.jpg') no-repeat center center fixed; */
     background-size: cover;
     color: #000000;
     position: relative; /* Creates a stacking context for the video */

@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
     font-size: 20px; /* Increased font size */
-    background: url('/assests/images/galaxy.jpg') no-repeat center center fixed;
+    background: url('assests/images/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     line-height: 1.6;
@@ -48,6 +48,11 @@ header nav ul {
     padding: 0;
 }
 
+header nav ul li a:hover {
+    font-weight: bolder; /* Make text bolder on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
 header nav ul li a {
     color: #ffffff; /* Change text color to white */
     text-decoration: none;
@@ -63,11 +68,6 @@ header nav ul li a {
     border-radius: 8px; /* Rounded corners */
 }
 
-
-header nav ul li a:hover {
-    font-weight: bolder; /* Make text bolder on hover */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
-}
 
 /* Active effect (when clicked) */
 header nav ul li a:active {

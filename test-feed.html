@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Feed</title>
+</head>
+<body>
+  <div id="feed-box">Loading...</div>
+
+  <script>
+    const url = "https://api.rss2json.com/v1/api.json?rss_url=https://www.nasa.gov/rss/dyn/breaking_news.rss";
+
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        const box = document.getElementById('feed-box');
+        let html = "<h3>NASA News</h3><ul>";
+        data.items.slice(0, 5).forEach(item => {
+          html += `<li><a href="${item.link}" target="_blank">${item.title}</a></li>`;
+        });
+        html += "</ul>";
+        box.innerHTML = html;
+      })
+      .catch(err => {
+        document.getElementById('feed-box').innerText = "Error loading feed.";
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

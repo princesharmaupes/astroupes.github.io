@@ -37,8 +37,8 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
     
     <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-      <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" style="width: 100%; border-radius: 10px;">
-      <h3>Dr. Prashant S. Rawat</h3>
+      <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+    </div>    <h3>Dr. Prashant S. Rawat</h3>
       <p><strong>Sr. Associate Professor, School of Applied Science</strong></p>
       <p style="font-size: 0.9em;">Dr. Rawat earned his doctoral degree from the esteemed Physical Research Laboratory (PRL), Ahmedabad....</p>
       <!-- <a> href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->

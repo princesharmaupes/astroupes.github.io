@@ -68,13 +68,13 @@ header nav ul li a {
 .read-more-button {
     display: inline-block;
     padding: 8px 12px;
-    background-color: #00aaff;
+    background-color: #3f8ef5;
     color: white;
     border-radius: 4px;
     text-decoration: none;
   }
   .read-more-button:hover {
-    background-color: #0077aa;
+    background-color: #83c2dd;
   }
   
 

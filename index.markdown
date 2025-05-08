@@ -6,11 +6,9 @@ title: Home
 ### A Sub-Division of the Department of Physics under the Cluster of Applied Science, School of Advanced Engineering  
 
 Explore the universe with us — from the smallest particles to the largest galaxies, we bridge the gap between curiosity and discovery.
-# Where curiosity meets the cosmos — Explore the science of stars, space, and time at UPES
 
-
-Stars have always called to the curious. At UPES, we turn that call into a career.  
-Our BSc in Astronomy and Astrophysics takes you from the fundamentals of physics to the frontiers of space science.  
+<em>Stars have always called to the curious. We, at UPES, turn that call into a career.</em> 
+Our B.Sc. in Astronomy and Astrophysics takes you from the fundamentals of physics to the frontiers of space science.  
 Explore the mysteries of the universe through data, decode cosmic phenomena, and contribute to real astronomical research — all as part of a dynamic and forward-looking academic environment.
 
 ---
@@ -18,7 +16,7 @@ Explore the mysteries of the universe through data, decode cosmic phenomena, and
 ## 🌟 What We Offer
 
 - 🎓 **Undergraduate & Postgraduate Programs**  
-  Dive into Astronomy and Astrophysics through specialized degree tracks with hands-on training in data analysis, simulation, and observational techniques.
+  Explore the field of Astronomy and Astrophysics through specialized degree tracks with hands-on training in data analysis, simulation, and observational techniques.
 
 - 🚀 **Research Opportunities**  
   Work on real-world projects alongside faculty and researchers, with collaborations across premier institutions like ARIES, IUCAA, and PRL.

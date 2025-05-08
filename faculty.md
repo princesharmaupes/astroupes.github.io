@@ -4,12 +4,12 @@ title: Faculty
 ---
 
 # Meet Our Faculty
-
-## Dr. Prashant Rawat
+<h2 id="PSRAWAT">Dr. Prashant S. Rawat</h2>
+<p>
 **Key Research Areas:**
 - Laboratory Astrophysics: Experiments related to planetary and space physics.
 - Solar Physics: Collaboration with ARIES on the Coronal heating problem.
-
+</p>
 ---
 
 ## Dr. Balendra Pratap Singh
@@ -19,7 +19,8 @@ title: Faculty
 
 ---
 
-## Dr. Nitesh Kumar
+<h2 id="NITESH">Dr. Nitesh Kumar</h2>
+<p>
 **Key Research Areas:**
 - Stellar Astrophysics: Study of stellar structure, evolution, and modeling.
 - Galactic Globular Clusters: Observational and theoretical studies of globular clusters.
@@ -30,10 +31,11 @@ title: Faculty
 **Publications:**
 - *"Multiwavelength photometric study of RR Lyrae variables in the globular cluster NGC 5272 (Messier 3)"*, Monthly Notices of the Royal Astronomical Society, May 2024. DOI: [10.1093/mnras/stae1334](https://doi.org/10.1093/mnras/stae1334)
 - *"Predicting light curves of RR Lyrae variables using artificial neural network-based interpolation of a grid of pulsation models"*, Monthly Notices of the Royal Astronomical Society, March 2023. DOI: [10.1093/mnras/stad937](https://doi.org/10.1093/mnras/stad937)
-
+</p>
 ---
 
-## Dr. Prince Sharma
+<h2 id="PRINCE">Dr. Prince Sharma</h2>
+<p>
 **Key Research Areas:**
 - Compact Object Astrophysics: Studying neutron stars and black holes in X-ray binary systems.
 
@@ -62,7 +64,7 @@ title: Faculty
 
 - *Broad-band spectral analysis of LMXB XTE J1710-281 with Suzaku*, *Monthly Notices of the Royal Astronomical Society*, 2020. DOI: [10.1093/mnras/staa1516](https://doi.org/10.1093/mnras/staa1516)
 
-
+</p>
 ---
 
 ## Dr. Arka Chatterjee

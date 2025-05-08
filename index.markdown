@@ -27,7 +27,48 @@ Explore the mysteries of the universe through data, decode cosmic phenomena, and
 - 🧑‍🏫 **Academic Excellence**  
 Learn from leading researchers and visiting scientists engaged in cutting-edge work on cosmology, high-energy astrophysics, X-ray accretion in compact objects, AI-based stellar cluster analysis and theoretical black hole physics.
 
+
 ---
+<!-- Faculty Section -->
+<section id="faculty-section" style="padding: 60px 20px; background: #f5f5f5;">
+  <h2 style="text-align:center; font-size: 2em;">Faculty</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
+    
+    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" style="width: 100%; border-radius: 10px;">
+      <h3>Dr. Prashant S. Rawat</h3>
+      <p><strong>Sr. Associate Professor, School of Applied Science</strong></p>
+      <p style="font-size: 0.9em;">Dr. Rawat earned his doctoral degree from the esteemed Physical Research Laboratory (PRL), Ahmedabad....</p>
+      <!-- <a href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->
+      <a href="PSRAWAT" class="read-more-button">Read more →</a>
+    </div>
+
+    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+     <img src="assests/images/nitesh.png" alt="Dr. Nitesh Kumar" style="width: 100%; border-radius: 10px;">
+      <h3>Dr. Nitesh Kumar</h3>
+      <p><strong>Assistant Professor, School of Applied Science</strong></p>
+      <p style="font-size: 0.9em;">Dr. Nitesh has done his Ph. D. in Automated Stellar Evolution study from the University of Delhi....</p>
+      <!-- <a href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->
+      <a href="NITESH" class="read-more-button">Read more →</a>
+    </div>
+
+    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+     <img src="assests/images/prince.png" alt="Dr. Prince Sharma" style="width: 100%; border-radius: 10px;">
+      <h3>Dr. Prince Sharma</h3>
+      <p><strong>Assistant Professor, School of Applied Science</strong></p>
+      <p style="font-size: 0.9em;">Dr. Sharma is an alumunus of Kirorimal College and obtained his Doctorate from University of Delhi....</p>
+      <!-- <a href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->
+      <a href="PRINCE" class="read-more-button">Read more →</a>
+    </div>
+
+    <!-- Add more cards similarly -->
+
+  </div>
+</section>
+
+---
+
+
 
 ## 🗞 Recent Highlights
 

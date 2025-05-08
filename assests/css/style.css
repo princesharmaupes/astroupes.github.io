@@ -65,6 +65,18 @@ header nav ul li a {
     border-radius: 8px; /* Rounded corners */
 }
 
+.read-more-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #00aaff;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .read-more-button:hover {
+    background-color: #0077aa;
+  }
+  
 
 /* Active effect (when clicked) */
 header nav ul li a:active {

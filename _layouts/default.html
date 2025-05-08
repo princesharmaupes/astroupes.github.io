@@ -46,6 +46,10 @@
       z-index: 1000;
       padding: 5px 0;
     } */
+  html {
+    scroll-behavior: smooth;
+  }
+
 
   </style>
   <!-- <script>
@@ -74,27 +78,31 @@
 
   
   <!-- Background Video -->
-  <video autoplay muted loop id="background-video" poster="/assests/images/galaxy.jpg">
+  <video autoplay muted loop id="background-video">
     <source src="assests/videos/time.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
+  <!-- Navbar link (ensure href matches the section ID) -->
+
+
+
   <!-- Navigation Panel -->
   <header style="background: linear-gradient(145deg, #1a1a1a, #4d4d4d); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-    <a href="/" target="_blank">
+    <a href="/">
       <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
     </a>
     <nav>
-      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px;">
-        <li><a href="/" class="button">Home</a></li>
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; overflow-x: auto; flex-wrap: nowrap;">
+        <li><a href="javascript:void(0);" class="button" onclick="scrollToTop()">Home</a></li>
         <li><a href="/about" class="button">About</a></li>
         <li><a href="https://www.upes.ac.in/school-of-advanced-engineering" class="button">Program</a></li>
-        <li><a href="/faculty" class="button">Faculty</a></li>
+        <li><a href="javascript:void(0);" class="button" onclick="scrollToSection('faculty-section')">Faculty</a></li>
         <li><a href="/publications" class="button">Publications</a></li>
         <li><a href="/activities" class="button">Activities</a></li>
         <li><a href="/gallery" class="button">Gallery</a></li>
         <li><a href="/contact" class="button" >Contact</a></li>
-        <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li>
+        <!-- <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li> -->
       </ul>
     </nav>
   </header>
@@ -114,10 +122,17 @@
     <img src="assests/images/upes-3.webp" alt="Campus 3" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
     <img src="assests/images/upes-4.webp" alt="Campus 4" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
    </div>
-    <div class="motto-box">
-      <h2>Where curiosity meets the cosmos</h2>
-      <p>Explore the science of stars, space, and time at UPES.</p>
-    </div>
+   <div class="motto-box" style="padding: 20px; max-width: 400px;">
+    <h2 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">
+      <span style="font-family: Arial, sans-serif; font-size: 24px; color: #333;"></span>
+        Where Curiosity Meets the Cosmos
+      </span>
+    </h2>
+    <p style="font-size: 14px; color: #555;">
+      <em>At UPES, astronomy is more than a subject — it's a journey into the unknown. Learn how stars are born, galaxies evolve, and black holes bend the fabric of space-time. With hands-on experience using telescopes and real astronomical data, our students turn their curiosity into meaningful discovery.</em>
+    </p>
+  </div>
+  
   </section>
 
   <!-- Main Content -->
@@ -143,6 +158,22 @@
       }
       slides.forEach((s, i) => s.style.opacity = i === 0 ? 1 : 0);
       setInterval(showNextSlide, 3000);
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+      // Prevent scrolling to #faculty-section on page load
+      if (window.location.hash === '#faculty-section') {
+        history.replaceState(null, null, ' '); // Remove the hash from the URL
+      }
     </script>
 </body>
 </html>

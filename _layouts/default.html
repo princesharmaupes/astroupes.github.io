@@ -169,6 +169,11 @@
           section.scrollIntoView({ behavior: 'smooth' });
         }
       }
+
+      // Prevent scrolling to #faculty-section on page load
+      if (window.location.hash === '#faculty-section') {
+        history.replaceState(null, null, ' '); // Remove the hash from the URL
+      }
     </script>
 </body>
 </html>

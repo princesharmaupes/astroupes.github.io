@@ -217,7 +217,6 @@ a:hover {
     padding: 20px;
     border-radius: 10px;
     gap: 20px;
-    opacity: 0.5;
   }
   
   /* Slider */
@@ -261,18 +260,21 @@ a:hover {
 
   .motto-box {
     flex: 1;
-    max-width: 500px;
+    padding: 20px;
+    max-width: 400px;
     text-align: left;
     color: #000;
   }
   
   .motto-box h2 {
+    font-weight: bold;
     font-size: 24px;
+    margin-bottom: 10px;
     color: #333;
   }
   
   .motto-box p {
-    font-size: 18px;
+    font-size: 14px;
     color: #555;
   }
 

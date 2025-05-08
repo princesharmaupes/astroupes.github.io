@@ -2,9 +2,11 @@
 layout: default
 title: Home
 ---
+# ✨ Astronomy & Astrophysics  
+### A Sub-Division of the Department of Physics under the Cluster of Applied Science, School of Advanced Engineering  
 
-# ✨ Astronomy & Astrophysics Department 
-# Where curiosity meets the cosmos — explore the science of stars, space, and time at UPES
+Explore the universe with us — from the smallest particles to the largest galaxies, we bridge the gap between curiosity and discovery.
+# Where curiosity meets the cosmos — Explore the science of stars, space, and time at UPES
 
 
 Stars have always called to the curious. At UPES, we turn that call into a career.  

@@ -37,7 +37,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
     
     <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-      <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+    <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
     </div>    <h3>Dr. Prashant S. Rawat</h3>
       <p><strong>Sr. Associate Professor, School of Applied Science</strong></p>
       <p style="font-size: 0.9em;">Dr. Rawat earned his doctoral degree from the esteemed Physical Research Laboratory (PRL), Ahmedabad....</p>
@@ -46,7 +46,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
     </div>
 
     <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-     <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" style="width: 100%; border-radius: 10px;">
+     <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
       <h3>Dr. Nitesh Kumar</h3>
       <p><strong>Assistant Professor, School of Applied Science</strong></p>
       <p style="font-size: 0.9em;">Dr. Nitesh has done his Ph. D. in Automated Stellar Evolution study from the University of Delhi....</p>
@@ -54,7 +54,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
     </div>
 
     <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-     <img src="assests/images/prince.png" alt="Dr. Prince Sharma" style="width: 100%; border-radius: 10px;">
+     <img src="assests/images/prince.png" alt="Dr. Prince Sharma" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
       <h3>Dr. Prince Sharma</h3>
       <p><strong>Assistant Professor, School of Applied Science</strong></p>
       <p style="font-size: 0.9em;">Dr. Sharma is an alumunus of Kirorimal College and obtained his Doctorate from University of Delhi....</p>

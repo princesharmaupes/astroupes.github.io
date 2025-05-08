@@ -52,7 +52,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
     </div>
 
     <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-     <img src="assests/images/prince.jpeg" alt="Dr. Prince Sharma" style="width: 100%; border-radius: 10px;">
+     <img src="assests/images/prince.png" alt="Dr. Prince Sharma" style="width: 100%; border-radius: 10px;">
       <h3>Dr. Prince Sharma</h3>
       <p><strong>Assistant Professor, School of Applied Science</strong></p>
       <p style="font-size: 0.9em;">Dr. Sharma is an alumunus of Kirorimal College and obtained his Doctorate from University of Delhi....</p>

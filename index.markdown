@@ -8,6 +8,7 @@ title: Home
 Explore the universe with us — from the smallest particles to the largest galaxies, we bridge the gap between curiosity and discovery.
 
 <em>Stars have always called to the curious. We, at UPES, turn that call into a career.</em> 
+
 Our B.Sc. in Astronomy and Astrophysics takes you from the fundamentals of physics to the frontiers of space science.  
 Explore the mysteries of the universe through data, decode cosmic phenomena, and contribute to real astronomical research — all as part of a dynamic and forward-looking academic environment.
 

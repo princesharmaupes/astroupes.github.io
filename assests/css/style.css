@@ -231,12 +231,7 @@ a:hover {
     z-index: 1;
 }*/
 
-.slide.active {
-    opacity: 1; /* Show the active slide */
-    z-index: 2;
-}
-
-  .slider .slide {
+.slider .slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -244,9 +239,14 @@ a:hover {
     height: 100%;
     object-fit: cover;
     transition: opacity 1s ease-in-out;
-    opacity: 0;
-  }
-  
+    opacity: 0; /* Hide all slides by default */
+}
+
+.slide.active {
+    opacity: 1; /* Fully opaque for the active slide */
+    z-index: 2;
+}
+
   .motto-box {
     flex: 1;
     max-width: 500px;

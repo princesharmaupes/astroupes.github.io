@@ -20,7 +20,7 @@ body {
     object-fit: cover; /* Ensure the video covers the entire page */
     z-index: -1; /* Place the video behind other content */
     pointer-events: none; /* Prevent interaction with the video */
-    opacity: 0.3; /* Add transparency for better visibility of content */
+    opacity: 0.5; /* Add transparency for better visibility of content */
 }
 
 /* Navigation Panel */

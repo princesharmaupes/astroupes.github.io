@@ -87,32 +87,39 @@
 
 
 
-  <!-- Navigation Panel -->
-  <header style="background: linear-gradient(145deg, #1a1a1a, #4d4d4d); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-    <a href="/">
-      <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
+<!-- Navigation Panel -->
+<header style="background-color: white; padding: 10px 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; font-family: sans-serif; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  
+  <!-- Logo -->
+  <a href="/">
+    <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
+  </a>
+
+  <!-- Navigation Links -->
+  <nav style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+    <a href="/" style="text-decoration: none; color: black; font-weight: 500;">Home</a>
+    <a href="/about" style="text-decoration: none; color: black; font-weight: 500;">About</a>
+    <a href="https://www.upes.ac.in/school-of-advanced-engineering" style="text-decoration: none; color: black; font-weight: 500;">Program</a>
+    <a href="/#faculty-section" style="text-decoration: none; color: black; font-weight: 500;">Faculty</a>
+    <a href="/publications" style="text-decoration: none; color: black; font-weight: 500;">Publications</a>
+    <a href="/activities" style="text-decoration: none; color: black; font-weight: 500;">Activities</a>
+    <a href="/gallery" style="text-decoration: none; color: black; font-weight: 500;">Gallery</a>
+    <a href="/contact" style="text-decoration: none; color: black; font-weight: 500;">Contact</a>
+    <a href="https://www.upes.ac.in" style="text-decoration: none; color: black; font-weight: 500;">UPES Home</a>
+
+    <!-- Apply Now Button -->
+    <a href="https://admission.upes.ac.in/Login" target="_blank"
+       style="padding: 8px 16px; border: 1px solid #ccc; border-radius: 6px; color: black; text-decoration: none; font-weight: bold; margin-left: 10px;"
+       onmouseover="this.style.backgroundColor='#eee'" 
+       onmouseout="this.style.backgroundColor='white'">
+       Apply Now
     </a>
-    <nav>
-      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; overflow-x: auto; flex-wrap: nowrap;">
-        <li><a href="/" class="button">Home</a></li>
-        <li><a href="/about" class="button">About</a></li>
-        <li><a href="https://www.upes.ac.in/school-of-advanced-engineering" class="button">Program</a></li>
-        <li><a href="/#faculty-section" class="button">Faculty</a></li>
-        <li><a href="/publications" class="button">Publications</a></li>
-        <li><a href="/activities" class="button">Activities</a></li>
-        <li><a href="/gallery" class="button">Gallery</a></li>
-        <li><a href="/contact" class="button" >Contact</a></li>
-        <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li>
-      </ul>
-    </nav>
-  </header>
 
+    <!-- Optional: Search Icon -->
+    <!-- <span style="margin-left: 15px; font-size: 20px; cursor: pointer;">🔍</span> -->
+  </nav>
+</header>
 
-  <!-- Apply Now Button -->
-  <div id="apply-now-container" style="text-align: right; margin: 10px;">
-    <a href="https://admission.upes.ac.in/Login" target="_blank" class="button" >Apply Now</a>
-  </div>
-  </div>
   
   <!-- Hero Section with Image Slider and Motto -->
   <section id="hero-section">

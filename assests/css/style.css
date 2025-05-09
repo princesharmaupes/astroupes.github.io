@@ -83,7 +83,7 @@ header nav ul li a {
 header nav ul li a:active {
     box-shadow: none; /* Remove shadow when clicked */
     transform: none; /* Remove indentation effect */
-    color: #1cd9f1;
+    color: #000000;
 }
 
 /* Adjust main content to avoid overlap with fixed header */

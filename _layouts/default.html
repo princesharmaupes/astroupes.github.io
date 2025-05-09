@@ -190,8 +190,7 @@
         const navbar = document.getElementById("navbar");
 
         menuToggle.addEventListener("click", () => {
-          const isExpanded = navbar.style.display === "flex";
-          navbar.style.display = isExpanded ? "none" : "flex";
+          navbar.style.display = navbar.style.display === "none" || navbar.style.display === "" ? "flex" : "none";
         });
       });
     </script>

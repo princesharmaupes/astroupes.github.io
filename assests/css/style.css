@@ -50,7 +50,7 @@ header nav ul li a {
     color: #000000; /* Text color is black */
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-weight: bold; /* Ensure text is bold */
+    font-weight: normal; /* Ensure text is not bold */
     font-size: 18px; /* Increased font size */
     margin: 0 5px;
     background: none; /* Remove background */
@@ -205,6 +205,12 @@ a:hover {
 
 #apply-now-container .button:hover {
     background-color: #95c218; /* Darker shade on hover */
+}
+
+.apply-now:hover {
+    background-color: #4a4a4a; /* Dark grey on hover */
+    color: white; /* Ensure text remains white */
+    border-color: #4a4a4a; /* Match border color with background */
 }
   
   /* Hero Section with Slider and Motto */

@@ -33,55 +33,69 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
 <!-- Faculty Section -->
 <section id="faculty-section" style="padding: 60px 20px; background: #f5f5f5;">
   <h2 style="text-align:center; font-size: 2em;">Faculty</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
-    
-    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-      <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" style="width: 100%; border-radius: 10px;">
-      <h3>Dr. Prashant S. Rawat</h3>
-      <p><strong>Sr. Associate Professor, School of Applied Science</strong></p>
-      <p style="font-size: 0.9em;">Dr. Rawat earned his doctoral degree from the esteemed Physical Research Laboratory (PRL), Ahmedabad....</p>
-      <!-- <a> href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->
-      <a href="faculty.html#PSRAWAT" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
+  <div id="faculty-carousel" style="overflow: hidden; width: 100%; position: relative;">
+    <div id="faculty-cards" style="display: flex; transition: transform 0.5s ease-in-out; width: max-content;">
+      <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-right: 20px;">
+        <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" style="width: 100%; border-radius: 10px;">
+        <h3>Dr. Prashant S. Rawat</h3>
+        <p><strong>Sr. Associate Professor, School of Applied Science</strong></p>
+        <p style="font-size: 0.9em;">Dr. Rawat earned his doctoral degree from the esteemed Physical Research Laboratory (PRL), Ahmedabad....</p>
+        <a href="faculty.html#PSRAWAT" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
+      </div>
+      <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-right: 20px;">
+        <img src="assests/images/balendra.jpeg" alt="Dr. Balendra P. Singh" style="width: 100%; border-radius: 10px;">
+        <h3>Dr. Balendra P. Singh</h3>
+        <p><strong>Assistant Professor, School of Applied Science</strong></p>
+        <p style="font-size: 0.9em;">Balendra P. Singh specializes in Astrophysics and Astronomy and received his PhD from the Center for Theoretical Physics...</p>
+        <a href="faculty.html#BALENDRA" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
+      </div>
+      <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-right: 20px;">
+        <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" style="width: 100%; border-radius: 10px;">
+        <h3>Dr. Nitesh Kumar</h3>
+        <p><strong>Assistant Professor, School of Applied Science</strong></p>
+        <p style="font-size: 0.9em;">Dr. Nitesh has done his Ph. D. in Automated Stellar Evolution study from the University of Delhi....</p>
+        <a href="faculty.html#NITESH" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
+      </div>
+      <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-right: 20px;">
+        <img src="assests/images/prince.png" alt="Dr. Prince Sharma" style="width: 100%; border-radius: 10px;">
+        <h3>Dr. Prince Sharma</h3>
+        <p><strong>Assistant Professor, School of Applied Science</strong></p>
+        <p style="font-size: 0.9em;">Dr. Sharma is an alumunus of Kirorimal College and obtained his Doctorate from University of Delhi....</p>
+        <a href="faculty.html#PRINCE" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
+      </div>
+      <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-right: 20px;">
+        <img src="assests/images/arka.jpeg" alt="Dr. Arka Chatterjee" style="width: 100%; border-radius: 10px;">
+        <h3>Dr. Arka Chatterjee</h3>
+        <p><strong>Assistant Professor, School of Applied Science</strong></p>
+        <p style="font-size: 0.9em;">Dr. Arka Chatterjee is an Astrophysicist with a PhD in Theoretical Physics from the University of Calcutta....</p>
+        <a href="faculty.html#ARKA" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
+      </div>
     </div>
-
-    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-     <img src="assests/images/balendra.jpeg" alt="Dr. Balendra P. Singh" style="width: 100%; border-radius: 10px;">
-      <h3>Dr. Balendra P. Singh</h3>
-      <p><strong>Assistant Professor, School of Applied Science</strong></p>
-      <p style="font-size: 0.9em;">Balendra P. Singh specializes in Astrophysics and Astronomy and received his PhD from the Center for Theoretical Physics, an autonomous research center affiliated with Jamia Millia Islamia University, New Delhi....</p>
-      <a href="faculty.html#BALENDRA" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
-    </div>
-
-    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-     <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" style="width: 100%; border-radius: 10px;">
-      <h3>Dr. Nitesh Kumar</h3>
-      <p><strong>Assistant Professor, School of Applied Science</strong></p>
-      <p style="font-size: 0.9em;">Dr. Nitesh has done his Ph. D. in Automated Stellar Evolution study from the University of Delhi....</p>
-      <a href="faculty.html#NITESH" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
-    </div>
-
-    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-     <img src="assests/images/prince.png" alt="Dr. Prince Sharma" style="width: 100%; border-radius: 10px;">
-      <h3>Dr. Prince Sharma</h3>
-      <p><strong>Assistant Professor, School of Applied Science</strong></p>
-      <p style="font-size: 0.9em;">Dr. Sharma is an alumunus of Kirorimal College and obtained his Doctorate from University of Delhi....</p>
-      <!-- <a> href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->
-      <a href="faculty.html#PRINCE" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
-    </div>
-
-    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-     <img src="assests/images/arka.png" alt="Dr. Arka Chatterjee" style="width: 100%; border-radius: 10px;">
-      <h3>Dr. Arka Chatterjee</h3>
-      <p><strong>Assistant Professor, School of Applied Science</strong></p>
-      <p style="font-size: 0.9em;">Dr. Arka Chatterjee is an Astrophysicist with a PhD in Theoretical Physics from the University of Calcutta. His research focuses the X-ray images of accreting black holes....</p>
-      <!-- <a> href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->
-      <a href="faculty.html#ARKA" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
-    </div>
-
-    <!-- Add more cards similarly -->
-
+    <button id="prev-btn" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: #333; color: #fff; border: none; padding: 10px; cursor: pointer; border-radius: 50%;">&#8249;</button>
+    <button id="next-btn" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: #333; color: #fff; border: none; padding: 10px; cursor: pointer; border-radius: 50%;">&#8250;</button>
   </div>
 </section>
+
+<script>
+  const facultyCards = document.getElementById('faculty-cards');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  let currentIndex = 0;
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      facultyCards.style.transform = `translateX(-${currentIndex * 960}px)`;
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < Math.ceil(facultyCards.children.length / 3) - 1) {
+      currentIndex++;
+      facultyCards.style.transform = `translateX(-${currentIndex * 960}px)`;
+    }
+  });
+</script>
 
 ---
 

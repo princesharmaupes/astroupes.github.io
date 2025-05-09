@@ -48,11 +48,11 @@ header nav ul {
 
 header nav ul li a:hover {
     font-weight: bolder; /* Make text bolder on hover */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+    text-shadow: 2px 2px 4px rgb(177, 173, 173); /* Add shadow for better visibility */
 }
 
 header nav ul li a {
-    color: #ffffff; /* Change text color to white */
+    color: #000000; /* Change text color to white */
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold; /* Ensure text is bold */

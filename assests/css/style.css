@@ -50,7 +50,7 @@ header nav ul li a {
     color: #000000; /* Text color is black */
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-weight: 500; /* Ensure text is not bold */
+    font-weight: 600; /* Ensure text is not bold */
     font-size: 18px; /* Increased font size */
     margin: 0 3px;
     background: none; /* Remove background */
@@ -297,7 +297,9 @@ a:hover {
         flex-direction: column; /* Stack navigation items vertically */
         gap: 10px;
         text-align: left; /* Align text to the left */
-        width: 100%; /* Ensure full width */
+        width: auto; /* Prevent full width */
+        max-height: 300px; /* Limit height to prevent taking up the whole screen */
+        overflow-y: auto; /* Add scrolling if content overflows */
     }
 
     header nav ul li a {

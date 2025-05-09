@@ -324,6 +324,7 @@ a:hover {
     
       header nav ul.show {
         display: flex;
+        flex-direction: column;
       }
     
       header nav ul li {

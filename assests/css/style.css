@@ -183,29 +183,32 @@ a:hover {
   } */
 
 /* Apply Now Button */
-#apply-now-container {
-    position: fixed;
-    top: 80px; /* Adjusted to appear below the navigation bar */
-    right: 20px;
-    z-index: 1001;
-}
-
-#apply-now-container .button {
-    display: inline-block; /* Ensures it appears as a button */
-    background-color: #ace91e;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 5px;
-    font-weight: bold;
+.nav-link {
     text-decoration: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    text-align: center; /* Centers text inside the button */
-    cursor: pointer;
-}
-
-#apply-now-container .button:hover {
-    background-color: #95c218; /* Darker shade on hover */
-}
+    color: black;
+    font-weight: 500;
+    transition: font-weight 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    font-weight: bold;
+  }
+  
+  .apply-button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    transition: background-color 0.2s ease;
+  }
+  
+  .apply-button:hover {
+    background-color: darkgrey;
+  }
+  
   
   /* Hero Section with Slider and Motto */
   #hero-section {

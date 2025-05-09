@@ -360,3 +360,35 @@ a:hover {
         padding: 10px; /* Add padding for better touch targets */
     }
 }
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+      background: rgba(233, 64, 64, 0.9); /* stronger background for visibility */
+      padding: 10px;
+      position: absolute;
+      top: 60px; /* adjust based on your header height */
+      right: 0;
+      width: 100%;
+      display: none;
+    }
+  
+    header nav ul.show {
+      display: flex;
+    }
+  
+    .nav-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 1002;
+    }
+  }
+  

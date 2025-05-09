@@ -90,11 +90,8 @@
     <a href="/">
       <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-left: 30px;">
     </a>
-    <button class="nav-toggle" onclick="document.querySelector('header nav ul').classList.toggle('show')">  ☰
-    </button>
-    <nav id="navbar" style="display: flex; flex-wrap: nowrap;">
-      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; flex-wrap: nowrap;">
-        <!-- <li><a href="/" class="button">Home</a></li> -->
+    <nav id="greedy-nav" style="flex-grow: 1; display: flex; justify-content: flex-end; align-items: center;">
+      <ul class="visible-links" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; flex-wrap: nowrap;">
         <li><a href="/about" class="button">About</a></li>
         <li><a href="https://www.upes.ac.in/school-of-advanced-engineering" class="button">Program</a></li>
         <li><a href="/#faculty-section" class="button">Faculty</a></li>
@@ -104,24 +101,46 @@
         <li><a href="/contact" class="button" >Contact</a></li>
         <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li>
         <li>
-          <a href="https://admission.upes.ac.in/Login" target="_blank" class="button apply-now" style="font-weight: bold; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; margin-right: 60px;">
+          <a href="https://admission.upes.ac.in/Login" target="_blank" class="button apply-now" style="font-weight: bold; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px;">
             Apply Now
           </a>
         </li>        
       </ul>
+      <button class="nav-toggle" style="display: none;">☰</button>
+      <ul class="hidden-links" style="list-style: none; margin: 0; padding: 0; display: none; position: absolute; background: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <!-- Hidden links will be dynamically added here -->
+      </ul>
     </nav>
-
-   <!-- Apply Now Button -->
-   <!-- <div id="apply-now-container" style="text-align: right; margin: 10px;">
-    <a href="https://admission.upes.ac.in/Login" target="_blank" class="button" >Apply Now</a>
-   </div> -->
-
-
-    <!-- Optional: Search Icon -->
-    <!-- <span style="margin-left: 15px; font-size: 20px; cursor: pointer;">🔍</span> -->
-  
   </header>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const greedyNav = document.getElementById("greedy-nav");
+      const visibleLinks = greedyNav.querySelector(".visible-links");
+      const hiddenLinks = greedyNav.querySelector(".hidden-links");
+      const navToggle = greedyNav.querySelector(".nav-toggle");
+
+      const updateNav = () => {
+        while (visibleLinks.scrollWidth > visibleLinks.clientWidth) {
+          const lastVisible = visibleLinks.lastElementChild;
+          hiddenLinks.prepend(lastVisible);
+          navToggle.style.display = "block";
+        }
+        while (hiddenLinks.childElementCount > 0 && visibleLinks.scrollWidth + hiddenLinks.firstElementChild.scrollWidth <= visibleLinks.clientWidth) {
+          const firstHidden = hiddenLinks.firstElementChild;
+          visibleLinks.append(firstHidden);
+        }
+        navToggle.style.display = hiddenLinks.childElementCount > 0 ? "block" : "none";
+      };
+
+      navToggle.addEventListener("click", () => {
+        hiddenLinks.style.display = hiddenLinks.style.display === "none" || hiddenLinks.style.display === "" ? "block" : "none";
+      });
+
+      window.addEventListener("resize", updateNav);
+      updateNav();
+    });
+  </script>
   
   <!-- Hero Section with Image Slider and Motto -->
   <section id="hero-section" style="margin-top: 80px;">

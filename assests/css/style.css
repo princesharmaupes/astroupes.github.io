@@ -50,7 +50,7 @@ header nav ul li a {
     color: #000000; /* Text color is black */
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-weight: 600; /* Ensure text is not bold */
+    font-weight: 500; /* Ensure text is not bold */
     font-size: 16px; /* Increased font size */
     margin: 0 3px;
     background: none; /* Remove background */
@@ -65,7 +65,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #000000; /* Hover color is black */
     font-weight: bolder; /* Make text bolder on hover */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Reduced shadow effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow effect */
 }
 
 header nav ul li a:active {

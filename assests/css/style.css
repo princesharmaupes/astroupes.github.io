@@ -361,34 +361,52 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
-    header nav ul {
-      flex-direction: column;
-      align-items: flex-end;
-      background: rgba(233, 64, 64, 0.9); /* stronger background for visibility */
-      padding: 10px;
+/* Base (desktop) styles */
+.nav-toggle {
+    display: none; /* hidden by default on desktop */
+  }
+  
+  /* Mobile navigation styles */
+  @media screen and (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 28px;
+      color: #000; /* Adjust to match your nav */
+      cursor: pointer;
       position: absolute;
-      top: 60px; /* adjust based on your header height */
+      top: 15px;
+      right: 20px;
+      z-index: 1002;
+    }
+  
+    header {
+      position: relative; /* ensures toggle is positioned relative to header */
+    }
+  
+    header nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 10px 20px;
+      position: absolute;
+      top: 70px; /* below the header */
       right: 0;
       width: 100%;
-      display: none;
+      z-index: 1001;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
   
     header nav ul.show {
       display: flex;
     }
   
-    .nav-toggle {
-      display: block;
-      background: none;
-      border: none;
-      font-size: 24px;
-      color: #fff;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      z-index: 1002;
+    header nav ul li a {
+      color: black !important; /* force black nav links */
+      font-size: 18px;
+      padding: 10px 0;
     }
   }
   

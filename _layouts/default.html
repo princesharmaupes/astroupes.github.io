@@ -86,42 +86,30 @@
   <!-- Navbar link (ensure href matches the section ID) -->
 
   <!-- Navigation Panel -->
-  <header style="background: #ffffff; padding: 10px 30px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <header>
     <a href="/">
-      <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-left: 30px;">
+      <img src="upes-logo.jpg" alt="UPES Logo" style="height: 60px; margin-left: 20px; display: block;">
     </a>
-    <button id="menu-toggle" style="background: none; border: none; font-size: 24px; cursor: pointer; display: none;">
-      ☰
-    </button>
-    <nav id="navbar" style="display: flex; flex-wrap: nowrap;">
-      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; flex-wrap: nowrap;">
-        <!-- <li><a href="/" class="button">Home</a></li> -->
-        <li><a href="/about" class="button">About</a></li>
-        <li><a href="https://www.upes.ac.in/school-of-advanced-engineering" class="button">Program</a></li>
-        <li><a href="/#faculty-section" class="button">Faculty</a></li>
-        <li><a href="/publications" class="button">Publications</a></li>
-        <li><a href="/activities" class="button">Activities</a></li>
-        <li><a href="/gallery" class="button">Gallery</a></li>
-        <li><a href="/contact" class="button" >Contact</a></li>
-        <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li>
-        <li>
-          <a href="https://admission.upes.ac.in/Login" target="_blank" class="button apply-now" style="font-weight: bold; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; margin-right: 60px;">
-            Apply Now
-          </a>
-        </li>        
+  
+    <!-- Hamburger toggle button -->
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+  
+    <!-- Nav menu -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/about">About</a></li>
+        <li><a href="https://www.upes.ac.in/school-of-advanced-engineering">Program</a></li>
+        <li><a href="/#faculty-section">Faculty</a></li>
+        <li><a href="/publications">Publications</a></li>
+        <li><a href="/activities">Activities</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://www.upes.ac.in">UPES Home</a></li>
+        <li><a href="https://admission.upes.ac.in/Login" class="apply-now" style="font-weight: bold; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; margin-right: 60px;">Apply Now</a></li>
       </ul>
     </nav>
-
-   <!-- Apply Now Button -->
-   <!-- <div id="apply-now-container" style="text-align: right; margin: 10px;">
-    <a href="https://admission.upes.ac.in/Login" target="_blank" class="button" >Apply Now</a>
-   </div> -->
-
-
-    <!-- Optional: Search Icon -->
-    <!-- <span style="margin-left: 15px; font-size: 20px; cursor: pointer;">🔍</span> -->
-  
   </header>
+  
 
   
   <!-- Hero Section with Image Slider and Motto -->
@@ -184,16 +172,6 @@
       if (window.location.hash === '#faculty-section') {
         history.replaceState(null, null, ' '); // Remove the hash from the URL
       }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuToggle = document.getElementById("menu-toggle");
-        const navbar = document.getElementById("navbar");
-
-        menuToggle.addEventListener("click", () => {
-          const isExpanded = navbar.style.display === "flex";
-          navbar.style.display = isExpanded ? "none" : "flex";
-        });
-      });
     </script>
 </body>
 </html>

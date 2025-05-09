@@ -25,15 +25,19 @@ body {
 
 /* Navigation Panel */
 header {
-    background: rgba(221, 36, 36, 0.6); /* Adjusted to a semi-transparent black */
-    color: #fff;
+    background: #ffffff; /* Solid white background */
+    color: #000; /* Ensure text color is black */
     width: 100%;
+    height: 60px; /* Set a fixed height for the navbar */
     position: fixed;
     top: 0;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
+    padding: 0 20px; /* Adjust padding to fit the fixed height */
     z-index: 1000;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space out the logo and nav links */
 }
 
 header nav ul {
@@ -50,8 +54,8 @@ header nav ul li a {
     color: #000000; /* Text color is black */
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-weight: 600; /* Ensure text is not bold */
-    font-size: 18px; /* Increased font size */
+    font-weight: 500; /* Ensure text is not bold */
+    font-size: 17px; /* Increased font size */
     margin: 0 3px;
     background: none; /* Remove background */
     border: none; /* Remove border */
@@ -76,7 +80,7 @@ header nav ul li a:active {
 
 /* Adjust main content to avoid overlap with fixed header */
 main {
-    padding-top: 80px;
+    padding-top: 70px; /* Adjusted padding to account for the fixed navbar height */
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -285,73 +289,127 @@ a:hover {
     color: #555;
   }
 
+/* Base hidden toggle button */
+.nav-toggle {
+    display: none;
+  }
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    header {
+     .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: black;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        z-index: 1100;
+      }
+    
+      .nav-links {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 15px; /* Adjust padding for smaller screens */
-    }
+        background: white;
+        position: absolute;
+        top: 10px;
+        left: 0; /* fix clipping */
+        width: 100%;
+        padding: 10px 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    
+      .nav-links.show {
+        display: flex;
+      }
+    
+      .nav-links li {
+        width: 100%;
+        padding: 10px 0;
+      }
+    
+      .nav-links li a {
+        display: block;
+        color: black !important;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    
+      .apply-now {
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px;
+        margin-top: 10px;
+        background: white;
+      }
+    
+      .apply-now:hover {
+        background-color: #eee;
+      }
 
-    header nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        gap: 10px;
-        text-align: left; /* Align text to the left */
-        width: auto; /* Prevent full width */
-        max-height: 300px; /* Limit height to prevent taking up the whole screen */
-        overflow-y: auto; /* Add scrolling if content overflows */
-    }
+      header {
+        position: relative;
+      }
+    
+      header nav ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 10px 20px;
+        z-index: 1001;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    
+      header nav ul.show {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      header nav ul li {
+        padding: 8px 0;
+      }
+    
+      header nav ul li a {
+        color: black !important;
+        font-size: 16px;
+        font-weight: 600;
+      }
 
-    header nav ul li a {
-        font-size: 16px; /* Slightly smaller font size for mobile */
-        padding: 10px; /* Add padding for better touch targets */
-    }
-
-    .apply-now {
+     .apply-now {
         margin-right: 0; /* Remove extra margin on mobile */
         width: 100%; /* Make the button full width */
         text-align: center; /* Center the text */
-    }
+     }
 
-    #hero-section {
+     #hero-section {
         flex-direction: column;
         text-align: center;
         margin-top: 100px; /* Adjust margin to account for the fixed header */
-    }
+     }
 
-    .slider {
+     .slider {
         height: 250px; /* Reduce slider height for smaller screens */
-    }
+     }
 
-    .motto-box {
+     .motto-box {
         max-width: 100%; /* Allow full width for the motto box */
         padding: 15px; /* Adjust padding for smaller screens */
-    }
+     }
 
-    main {
+     main {
         padding: 15px; /* Reduce padding for smaller screens */
-    }
+     }
 
-    footer {
+     footer {
         font-size: 14px; /* Slightly smaller font size for footer */
         padding: 10px; /* Adjust padding for smaller screens */
-    }
-
-    #menu-toggle {
-        display: block; /* Show the menu button on mobile */
-    }
-
-    #navbar {
-        display: none; /* Hide the navigation menu by default */
-        flex-direction: column; /* Stack navigation items vertically */
-        gap: 10px;
-        background: #ffffff; /* Add background color for better visibility */
-        border: 1px solid #ccc; /* Add a subtle border */
-        border-radius: 8px; /* Rounded corners */
-        padding: 10px; /* Add padding inside the navigation menu */
-        position: absolute; /* Position the menu below the header */
-        top: 60px; /* Adjust to appear below the header */
-        right: 10px; /* Align to the right */
-        z-index: 1001; /* Ensure it appears above other content */
-    }
+     }
 }

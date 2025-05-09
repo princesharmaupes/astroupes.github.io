@@ -45,6 +45,14 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
     </div>
 
     <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+     <img src="assests/images/balendra.jpeg" alt="Dr. Balendra P. Singh" style="width: 100%; border-radius: 10px;">
+      <h3>Dr. Balendra P. Singh</h3>
+      <p><strong>Assistant Professor, School of Applied Science</strong></p>
+      <p style="font-size: 0.9em;">Balendra P. Singh specializes in Astrophysics and Astronomy and received his PhD from the Center for Theoretical Physics, an autonomous research center affiliated with Jamia Millia Islamia University, New Delhi....</p>
+      <a href="faculty.html#BALENDRA" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
+    </div>
+
+    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
      <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" style="width: 100%; border-radius: 10px;">
       <h3>Dr. Nitesh Kumar</h3>
       <p><strong>Assistant Professor, School of Applied Science</strong></p>
@@ -59,6 +67,15 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <p style="font-size: 0.9em;">Dr. Sharma is an alumunus of Kirorimal College and obtained his Doctorate from University of Delhi....</p>
       <!-- <a> href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->
       <a href="faculty.html#PRINCE" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
+    </div>
+
+    <div style="background: #e9edf4; border-radius: 15px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+     <img src="assests/images/arka.png" alt="Dr. Arka Chatterjee" style="width: 100%; border-radius: 10px;">
+      <h3>Dr. Arka Chatterjee</h3>
+      <p><strong>Assistant Professor, School of Applied Science</strong></p>
+      <p style="font-size: 0.9em;">Dr. Arka Chatterjee is an Astrophysicist with a PhD in Theoretical Physics from the University of Calcutta. His research focuses the X-ray images of accreting black holes....</p>
+      <!-- <a> href="faculty1-details.html" style="display: inline-block; margin-top: 10px; font-size: 1.2em;">→</a> -->
+      <a href="faculty.html#ARKA" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">Read more →</a>
     </div>
 
     <!-- Add more cards similarly -->

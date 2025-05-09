@@ -6,21 +6,25 @@ title: Faculty
 # Meet Our Faculty
 <h2 id="PSRAWAT">Dr. Prashant S. Rawat</h2>
 <p>
+
 **Key Research Areas:**
 - Laboratory Astrophysics: Experiments related to planetary and space physics.
 - Solar Physics: Collaboration with ARIES on the Coronal heating problem.
 </p>
 ---
 
-## Dr. Balendra Pratap Singh
+<h2 id="BALENDRA">Dr. Balendra Pratap Singh</h2>
+<p>
+
 **Key Research Areas:**
 - Black Hole Physics: Study of black hole shadow, thermodynamic properties, and quasinormal modes.
 - Solar Physics: Solar flares and Coronal Mass Ejection.
-
+</p>
 ---
 
 <h2 id="NITESH">Dr. Nitesh Kumar</h2>
 <p>
+
 **Key Research Areas:**
 - Stellar Astrophysics: Study of stellar structure, evolution, and modeling.
 - Galactic Globular Clusters: Observational and theoretical studies of globular clusters.
@@ -36,6 +40,7 @@ title: Faculty
 
 <h2 id="PRINCE">Dr. Prince Sharma</h2>
 <p>
+
 **Key Research Areas:**
 - Compact Object Astrophysics: Studying neutron stars and black holes in X-ray binary systems.
 
@@ -67,7 +72,9 @@ title: Faculty
 </p>
 ---
 
-## Dr. Arka Chatterjee
+<h2 id="ARKA">Dr. Arka Chatterjee</h2>
+<p>
+
 **Key Research Areas:**
 - X-ray Images of Black Holes.
 - Timing Analysis of Black Hole Accretion.
@@ -77,9 +84,21 @@ title: Faculty
 - *"Images and spectral properties of two-component advective flows around black holes: effects of photon bending"*, Monthly Notices of the Royal Astronomical Society, 2017. DOI: [10.1093/mnras/stw2975](https://doi.org/10.1093/mnras/stw2975)
 - *"Time-domain variability properties of XTE J1650-500 during its 2001 outburst: Evidence of disc-jet connection"*, Monthly Notices of the Royal Astronomical Society, 2020. DOI: [10.1093/mnras/staa2263](https://doi.org/10.1093/mnras/staa2263)
 
+**Memberships**
+He has memberships of the following presitigious institutions:  
+
+1. Member International Astronomical Union (IAU), CA20832
+
+2. Member of Canadian Astronomical Society (CASCA), Vancouver, BC, Canada
+
+3. Life membership of Astronomical Society of India (ASI), L 2408, India 
+
+</p>
 ---
 
-## Dr. Raju Roychowdhury
+<h2 id="RAJU">Dr. Raju Roychowdhury</h2>
+<p>
+
 **Key Research Areas:**
 - Extremal Black Holes and Attractor Mechanism.
 - Gauge/Gravity Correspondence.
@@ -89,3 +108,4 @@ title: Faculty
 - Journal of High Energy Physics (JHEP).
 - General Relativity and Gravitation (GRG).
 - International Journal of Modern Physics A (IJMPA).
+</p>

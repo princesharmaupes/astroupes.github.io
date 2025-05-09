@@ -90,11 +90,7 @@
     <a href="/">
       <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-left: 30px;">
     </a>
-    <button class="nav-toggle" onclick="document.querySelector('header nav ul').classList.toggle('show')">
-      ☰
-    </button>
-    
-    <nav id="navbar" style="display: flex; flex-wrap: nowrap;">
+    <nav>
       <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; flex-wrap: nowrap;">
         <!-- <li><a href="/" class="button">Home</a></li> -->
         <li><a href="/about" class="button">About</a></li>
@@ -106,7 +102,7 @@
         <li><a href="/contact" class="button" >Contact</a></li>
         <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li>
         <li>
-          <a href="https://admission.upes.ac.in/Login" target="_blank" class="button apply-now" style="font-weight: bold; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; margin-right: 60px;">
+          <a href="https://admission.upes.ac.in/Login" target="_blank" class="button apply-now" style="font-weight: bold; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; margin-right: 70px;">
             Apply Now
           </a>
         </li>        
@@ -185,19 +181,6 @@
       if (window.location.hash === '#faculty-section') {
         history.replaceState(null, null, ' '); // Remove the hash from the URL
       }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuToggle = document.getElementById("menu-toggle");
-        const navbar = document.getElementById("navbar");
-
-        menuToggle.addEventListener("click", () => {
-          if (navbar.style.display === "none" || navbar.style.display === "") {
-            navbar.style.display = "block"; // Show the menu
-          } else {
-            navbar.style.display = "none"; // Hide the menu
-          }
-        });
-      });
     </script>
 </body>
 </html>

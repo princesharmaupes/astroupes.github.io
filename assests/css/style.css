@@ -46,16 +46,12 @@ header nav ul {
     overflow-x: auto; /* Ensure options are scrollable if they overflow */
 }
 
-header nav ul li a:hover {
-    font-weight: bolder; /* Make text bolder on hover */
-    text-shadow: 2px 2px 4px rgb(177, 173, 173); /* Add shadow for better visibility */
-}
-
 header nav ul li a {
-    color: #000000; /* Change text color to white */
+    color: #000000; /* Text color is black */
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold; /* Ensure text is bold */
+    font-size: 18px; /* Increased font size */
     margin: 0 5px;
     background: none; /* Remove background */
     border: none; /* Remove border */
@@ -66,20 +62,12 @@ header nav ul li a {
     border-radius: 8px; /* Rounded corners */
 }
 
-.read-more-button {
-    display: inline-block;
-    padding: 8px 12px;
-    background-color: #3f8ef5;
-    color: white;
-    border-radius: 4px;
-    text-decoration: none;
-  }
-  .read-more-button:hover {
-    background-color: #83c2dd;
-  }
-  
+header nav ul li a:hover {
+    color: #000000; /* Hover color is black */
+    font-weight: bolder; /* Make text bolder on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Reduced shadow effect */
+}
 
-/* Active effect (when clicked) */
 header nav ul li a:active {
     box-shadow: none; /* Remove shadow when clicked */
     transform: none; /* Remove indentation effect */
@@ -134,6 +122,18 @@ a:hover {
     border-radius: 5px;
 }
 
+.read-more-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #3f8ef5;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .read-more-button:hover {
+    background-color: #83c2dd;
+  }
+  
 /* Gallery Styles */
 .gallery {
     display: grid;

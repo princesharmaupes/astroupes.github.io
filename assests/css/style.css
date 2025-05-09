@@ -287,37 +287,51 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header nav ul {
+    header {
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        align-items: flex-start;
+        padding: 10px 15px; /* Adjust padding for smaller screens */
     }
 
-    main {
-        padding: 20px;
+    header nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px;
+        text-align: left; /* Align text to the left */
+        width: 100%; /* Ensure full width */
+    }
+
+    header nav ul li a {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+        padding: 10px; /* Add padding for better touch targets */
+    }
+
+    .apply-now {
+        margin-right: 0; /* Remove extra margin on mobile */
+        width: 100%; /* Make the button full width */
+        text-align: center; /* Center the text */
     }
 
     #hero-section {
         flex-direction: column;
         text-align: center;
+        margin-top: 100px; /* Adjust margin to account for the fixed header */
     }
 
-.slider, .motto-box {
-    max-width: 100%;
-}
+    .slider {
+        height: 250px; /* Reduce slider height for smaller screens */
+    }
 
-}/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
+    .motto-box {
+        max-width: 100%; /* Allow full width for the motto box */
+        padding: 15px; /* Adjust padding for smaller screens */
     }
 
     main {
-        padding: 20px;
+        padding: 15px; /* Reduce padding for smaller screens */
     }
 
-    #floating-news {
-        width: 250px; /* Slightly smaller on mobile */
+    footer {
+        font-size: 14px; /* Slightly smaller font size for footer */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 }

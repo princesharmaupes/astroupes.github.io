@@ -185,15 +185,11 @@
       }
 
       document.addEventListener("DOMContentLoaded", () => {
-        const menuToggle = document.getElementById("menu-toggle");
-        const navbar = document.getElementById("navbar");
+        const menuToggle = document.querySelector(".nav-toggle");
+        const navbar = document.querySelector("header nav ul");
 
         menuToggle.addEventListener("click", () => {
-          if (navbar.style.display === "none" || navbar.style.display === "") {
-            navbar.style.display = "block"; // Show the menu
-          } else {
-            navbar.style.display = "none"; // Hide the menu
-          }
+          navbar.classList.toggle("show"); // Toggle the "show" class to display or hide the menu
         });
       });
     </script>

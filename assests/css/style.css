@@ -170,19 +170,9 @@ a:hover {
     border-radius: 5px;
 }
 
-/* .button {
-    padding: 10px 15px;
-    background-color: #00eeff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
-  .button:hover {
-    background-color: #a282ee;
-  } */
+/* Unused styles */
 
-/* Apply Now Button */
+/* Floating News Styles - Not used in the HTML */
 #apply-now-container {
     position: fixed;
     top: 80px; /* Adjusted to appear below the navigation bar */
@@ -207,12 +197,33 @@ a:hover {
     background-color: #95c218; /* Darker shade on hover */
 }
 
-.apply-now:hover {
-    background-color: #4a4a4a; /* Dark grey on hover */
-    color: white; /* Ensure text remains white */
-    border-color: #4a4a4a; /* Match border color with background */
+/* .button class - Not used in the HTML */
+.button {
+    padding: 10px 15px;
+    background-color: #00eeff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
-  
+
+.button:hover {
+    background-color: #a282ee;
+}
+
+/* Commented-out styles for .slide - Not active */
+.slide {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    z-index: 1;
+}
+
 /* Hero Section with Slider and Motto */
 #hero-section {
     display: flex;
@@ -369,44 +380,43 @@ a:hover {
   /* Mobile navigation styles */
   @media screen and (max-width: 768px) {
     .nav-toggle {
-      display: block;
-      background: none;
-      border: none;
-      font-size: 28px;
-      color: #000; /* Adjust to match your nav */
-      cursor: pointer;
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      z-index: 1002;
+        display: block; /* Show the menu button on mobile */
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: #000; /* Adjust to match your nav */
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 1002;
     }
   
     header {
-      position: relative; /* ensures toggle is positioned relative to header */
+        position: relative; /* Ensures toggle is positioned relative to header */
     }
   
     header nav ul {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 10px 20px;
-      position: absolute;
-      top: 70px; /* below the header */
-      right: 0;
-      width: 100%;
-      z-index: 1001;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: none; /* Hide the navigation menu by default */
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 10px 20px;
+        position: absolute;
+        top: 70px; /* Below the header */
+        right: 0;
+        width: 100%;
+        z-index: 1001;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
   
     header nav ul.show {
-      display: flex;
+        display: flex; /* Show the menu when the "show" class is added */
     }
   
     header nav ul li a {
-      color: black !important; /* force black nav links */
-      font-size: 18px;
-      padding: 10px 0;
+        color: black !important; /* Force black nav links */
+        font-size: 18px;
+        padding: 10px 0;
     }
   }
-  

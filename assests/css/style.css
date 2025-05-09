@@ -25,15 +25,16 @@ body {
 
 /* Navigation Panel */
 header {
-    background: #ffffff; /* Changed to solid white */
+    background: #ffffff; /* Solid white background */
     color: #000; /* Ensure text color is black */
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
+    padding: 10px 20px; /* Reduced padding to minimize height */
     z-index: 1000;
+    height: auto; /* Allow height to adjust dynamically */
 }
 
 header nav ul {
@@ -311,8 +312,8 @@ a:hover {
         background: white;
         position: absolute;
         top: 70px;
-        left: 0; /* fix clipping */
-        width: 100%;
+        left: 0; /* Fix clipping */
+        width: 100%; /* Ensure it fits the screen width */
         padding: 10px 20px;
         z-index: 1000;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);

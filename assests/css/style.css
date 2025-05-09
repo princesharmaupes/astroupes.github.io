@@ -354,4 +354,9 @@ a:hover {
         right: 10px; /* Align to the right */
         z-index: 1001; /* Ensure it appears above other content */
     }
+
+    header nav ul li a {
+        font-size: 16px; /* Slightly smaller font size for mobile */
+        padding: 10px; /* Add padding for better touch targets */
+    }
 }

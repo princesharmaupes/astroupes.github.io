@@ -54,8 +54,8 @@ header nav ul li a {
     color: #000000; /* Text color is black */
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-weight: 550; /* Ensure text is not bold */
-    font-size: 18px; /* Increased font size */
+    font-weight: 500; /* Ensure text is not bold */
+    font-size: 17px; /* Increased font size */
     margin: 0 3px;
     background: none; /* Remove background */
     border: none; /* Remove border */

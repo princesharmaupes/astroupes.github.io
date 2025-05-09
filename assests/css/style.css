@@ -305,6 +305,48 @@ a:hover {
         z-index: 1100;
       }
     
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        left: 0; /* fix clipping */
+        width: 100%;
+        padding: 10px 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    
+      .nav-links.show {
+        display: flex;
+      }
+    
+      .nav-links li {
+        width: 100%;
+        padding: 10px 0;
+      }
+    
+      .nav-links li a {
+        display: block;
+        color: black !important;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    
+      .apply-now {
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px;
+        margin-top: 10px;
+        background: white;
+      }
+    
+      .apply-now:hover {
+        background-color: #eee;
+      }
+
       header {
         position: relative;
       }

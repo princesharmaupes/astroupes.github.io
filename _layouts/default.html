@@ -46,9 +46,9 @@
       z-index: 1000;
       padding: 5px 0;
     } */
-  html {
+   html {
     scroll-behavior: smooth;
-  }
+   }
 
 
   </style>
@@ -85,37 +85,47 @@
 
   <!-- Navbar link (ensure href matches the section ID) -->
 
-
-
   <!-- Navigation Panel -->
-  <header style="background: linear-gradient(145deg, #1a1a1a, #4d4d4d); padding: 10px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+  <header style="background: #ffffff; padding: 10px 30px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
     <a href="/">
-      <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-right: 20px;">
+      <img src="upes-logo.jpg" alt="UPES Logo" style="height: 50px; margin-left: 30px;">
     </a>
-    <nav>
-      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; overflow-x: auto; flex-wrap: nowrap;">
-        <li><a href="javascript:void(0);" class="button" onclick="scrollToTop()">Home</a></li>
+    <button id="menu-toggle" style="background: none; border: none; font-size: 24px; cursor: pointer; display: none;">
+      ☰
+    </button>
+    <nav id="navbar" style="display: flex; flex-wrap: nowrap;">
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; flex-wrap: nowrap;">
+        <!-- <li><a href="/" class="button">Home</a></li> -->
         <li><a href="/about" class="button">About</a></li>
         <li><a href="https://www.upes.ac.in/school-of-advanced-engineering" class="button">Program</a></li>
-        <li><a href="javascript:void(0);" class="button" onclick="scrollToSection('faculty-section')">Faculty</a></li>
+        <li><a href="/#faculty-section" class="button">Faculty</a></li>
         <li><a href="/publications" class="button">Publications</a></li>
         <li><a href="/activities" class="button">Activities</a></li>
         <li><a href="/gallery" class="button">Gallery</a></li>
         <li><a href="/contact" class="button" >Contact</a></li>
-        <!-- <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li> -->
+        <li><a href="https://www.upes.ac.in" class="button">UPES Home</a></li>
+        <li>
+          <a href="https://admission.upes.ac.in/Login" target="_blank" class="button apply-now" style="font-weight: bold; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; margin-right: 60px;">
+            Apply Now
+          </a>
+        </li>        
       </ul>
     </nav>
+
+   <!-- Apply Now Button -->
+   <!-- <div id="apply-now-container" style="text-align: right; margin: 10px;">
+    <a href="https://admission.upes.ac.in/Login" target="_blank" class="button" >Apply Now</a>
+   </div> -->
+
+
+    <!-- Optional: Search Icon -->
+    <!-- <span style="margin-left: 15px; font-size: 20px; cursor: pointer;">🔍</span> -->
+  
   </header>
 
-
-  <!-- Apply Now Button -->
-  <div id="apply-now-container" style="text-align: right; margin: 10px;">
-    <a href="https://admission.upes.ac.in/Login" target="_blank" class="button" >Apply Now</a>
-  </div>
-  </div>
   
   <!-- Hero Section with Image Slider and Motto -->
-  <section id="hero-section">
+  <section id="hero-section" style="margin-top: 80px;">
    <div class="slider" style="position: relative; width: 100%; height: 400px; overflow: hidden;">
     <img src="assests/images/campus1.jpg" alt="Campus 1" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
     <img src="assests/images/campus2.jpg" alt="Campus 2" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
@@ -131,7 +141,7 @@
     <p style="font-size: 14px; color: #555;">
       <em>At UPES, astronomy is more than a subject — it's a journey into the unknown. Learn how stars are born, galaxies evolve, and black holes bend the fabric of space-time. With hands-on experience using telescopes and real astronomical data, our students turn their curiosity into meaningful discovery.</em>
     </p>
-  </div>
+   </div>
   
   </section>
 
@@ -174,6 +184,16 @@
       if (window.location.hash === '#faculty-section') {
         history.replaceState(null, null, ' '); // Remove the hash from the URL
       }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar");
+
+        menuToggle.addEventListener("click", () => {
+          const isExpanded = navbar.style.display === "flex";
+          navbar.style.display = isExpanded ? "none" : "flex";
+        });
+      });
     </script>
 </body>
 </html>

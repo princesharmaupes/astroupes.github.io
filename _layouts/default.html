@@ -190,7 +190,12 @@
         const navbar = document.getElementById("navbar");
 
         menuToggle.addEventListener("click", () => {
-          navbar.style.display = navbar.style.display === "none" || navbar.style.display === "" ? "flex" : "none";
+          if (navbar.style.display === "none" || navbar.style.display === "") {
+            navbar.style.display = "flex"; // Show the menu
+            navbar.style.flexDirection = "column"; // Ensure vertical stacking
+          } else {
+            navbar.style.display = "none"; // Hide the menu
+          }
         });
       });
     </script>

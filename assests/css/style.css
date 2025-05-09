@@ -28,13 +28,14 @@ header {
     background: #ffffff; /* Solid white background */
     color: #000; /* Ensure text color is black */
     width: 100%;
+    height: 50px; /* Reduced height to prevent overlap */
     position: fixed;
     top: 0;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    padding: 10px 20px; /* Reduced padding to minimize height */
+    padding: 5px 20px; /* Reduced padding to minimize height */
     z-index: 1000;
-    height: auto; /* Allow height to adjust dynamically */
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 header nav ul {
@@ -51,8 +52,8 @@ header nav ul li a {
     color: #000000; /* Text color is black */
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-weight: 500; /* Ensure text is not bold */
-    font-size: 18px; /* Increased font size */
+    font-weight: 600; /* Ensure text is not bold */
+    font-size: 16px; /* Increased font size */
     margin: 0 3px;
     background: none; /* Remove background */
     border: none; /* Remove border */
@@ -77,7 +78,7 @@ header nav ul li a:active {
 
 /* Adjust main content to avoid overlap with fixed header */
 main {
-    padding-top: 80px;
+    padding-top: 70px; /* Adjusted padding to account for reduced navbar height */
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;

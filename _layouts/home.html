@@ -3,10 +3,10 @@
 <head>
   <!-- Meta and External Resources -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="icon" href="assests/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assests/images/favicons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="assests/css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -18,12 +18,12 @@
     }
 
     /* Responsive Navigation */
-    header nav ul {
+    /* header nav ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
       gap: 15px;
-    }
+    } */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -146,14 +146,15 @@
     <nav aria-label="Main navigation">
       <ul class="nav-links">
         <li><a href="/about">About</a></li>
-        <li class="dropdown">
+        <!-- <li class="dropdown">
           <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Program ▾</a>
           <ul class="dropdown-content">
             <li><a href="https://www.upes.ac.in/school-of-advanced-engineering/bsc-hons/physics-astronomy-and-astrophysics" target="_blank" rel="noopener noreferrer">B.Sc. Astronomy & Astrophysics</a></li>
             <li><a href="https://www.upes.ac.in/school-of-advanced-engineering/msc-engineering/physics-astronomy-and-astrophysics" target="_blank" rel="noopener noreferrer">M.Sc. Physics (Astro Specialization)</a></li>
           </ul>
-        </li>
-        <li><a href="/#faculty-section">Faculty</a></li>
+        </li> -->
+        <li><a href="/programs">Programs</a></li>
+        <li><a href="/faculty">Faculty</a></li>
         <li><a href="/publications">Publications</a></li>
         <li><a href="/activities">Activities</a></li>
         <li><a href="/gallery">Gallery</a></li>

@@ -107,14 +107,14 @@ footer {
 
 /* Links */
 a {
-    color: #ffffff;
+    color: #007BFF; /* Updated link color to a blue shade */
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 18px; /* Ensure consistent font size for links */
 }
 
 a:hover {
-    color: #bae3ee;
+    color: #0056b3; /* Darker blue shade on hover */
 }
 
 /* Highlighted Sections */

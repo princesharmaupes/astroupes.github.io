@@ -562,4 +562,10 @@ a:hover {
   display: block;
 }
 
+/* Ensure dropdown appears above the slider */
+header {
+  position: relative;
+  z-index: 2000; /* Ensure header and dropdown are above the slider */
+}
+
 

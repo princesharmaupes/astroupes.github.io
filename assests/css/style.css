@@ -512,8 +512,8 @@ a:hover {
 
 /* Dropdown container */
 .dropdown {
-  position: relative; /* Ensure the dropdown container is positioned */
-  z-index: 1000; /* Set a high z-index for the dropdown container */
+  position: relative;
+  z-index: 3000; /* Ensure it appears above the slider */
 }
 
 .dropbtn {
@@ -530,12 +530,12 @@ a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 100%; /* Position below the button */
   left: 0;
   background-color: white;
   min-width: 240px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 1100; /* Ensure the dropdown list appears above other content */
+  z-index: 3000; /* Ensure it appears above other elements */
   border-radius: 6px;
   padding: 0;
 }
@@ -557,16 +557,15 @@ a:hover {
   background-color: #f0f0f0;
 }
 
-/* Desktop: show dropdown on hover */
-@media (min-width: 769px) {
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
-
-/* Mobile: show dropdown on .show class */
+/* Show dropdown when .show class is added */
 .dropdown.show .dropdown-content {
   display: block;
+}
+
+/* Ensure dropdown appears above the slider */
+header {
+  position: relative;
+  z-index: 4000; /* Ensure header and dropdown are above the slider */
 }
 
 

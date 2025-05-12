@@ -434,8 +434,13 @@ a:hover {
  Slider Dot Controls
 ======================== */
 #slider-dots {
+  position: absolute; /* Position relative to the slider */
+  bottom: 15px; /* Place at the bottom of the slider */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
   text-align: center;
-  margin-top: 10px;
+  margin: 0; /* Remove extra margin */
+  z-index: 2; /* Ensure dots appear above the images */
 }
 
 .dot {

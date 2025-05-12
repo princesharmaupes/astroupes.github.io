@@ -513,7 +513,7 @@ a:hover {
 /* Dropdown container */
 .dropdown {
     position: relative;
-    display: inline-block; /* Ensure it aligns with other nav items */
+    display: inline-block; /* Align with other nav items */
 }
 
 /* Top-level menu button */
@@ -543,9 +543,12 @@ a:hover {
     z-index: 1000;
     border-radius: 6px;
     overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.dropdown-content a {
+.dropdown-content li a {
     display: block;
     padding: 10px 16px;
     color: black;
@@ -554,7 +557,7 @@ a:hover {
     transition: background-color 0.3s ease;
 }
 
-.dropdown-content a:hover {
+.dropdown-content li a:hover {
     background-color: #f0f0f0;
 }
 

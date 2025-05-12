@@ -512,7 +512,8 @@ a:hover {
 
 /* Dropdown container */
 .dropdown {
-  position: relative;
+  position: relative; /* Ensure the dropdown container is positioned */
+  z-index: 1000; /* Set a high z-index for the dropdown container */
 }
 
 .dropbtn {
@@ -534,7 +535,7 @@ a:hover {
   background-color: white;
   min-width: 240px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 1000;
+  z-index: 1100; /* Ensure the dropdown list appears above other content */
   border-radius: 6px;
   padding: 0;
 }

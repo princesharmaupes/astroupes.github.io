@@ -234,7 +234,8 @@ a:hover {
  .slider {
     position: relative;
     width: 100%; /* Full width of the screen */
-    height: 600px; /* Increased height for better visibility */
+    height: auto; /* Allow height to adjust dynamically */
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
     overflow: hidden;
     margin: 0; /* Remove margin for full-width alignment */
 } 
@@ -244,8 +245,8 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%; /* Full width of the screen */
-    height: 100%; /* Maintain height */
-    object-fit: cover; /* Ensure the image covers the entire area without stretching */
+    height: 100%; /* Match the height of the slider */
+    object-fit: contain; /* Ensure the entire image is visible without cropping */
     transition: opacity 1s ease-in-out;
     opacity: 0; /* Hide all slides by default */
 }

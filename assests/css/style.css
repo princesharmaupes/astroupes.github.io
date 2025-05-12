@@ -34,7 +34,7 @@ header {
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 0 20px; /* Adjust padding to fit the fixed height */
-    z-index: 1000;
+    z-index: 5000; /* Ensure header is above all other content */
     display: flex;
     align-items: center; /* Vertically center the content */
     justify-content: space-between; /* Space out the logo and nav links */
@@ -513,7 +513,7 @@ a:hover {
 /* Dropdown container */
 .dropdown {
   position: relative;
-  z-index: 3000; /* Ensure it appears above the slider */
+  z-index: 5002; /* Ensure dropdown container is above other content */
 }
 
 .dropbtn {
@@ -535,9 +535,10 @@ a:hover {
   background-color: white;
   min-width: 240px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 3000; /* Ensure it appears above other elements */
+  z-index: 5003; /* Ensure dropdown list is above other elements */
   border-radius: 6px;
   padding: 0;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 /* Style for links inside dropdown */
@@ -565,7 +566,11 @@ a:hover {
 /* Ensure dropdown appears above the slider */
 header {
   position: relative;
-  z-index: 4000; /* Ensure header and dropdown are above the slider */
+  z-index: 5000; /* Ensure header and dropdown are above the slider */
+}
+
+.nav-links {
+  z-index: 5001; /* Ensure nav links are above other content */
 }
 
 

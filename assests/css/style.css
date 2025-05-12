@@ -535,7 +535,7 @@ a:hover {
   background-color: white;
   min-width: 240px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 1200; /* Ensure it appears above other elements */
+  z-index: 3000; /* Ensure it appears above other elements */
   border-radius: 6px;
   padding: 0;
 }

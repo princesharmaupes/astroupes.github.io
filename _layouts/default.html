@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta and External Resources -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ page.title | default: site.title }}</title>
+  <link rel="icon" href="assests/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Embedded Custom Styles -->
   <style>
-  
-    /* Optimize navigation for mobile */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    /* Responsive Navigation */
     header nav ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
       gap: 15px;
     }
-
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -24,78 +33,59 @@
         justify-content: flex-start;
       }
     }
-    /* Background video styles */
-    #background-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
     }
-    /* Development ribbon
-    .development-ribbon {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: red;
-      color: white;
+
+    /* Slider Navigation Dots */
+    #slider-dots {
       text-align: center;
-      z-index: 1000;
-      padding: 5px 0;
-    } */
-   html {
-    scroll-behavior: smooth;
-   }
+      margin-top: 10px;
+    }
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+    .dot.active {
+      background-color: #333;
+    }
 
-
+    /* AOS Animation Transitions */
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition-property: opacity, transform;
+      transition-duration: 0.6s;
+      transition-timing-function: ease-out;
+    }
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const apiKey = "rGe6XI3oqugCD4gKxK8w9QPdP7CM7PfuMpy8w9OT"; // Replace with your NASA API key
-      const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
-
-      fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-          if (data.media_type === "image") {
-            document.body.style.backgroundImage = `url('${data.url}')`;
-          }
-        })
-        .catch(error => console.error("Error fetching NASA APOD:", error));
-    });
-  </script> -->
 </head>
-
 <body>
-  <!-- Add a ribbon for development notice -->
-  <!-- <div class="development-ribbon">
-    The website is currently under development
-  </div> -->
-  
-
-  
-  <!-- Background Video -->
+  <!-- Video Background -->
   <video autoplay muted loop id="background-video">
     <source src="assests/videos/time.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-  <!-- Navbar link (ensure href matches the section ID) -->
-
-  <!-- Navigation Panel -->
+  <!-- Navigation Header -->
   <header>
     <a href="/">
       <img src="upes-logo.jpg" alt="UPES Logo" style="height: 60px; margin-left: 20px; display: block;">
     </a>
-  
-    <!-- Hamburger toggle button -->
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
-  
-    <!-- Nav menu -->
-    <nav>
+    <nav aria-label="Main navigation">
       <ul class="nav-links">
         <li><a href="/about">About</a></li>
         <li><a href="https://www.upes.ac.in/school-of-advanced-engineering">Program</a></li>
@@ -109,31 +99,25 @@
       </ul>
     </nav>
   </header>
-  
 
-  
-  <!-- Hero Section with Image Slider and Motto -->
-  <section id="hero-section" style="margin-top: 80px;">
-   <div class="slider" style="position: relative; width: 100%; height: 400px; overflow: hidden;">
-    <img src="assests/images/campus1.jpg" alt="Campus 1" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
-    <img src="assests/images/campus2.jpg" alt="Campus 2" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
-    <img src="assests/images/upes-3.webp" alt="Campus 3" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
-    <img src="assests/images/upes-4.webp" alt="Campus 4" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" />
-   </div>
-   <div class="motto-box" style="padding: 20px; max-width: 400px;">
-    <h2 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">
-      <span style="font-family: Arial, sans-serif; font-size: 24px; color: #333;"></span>
-        Where Curiosity Meets the Cosmos
-      </span>
-    </h2>
-    <p style="font-size: 14px; color: #555;">
-      <em>At UPES, astronomy is more than a subject — it's a journey into the unknown. Learn how stars are born, galaxies evolve, and black holes bend the fabric of space-time. With hands-on experience using telescopes and real astronomical data, our students turn their curiosity into meaningful discovery.</em>
-    </p>
-   </div>
-  
+  <!-- Hero Section with Slider and Motto -->
+  <section id="hero-section" style="margin-top: 80px;" data-aos="fade-up">
+    <div class="slider" style="position: relative; width: 100%; height: 400px; overflow: hidden;">
+      <img src="assests/images/campus1.jpg" alt="Campus 1" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" loading="lazy" />
+      <img src="assests/images/campus2.jpg" alt="Campus 2" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" loading="lazy" />
+      <img src="assests/images/upes-3.webp" alt="Campus 3" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" loading="lazy" />
+      <img src="assests/images/upes-4.webp" alt="Campus 4" class="slide" style="position: absolute; width: 100%; height: 100%; object-fit: cover; transition: opacity 1s;" loading="lazy" />
+    </div>
+    <div id="slider-dots"></div>
+    <div class="motto-box" style="padding: 20px; max-width: 400px;">
+      <h1 style="font-weight: bold; font-size: 32px; margin-bottom: 10px; color: #333;">Where Curiosity Meets the Cosmos</h1>
+      <p style="font-size: 16px; color: #555;">
+        <em>At UPES, astronomy is more than a subject — it's a journey into the unknown. Learn how stars are born, galaxies evolve, and black holes bend the fabric of space-time. With hands-on experience using telescopes and real astronomical data, our students turn their curiosity into meaningful discovery.</em>
+      </p>
+    </div>
   </section>
 
-  <!-- Main Content -->
+  <!-- Main Content Container -->
   <main>
     <div style="padding: 20px; background: rgba(255, 255, 255, 0.8);">
       {{ content }}
@@ -145,33 +129,49 @@
     <p>&copy; {{ site.title }} - {{ site.description }}</p>
   </footer>
 
-    <!-- JS for slider -->
-    <script>
-      let currentSlide = 0;
-      const slides = document.querySelectorAll('.slide');
-      function showNextSlide() {
-        slides[currentSlide].style.opacity = 0;
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].style.opacity = 1;
-      }
-      slides.forEach((s, i) => s.style.opacity = i === 0 ? 1 : 0);
-      setInterval(showNextSlide, 3000);
+  <!-- Slider JavaScript Logic -->
+  <script defer>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dotsContainer = document.getElementById('slider-dots');
 
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+    function showSlide(index) {
+      slides.forEach((s, i) => s.style.opacity = i === index ? 1 : 0);
+      document.querySelectorAll('.dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
 
-      function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
+    function createDots() {
+      slides.forEach((_, i) => {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        dot.addEventListener('click', () => {
+          currentSlide = i;
+          showSlide(currentSlide);
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
 
-      // Prevent scrolling to #faculty-section on page load
-      if (window.location.hash === '#faculty-section') {
-        history.replaceState(null, null, ' '); // Remove the hash from the URL
-      }
-    </script>
+    createDots();
+    showSlide(currentSlide);
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 4000);
+
+    if (window.location.hash === '#faculty-section') {
+      history.replaceState(null, null, ' ');
+    }
+  </script>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init();
+    });
+  </script>
 </body>
 </html>

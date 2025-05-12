@@ -62,7 +62,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
         <img src="assests/images/prince.png" alt="Dr. Prince Sharma" class="faculty-img">
         <h3>Dr. Prince Sharma</h3>
         <p><strong>Assistant Professor, School of Applied Science</strong></p>
-        <p class="faculty-bio">Dr. Sharma is an alumunus of Kirorimal College and obtained his Doctorate from University of Delhi....</p>
+        <p class="faculty-bio">Dr. Prince Sharma is an alumnus of Kirorimal College and has done his Doctorate from University of Delhi....</p>
         <a href="faculty.html#PRINCE" class="read-more-button">Read more →</a>
       </div>
 

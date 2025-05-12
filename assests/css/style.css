@@ -509,3 +509,45 @@ a:hover {
 .carousel-btn.next {
   right: 10px;
 }
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown button styling */
+.dropbtn {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 240px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+  border-radius: 6px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

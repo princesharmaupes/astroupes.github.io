@@ -513,6 +513,7 @@ a:hover {
 /* Dropdown container */
 .dropdown {
   position: relative;
+  z-index: 1100; /* Ensure it appears above the slider */
 }
 
 .dropbtn {
@@ -529,12 +530,12 @@ a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 100%; /* Position below the button */
   left: 0;
   background-color: white;
   min-width: 240px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 1000;
+  z-index: 1200; /* Ensure it appears above other elements */
   border-radius: 6px;
   padding: 0;
 }

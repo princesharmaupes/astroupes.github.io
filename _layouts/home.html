@@ -164,21 +164,7 @@
     </nav>
   </header>
 
-  <section id="hero-section" data-aos="fade-up">
-    <div class="slider">
-      <img src="assests/images/campus1.jpg" alt="Campus 1" class="slide active" loading="lazy" />
-      <img src="assests/images/campus2.jpg" alt="Campus 2" class="slide" loading="lazy" />
-      <img src="assests/images/campus3.jpg" alt="Campus 3" class="slide" loading="lazy" />
-      <img src="assests/images/campus5.jpg" alt="Campus 4" class="slide" loading="lazy" />
-      <div class="motto-box">
-        <h1>Where Curiosity Meets the Cosmos</h1>
-        <p>
-          <em>At UPES, astronomy is more than a subject — it's a journey into the unknown. Learn how stars are born, galaxies evolve, and black holes bend the fabric of space-time. With hands-on experience using telescopes and real astronomical data, our students turn their curiosity into meaningful discovery.</em>
-        </p>
-      </div>
-    </div>
-    <div id="slider-dots"></div>
-  </section>
+ 
   
 
   <!-- Main Content Container -->
@@ -193,50 +179,7 @@
     <p>&copy; {{ site.title }} - {{ site.description }}</p>
   </footer>
 
-  <!-- Slider JavaScript Logic -->
-  <script defer>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-    const dotsContainer = document.getElementById('slider-dots');
-
-    function showSlide(index) {
-      slides.forEach((s, i) => s.style.opacity = i === index ? 1 : 0);
-      document.querySelectorAll('.dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
-      });
-    }
-
-    function createDots() {
-      slides.forEach((_, i) => {
-        const dot = document.createElement('span');
-        dot.classList.add('dot');
-        dot.addEventListener('click', () => {
-          currentSlide = i;
-          showSlide(currentSlide);
-        });
-        dotsContainer.appendChild(dot);
-      });
-    }
-
-    createDots();
-    showSlide(currentSlide);
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }, 4000);
-
-    if (window.location.hash === '#faculty-section') {
-      history.replaceState(null, null, ' ');
-    }
-  </script>
-
-  <!-- AOS Animation Library -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-  <script defer>
-    document.addEventListener('DOMContentLoaded', function() {
-      AOS.init();
-    });
-  </script>
+  
 
 <script>
   function toggleDropdown(event) {

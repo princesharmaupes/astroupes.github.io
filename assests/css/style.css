@@ -556,14 +556,7 @@ a:hover {
   background-color: #f0f0f0;
 }
 
-/* Desktop: show dropdown on hover */
-@media (min-width: 769px) {
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
-
-/* Mobile: show dropdown on .show class */
+/* Show dropdown when .show class is added */
 .dropdown.show .dropdown-content {
   display: block;
 }

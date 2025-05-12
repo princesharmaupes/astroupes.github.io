@@ -70,6 +70,50 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Hero Section Styles */
+    #hero-section {
+      position: relative;
+      overflow: hidden;
+    }
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+    }
+    .slide.active {
+      opacity: 1;
+    }
+    .motto-box {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+    .motto-box h1 {
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .motto-box p {
+      font-size: 16px;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -102,19 +146,19 @@
 
   <!-- Hero Section with Slider and Motto -->
   <section id="hero-section" style="margin-top: 80px; width: 100%;" data-aos="fade-up">
-    <div class="slider" style="width: 100%; height: 400px; overflow: hidden;">
+    <div class="slider">
       <img src="assests/images/campus1.jpg" alt="Campus 1" class="slide" loading="lazy" />
       <img src="assests/images/campus2.jpg" alt="Campus 2" class="slide" loading="lazy" />
       <img src="assests/images/upes-3.webp" alt="Campus 3" class="slide" loading="lazy" />
       <img src="assests/images/upes-4.webp" alt="Campus 4" class="slide" loading="lazy" />
+      <div class="motto-box">
+        <h1>Where Curiosity Meets the Cosmos</h1>
+        <p>
+          <em>At UPES, astronomy is more than a subject — it's a journey into the unknown. Learn how stars are born, galaxies evolve, and black holes bend the fabric of space-time. With hands-on experience using telescopes and real astronomical data, our students turn their curiosity into meaningful discovery.</em>
+        </p>
+      </div>
     </div>
     <div id="slider-dots"></div>
-    <div class="motto-box" style="padding: 20px; max-width: 400px;">
-      <h1 style="font-weight: bold; font-size: 32px; margin-bottom: 10px; color: #333;">Where Curiosity Meets the Cosmos</h1>
-      <p style="font-size: 16px; color: #555;">
-        <em>At UPES, astronomy is more than a subject — it's a journey into the unknown. Learn how stars are born, galaxies evolve, and black holes bend the fabric of space-time. With hands-on experience using telescopes and real astronomical data, our students turn their curiosity into meaningful discovery.</em>
-      </p>
-    </div>
   </section>
 
   <!-- Main Content Container -->
@@ -136,7 +180,7 @@
     const dotsContainer = document.getElementById('slider-dots');
 
     function showSlide(index) {
-      slides.forEach((s, i) => s.style.opacity = i === index ? 1 : 0);
+      slides.forEach((s, i) => s.classList.toggle('active', i === index));
       document.querySelectorAll('.dot').forEach((dot, i) => {
         dot.classList.toggle('active', i === index);
       });

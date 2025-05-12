@@ -54,7 +54,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
         <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" class="faculty-img">
         <h3>Dr. Nitesh Kumar</h3>
         <p><strong>Assistant Professor, School of Applied Science</strong></p>
-        <p class="faculty-bio">Dr. Nitesh has done his Ph. D. in Automated Stellar Evolution study from the University of Delhi....</p>
+        <p class="faculty-bio">Dr. Nitesh has attended Hansraj College and obtained his Ph. D. in Automated Stellar Evolution study from the University of Delhi....</p>
         <a href="faculty.html#NITESH" class="read-more-button">Read more →</a>
       </div>
 

@@ -146,15 +146,13 @@
     <nav aria-label="Main navigation">
       <ul class="nav-links">
         <li><a href="/about">About</a></li>
-        <!-- <li><a href="https://www.upes.ac.in/school-of-advanced-engineering">Program</a></li> -->
         <li class="dropdown">
-          <a href="#" class="dropbtn">Program ▾</a>
-          <div class="dropdown-content">
-            <a href="https://www.upes.ac.in/school-of-advanced-engineering/bsc-hons/physics-astronomy-and-astrophysics">B.Sc.</a>
-            <a href="https://www.upes.ac.in/school-of-advanced-engineering/msc-engineering/physics-astronomy-and-astrophysics">M.Sc.</a>
-          </div>
+          <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Program ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="https://www.upes.ac.in/school-of-advanced-engineering/bsc-hons/physics-astronomy-and-astrophysics" target="_blank" rel="noopener noreferrer">B.Sc. Astronomy & Astrophysics</a></li>
+            <li><a href="https://www.upes.ac.in/school-of-advanced-engineering/msc-engineering/physics-astronomy-and-astrophysics" target="_blank" rel="noopener noreferrer">M.Sc. Physics (Astro Specialization)</a></li>
+          </ul>
         </li>
-        
         <li><a href="/#faculty-section">Faculty</a></li>
         <li><a href="/publications">Publications</a></li>
         <li><a href="/activities">Activities</a></li>
@@ -166,6 +164,42 @@
     </nav>
   </header>
 
+ 
   
+
+  <!-- Main Content Container -->
+  <main>
+    <div style="padding: 20px; background: rgba(255, 255, 255, 0.8);">
+      {{ content }}
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 10px; background: rgba(0, 0, 0, 0.8); color: #fff;">
+    <p>&copy; {{ site.title }} - {{ site.description }}</p>
+  </footer>
+
+  
+
+<script>
+  function toggleDropdown(event) {
+    event.preventDefault(); // Prevent default link behavior
+    const dropdown = event.target.closest('.dropdown');
+    dropdown.classList.toggle('show');
+
+    // Close other dropdowns
+    document.querySelectorAll('.dropdown').forEach(d => {
+      if (d !== dropdown) d.classList.remove('show');
+    });
+  }
+
+  // Close dropdown on click outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('show'));
+    }
+  });
+</script>
+
 </body>
 </html>

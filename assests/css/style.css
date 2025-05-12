@@ -452,6 +452,14 @@ a:hover {
   background-color: #333;
 }
 
+
+#faculty-cards {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
 .faculty-img {
   width: 140px;
   height: 140px;
@@ -463,9 +471,10 @@ a:hover {
 }
 
 .faculty-card {
+  flex: 0 0 auto;
   background: #e9edf4;
   border-radius: 15px;
-  width: 300px;
+  width: 280px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);

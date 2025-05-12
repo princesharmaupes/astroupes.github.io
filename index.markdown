@@ -80,22 +80,26 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
   const facultyCards = document.getElementById('faculty-cards');
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
-  let currentIndex = 0;
+
+  function getCardScrollWidth() {
+    const firstCard = facultyCards.querySelector('.faculty-card');
+    if (!firstCard) return 300;
+    const style = window.getComputedStyle(firstCard);
+    return firstCard.offsetWidth + parseInt(style.marginRight || 0);
+  }
 
   prevBtn.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      facultyCards.style.transform = `translateX(-${currentIndex * 960}px)`;
-    }
+    const scrollAmount = getCardScrollWidth();
+    facultyCards.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
 
   nextBtn.addEventListener('click', () => {
-    if (currentIndex < Math.ceil(facultyCards.children.length / 3) - 1) {
-      currentIndex++;
-      facultyCards.style.transform = `translateX(-${currentIndex * 960}px)`;
-    }
+    const scrollAmount = getCardScrollWidth();
+    facultyCards.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   });
 </script>
+
+
 
 ---
 

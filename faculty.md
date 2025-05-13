@@ -6,6 +6,7 @@ title: Faculty
 # Meet Our Faculty
 
 <h2 id="PSRAWAT">Dr. Prashant S. Rawat</h2>
+<p><strong>Sr. Associate Professor, School of Applied Science</strong></p>
 <div style="display: flex; align-items: center;">
   <p style="flex: 1;">
     <strong>Key Research Areas:</strong>
@@ -19,6 +20,7 @@ title: Faculty
 <hr />
 
 <h2 id="BALENDRA">Dr. Balendra Pratap Singh</h2>
+<p><strong>Assistant Professor, School of Applied Science</strong></p>
 <div style="display: flex; align-items: center;">
   <p style="flex: 1;">
     <strong>Key Research Areas:</strong>
@@ -32,6 +34,7 @@ title: Faculty
 <hr />
 
 <h2 id="NITESH"><a href="https://niteshchandra039.github.io/" target="_blank" style='font-size: 1em; color: black; text-decoration: none; font-weight: bold; text-align: center; display: block; margin: 10px 0 20px 0; padding: 5px 10px; background-color: #f0f8ff; border-radius: 5px; width: fit-content; max-width: 100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);'>Dr. Nitesh Kumar</a></h2>
+<p><strong>Assistant Professor, School of Applied Science</strong></p>
 <div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 300px;">
     <strong>Key Research Areas:</strong>
@@ -56,6 +59,7 @@ title: Faculty
 <hr />
 
 <h2 id="PRINCE">Dr. Prince Sharma</h2>
+<p><strong>Assistant Professor, School of Applied Science</strong></p>
 <div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 300px;">
     <strong>Key Research Areas:</strong>
@@ -77,6 +81,7 @@ title: Faculty
 <hr />
 
 <h2 id="ARKA">Dr. Arka Chatterjee</h2>
+<p><strong>Assistant Professor, School of Applied Science</strong></p>
 <div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 300px;">
     <strong>Key Research Areas:</strong>
@@ -96,6 +101,7 @@ title: Faculty
 <hr />
 
 <h2 id="RAJU">Dr. Raju Roychowdhury</h2>
+<p><strong>Associate Professor, School of Applied Science</strong></p>
 <p>
 <strong>Key Research Areas:</strong>
 <ul>

@@ -54,7 +54,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
         <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" class="faculty-img">
         <h3>Dr. Nitesh Kumar</h3>
         <p><strong>Assistant Professor, School of Applied Science</strong></p>
-        <p class="faculty-bio">Dr. Nitesh has attended Hansraj College and obtained his Ph. D. in Automated Stellar Evolution study from the University of Delhi....</p>
+        <p class="faculty-bio">Dr. Nitesh has attended Hansraj College and obtained his Ph. D. in Automated Analysis of Stellar Photometric and Spectroscopic Data from the University of Delhi....</p>
         <a href="faculty.html#NITESH" class="read-more-button">Read more →</a>
       </div>
 
@@ -73,6 +73,15 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
         <p class="faculty-bio">Dr. Arka Chatterjee is an Astrophysicist with a PhD in Theoretical Physics from the University of Calcutta....</p>
         <a href="faculty.html#ARKA" class="read-more-button">Read more →</a>
       </div>
+
+      <div class="faculty-card">
+        <img src="assests/images/raju.jpg" alt="Dr. Raju Roychowdhury" class="faculty-img">
+        <h3>Dr. Raju Roychowdhury</h3>
+        <p><strong>Associate Professor, School of Applied Science</strong></p>
+        <p class="faculty-bio">Dr. Roychowdhury has obtained his Ph. D. from IACS, Kolkata, and specializes in the field of high energy astrophysics....</p>
+        <a href="faculty.html#RAJU" class="read-more-button">Read more →</a>
+      </div>
+
     </div>
 
     <button id="prev-btn" class="carousel-btn prev">&#10094;</button>

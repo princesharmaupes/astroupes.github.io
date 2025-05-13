@@ -589,7 +589,7 @@ header {
 /* Fix motto-box scaling on smaller screens */
 @media screen and (max-width: 768px) {
   .motto-box {
-    font-size: 0.8rem; /* Reduce font size further */
+    font-size: 1.2rem; /* Reduce font size further */
     padding: 10px; /* Adjust padding for better fit */
     max-width: 85%; /* Limit width to 85% of the screen */
     width: auto;
@@ -602,12 +602,12 @@ header {
   }
 
   .motto-box h1 {
-    font-size: 0.7rem; /* Reduce heading size */
+    font-size: 1rem; /* Reduce heading size */
     margin-bottom: 8px; /* Adjust spacing below heading */
   }
 
   .motto-box p {
-    font-size: 0.4rem; /* Reduce paragraph font size */
+    font-size: 0.7rem; /* Reduce paragraph font size */
     line-height: 1.0; /* Adjust line height for readability */
   }
 }

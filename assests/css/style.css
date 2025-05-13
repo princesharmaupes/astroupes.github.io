@@ -563,14 +563,51 @@ a:hover {
   display: block;
 }
 
-/* Ensure dropdown appears above the slider */
+/* Ensure dropdown appears above the slider
 header {
   position: relative;
-  z-index: 5000; /* Ensure header and dropdown are above the slider */
+  z-index: 5000; /* Ensure header and dropdown are above the slider 
+} */
+
+/*.nav-links {
+  z-index: 5001; /* Ensure nav links are above other content 
+}*/
+
+/* For footer hover */
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(100%);
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.nav-links {
-  z-index: 5001; /* Ensure nav links are above other content */
+.social-icon img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
+/* Fix motto-box scaling on smaller screens */
+@media screen and (max-width: 768px) {
+  .motto-box {
+    font-size: 1.2rem; /* Reduce font size further */
+    padding: 10px; /* Adjust padding for better fit */
+    max-width: 90%; /* Limit width to 85% of the screen */
+    width: auto;
+    line-height: 1.3; /* Adjust line spacing */
+    text-align: center; /* Center align text */
+    margin: 15px auto; /* Add margin for spacing */
+    box-sizing: border-box;
+    background-size: contain;
+    background-position: center;
+  }
 
+  .motto-box h1 {
+    font-size: 1.2rem; /* Reduce heading size */
+    margin-bottom: 8px; /* Adjust spacing below heading */
+  }
+
+  .motto-box p {
+    font-size: 0.8rem; /* Reduce paragraph font size */
+    line-height: 1.1; /* Adjust line height for readability */
+  }
+}

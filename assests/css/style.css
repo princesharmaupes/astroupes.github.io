@@ -585,3 +585,19 @@ header {
   transform: scale(1.1);
   filter: grayscale(0%);
 }
+
+/* Fix motto-box scaling on smaller screens */
+@media screen and (max-width: 768px) {
+  .motto-box {
+    font-size: 1rem;
+    padding: 10px 15px;
+    max-width: 100%;
+    width: auto;
+    line-height: 1.4;
+    text-align: center;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-size: contain;
+    background-position: center;
+  }
+}

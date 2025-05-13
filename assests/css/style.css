@@ -283,75 +283,129 @@ a:hover {
     line-height: 1.8; /* Improved line spacing */
 }
 
-/* Hamburger menu button */
+/* Base hidden toggle button */
 .nav-toggle {
-  display: none;
-  z-index: 1100; /* Ensure it stays above the vertical menu */
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  background: none;
-  border: none;
-  font-size: 28px;
-  color: black;
-  cursor: pointer;
-}
-
-/* Vertical menu */
-.nav-links {
-  display: none;
-  flex-direction: column;
-  background: white;
-  position: absolute;
-  top: 60px; /* Adjusted to appear below the header */
-  left: 0;
-  width: 100%;
-  padding: 10px 20px;
-  z-index: 1000; /* Ensure it appears below the hamburger button */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.nav-links.show {
-  display: flex;
-}
-
-/* Ensure the menu can be closed */
-.nav-links li {
-  width: 100%;
-  padding: 10px 0;
-}
-
-.nav-links li a {
-  display: block;
-  color: black !important;
-  font-weight: 600;
-  font-size: 16px;
-}
+    display: none;
+  }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-    z-index: 1100; /* Ensure it stays above the menu */
-  }
+     .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: black;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        z-index: 1100;
+      }
+    
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 10px;
+        left: 0; /* fix clipping */
+        width: 100%;
+        padding: 10px 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    
+      .nav-links.show {
+        display: flex;
+      }
+    
+      .nav-links li {
+        width: 100%;
+        padding: 10px 0;
+      }
+    
+      .nav-links li a {
+        display: block;
+        color: black !important;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    
+      .apply-now {
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px;
+        margin-top: 10px;
+        background: white;
+      }
+    
+      .apply-now:hover {
+        background-color: #eee;
+      }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    z-index: 1000; /* Ensure it appears below the hamburger button */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
+      header {
+        position: relative;
+      }
+    
+      header nav ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 10px 20px;
+        z-index: 1001;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    
+      header nav ul.show {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      header nav ul li {
+        padding: 8px 0;
+      }
+    
+      header nav ul li a {
+        color: black !important;
+        font-size: 16px;
+        font-weight: 600;
+      }
 
-  .nav-links.show {
-    display: flex;
-  }
-}
+     .apply-now {
+        margin-right: 0; /* Remove extra margin on mobile */
+        width: 100%; /* Make the button full width */
+        text-align: center; /* Center the text */
+     }
+
+     #hero-section {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px; /* Adjust margin to account for the fixed header */
+     }
+
+     .slider {
+        height: 250px; /* Reduce slider height for smaller screens */
+     }
+
+     .motto-box {
+        max-width: 100%; /* Allow full width for the motto box */
+        padding: 15px; /* Adjust padding for smaller screens */
+     }
+
+     main {
+        padding: 15px; /* Reduce padding for smaller screens */
+     }
+
+     footer {
+        font-size: 14px; /* Slightly smaller font size for footer */
+        padding: 10px; /* Adjust padding for smaller screens */
+     }
 }
 
 /* ========================

@@ -31,7 +31,7 @@ title: Faculty
 </div>
 <hr />
 
-<h2 id="NITESH">Dr. Nitesh Kumar</h2>
+<h2 id="NITESH"><a href="https://niteshchandra039.github.io/" target="_blank" style='font-size: 1em; color: black; text-decoration: none; font-weight: bold; text-align: center; display: block; margin: 10px 0 20px 0; padding: 5px 10px; background-color: #f0f8ff; border-radius: 5px; width: fit-content; max-width: 100%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);'>Dr. Nitesh Kumar</a></h2>
 <div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 300px;">
     <strong>Key Research Areas:</strong>
@@ -44,11 +44,14 @@ title: Faculty
     </ul>
     <strong>Publications:</strong>
     <ul>
-      <li><em>"Multiwavelength photometric study of RR Lyrae variables in the globular cluster NGC 5272 (Messier 3)"</em>, Monthly Notices of the Royal Astronomical Society, May 2024. DOI: <a href="https://doi.org/10.1093/mnras/stae1334">10.1093/mnras/stae1334</a></li>
-      <li><em>"Predicting light curves of RR Lyrae variables using artificial neural network-based interpolation of a grid of pulsation models"</em>, Monthly Notices of the Royal Astronomical Society, March 2023. DOI: <a href="https://doi.org/10.1093/mnras/stad937">10.1093/mnras/stad937</a></li>
+      <li><em>"Physical parameters of stars in NGC 6397 using ANN-based interpolation and full spectrum fitting"</em>, New Astronomy, 2025. DOI: <a href="https://doi.org/10.1016/j.newast.2025.102416" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.newast.2025.102416</a></li>
+      <li><em>"Multiwavelength photometric study of RR Lyrae variables in the globular cluster NGC 5272 (Messier 3)"</em>, Monthly Notices of the Royal Astronomical Society, May 2024. DOI: <a href="https://doi.org/10.1093/mnras/stae1334" target="_blank" rel="noopener noreferrer">10.1093/mnras/stae1334</a></li>
+      <li><em>"Predicting light curves of RR Lyrae variables using artificial neural network-based interpolation of a grid of pulsation models"</em>, Monthly Notices of the Royal Astronomical Society, March 2023. DOI: <a href="https://doi.org/10.1093/mnras/stad937" target="_blank" rel="noopener noreferrer">10.1093/mnras/stad937</a></li>
     </ul>
   </div>
-  <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" style="width: 150px; height: auto; border-radius: 10px; margin-left: 20px;">
+  <a href="https://niteshchandra039.github.io/" target="_blank">
+    <img src="assests/images/nitesh_1.jpg" alt="Dr. Nitesh Kumar" style="width: 150px; height: auto; border-radius: 10px; margin-left: 20px;">
+  </a>
 </div>
 <hr />
 
@@ -65,8 +68,8 @@ title: Faculty
     </ul>
     <strong>Publications:</strong>
     <ul>
-      <li><em>Timing analysis of Be/X-ray transient 4U 0115+63 during Type II outburst of 2023 using NuSTAR observations</em>, Advances in Space Research, 2024. DOI: <a href="https://doi.org/10.1016/j.asr.2024.10.021">10.1016/j.asr.2024.10.021</a></li>
-      <li><em>Torque reversal and cyclotron absorption feature in HMXB 4U 1538-522</em>, Monthly Notices of the Royal Astronomical Society, 2023. DOI: <a href="https://doi.org/10.1093/mnras/stad1285">10.1093/mnras/stad1285</a></li>
+      <li><em>Timing analysis of Be/X-ray transient 4U 0115+63 during Type II outburst of 2023 using NuSTAR observations</em>, Advances in Space Research, 2024. DOI: <a href="https://doi.org/10.1016/j.asr.2024.10.021" target="_blank" rel="noopener noreferrer">10.1016/j.asr.2024.10.021</a></li>
+      <li><em>Torque reversal and cyclotron absorption feature in HMXB 4U 1538-522</em>, Monthly Notices of the Royal Astronomical Society, 2023. DOI: <a href="https://doi.org/10.1093/mnras/stad1285" target="_blank" rel="noopener noreferrer">10.1093/mnras/stad1285</a></li>
     </ul>
   </div>
   <img src="assests/images/prince.png" alt="Dr. Prince Sharma" style="width: 150px; height: auto; border-radius: 10px; margin-left: 20px;">
@@ -84,8 +87,8 @@ title: Faculty
     </ul>
     <strong>Publications:</strong>
     <ul>
-      <li><em>"Images and spectral properties of two-component advective flows around black holes: effects of photon bending"</em>, Monthly Notices of the Royal Astronomical Society, 2017. DOI: <a href="https://doi.org/10.1093/mnras/stw2975">10.1093/mnras/stw2975</a></li>
-      <li><em>"Time-domain variability properties of XTE J1650-500 during its 2001 outburst: Evidence of disc-jet connection"</em>, Monthly Notices of the Royal Astronomical Society, 2020. DOI: <a href="https://doi.org/10.1093/mnras/staa2263">10.1093/mnras/staa2263</a></li>
+      <li><em>"Images and spectral properties of two-component advective flows around black holes: effects of photon bending"</em>, Monthly Notices of the Royal Astronomical Society, 2017. DOI: <a href="https://doi.org/10.1093/mnras/stw2975" target="_blank" rel="noopener noreferrer">10.1093/mnras/stw2975</a></li>
+      <li><em>"Time-domain variability properties of XTE J1650-500 during its 2001 outburst: Evidence of disc-jet connection"</em>, Monthly Notices of the Royal Astronomical Society, 2020. DOI: <a href="https://doi.org/10.1093/mnras/staa2263" target="_blank" rel="noopener noreferrer">10.1093/mnras/staa2263</a></li>
     </ul>
   </div>
   <img src="assests/images/arka.jpeg" alt="Dr. Arka Chatterjee" style="width: 150px; height: auto; border-radius: 10px; margin-left: 20px;">

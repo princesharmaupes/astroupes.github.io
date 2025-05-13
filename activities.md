@@ -44,6 +44,7 @@ title: Activities
     <a href="assests/images/facilities/sun.jpg" target="_blank">
       <img src="assests/images/facilities/sun.jpg" alt="Telescope 2" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
     </a>
-    <a href="assests/images/facilities/telescope_roof.jpg" target="_blank>
+    <a href="assests/images/facilities/telescope_roof.jpg" target="_blank">
       <img src="assests/images/facilities/telescope_roof.jpg" alt="Telescope 3" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
+    </a>
   </div>

@@ -26,6 +26,11 @@ title: Faculty
       <li>Black Hole Physics: Study of black hole shadow, thermodynamic properties, and quasinormal modes.</li>
       <li>Solar Physics: Solar flares and Coronal Mass Ejection.</li>
     </ul>
+    <strong>Publications:</strong>
+    <ul>
+      <li><em>"On the Formation Height of Low-corona and Chromospheric Channels of the Atmospheric Imaging Assembly (AIA) onboard the Solar Dynamics Observatory (SDO)"</em>, The Astrophysical Journal, 2024. DOI: <a href="0 https://doi.org/10.3847/1538-4357/ad7d8c" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">:10.3847/1538-4357/ad7d8c</a></li>
+      <li><em>"Height-Dependent Slow Magnetoacoustic Wave Amplitude and Energy Flux in Sunspot Atmospheres"</em>, Monthly Notices of the Royal Astronomical Society, 2025. DOI: <a href="https://arxiv.org/pdf/2504.15030" target="_blank" rel="noopener noreferrer">10.48550/arXiv.2504.15030</a></li>      
+    </ul>
   </p>
   <img src="assests/images/balendra.jpeg" alt="Dr. Balendra Pratap Singh" style="width: 150px; height: auto; border-radius: 10px; margin-left: 20px;">
 </div>

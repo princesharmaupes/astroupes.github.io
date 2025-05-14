@@ -37,7 +37,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <div class="faculty-card">
         <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" class="faculty-img">
         <h3>Dr. Prashant S. Rawat</h3>
-        <p><strong>Sr. Associate Professor, School of Applied Science</strong></p>
+        <p><strong>Sr. Associate Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Dr. Rawat earned his doctoral degree from the esteemed Physical Research Laboratory (PRL), Ahmedabad....</p>
         <a href="faculty.html#PSRAWAT" class="read-more-button">Read more →</a>
       </div>
@@ -45,7 +45,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <div class="faculty-card">
         <img src="assests/images/balendra.jpeg" alt="Dr. Balendra P. Singh" class="faculty-img">
         <h3>Dr. Balendra P. Singh</h3>
-        <p><strong>Assistant Professor, School of Applied Science</strong></p>
+        <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Balendra P. Singh specializes in Astrophysics and Astronomy and received his PhD from the Center for Theoretical Physics...</p>
         <a href="faculty.html#BALENDRA" class="read-more-button">Read more →</a>
       </div>
@@ -53,7 +53,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <div class="faculty-card">
         <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" class="faculty-img">
         <h3>Dr. Nitesh Kumar</h3>
-        <p><strong>Assistant Professor, School of Applied Science</strong></p>
+        <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Dr. Nitesh has attended Hansraj College and obtained his Ph. D. in Automated Analysis of Stellar Photometric and Spectroscopic Data from the University of Delhi....</p>
         <a href="faculty.html#NITESH" class="read-more-button">Read more →</a>
       </div>
@@ -61,7 +61,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <div class="faculty-card">
         <img src="assests/images/prince.png" alt="Dr. Prince Sharma" class="faculty-img">
         <h3>Dr. Prince Sharma</h3>
-        <p><strong>Assistant Professor, School of Applied Science</strong></p>
+        <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Dr. Prince Sharma is an alumnus of Kirorimal College and has done his Doctorate from University of Delhi....</p>
         <a href="faculty.html#PRINCE" class="read-more-button">Read more →</a>
       </div>
@@ -69,7 +69,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <div class="faculty-card">
         <img src="assests/images/arka.jpeg" alt="Dr. Arka Chatterjee" class="faculty-img">
         <h3>Dr. Arka Chatterjee</h3>
-        <p><strong>Assistant Professor, School of Applied Science</strong></p>
+        <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Dr. Arka Chatterjee is an Astrophysicist with a PhD in Theoretical Physics from the University of Calcutta....</p>
         <a href="faculty.html#ARKA" class="read-more-button">Read more →</a>
       </div>
@@ -77,8 +77,8 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <div class="faculty-card">
         <img src="assests/images/raju.jpg" alt="Dr. Raju Roychowdhury" class="faculty-img">
         <h3>Dr. Raju Roychowdhury</h3>
-        <p><strong>Associate Professor, School of Applied Science</strong></p>
-        <p class="faculty-bio">Dr. Roychowdhury has obtained his Ph. D. from IACS, Kolkata, and specializes in the field of high energy astrophysics....</p>
+        <p><strong>Associate Professor, Applied Science Cluster</strong></p>
+        <p class="faculty-bio">Dr. Roychowdhury has obtained his Ph. D. from University of Naples, Italy in the field of Black-Holes in Supergravity....</p>
         <a href="faculty.html#RAJU" class="read-more-button">Read more →</a>
       </div>
 

@@ -28,10 +28,13 @@ title: Activities
   The lecture series aims to provide students with insights into cutting-edge research topics in astrophysics. Topics covered include stellar evolution, black hole physics, and observational techniques.
   <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; justify-content: center;">
     <a href="assests/images/LECTURE_SERIES_2025/nitesh_talk_poster.jpg" target="_blank">
-      <img src="assests/images/LECTURE_SERIES_2025/nitesh_talk_poster.jpg" alt="Lecture Series Poster 1" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
+      <img src="assests/images/LECTURE_SERIES_2025/nitesh_talk_poster.jpg" alt="Lecture Series Poster 2" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
+    </a>
+    <a href="assests/images/LECTURE_SERIES_2025/prince_talk.jpeg" target="_blank">
+      <img src="assests/images/LECTURE_SERIES_2025/prince_talk.jpeg" alt="Lecture Series Poster 3" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
     </a>
     <a href="assests/images/LECTURE_SERIES_2025/suvankar.jpg" target="_blank">
-      <img src="assests/images/LECTURE_SERIES_2025/suvankar.jpg" alt="Lecture Series Poster 2" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
+      <img src="assests/images/LECTURE_SERIES_2025/suvankar.jpg" alt="Lecture Series Poster 4" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
     </a>
   </div>
 

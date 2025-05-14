@@ -78,6 +78,8 @@ title: Faculty
     <ul>
       <li><em>Timing analysis of Be/X-ray transient 4U 0115+63 during Type II outburst of 2023 using NuSTAR observations</em>, Advances in Space Research, 2024. DOI: <a href="https://doi.org/10.1016/j.asr.2024.10.021" target="_blank" rel="noopener noreferrer">10.1016/j.asr.2024.10.021</a></li>
       <li><em>Torque reversal and cyclotron absorption feature in HMXB 4U 1538-522</em>, Monthly Notices of the Royal Astronomical Society, 2023. DOI: <a href="https://doi.org/10.1093/mnras/stad1285" target="_blank" rel="noopener noreferrer">10.1093/mnras/stad1285</a></li>
+      <li><em>Discovery of cyclotron and narrow Fe Kα lines in HMXB GRO J1750-27</em>, Monthly Notices of the Royal Astronomical Society: Letters, 2022. DOI: <a href="https://doi.org/10.1093/mnrasl/slac041" target="_blank" rel="noopener noreferrer">10.1093/mnrasl/slac041</a></li>
+      <li><em>Broad-band spectral analysis of LMXB 2S 0921-63 with Suzaku</em>, Monthly Notices of the Royal Astronomical Society, 2022. DOI: <a href="https://doi.org/10.1093/mnras/stac2698" target="_blank" rel="noopener noreferrer">10.1093/mnras/stac2698</a></li>
     </ul>
   </div>
 </div>

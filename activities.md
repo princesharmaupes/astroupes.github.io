@@ -70,9 +70,16 @@ The series is led by experts in the field, and so far has featured engaging lect
 
   <div style="text-align: center;">
     <a href="assests/images/LECTURE_SERIES_2025/suvankar.jpg" target="_blank">
-      <img src="assests/images/LECTURE_SERIES_2025/suvankar.jpg" alt="Lecture Series Poster 4" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
+      <img src="assests/images/LECTURE_SERIES_2025/suvankar.jpg" alt="Lecture Series Poster 5" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
     </a>
     <p>Lecture 5 by Dr. Suvankar R. Chowdhury on "<em> Inward Bound: From Rutherford to Large Hadron Collider</em>"</p>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="assests/images/LECTURE_SERIES_2025/raju_talk.png" target="_blank">
+      <img src="assests/images/LECTURE_SERIES_2025/raju_talk.png" alt="Lecture Series Poster 6" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px;">
+    </a>
+    <p>Lecture 6 by Dr. Raju Roychowdhury on "<em> The Einstein Window: A Voyage in Spacetime</em>"</p>
   </div>
 </div>
 

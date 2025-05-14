@@ -11,9 +11,16 @@ Explore the cutting-edge facilities that empower our students and researchers to
 
 ## 🔭 In-house Telescope
 
-Our observatory features an **8-inch Celestron Schmidt-Cassegrain OTA** mounted on an **iOptron German Equatorial Mount**, ideal for photometric and imaging work.
-
-![Telescope](assests/images/telescope.jpg)
+<div style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap;">
+  <figure style="text-align: center;">
+    <img src="assests/images/facilities/celestron_ota.webp" alt="Telescope OTA" style="width: 300px; height: auto; border-radius: 10px;">
+    <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">Celestron Schmidt-Cassegrain OTA</figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="assests/images/facilities/ioptron.jpg" alt="Equatorial Mount" style="width: 300px; height: auto; border-radius: 10px;">
+    <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">iOptron German Equatorial Mount</figcaption>
+  </figure>
+</div>
 
 ### **Telescope Specifications**
 - **Optical Design:** Schmidt-Cassegrain  
@@ -31,7 +38,10 @@ Our observatory features an **8-inch Celestron Schmidt-Cassegrain OTA** mounted 
 
 Our imaging is powered by the **ZWO ASI2600MC Pro**, a high-performance cooled color CMOS camera.
 
-![CCD Camera](assests/images/ccd_camera.jpg)
+<figure style="text-align: center;">
+  <img src="assests/images/facilities/ccd_camera.webp" alt="CCD Camera" style="width: 300px; height: auto; border-radius: 10px; display: block; margin: 20px auto;">
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">ZWO ASI2600MC Pro CCD Camera</figcaption>
+</figure>
 
 ### **Camera Specifications**
 - **Sensor:** Sony IMX571 CMOS (APS-C)  
@@ -47,7 +57,7 @@ Our imaging is powered by the **ZWO ASI2600MC Pro**, a high-performance cooled c
 
 A **3-meter automated observation dome** is under development to house our telescope system.
 
-![Observation Dome](assests/images/dome.jpg)
+<!-- ![Observation Dome](assests/images/dome.jpg) -->
 
 ### **Dome Specifications**
 - **Diameter:** 3 meters  
@@ -57,10 +67,3 @@ A **3-meter automated observation dome** is under development to house our teles
 - **Automation:** Weather sensors and remote control (planned)  
 
 ---
-
-## 🌟 Sample Images from Observations
-
-Here are some stunning images captured using our advanced facilities:
-
-![Star Field](assests/images/starfield.jpg)  
-![Photometric Frame](assests/images/photometry.jpg)

@@ -31,7 +31,7 @@ Our curriculum is enriched with specialized courses in celestial mechanics, cosm
 </p>
 
 <p style="font-size: 1.05rem; color: #444;">
-The program emphasizes experiential learning through workshops, sky-gazing events, lecture series, and educational expeditions to leading national facilities like <strong>ARIES, IUCAA, PRL</strong>, and the <strong>Devasthal Optical Telescope</strong>. These immersive experiences allow students to witness real-world research operations, interact with professional scientists, and gain hands-on exposure to observatory instrumentation and data workflows.
+The program emphasizes experiential learning through workshops, sky-gazing events, lecture series, and educational expeditions to leading national facilities like ARIES, IUCAA, PRL, and the Devasthal Optical Telescope. These immersive experiences allow students to witness real-world research operations, interact with professional scientists, and gain hands-on exposure to observatory instrumentation and data workflows.
 </p>
 
 <p style="font-size: 1.05rem; color: #444;">
@@ -39,7 +39,7 @@ Backed by a dedicated and research-active faculty, our students are mentored to 
 </p>
 
 <p style="font-size: 1.05rem; color: #444;">
-Whether you aspire to decode the mysteries of black holes, contribute to space missions, or simply deepen your understanding of the cosmos — our <strong>Astronomy & Astrophysics program at UPES</strong> is your gateway to the universe.
+Whether you aspire to decode the mysteries of black holes, contribute to space missions, or simply deepen your understanding of the cosmos — our Astronomy & Astrophysics program at UPES is your gateway to the universe.
 </p>
 ---
 

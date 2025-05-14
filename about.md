@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-# <span style="font-size: 2em; font-weight: bold;">Welcome to Astronomy & Astrophysics @ UPES</span>
+# <span style="font-size: 1.5em; font-weight: bold;">Welcome to Astronomy & Astrophysics @ UPES</span>
 
 <p style="font-size: 1.2em; color: #555;">
 Embark on a journey through space and time with the Astronomy and Astrophysics Branch at UPES. Our programs blend the wonders of the cosmos with the rigors of scientific research and the excitement of hands-on discovery.

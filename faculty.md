@@ -39,7 +39,7 @@ title: Faculty
       <strong>Key Research Areas:</strong>
       <ul>
         <li>Phase transformation in materials under thermal and irradiation conditions using mathematical modelling</li>
-        <li>Synthesizing Nickel Silicides through annealing and ion beam irradiation.
+        <li>Synthesizing Nickel Silicides through annealing and ion beam irradiation.</li>
         <li>Applications of synthesised material in microelectronics, solar photovoltaics, and other fields.</li>
       </ul>
       <strong>Publications:</strong>

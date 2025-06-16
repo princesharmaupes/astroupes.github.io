@@ -40,7 +40,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <img src="assests/images/ranjeet.png" alt="Prof. Ranjeet K. Brajpuriya" style="width: 100%; border-radius: 10px;">
       <h3 style="color: #002855;">Prof. Ranjeet Kumar Brajpuriya</h3>
       <p><strong>Cluster Head, Applied Science Cluster</strong></p>
-      <p style="font-size: 0.95em;">Prof. Ranjeet has more than 20 years of extensive research and teaching experience. He has undertaken post-doctoral work both in India and abroad. HeProf. Ranjeet is a recipient of several national and international fellowships, including the esteemed ENEA & ICTP International Research Fellowships in Italy.</p>
+      <p style="font-size: 0.95em;">Prof. Ranjeet has more than 20 years of extensive research and teaching experience. Prof. Ranjeet has undertaken post-doctoral work both in India and abroad. He is a recipient of several national and international fellowships, including the esteemed ENEA & ICTP International Research Fellowships in Italy.</p>
       <a href="faculty.html#RANJEET" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">View Profile →</a>
     </div>
     <!-- Program Lead -->

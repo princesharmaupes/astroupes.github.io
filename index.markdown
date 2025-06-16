@@ -45,11 +45,11 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
     </div>
     <!-- Program Lead -->
     <div style="background: #e9edf4; border-radius: 15px; width: 320px; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
-      <img src="assests/images/nisantosh.png" alt="Prof. Santosh Dubey" style="width: 100%; border-radius: 10px;">
+      <img src="assests/images/santosh.png" alt="Prof. Santosh Dubey" style="width: 100%; border-radius: 10px;">
       <h3 style="color: #002855;">Prof. Santosh Dubey</h3>
       <p><strong>Program Lead, Department of Physics</strong></p>
       <p style="font-size: 0.95em;">Prof. Santosh Dubey completed his MS & PhD in Computational Science (Materials Science) at Florida State University, USA. He is renowned for his significant contributions to understanding radiation-materials interactions through mathematical modelling and experimentation.</p>
-      <a href="faculty.html#NITESH" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">View Profile →</a>
+      <a href="faculty.html#SANTOSH" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">View Profile →</a>
     </div>
   </div>
 </section>

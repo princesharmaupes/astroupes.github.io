@@ -11,19 +11,16 @@ title: Faculty
   <img src="assests/images/ranjeet.png" alt="Cluster Head" style="width: 170px; height: 170px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 4px solid #002855;">
   <div style="flex: 1; min-width: 260px;">
     <h2 style="margin-bottom: 8px; color: #002855;">Cluster Head</h2>
-    <p style="font-size: 1.1em; font-weight: bold; color: #002855; margin-bottom: 6px;">Prof. Ranjeet Kumar Brajpuriya</p>
+    <p style="font-size: 1.1em; font-weight: bold; color: #002855; margin-bottom: 6px;">
+    <a href="https://www.upes.ac.in/faculty/school-of-advanced-engineering/applied-science/dr-ranjeet-kumar-brajpuriya" target="_blank" rel="noopener noreferrer" style="color: #002855; text-decoration: underline;">Prof. Ranjeet Kumar Brajpuriya</a>
+    </p>
     <div style="font-size: 1em; color: #333; margin-bottom: 12px;">
       <strong>Key Research Areas:</strong>
       <ul>
         <li>Carbon-Based 2D Nanomaterials.</li>
         <li>Thin Film and Multilayers</li>
         <li>Magnetic Materials</li>
-      </ul>
-      <strong>Publications:</strong>
-      <ul>
-        <li>[Add publication 1]</li>
-        <li>[Add publication 2]</li>
-      </ul>
+      </ul>     
     </div>
   </div>
 </div>
@@ -33,18 +30,15 @@ title: Faculty
   <img src="assests/images/santosh.png" alt="Program Lead" style="width: 170px; height: 170px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 4px solid #bfa100;">
   <div style="flex: 1; min-width: 260px;">
     <h2 style="margin-bottom: 8px; color: #bfa100;">Program Lead</h2>
-    <p style="font-size: 1.1em; font-weight: bold; color: #bfa100; margin-bottom: 6px;">Prof. Santosh Dubey</p>
+    <p style="font-size: 1.1em; font-weight: bold; color: #bfa100; margin-bottom: 6px;">
+      <a href="https://www.upes.ac.in/faculty/school-of-advanced-engineering/applied-science/santosh-dubey" target="_blank" rel="noopener noreferrer" style="color: #bfa100; text-decoration: underline;">Prof. Santosh Dubey</a>
+    </p>
     <div style="font-size: 1em; color: #333; margin-bottom: 12px;">
       <strong>Key Research Areas:</strong>
       <ul>
         <li>Phase transformation in materials under thermal and irradiation conditions using mathematical modelling.</li>
         <li>Synthesizing Nickel Silicides through annealing and ion beam irradiation.</li>
         <li>Applications of synthesised material in microelectronics, solar photovoltaics, and other fields.</li>
-      </ul>
-      <strong>Publications:</strong>
-      <ul>
-        <li>[Add publication 1]</li>
-        <li>[Add publication 2]</li>
       </ul>
     </div>
   </div>

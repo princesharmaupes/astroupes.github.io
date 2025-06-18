@@ -79,8 +79,8 @@ title: Faculty
     </ul>
     <strong>Publications:</strong>
     <ul>
-      <li><em>"Black hole evaporation process and Tangherlini–Reissner–Nordström black holes shadow"</em>, Annals Phys, 2024. DOI: <a href="https://doi.org/10.1016/j.aop.2024.169803" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.aop.2024.169803</a></li>
-      <li><em>"Effect of higher dimensions on rotating black holes shadow"</em>, New Astron., 2023. DOI: <a href="https://doi.org/10.1016/j.newast.2022.101945" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.newast.2022.101945</a></li>
+      <li><em>"Black hole evaporation process and Tangherlini–Reissner–Nordström black holes shadow"</em>, Annals of Physics, 2024. DOI: <a href="https://doi.org/10.1016/j.aop.2024.169803" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.aop.2024.169803</a></li>
+      <li><em>"Effect of higher dimensions on rotating black holes shadow"</em>, New Astronomy, 2023. DOI: <a href="https://doi.org/10.1016/j.newast.2022.101945" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.newast.2022.101945</a></li>
       <li><em>"Shadows of quintessential dark energy black holes in the domain of outer communication"</em>, Physics of the Dark Universe, 2023. DOI: <a href="https://doi.org/10.1016/j.dark.2023.101279" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.dark.2023.101279</a></li>
     </ul>
   </div>

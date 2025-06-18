@@ -77,6 +77,12 @@ title: Faculty
       <li>Black Hole Physics: Study of black hole shadow, thermodynamic properties, and quasinormal modes.</li>
       <li>Solar Physics: Solar flares and Coronal Mass Ejection.</li>
     </ul>
+    <strong>Publications:</strong>
+    <ul>
+      <li><em>"Black hole evaporation process and Tangherlini–Reissner–Nordström black holes shadow"</em>, Annals Phys, 2024. DOI: <a href="https://doi.org/10.1016/j.aop.2024.169803" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.aop.2024.169803</a></li>
+      <li><em>"Effect of higher dimensions on rotating black holes shadow"</em>, New Astron., 2023. DOI: <a href="https://doi.org/10.1016/j.newast.2022.101945" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.newast.2022.101945</a></li>
+      <li><em>"Shadows of quintessential dark energy black holes in the domain of outer communication"</em>, Physics of the Dark Universe, 2023. DOI: <a href="https://doi.org/10.1016/j.dark.2023.101279" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.dark.2023.101279</a></li>
+    </ul>
   </div>
 </div>
 <hr />
@@ -149,7 +155,7 @@ title: Faculty
 <hr />
 
 <h2 id="RAJU">Dr. Raju Roychowdhury</h2>
-<img src="assests/images/raju.webp" alt="Dr. Raju Roychowdhury" style="width: 150px; height: auto; border-radius: 10px; margin: 10px 0;">
+<img src="assests/images/raju.png" alt="Dr. Raju Roychowdhury" style="width: 150px; height: auto; border-radius: 10px; margin: 10px 0;">
 <p style="padding-top: 15px;"><strong>Associate Professor, Applied Science Cluster</strong></p>
 <div style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-top: 15px;">
   <div style="flex: 1; min-width: 300px;">
@@ -174,7 +180,7 @@ title: Faculty
 <!-- All Department Faculty Section -->
 <h2 id="all-faculty">Department of Physics Faculty</h2>
 <p style="font-size: 1.1em; color: #234;">
-  Our department is home to experts in a wide range of research areas, dedicated to teaching and advancing science.The Department of Physics at UPES comprises <strong>over 20 faculty members</strong> with expertise spanning condensed matter physics, astrophysics, materials science, nuclear physics, computational physics, and more. Our faculty are committed to excellence in teaching, research, and mentoring students at both undergraduate and postgraduate levels.
+  Our department is home to experts in a wide range of research areas, dedicated to teaching and advancing science.The Department of Physics at UPES comprises <strong>over 30 faculty members</strong> with expertise spanning condensed matter physics, astrophysics, materials science, nuclear physics, computational physics, and more. Our faculty are committed to excellence in teaching, research, and mentoring students at both undergraduate and postgraduate levels.
 </p>
 <p style="font-size: 1em; color: #345;">
   <a href="all-faculty.html" style="color: #0056b3; text-decoration: underline; font-weight: 500;">

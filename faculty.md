@@ -1,6 +1,49 @@
 ---
-layout: home
+layout: default
 title: Faculty
+---
+
+# Meet The Leadership
+
+<!-- Highlighted Leadership Profiles -->
+<h2 id="RANJEET">Prof. Ranjeet Kumar Brajpuriya</h2>
+<div style="background: linear-gradient(90deg, #eaf6ff 60%, #e9edf4 100%); border-radius: 18px; box-shadow: 0 6px 18px rgba(0,0,0,0.12); padding: 32px 24px; margin-bottom: 32px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
+  <img src="assests/images/ranjeet.png" alt="Cluster Head" style="width: 170px; height: 170px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 4px solid #002855;">
+  <div style="flex: 1; min-width: 260px;">
+    <h2 style="margin-bottom: 8px; color: #002855;">Cluster Head</h2>
+    <p style="font-size: 1.1em; font-weight: bold; color: #002855; margin-bottom: 6px;">
+    <a href="https://www.upes.ac.in/faculty/school-of-advanced-engineering/applied-science/dr-ranjeet-kumar-brajpuriya" target="_blank" rel="noopener noreferrer" style="color: #002855; text-decoration: underline;">Prof. Ranjeet Kumar Brajpuriya</a>
+    </p>
+    <div style="font-size: 1em; color: #333; margin-bottom: 12px;">
+      <strong>Key Research Areas:</strong>
+      <ul>
+        <li>Carbon-Based 2D Nanomaterials.</li>
+        <li>Thin Film and Multilayers</li>
+        <li>Magnetic Materials</li>
+      </ul>     
+    </div>
+  </div>
+</div>
+
+<h2 id="SANTOSH">Prof. Santosh Dubey</h2>
+<div style="background: linear-gradient(90deg, #fffbe7 60%, #e9edf4 100%); border-radius: 18px; box-shadow: 0 6px 18px rgba(0,0,0,0.10); padding: 32px 24px; margin-bottom: 40px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
+  <img src="assests/images/santosh.png" alt="Program Lead" style="width: 170px; height: 170px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 4px solid #bfa100;">
+  <div style="flex: 1; min-width: 260px;">
+    <h2 style="margin-bottom: 8px; color: #bfa100;">Program Lead</h2>
+    <p style="font-size: 1.1em; font-weight: bold; color: #bfa100; margin-bottom: 6px;">
+      <a href="https://www.upes.ac.in/faculty/school-of-advanced-engineering/applied-science/santosh-dubey" target="_blank" rel="noopener noreferrer" style="color: #bfa100; text-decoration: underline;">Prof. Santosh Dubey</a>
+    </p>
+    <div style="font-size: 1em; color: #333; margin-bottom: 12px;">
+      <strong>Key Research Areas:</strong>
+      <ul>
+        <li>Phase transformation in materials under thermal and irradiation conditions using mathematical modelling.</li>
+        <li>Synthesizing Nickel Silicides through annealing and ion beam irradiation.</li>
+        <li>Applications of synthesised material in microelectronics, solar photovoltaics, and other fields.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 ---
 
 # Meet Our Faculty
@@ -33,6 +76,12 @@ title: Faculty
     <ul>
       <li>Black Hole Physics: Study of black hole shadow, thermodynamic properties, and quasinormal modes.</li>
       <li>Solar Physics: Solar flares and Coronal Mass Ejection.</li>
+    </ul>
+    <strong>Publications:</strong>
+    <ul>
+      <li><em>"Black hole evaporation process and Tangherlini–Reissner–Nordström black holes shadow"</em>, Annals of Physics, 2024. DOI: <a href="https://doi.org/10.1016/j.aop.2024.169803" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.aop.2024.169803</a></li>
+      <li><em>"Effect of higher dimensions on rotating black holes shadow"</em>, New Astronomy, 2023. DOI: <a href="https://doi.org/10.1016/j.newast.2022.101945" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.newast.2022.101945</a></li>
+      <li><em>"Shadows of quintessential dark energy black holes in the domain of outer communication"</em>, Physics of the Dark Universe, 2023. DOI: <a href="https://doi.org/10.1016/j.dark.2023.101279" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.dark.2023.101279</a></li>
     </ul>
   </div>
 </div>
@@ -106,7 +155,7 @@ title: Faculty
 <hr />
 
 <h2 id="RAJU">Dr. Raju Roychowdhury</h2>
-<img src="assests/images/raju.webp" alt="Dr. Raju Roychowdhury" style="width: 150px; height: auto; border-radius: 10px; margin: 10px 0;">
+<img src="assests/images/raju.png" alt="Dr. Raju Roychowdhury" style="width: 150px; height: auto; border-radius: 10px; margin: 10px 0;">
 <p style="padding-top: 15px;"><strong>Associate Professor, Applied Science Cluster</strong></p>
 <div style="display: flex; align-items: flex-start; flex-wrap: wrap; margin-top: 15px;">
   <div style="flex: 1; min-width: 300px;">
@@ -125,3 +174,16 @@ title: Faculty
   </div>
 </div>
 <hr />
+
+---
+
+<!-- All Department Faculty Section -->
+<h2 id="all-faculty">Department of Physics Faculty</h2>
+<p style="font-size: 1.1em; color: #234;">
+  Our department is home to experts in a wide range of research areas, dedicated to teaching and advancing science.The Department of Physics at UPES comprises <strong>over 30 faculty members</strong> with expertise spanning condensed matter physics, astrophysics, materials science, nuclear physics, computational physics, and more. Our faculty are committed to excellence in teaching, research, and mentoring students at both undergraduate and postgraduate levels.
+</p>
+<p style="font-size: 1em; color: #345;">
+  <a href="all-faculty.html" style="color: #0056b3; text-decoration: underline; font-weight: 500;">
+    List of all faculty members
+  </a>
+</p>

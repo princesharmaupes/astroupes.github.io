@@ -16,6 +16,8 @@ title: Publications
 ## 2024
 - *"On the Formation Height of Low-corona and Chromospheric Channels of the Atmospheric Imaging Assembly (AIA) onboard the Solar Dynamics Observatory (SDO)"*, Sanjay, Y., Krishna Prasad, S., Erdélyi, R., Korsós, M. B., Banerjee, D., & Rawat, P. S., *Astrophysical Journal*, 2024. DOI: <a href="https://ui.adsabs.harvard.edu/link_gateway/2024ApJ...975..236S/doi:10.3847/1538-4357/ad7d8c" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.3847/1538-4357/ad7d8c</a>
 
+- *"Black hole evaporation process and Tangherlini–Reissner–Nordström black holes shadow"*, Balendra Pratap Singh, *Annals of Physics*, 2024. DOI: <a href="https://doi.org/10.1016/j.aop.2024.169803" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.aop.2024.169803</a>
+
 - *"Timing analysis of Be/X-ray transient 4U 0115+63 during Type II outburst of 2023 using NuSTAR observations"*, Jain, C., Sharma, P., & Dutta, A., *Advances in Space Research*, 2024. DOI: <a href="https://doi.org/10.1016/j.asr.2024.10.021" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.asr.2024.10.021</a>
 
 - *"Multiwavelength photometric study of RR Lyrae variables in the globular cluster NGC 5272 (Messier 3)"*, Nitesh Kumar, et al., *Monthly Notices of the Royal Astronomical Society*. DOI: <a href="https://doi.org/10.1093/mnras/stae1334" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1093/mnras/stae1334</a>
@@ -24,6 +26,10 @@ title: Publications
 - *"Survey of Bare Active Galactic Nuclei in nearby universe (z < 0.2): I. On the origin of Soft-Excess"*, Prantik Nandi, Arka Chatterjee, et al., *ApJ Supplement Series*, 2023. DOI: <a href="https://doi.org/10.3847/1538-4365/acf4f9" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.3847/1538-4365/acf4f9</a>
 
 - *"Predicting light curves of RR Lyrae variables using artificial neural network-based interpolation of a grid of pulsation models"*, Nitesh Kumar, et al., *Monthly Notices of the Royal Astronomical Society*. DOI: <a href="https://doi.org/10.1093/mnras/stad937" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1093/mnras/stad937</a>
+
+- *"Effect of higher dimensions on rotating black holes shadow"*, Balendra Pratap Singh, Rahul Kumar, Sushant G. Ghosh, *New Astronomy*, 2023. DOI: <a href="https://doi.org/10.1016/j.newast.2022.101945" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.newast.2022.101945</a>
+
+- *"Shadows of quintessential dark energy black holes in the domain of outer communication"*, Balendra Pratap Singh, *Physics of the Dark Universe*, 2023. DOI: <a href="https://doi.org/10.1016/j.dark.2023.101279" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1016/j.dark.2023.101279</a>
 
 - *Torque reversal and cyclotron absorption feature in HMXB 4U 1538-522*, Sharma, P., Jain, C., & Dutta, A., *Monthly Notices of the Royal Astronomical Society*, 2023. DOI: <a href="https://doi.org/10.1093/mnras/stad1285" target="_blank" rel="noopener noreferrer" style="color: blue; text-decoration: underline;">10.1093/mnras/stad1285</a>
 

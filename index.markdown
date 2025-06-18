@@ -141,7 +141,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
         <h3>Department Faculty</h3>
         <p><strong>Department of Physics, School of Advanced Engineering</strong></p>
         <p class="faculty-bio">
-          Discover more about the diverse and accomplished faculty members of the Department of Physics. Our department is home to experts in a wide range of research areas, dedicated to teaching and advancing science.
+          Discover more about the diverse and accomplished faculty members of the Department of Physics. 
         </p>
         <a href="faculty.html#all-faculty" class="read-more-button">
          More →</a>

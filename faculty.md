@@ -174,8 +174,10 @@ title: Faculty
 <!-- All Department Faculty Section -->
 <h2 id="all-faculty">Department of Physics Faculty</h2>
 <p style="font-size: 1.1em; color: #234;">
-  The Department of Physics at UPES comprises <strong>over 20 faculty members</strong> with expertise spanning condensed matter physics, astrophysics, materials science, nuclear physics, computational physics, and more. Our faculty are committed to excellence in teaching, research, and mentoring students at both undergraduate and postgraduate levels.
+  Our department is home to experts in a wide range of research areas, dedicated to teaching and advancing science.The Department of Physics at UPES comprises <strong>over 20 faculty members</strong> with expertise spanning condensed matter physics, astrophysics, materials science, nuclear physics, computational physics, and more. Our faculty are committed to excellence in teaching, research, and mentoring students at both undergraduate and postgraduate levels.
 </p>
 <p style="font-size: 1em; color: #345;">
-  For a complete list and brief profiles of all faculty members in the Department of Physics, please contact the department office or visit the official university website.
+  <a href="all-faculty.html" style="color: #0056b3; text-decoration: underline; font-weight: 500;">
+    List of all faculty members
+  </a>
 </p>

@@ -68,7 +68,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <img src="assests/images/ranjeet.png" alt="Prof. Ranjeet K. Brajpuriya" style="width: 100%; border-radius: 10px;">
       <h3 style="color: #002855;">Prof. Ranjeet Kumar Brajpuriya</h3>
       <p><strong>Cluster Head, Applied Science Cluster</strong></p>
-      <p style="font-size: 0.95em;">Prof. Ranjeet has more than 20 years of extensive research and teaching experience. Prof. Ranjeet has undertaken post-doctoral work both in India and abroad. He is a recipient of several national and international fellowships, including the esteemed ENEA & ICTP International Research Fellowships in Italy.</p>
+      <p style="font-size: 0.95em;">Prof. Ranjeet has more than 20 years of research and teaching experience. Prof. Ranjeet has undertaken post-doctoral work both in India and abroad. He is a recipient of several national and international fellowships, including the esteemed ENEA & ICTP International Research Fellowships in Italy.</p>
       <a href="faculty.html#RANJEET" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">View Profile →</a>
     </div>
     <!-- Program Lead -->
@@ -133,6 +133,18 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
         <p><strong>Associate Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Dr. Roychowdhury has obtained his Ph. D. from University of Naples, Italy in the field of Black-Holes in Supergravity....</p>
         <a href="faculty.html#RAJU" class="read-more-button">Read more →</a>
+      </div>
+
+      <!-- All Department Faculty Card -->
+      <div class="faculty-card">
+        <img src="assests/images/department.png" alt="Department Faculty" class="faculty-img">
+        <h3>Department Faculty</h3>
+        <p><strong>Department of Physics, School of Advanced Engineering</strong></p>
+        <p class="faculty-bio">
+          Discover more about the diverse and accomplished faculty members of the Department of Physics. Our department is home to experts in a wide range of research areas, dedicated to teaching and advancing science.
+        </p>
+        <a href="faculty.html#all-faculty" class="read-more-button">
+         More →</a>
       </div>
 
     </div>

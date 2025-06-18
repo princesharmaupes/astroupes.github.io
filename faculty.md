@@ -3,7 +3,7 @@ layout: default
 title: Faculty
 ---
 
-# Meet Our Faculty
+# Meet The Leadership
 
 <!-- Highlighted Leadership Profiles -->
 <h2 id="RANJEET">Prof. Ranjeet Kumar Brajpuriya</h2>
@@ -168,3 +168,14 @@ title: Faculty
   </div>
 </div>
 <hr />
+
+---
+
+<!-- All Department Faculty Section -->
+<h2 id="all-faculty">Department of Physics Faculty</h2>
+<p style="font-size: 1.1em; color: #234;">
+  The Department of Physics at UPES comprises <strong>over 20 faculty members</strong> with expertise spanning condensed matter physics, astrophysics, materials science, nuclear physics, computational physics, and more. Our faculty are committed to excellence in teaching, research, and mentoring students at both undergraduate and postgraduate levels.
+</p>
+<p style="font-size: 1em; color: #345;">
+  For a complete list and brief profiles of all faculty members in the Department of Physics, please contact the department office or visit the official university website.
+</p>

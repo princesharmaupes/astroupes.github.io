@@ -128,7 +128,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       </div>
 
       <div class="faculty-card">
-        <img src="assests/images/raju.webp" alt="Dr. Raju Roychowdhury" class="faculty-img">
+        <img src="assests/images/raju.png" alt="Dr. Raju Roychowdhury" class="faculty-img">
         <h3>Dr. Raju Roychowdhury</h3>
         <p><strong>Associate Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Dr. Roychowdhury has obtained his Ph. D. from University of Naples, Italy in the field of Black-Holes in Supergravity....</p>

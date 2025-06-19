@@ -11,8 +11,10 @@ Explore the universe with us — from the smallest particles to the largest gala
 
 Our B.Sc. in Astronomy and Astrophysics takes you from the fundamentals of physics to the frontiers of space science.  
 Explore the mysteries of the universe through data, decode cosmic phenomena, and contribute to real astronomical research — all as part of a dynamic and forward-looking academic environment. -->
-# <span style="font-size: 2.5rem; font-weight: bold; color: #002855;">✨ Astronomy & Astrophysics</span>  
-### <span style="color: #333;">A Sub-Division of the Department of Physics under the Cluster of Applied Science, School of Advanced Engineering</span>  
+
+# `<span style="font-size: 2.5rem; font-weight: bold; color: #002855;">`✨ Astronomy & Astrophysics
+
+### `<span style="color: #333;">`A Sub-Division of the Department of Physics under the Cluster of Applied Science, School of Advanced Engineering
 
 <p style="font-size: 1.2rem; color: #444; line-height: 1.7;">
 The <strong>Astronomy and Astrophysics division at UPES</strong> is a thriving academic platform for students with a passion for exploring the cosmos. Rooted in the fundamentals of physics and inspired by the vastness of the universe, this program offers an integrated learning experience that bridges theoretical knowledge, observational science, and data-driven astrophysical research.
@@ -45,21 +47,16 @@ Whether you aspire to decode the mysteries of black holes, contribute to space m
 
 ## 🌟 What We Offer
 
-- 🎓 **Undergraduate & Postgraduate Programs**  
-  Explore the field of Astronomy and Astrophysics through specialized degree tracks with hands-on training in data analysis, simulation, and observational techniques.
-
-- 🚀 **Research Opportunities**  
-  Work on real-world projects alongside faculty and researchers, with collaborations across premier institutions like ARIES, IUCAA, and PRL.
-
-- 🌌 **Sky-Gazing & Workshops**  
-  Experience the mysteries beyond Earth firsthand through regular public outreach events, night-sky observations, and hands-on sessions with department telescopes.
-
-- 🧑‍🏫 **Academic Excellence**  
-Learn from leading researchers and visiting scientists engaged in cutting-edge work on cosmology, high-energy astrophysics, X-ray accretion in compact objects, AI-based stellar cluster analysis and theoretical black hole physics.
+- 🎓 **Undergraduate & Postgraduate Programs**Explore the field of Astronomy and Astrophysics through specialized degree tracks with hands-on training in data analysis, simulation, and observational techniques.
+- 🚀 **Research Opportunities**Work on real-world projects alongside faculty and researchers, with collaborations across premier institutions like ARIES, IUCAA, and PRL.
+- 🌌 **Sky-Gazing & Workshops**Experience the mysteries beyond Earth firsthand through regular public outreach events, night-sky observations, and hands-on sessions with department telescopes.
+- 🧑‍🏫 **Academic Excellence**
+  Learn from leading researchers and visiting scientists engaged in cutting-edge work on cosmology, high-energy astrophysics, X-ray accretion in compact objects, AI-based stellar cluster analysis and theoretical black hole physics.
 
 ---
 
 <!-- Leadership Section -->
+
 <section id="leadership-section" style="padding: 60px 20px; background: #eaf6ff;">
   <h2 style="text-align:center; font-size: 2em; color: #002855;">Leadership</h2>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 30px;">
@@ -83,6 +80,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
 </section>
 
 ---
+
 <section id="faculty-section" style="padding: 60px 20px; background: #f5f5f5;">
   <h2 style="text-align:center; font-size: 2em;">Faculty</h2>
   <div id="faculty-carousel" style="overflow: hidden; width: 100%; position: relative;">
@@ -95,64 +93,67 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
         <a href="faculty.html#PSRAWAT" class="read-more-button">Read more →</a>
       </div>
 
-      <div class="faculty-card">
-        <img src="assests/images/balendra.jpeg" alt="Dr. Balendra P. Singh" class="faculty-img">
-        <h3>Dr. Balendra P. Singh</h3>
-        <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
-        <p class="faculty-bio">Balendra P. Singh specializes in Astrophysics and Astronomy and received his PhD from the Center for Theoretical Physics...</p>
-        <a href="faculty.html#BALENDRA" class="read-more-button">Read more →</a>
-      </div>
+    `<div class="faculty-card">`
+        `<img src="assests/images/balendra.jpeg" alt="Dr. Balendra P. Singh" class="faculty-img">`
+        `<h3>`Dr. Balendra P. Singh`</h3>`
+        `<p><strong>`Assistant Professor, Applied Science Cluster`</strong></p>`
+        `<p class="faculty-bio">`Balendra P. Singh specializes in Astrophysics and Astronomy and received his PhD from the Center for Theoretical Physics...`</p>`
+        `<a href="faculty.html#BALENDRA" class="read-more-button">`Read more →`</a>`
+      `</div>`
 
-      <div class="faculty-card">
-        <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" class="faculty-img">
-        <h3>Dr. Nitesh Kumar</h3>
-        <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
-        <p class="faculty-bio">Dr. Nitesh has attended Hansraj College and obtained his Ph. D. in Automated Analysis of Stellar Photometric and Spectroscopic Data from the University of Delhi....</p>
-        <a href="faculty.html#NITESH" class="read-more-button">Read more →</a>
-      </div>
+    `<div class="faculty-card">`
+        `<img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" class="faculty-img">`
+        `<h3>`Dr. Nitesh Kumar`</h3>`
+        `<p><strong>`Assistant Professor, Applied Science Cluster`</strong></p>`
+        `<p class="faculty-bio">`Dr. Nitesh has attended Hansraj College and obtained his Ph. D. in Automated Analysis of Stellar Photometric and Spectroscopic Data from the University of Delhi....`</p>`
+        `<a href="faculty.html#NITESH" class="read-more-button">`Read more →`</a>`
+      `</div>`
 
-      <div class="faculty-card">
-        <img src="assests/images/prince.png" alt="Dr. Prince Sharma" class="faculty-img">
-        <h3>Dr. Prince Sharma</h3>
-        <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
-        <p class="faculty-bio">Dr. Prince Sharma is an alumnus of Kirorimal College and has done his Doctorate from University of Delhi....</p>
-        <a href="faculty.html#PRINCE" class="read-more-button">Read more →</a>
-      </div>
+    `<div class="faculty-card">`
+        `<img src="assests/images/prince.png" alt="Dr. Prince Sharma" class="faculty-img">`
+        `<h3>`Dr. Prince Sharma`</h3>`
+        `<p><strong>`Assistant Professor, Applied Science Cluster`</strong></p>`
+        `<p class="faculty-bio">`Dr. Prince Sharma is an alumnus of Kirorimal College and has done his Doctorate from University of Delhi....`</p>`
+        `<a href="faculty.html#PRINCE" class="read-more-button">`Read more →`</a>`
+      `</div>`
 
-      <div class="faculty-card">
-        <img src="assests/images/arka.jpeg" alt="Dr. Arka Chatterjee" class="faculty-img">
-        <h3>Dr. Arka Chatterjee</h3>
-        <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
-        <p class="faculty-bio">Dr. Arka Chatterjee is an Astrophysicist with a PhD in Theoretical Physics from the University of Calcutta....</p>
-        <a href="faculty.html#ARKA" class="read-more-button">Read more →</a>
-      </div>
+    `<div class="faculty-card">`
+        `<img src="assests/images/arka.jpeg" alt="Dr. Arka Chatterjee" class="faculty-img">`
+        `<h3>`Dr. Arka Chatterjee`</h3>`
+        `<p><strong>`Assistant Professor, Applied Science Cluster`</strong></p>`
+        `<p class="faculty-bio">`Dr. Arka Chatterjee is an Astrophysicist with a PhD in Theoretical Physics from the University of Calcutta....`</p>`
+        `<a href="faculty.html#ARKA" class="read-more-button">`Read more →`</a>`
+      `</div>`
 
-      <div class="faculty-card">
-        <img src="assests/images/raju.webp" alt="Dr. Raju Roychowdhury" class="faculty-img">
-        <h3>Dr. Raju Roychowdhury</h3>
-        <p><strong>Associate Professor, Applied Science Cluster</strong></p>
-        <p class="faculty-bio">Dr. Roychowdhury has obtained his Ph. D. from University of Naples, Italy in the field of Black-Holes in Supergravity....</p>
-        <a href="faculty.html#RAJU" class="read-more-button">Read more →</a>
-      </div>
+    `<div class="faculty-card">`
+        `<img src="assests/images/raju.png" alt="Dr. Raju Roychowdhury" class="faculty-img">`
+        `<h3>`Dr. Raju Roychowdhury `</h3>`
+        `<p><strong>`Associate Professor, Applied Science Cluster `</strong></p>`
+        `<p class="faculty-bio">`Dr. Roychowdhury has obtained his Ph. D. from University of Naples, Italy in the field of Black-Holes in Supergravity....`</p>`
+        `<a href="faculty.html#RAJU" class="read-more-button">`Read more →`</a>`
+      `</div>`
 
-      <!-- All Department Faculty Card -->
-      <div class="faculty-card">
-        <img src="assests/images/department.png" alt="Department Faculty" class="faculty-img">
-        <h3>Department Faculty</h3>
-        <p><strong>Department of Physics, School of Advanced Engineering</strong></p>
-        <p class="faculty-bio">
-          Discover more about the diverse and accomplished faculty members of the Department of Physics. 
-        </p>
-        <a href="faculty.html#all-faculty" class="read-more-button">
-         More →</a>
-      </div>
+    `<!-- All Department Faculty Card -->`
+      `<div class="faculty-card">`
+        `<img src="assests/images/department.png" alt="Department Faculty" class="faculty-img">`
+        `<h3>`Department Faculty`</h3>`
+        `<p><strong>`Department of Physics, School of Advanced Engineering`</strong></p>`
+        `<p class="faculty-bio">`
+          Discover more about the diverse and accomplished faculty members of the Department of Physics.
+        `</p>`
+        `<a href="faculty.html#all-faculty" class="read-more-button">`
+         More →`</a>`
+      `</div>`
 
-    </div>
+    `</div>`
 
-    <button id="prev-btn" class="carousel-btn prev">&#10094;</button>
-    <button id="next-btn" class="carousel-btn next">&#10095;</button>
-  </div>
+    `<button id="prev-btn" class="carousel-btn prev">`&#10094;`</button>`
+    `<button id="next-btn" class="carousel-btn next">`&#10095;`</button>`
+
+</div>
 </section>
+
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -179,17 +180,14 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
   });
 </script>
 
-
-
-
 ---
-
-
 
 ## 🗞 Recent Highlights
 
-- ✅ *April 2025:* Student visit to ARIES, Nainital.  
+- ✅ *April 2025:* Student visit to ARIES, Nainital.
+
 <!-- - ✅ *February 2025:* B.Sc. students observed variable stars with new 12-inch telescope   -->
+
 <!-- - ✅ *January 2025:* Faculty paper on stellar classification accepted in MNRAS   -->
 
 ➡️ See more in [Recent Activities](activities.md)
@@ -198,12 +196,12 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
 
 ## 🌟 Join Us
 
-Applications are open for the **B.Sc. (Hons.) Physics** and **M.Sc. Physics** programs.  
+Applications are open for the **B.Sc. (Hons.) Physics** and **M.Sc. Physics** programs.
 Build your career in **Astronomy** and **Astrophysics**.
 
 🔗 [Learn about our academic programs](programs.md)
 
 ---
 
-> _"Somewhere, something incredible is waiting to be known."_  
+> _"Somewhere, something incredible is waiting to be known."_
 > — Carl Sagan

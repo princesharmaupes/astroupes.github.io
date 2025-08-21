@@ -17,3 +17,5 @@ On the occasion of the 2nd National Space Day, Prof. Varun Sheel (Head, Planetar
 A flyer for the event is available for download: [Download Flyer][def]
 
 [def]: assests/images/National%20Space%20Day%20celebration%20UPES.pdf
+
+![National Space Day Flyer](assests/images/National%20Space%20Day%20celebration%20UPES.pdf)

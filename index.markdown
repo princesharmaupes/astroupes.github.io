@@ -76,7 +76,7 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
       <img src="assests/images/rajiv.png" alt="Prof. Rajiv Gupta" style="width: 100%; border-radius: 10px;">
       <h3 style="color: #002855;">Prof. Rajeev Gupta</h3>
       <p><strong>Program Lead, Department of Physics</strong></p>
-      <p style="font-size: 0.95em;">Prof. Rajeev Gupta is a distinguished academician, member of several scientific and educational societies, and editor/reviewer for leading international journals. He has authored books on Nanoscience, Solar Photovoltaics, Electronics Engineering, Solid-State Devices, and Electrical Engineering experiments, along with numerous book chapters in reputed publications.</p>
+      <p style="font-size: 0.95em;">Prof. Rajeev Gupta is a distinguished academician, member of several scientific and educational societies, and editor/reviewer for leading international journals. He has authored books on Nanoscience, Solar Photovoltaics, Electronics Engineering and Solid-State Devices.</p>
       <a href="faculty.html#RAJEEV" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">View Profile →</a>
     </div>
     <div style="background: #e9edf4; border-radius: 15px; width: 320px; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">

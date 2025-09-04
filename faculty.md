@@ -25,7 +25,7 @@ title: Faculty
   </div>
 </div>
 
-<h2 id="RAJEEV">Prof. Santosh Dubey</h2>
+<h2 id="RAJEEV">Prof. Rajeev Gupta</h2>
 <div style="background: linear-gradient(90deg, #fffbe7 60%, #e9edf4 100%); border-radius: 18px; box-shadow: 0 6px 18px rgba(0,0,0,0.10); padding: 32px 24px; margin-bottom: 40px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
   <img src="assests/images/rajiv.png" alt="Program Lead" style="width: 170px; height: 170px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 4px solid #bfa100;">
   <div style="flex: 1; min-width: 260px;">

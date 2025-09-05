@@ -190,16 +190,32 @@
         left: 0;
       }
     }
+    @media (max-width: 600px) {
+      /* Responsive logos row */
+      body > div[style*="justify-content: space-between"] {
+        padding: 8px 8px 0 8px !important;
+      }
+      body > div[style*="justify-content: space-between"] img {
+        height: 38px !important;
+        max-width: 90px !important;
+      }
+    }
   </style>
 </head>
 <body>
+  <!-- Logos Row -->
+  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 12px 32px 0 32px; box-sizing: border-box; position: relative; z-index: 100;">
+    <img src="upes-logo.jpg" alt="UPES Logo" style="height: 56px; width: auto; max-width: 160px;">
+    <img src="assests/images/IUCCA_Logo.png" alt="IUCAA Logo" style="height: 56px; width: auto; max-width: 160px;">
+  </div>
+
   <header>
     <h1>Workshop on Data Science in Astronomy</h1>
     <p>February 24-26, 2026 · UPES, Dehradun · Sponsored by IUCAA</p>
   </header>
 
   <nav aria-label="Main navigation">
-    <a href="/"><img src="upes-logo.jpg" alt="UPES logo featuring a colorful abstract U shape with overlapping geometric patterns. The logo includes the text UPES University of Tomorrow in bold modern font, conveying a forward-looking and innovative atmosphere" class="nav-icon" style="width:64px; height:64px;"></a>
+    <!-- <a href="/"><img src="upes-logo.jpg" alt="UPES logo" class="nav-icon" style="width:64px; height:64px;"></a> -->
     <a href="#about"><img src="assests/workshop_images/about.png" alt="About icon" class="nav-icon">About</a>
     <a href="#eligibility"><img src="assests/workshop_images/check-all--v1.png" alt="Eligibility icon" class="nav-icon">Eligibility</a>
     <a href="#program"><img src="assests/workshop_images/calendar--v1.png" alt="Program icon" class="nav-icon">Program</a>
@@ -327,7 +343,7 @@
           </tr>
         </tbody>
       </table>
-      <p class="tiny">Actual ordering may vary depending on speaker availability.</p>
+      <p class="tiny">Tentative Schedule. Actual ordering may vary depending on speaker availability.</p>
     </div>
     </section>
 
@@ -372,15 +388,15 @@
           <img src="assests/images/susmita.png" alt="Dr. Susmita Das" class="speaker-img">
           <div class="speaker-info">
             <p class="speaker-name">Dr. Susmita Das</p>
-            <p class="speaker-role">Postdoctoral Fellow, IUCAA</p>
+            <p class="speaker-role">Postdoctoral Fellow, IUCAA, Pune</p>
           </div>
         </div>
       </div>
 
-    <h3>Organizing Team</h3>
+    <h3>Local Organizing Team</h3>
     <div class="speaker-grid">
         <div class="speaker-card">
-            <img src="assests/images/nitesh.png" alt="Dr. Nitesh Kumar" class="speaker-img">
+            <img src="assests/images/nitesh.jpeg" alt="Dr. Nitesh Kumar" class="speaker-img">
             <div class="speaker-info">
                 <p class="speaker-name">Dr. Nitesh Kumar</p>
                 <p class="speaker-role">UPES, Dehradun</p>
@@ -395,21 +411,21 @@
         </div>
 
         <div class="speaker-card">
-            <img src="assests/images/prashant.png" alt="Dr. Prashant Rawat" class="speaker-img">
+            <img src="assests/images/rawat.png" alt="Dr. Prashant Rawat" class="speaker-img">
             <div class="speaker-info">
                 <p class="speaker-name">Dr. Prashant Rawat</p>
                 <p class="speaker-role">UPES, Dehradun</p>
             </div>
         </div>
         <div class="speaker-card">
-            <img src="assests/images/balendra.png" alt="Dr. Balendra P. Singh" class="speaker-img">
+            <img src="assests/images/balendra.jpeg" alt="Dr. Balendra P. Singh" class="speaker-img">
             <div class="speaker-info">
                 <p class="speaker-name">Dr. Balendra P. Singh</p>
                 <p class="speaker-role">UPES, Dehradun</p>
             </div>
         </div>
         <div class="speaker-card">
-            <img src="assests/images/arka.png" alt="Dr. Arka Chatterjee" class="speaker-img">
+            <img src="assests/images/arka.jpeg" alt="Dr. Arka Chatterjee" class="speaker-img">
             <div class="speaker-info">
                 <p class="speaker-name">Dr. Arka Chatterjee</p>
                 <p class="speaker-role">UPES, Dehradun</p>

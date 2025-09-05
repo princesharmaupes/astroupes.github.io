@@ -168,14 +168,15 @@
   </div>
   <style>
     #workshop-banner {
-      position: relative;
+      position: sticky;
+      top: 0;
       width: 100%;
       background: #2d2d72;
       color: #fff;
       padding: 16px 20px;
       text-align: center;
       font-size: 18px;
-      z-index: 1001;
+      z-index: 1002;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -209,10 +210,8 @@
         align-self: flex-end;
       }
     }
-    /* Push hero-section down by banner height */
-    #hero-section {
-      margin-top: 60px;
-    }
+    /* Remove margin-top from hero-section */
+    /* Removed empty #hero-section ruleset */
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -222,9 +221,6 @@
           var banner = document.getElementById('workshop-banner');
           if (banner) {
             banner.style.display = 'none';
-            // Remove margin from hero-section when banner is closed
-            var hero = document.getElementById('hero-section');
-            if (hero) hero.style.marginTop = '0';
           }
         };
       }
@@ -375,5 +371,7 @@
   <p>Webpage curated by Dr. Prince Sharma and Dr. Nitesh Kumar</p>
 </footer>
 
+</body>
+</html>
 </body>
 </html>

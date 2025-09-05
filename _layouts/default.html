@@ -158,6 +158,66 @@
     </nav>
   </header>
 
+    <!-- Workshop Floating Banner -->
+  <div id="workshop-banner">
+    <span>
+      🚀 Upcoming Workshop: "Workshop on Data Science in Astronomy" – 24th - 26th February, 2026.
+      <a href="/workshop" style="color: #fff; text-decoration: underline;">Learn more</a>
+    </span>
+    <button id="close-banner" aria-label="Close banner">&times;</button>
+  </div>
+  <style>
+    #workshop-banner {
+      position: relative;
+      width: 100%;
+      background: #2d2d72;
+      color: #fff;
+      padding: 16px 20px;
+      text-align: center;
+      font-size: 18px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      animation: fadeInBanner 0.8s;
+    }
+    #workshop-banner a {
+      font-weight: bold;
+    }
+    #close-banner {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+      margin-left: 10px;
+      line-height: 1;
+    }
+    @keyframes fadeInBanner {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      #workshop-banner {
+        font-size: 15px;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 5px;
+      }
+      #close-banner {
+        align-self: flex-end;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('close-banner').onclick = function() {
+        document.getElementById('workshop-banner').style.display = 'none';
+      };
+    });
+  </script>
+
   <section id="hero-section" data-aos="fade-up">
     <div class="slider">
       <img src="assests/images/campus1.jpg" alt="Campus 1" class="slide active" loading="lazy" />

@@ -134,12 +134,14 @@
     .col-6 { grid-column: span 6; }
     .col-4 { grid-column: span 4; }
     .col-12 { grid-column: span 12; }
+    .col-7 { grid-column: span 7; }
 
     /* Table styling */
     table { width: 100%; border-collapse: collapse; margin-top: 1rem; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px var(--shadow); }
     th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #e0e0e0; }
     th { background: #f0f4f7; font-weight: 600; }
     tbody tr:hover { background: var(--accent); }
+    .table-container { overflow-x: auto; }
 
     /* Chips and buttons */
     .chip { display: inline-block; background: #eef5fb; border: 1px solid #d9e8f6; color: #24577c; padding: 0.3rem 0.6rem; border-radius: 20px; font-size: 0.85rem; margin: 0.2rem 0.3rem 0 0; }
@@ -202,6 +204,7 @@
     @media (max-width: 900px) {
       .col-6 { grid-column: span 12; }
       .col-4 { grid-column: span 12; }
+      .col-7 { grid-column: span 12; }
       .speaker-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
     }
     @media (max-width: 720px) {
@@ -212,12 +215,33 @@
       .container { padding: 1.5rem 1rem; }
       section { padding: 1.5rem; }
       .logo-left img, .logo-right img { height: 40px; max-width: 120px; }
+      .speaker-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+      .date-card { min-width: 200px; }
     }
     @media (max-width: 600px) {
       .dates-grid { flex-direction: column; }
       .date-card { min-width: auto; }
       .logo-left { top: 0.5rem; left: 0.5rem; }
       .logo-right { top: 0.5rem; right: 0.5rem; }
+      header h1 { font-size: 1.8rem; }
+      header p { font-size: 1rem; }
+      .speaker-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+      .speaker-img { height: 120px; }
+      .speaker-info { padding: 1rem; }
+      .speaker-name { font-size: 1rem; }
+      .speaker-role { font-size: 0.8rem; }
+      .apply-btn { padding: 0.8rem 1.2rem; font-size: 0.9rem; }
+      nav a { padding: 0.3rem 0.5rem; font-size: 0.85rem; }
+      .nav-icon { width: 18px; height: 18px; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 1rem 0.5rem; }
+      section { padding: 1rem; margin-bottom: 1rem; }
+      h2 { font-size: 1.5rem; }
+      .highlight { padding: 1rem; }
+      .table-container { margin: 0 -1rem; }
+      .date-card { padding: 1rem; }
+      .date-card img { width: 40px; height: 40px; }
     }
   </style>
 </head>
@@ -281,52 +305,54 @@
     <section id="program">
       <h2>Tentative Program Schedule</h2>
       <p class="note">Format: Morning lectures by invited experts; Afternoon hands-on labs using real data; Telescope session on Day-1 evening (weather permitting).</p>
-      <table aria-label="Tentative schedule">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Session</th>
-            <th>Focus</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Feb 24 (Day 1)</strong></td>
-            <td>Morning</td>
-            <td>Opening &amp; lectures: observational astronomy; variable stars — photometric/spectroscopic classification</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Afternoon</td>
-            <td>Hands-on: Python setup, Astropy &amp; Lightkurve basics; working with TESS/Kepler light curves; Lomb–Scargle periodograms</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Evening</td>
-            <td>Telescope observation session at UPES (weather permitting)</td>
-          </tr>
-          <tr>
-            <td><strong>Feb 25 (Day 2)</strong></td>
-            <td>Morning</td>
-            <td>Lectures: time-series analysis; machine-learning applications in astrophysics</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Afternoon</td>
-            <td>Hands-on: feature extraction, classification demos; Gaia cross-matching &amp; catalog queries</td>
-          </tr>
-          <tr>
-            <td><strong>Feb 26 (Day 3)</strong></td>
-            <td>Morning</td>
-            <td>Lectures + practical wrap-up with real case studies</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Afternoon</td>
-            <td>Panel/Q&amp;A, feedback, certificates &amp; valedictory</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-container">
+        <table aria-label="Tentative schedule">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Session</th>
+              <th>Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Feb 24 (Day 1)</strong></td>
+              <td>Morning</td>
+              <td>Opening &amp; lectures: observational astronomy; variable stars — photometric/spectroscopic classification</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Afternoon</td>
+              <td>Hands-on: Python setup, Astropy &amp; Lightkurve basics; working with TESS/Kepler light curves; Lomb–Scargle periodograms</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Evening</td>
+              <td>Telescope observation session at UPES (weather permitting)</td>
+            </tr>
+            <tr>
+              <td><strong>Feb 25 (Day 2)</strong></td>
+              <td>Morning</td>
+              <td>Lectures: time-series analysis; machine-learning applications in astrophysics</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Afternoon</td>
+              <td>Hands-on: feature extraction, classification demos; Gaia cross-matching &amp; catalog queries</td>
+            </tr>
+            <tr>
+              <td><strong>Feb 26 (Day 3)</strong></td>
+              <td>Morning</td>
+              <td>Lectures + practical wrap-up with real case studies</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Afternoon</td>
+              <td>Panel/Q&amp;A, feedback, certificates &amp; valedictory</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p class="tiny">Tentative Schedule. Actual ordering may vary depending on speaker availability.</p>
     </section>
 
@@ -469,7 +495,7 @@
     </section>
   </main>
 
-  <section id="about-upes">
+  <section id="about-upes" class="container">
     <h2>About UPES and Dehradun</h2>
     <div class="grid">
       <div class="col-6">
@@ -497,7 +523,6 @@
       </div>
     </div>
   </section>
-
 
   <footer>
     &copy; 2026 Workshop on Data Science in Astronomy · Organized by UPES &amp; IUCAA

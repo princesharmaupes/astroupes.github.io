@@ -221,4 +221,15 @@ For many, this was their first direct glimpse at the Sun through a scientific in
   ul {
     margin-bottom: 0;
   }
+  /* make embedded slides and images responsive to avoid horizontal overflow */
+  #varunTalkSlideshow, #lectureSeriesSlideshow,
+  #varunTalkSlideshow img, #lectureSeriesSlideshow img,
+  #lectureSeriesSlide, #varunTalkSlide {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  /* reduce fixed 480px containers to scale on small screens */
+  #varunTalkSlideshow[style], #lectureSeriesSlideshow[style],
+  div[style*="width: 480px"] { width: 100% !important; max-width: 480px; }
 </style>

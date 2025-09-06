@@ -22,6 +22,14 @@ body {
     pointer-events: none; /* Prevent interaction with the video */
     opacity: 0.5; /* Add transparency for better visibility of content */
 }
+/* Workshop Floating Banner */
+.workshop-banner {
+  position: fixed;       /* so it sits at the top with the header */
+  top: 60px;             /* push it below the 60px header */
+  left: 0;
+  width: 100%;
+  z-index: 6000;         /* higher than header */
+}
 
 /* Navigation Panel */
 header {

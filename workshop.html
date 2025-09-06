@@ -60,6 +60,28 @@
     header h1 { font-size: 2.5rem; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
     header p { opacity: 0.95; font-size: 1.1rem; }
 
+    /* Logo positioning in header corners */
+    .logo-left {
+      position: absolute;
+      top: 0.5rem;
+      left: 1rem;
+      z-index: 3;
+    }
+    .logo-left img {
+      height: 50px;
+      max-width: 150px;
+    }
+    .logo-right {
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+      z-index: 3;
+    }
+    .logo-right img {
+      height: 50px;
+      max-width: 150px;
+    }
+
     /* Navigation enhancements */
     nav {
       background: var(--ink-d);
@@ -175,20 +197,6 @@
     }
     .date-card:hover { transform: translateY(-3px); }
     .date-card img {width: 50px; height: 50px; display: block; margin: 0 auto 1rem;}
-    /* Logos row */
-    .logos-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 1rem 2rem;
-      box-sizing: border-box;
-      position: relative;
-      z-index: 100;
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(5px);
-    }
-    .logos-row img { height: 60px; max-width: 180px; }
 
     /* Responsive design */
     @media (max-width: 900px) {
@@ -203,27 +211,28 @@
       nav a { font-size: 0.9rem; padding: 0.4rem 0.6rem; }
       .container { padding: 1.5rem 1rem; }
       section { padding: 1.5rem; }
-      .logos-row { padding: 0.8rem 1rem; }
-      .logos-row img { height: 50px; max-width: 120px; }
+      .logo-left img, .logo-right img { height: 40px; max-width: 120px; }
     }
     @media (max-width: 600px) {
       .dates-grid { flex-direction: column; }
       .date-card { min-width: auto; }
+      .logo-left { top: 0.5rem; left: 0.5rem; }
+      .logo-right { top: 0.5rem; right: 0.5rem; }
     }
   </style>
 </head>
 <body>
-  <!-- Logos Row -->
-  <div class="logos-row">
-    <a href="https://astroupes.github.io/" target="_blank" rel="noopener" aria-label="UPES website">
-      <img src="upes-logo.jpg" alt="UPES Logo">
-    </a>
-    <a href="https://www.iucaa.in/en/" target="_blank" rel="noopener" aria-label="IUCAA website">
-      <img src="assests/images/IUCCA_Logo.png" alt="IUCAA Logo">
-    </a>
-  </div>
-
   <header>
+    <div class="logo-left">
+      <a href="https://astroupes.github.io/" target="_blank" rel="noopener" aria-label="UPES website">
+        <img src="upes-logo.jpg" alt="UPES Logo">
+      </a>
+    </div>
+    <div class="logo-right">
+      <a href="https://www.iucaa.in/en/" target="_blank" rel="noopener" aria-label="IUCAA website">
+        <img src="assests/images/IUCCA_Logo.png" alt="IUCAA Logo">
+      </a>
+    </div>
     <h1>Workshop on Data Science in Astronomy</h1>
     <p>February 24-26, 2026 · UPES, Dehradun · Sponsored by IUCAA</p>
   </header>
@@ -484,11 +493,10 @@
         <p>For detailed directions, check Google Maps or contact the organizers.</p>
       </div>
       <div class="col-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110106.50467714535!2d77.90216333186522!3d30.412613817351808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1757186906597!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d110106.50469671896!2d77.9021633!3d30.4126138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1757187843567!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
-
 
 
   <footer>

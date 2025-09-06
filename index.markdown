@@ -193,7 +193,10 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
 
 
 
-## 🗞 Recent Highlights
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px;">
+
+  <div style="flex: 2 1 600px; min-width: 320px;">
+    ## 🗞 Recent Highlights
 
 - ✅ *April 2025:* Student visit to ARIES, Nainital.  
 <!-- - ✅ *February 2025:* B.Sc. students observed variable stars with new 12-inch telescope   -->
@@ -209,6 +212,53 @@ Applications are open for the **B.Sc. (Hons.) Physics** and **M.Sc. Physics** pr
 Build your career in **Astronomy** and **Astrophysics**.
 
 🔗 [Learn about our academic programs](programs.md)
+
+  </div>
+
+  <!-- Latest Section Box -->
+  <aside style="flex: 1 1 320px; min-width: 280px; max-width: 370px; background: #f7fafc; border: 1.5px solid #dbeafe; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 22px 18px 18px 18px; margin-top: 12px;">
+    <h2 style="font-size: 1.3em; color: #1a5276; margin-top: 0; margin-bottom: 12px; letter-spacing: 1px;">📰 Latest</h2>
+    <div style="margin-bottom: 18px;">
+      <strong style="color: #003366;">Global Headlines</strong>
+      <ul style="list-style: disc inside; font-size: 1em; color: #234; margin: 8px 0 0 0; padding: 0;">
+        <li>
+          <a href="https://www.nasa.gov/press-release/nasa-s-euclid-mission-releases-first-science-images" target="_blank" rel="noopener" style="color: #1a5276; text-decoration: underline;">
+            NASA's Euclid Mission Releases First Science Images
+          </a>
+        </li>
+        <li>
+          <a href="https://www.esa.int/Science_Exploration/Space_Science/Black_hole_eats_star" target="_blank" rel="noopener" style="color: #1a5276; text-decoration: underline;">
+            ESA: Black Hole Eats Star in Distant Galaxy
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nature.com/articles/d41586-024-01234-5" target="_blank" rel="noopener" style="color: #1a5276; text-decoration: underline;">
+            Astronomers Detect Most Distant Fast Radio Burst Yet
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <strong style="color: #003366;">Department Updates</strong>
+      <ul style="list-style: disc inside; font-size: 1em; color: #234; margin: 8px 0 0 0; padding: 0;">
+        <li>
+          <span style="color: #d97706; font-weight: bold;">New!</span>
+          <span>We're launching a dedicated Astronomy Club. <b>Help us name the club!</b> Submit your creative suggestions at our upcoming event. Stay tuned for details.</span>
+        </li>
+        <li>
+          <span>Upcoming: <b>Sky-Gazing Night</b> – August 2025. Open to all students. Details soon.</span>
+        </li>
+        <li>
+          <span>Recent: Students visited ARIES, Nainital (April 2025).</span>
+        </li>
+        <li>
+          <span>Workshop on Data Science in Astronomy: Feb 2026. <a href="workshop.html" style="color: #1a5276; text-decoration: underline;">Details</a></span>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
 
 ---
 

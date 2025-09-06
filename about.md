@@ -39,7 +39,7 @@ We aspire to be a global leader in astronomy and astrophysics education and rese
 
 <ul style="font-size: 1.05em; color: #333;">
   <li>🔭 Collaborations with leading research institutes including <strong>ARIES, IUCAA, and PRL</strong>.</li>
-  <li>📚 Faculty publications in top-tier journals such as <em>Monthly Notices of the Royal Astronomical Society</em> and <em>Advances in Space Research</em>.</li>
+  <li>📚 Faculty publications in top-tier journals such as <em>Monthly Notices of the Royal Astronomical Society</em>, <em>Astrophysical Journal </em> and <em>Advances in Space Research</em>.</li>
   <li>🌌 Regular sky-gazing nights, student lectures, and astronomy outreach events.</li>
   <li>🛰️ Practical training in telescope operation, CCD imaging, and astronomical data analysis.</li>
 </ul>

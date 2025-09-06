@@ -11,6 +11,48 @@ Explore the universe with us — from the smallest particles to the largest gala
 
 Our B.Sc. in Astronomy and Astrophysics takes you from the fundamentals of physics to the frontiers of space science.  
 Explore the mysteries of the universe through data, decode cosmic phenomena, and contribute to real astronomical research — all as part of a dynamic and forward-looking academic environment. -->
+<!-- Latest Section Box: place immediately after hero/intro section -->
+<div style="display: flex; justify-content: flex-end; margin: 32px 0 24px 0;">
+  <aside style="width: 370px; min-width: 260px; max-width: 98vw; background: #f7fafc; border: 1.5px solid #dbeafe; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 22px 18px 18px 18px;">
+    <h2 style="font-size: 1.3em; color: #1a5276; margin-top: 0; margin-bottom: 12px; letter-spacing: 1px;">📰 Latest</h2>
+    <div style="margin-bottom: 18px;">
+      <strong style="color: #003366;">Global Headlines</strong>
+      <ul style="list-style: disc inside; font-size: 1em; color: #234; margin: 8px 0 0 0; padding: 0;">
+        <li>
+          <a href="https://www.nasa.gov/press-release/nasa-s-euclid-mission-releases-first-science-images" target="_blank" rel="noopener" style="color: #1a5276; text-decoration: underline;">
+            NASA's Euclid Mission Releases First Science Images
+          </a>
+        </li>
+        <li>
+          <a href="https://www.esa.int/Science_Exploration/Space_Science/Black_hole_eats_star" target="_blank" rel="noopener" style="color: #1a5276; text-decoration: underline;">
+            ESA: Black Hole Eats Star in Distant Galaxy
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nature.com/articles/d41586-024-01234-5" target="_blank" rel="noopener" style="color: #1a5276; text-decoration: underline;">
+            Astronomers Detect Most Distant Fast Radio Burst Yet
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <strong style="color: #003366;">Department Updates</strong>
+      <ul style="list-style: disc inside; font-size: 1em; color: #234; margin: 8px 0 0 0; padding: 0;">
+        <li>
+          <span>Upcoming: <b>Lunar Eclipse</b> – September 2025.</span>
+        </li>
+        <li>
+          <span style="color: #d97706; font-weight: bold;">New!</span>
+          <span>We're launching a dedicated Astronomy Club. <b>Help us name the club!</b> Submit your creative suggestions at our upcoming event. Stay tuned for details.</span>
+        </li>        
+        <li>
+          <span>Workshop on Data Science in Astronomy: Feb 2026. <a href="workshop.html" style="color: #1a5276; text-decoration: underline;">Details</a></span>
+        </li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
 # <span style="font-size: 2.5rem; font-weight: bold; color: #002855;">✨ Astronomy & Astrophysics</span>  
 ### <span style="color: #333;">A Sub-Division of the Department of Physics under the Cluster of Applied Science, School of Advanced Engineering</span>  
 

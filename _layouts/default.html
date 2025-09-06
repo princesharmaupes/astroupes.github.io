@@ -158,13 +158,74 @@
     </nav>
   </header>
 
-  <!-- Workshop Floating Banner: place after header, before hero-section -->
-  <div class="workshop-banner">
-  🚀 <span>Upcoming Workshop: <strong>Workshop on Data Science in Astronomy" - 24th - 26th February, 2026.</strong></span>
-  <a href="/workshop.html">Learn More &amp; Register</a>
-  <button class="close-banner" onclick="this.parentElement.style.display='none'">✖</button>
-</div>
-  
+ <!-- Workshop Floating Banner: place after header, before hero-section -->
+  <div id="workshop-banner">
+    <span>
+      🚀 Upcoming Workshop: "Workshop on Data Science in Astronomy" – 24th - 26th February, 2026.
+      <a href="/workshop" style="color: #07ad23; text-decoration: underline;">Learn more</a>
+    </span>
+    <!-- <button id="close-banner" aria-label="Close banner">&times;</button> -->
+  </div>
+  <style>
+    #workshop-banner {
+      position: relative;
+      top: 70px;
+      margin-top: 80px; /* Adjust this value to match your header/nav height */
+      width: 100%;
+      background: #2d2d72;
+      color: #fff;
+      padding: 16px 20px;
+      text-align: center;
+      font-size: 18px;
+      z-index: 5002;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+    }
+
+    #workshop-banner a {
+      font-weight: bold;
+    }
+    #close-banner {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+      margin-left: 10px;
+      line-height: 1;
+    }
+    @keyframes fadeInBanner {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      #workshop-banner {
+        font-size: 15px;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 5px;
+      }
+      #close-banner {
+        align-self: flex-end;
+      }
+    }
+    
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var closeBtn = document.getElementById('close-banner');
+      if (closeBtn) {
+        closeBtn.onclick = function() {
+          var banner = document.getElementById('workshop-banner');
+          if (banner) {
+            banner.style.display = 'none';
+          }
+        };
+      }
+    });
+  </script>
 
 
   <!-- Hero Section with Image Slider -->

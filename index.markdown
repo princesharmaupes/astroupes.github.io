@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div style="display: flex; justify-content: flex-end; margin: 32px 0 24px 0;">
+<!-- <div style="display: flex; justify-content: flex-end; margin: 32px 0 24px 0;">
 
   <aside style="width: 370px; min-width: 260px; max-width: 98vw; background: #f7fafc; border: 1.5px solid #dbeafe; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 22px 18px 18px 18px;">
     <h2 style="font-size: 1.3em; color: #1a5276; margin-top: 0; margin-bottom: 12px; letter-spacing: 1px;">📰 Latest</h2>
@@ -50,7 +50,7 @@ title: Home
       </ul>
     </div>
   </aside>
-</div>
+</div> -->
 
 
 # Astronomy & Astrophysics at UPES

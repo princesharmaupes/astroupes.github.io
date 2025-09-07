@@ -10,9 +10,29 @@ Welcome to our Astronomy & Astrophysics Gallery! Explore captivating moments fro
 <!-- Filter Buttons for Interactivity -->
 <div id="filter-buttons" style="text-align: center; margin-bottom: 20px;">
   <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="aries">ARIES Trip 2025</button>
   <button class="filter-btn" data-filter="space-day">National Space Day 2025</button>
+  <button class="filter-btn" data-filter="aries">ARIES Trip 2025</button>
   <button class="filter-btn" data-filter="lecture-series">Weekly Lecture Series</button>
+</div>
+
+---
+
+## <a href="#" class="event-header" data-section="space-day">🛰️ National Space Day 2025</a>
+<div class="gallery-section" data-section="space-day">
+  <div class="gallery-grid">
+    <a href="assests/images/varun_talk/slide1.jpg" target="_blank" class="gallery-item">
+      <img src="assests/images/varun_talk/slide1.jpg" alt="Varun Talk Slide 1" loading="lazy">
+    </a>
+    <a href="assests/images/varun_talk/slide2.jpg" target="_blank" class="gallery-item">
+      <img src="assests/images/varun_talk/slide2.jpg" alt="Varun Talk Slide 2" loading="lazy">
+    </a>
+    <a href="assests/images/varun_talk/slide3.jpg" target="_blank" class="gallery-item">
+      <img src="assests/images/varun_talk/slide3.jpg" alt="Varun Talk Slide 3" loading="lazy">
+    </a>
+    <a href="assests/images/varun_talk/slide4.jpg" target="_blank" class="gallery-item">
+      <img src="assests/images/varun_talk/slide4.jpg" alt="Varun Talk Slide 4" loading="lazy">
+    </a>
+  </div>
 </div>
 
 ---
@@ -55,26 +75,6 @@ Welcome to our Astronomy & Astrophysics Gallery! Explore captivating moments fro
     </a>
     <a href="assests/images/ARIES_TRIP_2025/IMG-20250413-WA0049.jpg" target="_blank" class="gallery-item">
       <img src="assests/images/ARIES_TRIP_2025/IMG-20250413-WA0049.jpg" alt="ARIES Trip 12" loading="lazy">
-    </a>
-  </div>
-</div>
-
----
-
-## <a href="#" class="event-header" data-section="space-day">🛰️ National Space Day 2025</a>
-<div class="gallery-section" data-section="space-day">
-  <div class="gallery-grid">
-    <a href="assests/images/varun_talk/slide1.jpg" target="_blank" class="gallery-item">
-      <img src="assests/images/varun_talk/slide1.jpg" alt="Varun Talk Slide 1" loading="lazy">
-    </a>
-    <a href="assests/images/varun_talk/slide2.jpg" target="_blank" class="gallery-item">
-      <img src="assests/images/varun_talk/slide2.jpg" alt="Varun Talk Slide 2" loading="lazy">
-    </a>
-    <a href="assests/images/varun_talk/slide3.jpg" target="_blank" class="gallery-item">
-      <img src="assests/images/varun_talk/slide3.jpg" alt="Varun Talk Slide 3" loading="lazy">
-    </a>
-    <a href="assests/images/varun_talk/slide4.jpg" target="_blank" class="gallery-item">
-      <img src="assests/images/varun_talk/slide4.jpg" alt="Varun Talk Slide 4" loading="lazy">
     </a>
   </div>
 </div>

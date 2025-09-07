@@ -268,14 +268,11 @@ Build your career in **Astronomy** and **Astrophysics**.
       <strong style="color: #003366;">Department Updates</strong>
       <ul style="list-style: disc inside; font-size: 1em; color: #234; margin: 8px 0 0 0; padding: 0;">
         <li>
+          <span>Latest: <b>When the Moon turns RED</b> – September 7, 2025. Total Lunar Eclipse across India.</span>
+        </li>
+        <li>
           <span style="color: #d97706; font-weight: bold;">New!</span>
-          <span>We're launching a dedicated Astronomy Club. <b>Help us name the club!</b> Submit your creative suggestions at our upcoming event. Stay tuned for details.</span>
-        </li>
-        <li>
-          <span>Upcoming: <b>Sky-Gazing Night</b> – August 2025. Open to all students. Details soon.</span>
-        </li>
-        <li>
-          <span>Recent: Students visited ARIES, Nainital (April 2025).</span>
+          <span>Dedicated Astronomy Club - <b>Coming Soon</b> Several events and contests await you. Stay tuned for details.</span>
         </li>
         <li>
           <span>Workshop on Data Science in Astronomy: Feb 2026. <a href="workshop.html" style="color: #1a5276; text-decoration: underline;">Details</a></span>

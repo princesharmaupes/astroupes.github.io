@@ -13,11 +13,21 @@
 
   <!-- Embedded Custom Styles -->
   <style>
+    /* global box-model + prevent horizontal scroll */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden; /* prevent horizontal scrolling on all pages */
+      margin: 0;
+      padding: 0;
+    }
+    img, picture, svg, video { max-width: 100%; height: auto; display: block; }
+
     body {
       font-family: 'Roboto', Arial, sans-serif;
     }
 
-    Responsive Navigation
+    /* Responsive Navigation */
     header nav ul {
       display: flex;
       flex-wrap: nowrap;
@@ -75,7 +85,7 @@
 #hero-section {
   position: relative;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 20px;
@@ -129,13 +139,26 @@
 } */
 
   </style>
-</head>
-<body>
-  <!-- Video Background -->
-  <video autoplay muted loop id="background-video">
-    <source src="assests/videos/time.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+ </head>
+ <body>
+   <!-- Video Background -->
+   <video autoplay muted loop id="background-video">
+     <source src="assests/videos/time.mp4" type="video/mp4">
+     Your browser does not support the video tag.
+   </video>
+   <style>
+     /* ensure background video fits viewport and doesn't trigger horizontal scroll */
+     #background-video {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       z-index: -1;
+       pointer-events: none;
+     }
+   </style>
 
   <!-- Navigation Header -->
   <header>
@@ -164,15 +187,15 @@
       🚀 Upcoming Workshop: "Workshop on Data Science in Astronomy" – 24th - 26th February, 2026.
       <a href="/workshop" style="color: #07ad23; text-decoration: underline;">Learn more</a>
     </span>
-    <!-- <button id="close-banner" aria-label="Close banner">&times;</button> -->
-  </div>
-  <style>
+    <button id="close-banner" aria-label="Close banner">&times;</button>
+    </div>
+    <style>
     #workshop-banner {
       position: relative;
       top: 0px;
       margin-top: 70px; /* Adjust this value to match your header/nav height */
       width: 100%;
-      background: #2d2d72;
+      background: linear-gradient(45deg, #2d2d72, #4a4a9e);
       color: #fff;
       padding: 16px 20px;
       text-align: center;
@@ -182,50 +205,80 @@
       justify-content: center;
       align-items: center;
       gap: 18px;
+      animation: slideIn 0.5s ease-out;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    #workshop-banner:hover {
+      background: linear-gradient(45deg, #3a3a82, #5a5ab0);
+      transition: background 0.3s ease;
     }
 
     #workshop-banner a {
       font-weight: bold;
+      transition: color 0.3s ease;
     }
+
+    #workshop-banner a:hover {
+      color: #e0e0e0;
+    }
+
     #close-banner {
       background: none;
       border: none;
       color: #fff;
-      font-size: 28px;
+      font-size: 24px;
       cursor: pointer;
       margin-left: 10px;
       line-height: 1;
+      transition: color 0.3s ease;
     }
-    @keyframes fadeInBanner {
-      from { opacity: 0; transform: translateY(-20px);}
-      to { opacity: 1; transform: translateY(0);}
+
+    #close-banner:hover {
+      color: #ff6b6b;
     }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideOut {
+      from { opacity: 1; transform: translateY(0); }
+      to { opacity: 0; transform: translateY(-20px); }
+    }
+
     @media (max-width: 600px) {
       #workshop-banner {
-        font-size: 15px;
-        flex-direction: column;
-        gap: 8px;
-        padding: 10px 5px;
+      font-size: 15px;
+      flex-direction: column;
+      gap: 8px;
+      padding: 10px 5px;
       }
       #close-banner {
-        align-self: flex-end;
+      align-self: flex-end;
       }
     }
     
-  </style>
-  <script>
+    </style>
+    <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var closeBtn = document.getElementById('close-banner');
+      const closeBtn = document.getElementById('close-banner');
       if (closeBtn) {
-        closeBtn.onclick = function() {
-          var banner = document.getElementById('workshop-banner');
-          if (banner) {
-            banner.style.display = 'none';
-          }
-        };
+      closeBtn.addEventListener('click', function() {
+        const banner = document.getElementById('workshop-banner');
+        if (banner) {
+        banner.style.animation = 'slideOut 0.5s ease-out';
+        setTimeout(() => {
+          banner.style.display = 'none';
+        }, 500);
+        }
+      });
       }
     });
-  </script>
+    </script>
 
 
   <!-- Hero Section with Image Slider -->
@@ -374,7 +427,5 @@
   <p>Webpage curated by Dr. Prince Sharma and Dr. Nitesh Kumar</p>
 </footer>
 
-</body>
-</html>
 </body>
 </html>

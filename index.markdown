@@ -2,17 +2,9 @@
 layout: default
 title: Home
 ---
-<!-- # ✨ Astronomy & Astrophysics  
-### A Sub-Division of the Department of Physics under the Cluster of Applied Science, School of Advanced Engineering  
 
-Explore the universe with us — from the smallest particles to the largest galaxies, we bridge the gap between curiosity and discovery.
-
-<em>Stars have always called to the curious. We, at UPES, turn that call into a career.</em> 
-
-Our B.Sc. in Astronomy and Astrophysics takes you from the fundamentals of physics to the frontiers of space science.  
-Explore the mysteries of the universe through data, decode cosmic phenomena, and contribute to real astronomical research — all as part of a dynamic and forward-looking academic environment. -->
-<!-- Latest Section Box: place immediately after hero/intro section -->
 <div style="display: flex; justify-content: flex-end; margin: 32px 0 24px 0;">
+
   <aside style="width: 370px; min-width: 260px; max-width: 98vw; background: #f7fafc; border: 1.5px solid #dbeafe; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 22px 18px 18px 18px;">
     <h2 style="font-size: 1.3em; color: #1a5276; margin-top: 0; margin-bottom: 12px; letter-spacing: 1px;">📰 Latest</h2>
     <div style="margin-bottom: 18px;">
@@ -42,62 +34,58 @@ Explore the mysteries of the universe through data, decode cosmic phenomena, and
           <span>Upcoming: <b>Lunar Eclipse</b> – September 2025.</span>
         </li>
         <li>
-          <span style="color: #d97706; font-weight: bold;">New!</span>
           <span>We're launching a dedicated Astronomy Club. <b>Help us name the club!</b> Submit your creative suggestions at our upcoming event. Stay tuned for details.</span>
+          [<span style="color: #d97706; font-weight: bold; animation: pulse 1.2s infinite;">New!</span>]
+        <style>
+        @keyframes pulse {
+          0% { opacity: 1; transform: scale(1);}
+          50% { opacity: 0.5; transform: scale(1.15);}
+          100% { opacity: 1; transform: scale(1);}
+        }
+        </style>     
         </li>        
         <li>
-          <span>Workshop on Data Science in Astronomy: Feb 2026. <a href="workshop.html" style="color: #1a5276; text-decoration: underline;">Details</a></span>
+          <span>Workshop on Data Science in Astronomy: Feb 2026. (<a href="workshop.html" style="color: #1a5276; text-decoration: underline;">Details</a>)</span>
         </li>
       </ul>
     </div>
   </aside>
 </div>
 
-# <span style="font-size: 2.5rem; font-weight: bold; color: #002855;">✨ Astronomy & Astrophysics</span>  
-### <span style="color: #333;">A Sub-Division of the Department of Physics under the Cluster of Applied Science, School of Advanced Engineering</span>  
 
-<p style="font-size: 1.2rem; color: #444; line-height: 1.7;">
-The <strong>Astronomy and Astrophysics division at UPES</strong> is a thriving academic platform for students with a passion for exploring the cosmos. Rooted in the fundamentals of physics and inspired by the vastness of the universe, this program offers an integrated learning experience that bridges theoretical knowledge, observational science, and data-driven astrophysical research.
-</p>
+# Astronomy & Astrophysics at UPES
 
-<p style="font-size: 1.1rem; color: #444;">
-We offer a rigorous yet accessible academic environment that encourages students to ask big questions — from the formation of stars and galaxies to the detection of gravitational waves and exoplanets. The program is designed to give students a strong foundation in classical and modern physics, while introducing them to the methods and tools used by astronomers and astrophysicists worldwide.
-</p>
+### A Specialized Division within the Department of Physics, Applied Science Cluster, School of Advanced Engineering
 
-<blockquote style="font-size: 1.1rem; font-style: italic; color: #666; border-left: 4px solid #ccc; padding-left: 10px;">
-🌌 “Astronomy compels the soul to look upward and leads us from this world to another.” — Plato  
-</blockquote>
+At UPES, our Astronomy and Astrophysics division stands as a vibrant center for students passionate about exploring the universe's mysteries. Rooted in fundamental physics and driven by the endless fascination of space, we offer a thorough educational experience that blends theoretical knowledge, observational skills, and innovative astrophysical research.
 
-<p style="font-size: 1.05rem; color: #444; margin-top: 1em;">
-Our curriculum is enriched with specialized courses in celestial mechanics, cosmology, stellar structure and evolution, galactic and extragalactic astronomy, and observational techniques. Students are also introduced to practical skills such as telescope handling, astronomical image processing, and Python-based data analysis — equipping them with both scientific literacy and technical fluency.
-</p>
+We foster a setting where learners confront big questions, from the formation of stars and galaxies to the detection of gravitational waves and exoplanets. Our programs establish a strong base in both traditional and modern physics, while providing the hands-on tools and methods used by astronomers worldwide.
 
-<p style="font-size: 1.05rem; color: #444;">
-The program emphasizes experiential learning through workshops, sky-gazing events, lecture series, and educational expeditions to leading national facilities like ARIES, IUCAA, PRL, and the Devasthal Optical Telescope. These immersive experiences allow students to witness real-world research operations, interact with professional scientists, and gain hands-on exposure to observatory instrumentation and data workflows.
-</p>
+> “Astronomy compels the soul to look upward and leads us from this world to another.” — Plato
 
-<p style="font-size: 1.05rem; color: #444;">
-Backed by a dedicated and research-active faculty, our students are mentored to explore independent research ideas and pursue opportunities in internships, fellowships, and higher education. We foster a collaborative academic environment where interdisciplinary curiosity is celebrated and nurtured.
-</p>
+The curriculum delves into topics like celestial mechanics, cosmology, stellar evolution, galactic astronomy, and advanced observational techniques. Students develop key abilities in telescope handling, image processing, and data analysis with Python, nurturing both scientific understanding and technical proficiency.
 
-<p style="font-size: 1.05rem; color: #444;">
-Whether you aspire to decode the mysteries of black holes, contribute to space missions, or simply deepen your understanding of the cosmos — our Astronomy & Astrophysics program at UPES is your gateway to the universe.
-</p>
+With a focus on experiential learning, we host workshops, stargazing events, guest lectures, and visits to leading facilities such as ARIES, IUCAA, PRL, and the Devasthal Optical Telescope. These opportunities provide real-world research exposure, expert interactions, and training in observatory equipment and data management.
+
+Backed by dedicated, research-oriented faculty, students are inspired to innovate and pursue internships, fellowships, and further studies. We encourage a collaborative culture that embraces interdisciplinary discovery and creativity.
+
+Whether you're drawn to unraveling black hole enigmas, advancing space exploration, or broadening your cosmic perspective, our Astronomy & Astrophysics program at UPES invites you to reach for the stars.
+
 ---
 
-## 🌟 What We Offer
+## What We Offer
 
-- 🎓 **Undergraduate & Postgraduate Programs**  
-  Explore the field of Astronomy and Astrophysics through specialized degree tracks with hands-on training in data analysis, simulation, and observational techniques.
+- **Undergraduate & Postgraduate Programs in Physics**  
+  Immerse yourself in Astronomy and Astrophysics through specialized degree options, including B.Sc. (Hons.) Physics and M.Sc. Physics, featuring practical training in data analysis, simulations, and observational astronomy.
 
-- 🚀 **Research Opportunities**  
-  Work on real-world projects alongside faculty and researchers, with collaborations across premier institutions like ARIES, IUCAA, and PRL.
+- **Research Opportunities in Astrophysics**  
+  Participate in meaningful projects alongside faculty and partners from institutions like ARIES, IUCAA, and PRL, concentrating on fields such as cosmology and high-energy astrophysics.
 
-- 🌌 **Sky-Gazing & Workshops**  
-  Experience the mysteries beyond Earth firsthand through regular public outreach events, night-sky observations, and hands-on sessions with department telescopes.
+- **Sky-Gazing & Workshops**  
+  Join public outreach, night-sky observations, and interactive sessions with department telescopes to bridge theoretical concepts with actual celestial events.
 
-- 🧑‍🏫 **Academic Excellence**  
-Learn from leading researchers and visiting scientists engaged in cutting-edge work on cosmology, high-energy astrophysics, X-ray accretion in compact objects, AI-based stellar cluster analysis and theoretical black hole physics.
+- **Academic Excellence and Mentorship**  
+  Gain insights from leading researchers in areas like X-ray accretion, AI-driven stellar analysis, and theoretical black hole physics, supported by visiting scientists and an emphasis on interdisciplinary development.
 
 ---
 
@@ -235,16 +223,12 @@ Learn from leading researchers and visiting scientists engaged in cutting-edge w
 
 
 
-<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px;">
+## 🗞 Recent Highlights
 
-  <div style="flex: 2 1 600px; min-width: 320px;">
-    ## 🗞 Recent Highlights
 
+- 🌠 *August 2025:* Public Lecture on the occasion of the 2nd National Space Day by *Prof. Varun Sheel* (Head, Planetary Science Division, PRL).
 - ✅ *April 2025:* Student visit to ARIES, Nainital.  
-<!-- - ✅ *February 2025:* B.Sc. students observed variable stars with new 12-inch telescope   -->
-<!-- - ✅ *January 2025:* Faculty paper on stellar classification accepted in MNRAS   -->
-
-➡️ See more in [Recent Activities](activities.md)
+- ➡️ See more in [Recent Activities](activities.md)
 
 ---
 
@@ -284,11 +268,14 @@ Build your career in **Astronomy** and **Astrophysics**.
       <strong style="color: #003366;">Department Updates</strong>
       <ul style="list-style: disc inside; font-size: 1em; color: #234; margin: 8px 0 0 0; padding: 0;">
         <li>
-          <span>Latest: <b>Moon turns Red</b> – September 7, 2025. Total Lunar Eclipse across India.</span>
+          <span style="color: #d97706; font-weight: bold;">New!</span>
+          <span>We're launching a dedicated Astronomy Club. <b>Help us name the club!</b> Submit your creative suggestions at our upcoming event. Stay tuned for details.</span>
         </li>
         <li>
-          <span style="color: #d97706; font-weight: bold;">New!</span>
-          <span>Dedicated Astronomy Club - Coming Soon. <b>Several contests and event are waiting for you!</b> Stay tuned for details.</span>
+          <span>Upcoming: <b>Sky-Gazing Night</b> – August 2025. Open to all students. Details soon.</span>
+        </li>
+        <li>
+          <span>Recent: Students visited ARIES, Nainital (April 2025).</span>
         </li>
         <li>
           <span>Workshop on Data Science in Astronomy: Feb 2026. <a href="workshop.html" style="color: #1a5276; text-decoration: underline;">Details</a></span>

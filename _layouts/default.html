@@ -375,7 +375,8 @@
 
   <script>
     (function(){
-      const namespace = 'astroupes'; // change if you want a different public counter
+      // Updated: use provided API token as CountAPI namespace
+      const namespace = 'ut_mKTwDt4bVV6cAmVQnXl9enOzoBXkX6MFr05UPhWB'; // <- updated with your API string
       const key = 'visitors';
       const hitUrl = `https://api.countapi.xyz/hit/${encodeURIComponent(namespace)}/${encodeURIComponent(key)}`;
       const getUrl = `https://api.countapi.xyz/get/${encodeURIComponent(namespace)}/${encodeURIComponent(key)}`;

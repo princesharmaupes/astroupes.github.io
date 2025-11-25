@@ -138,6 +138,38 @@
   line-height: 1.6;
 } */
 
+/* add site-counter styles */
+.site-counter {
+  max-width: 420px;
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(135deg,#0b1220 0%, #10223a 100%);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  font-family: Arial, sans-serif;
+}
+.counter-graphic { width: 78px; height: 78px; flex: 0 0 78px; display: grid; place-items: center; }
+.counter-info { flex: 1; min-width: 0; }
+.counter-number { font-size: 20px; font-weight: 700; line-height: 1; background: linear-gradient(90deg,#7c3aed,#06b6d4); -webkit-background-clip: text; color: transparent; }
+.counter-label { font-size: 12px; color: rgba(255,255,255,0.85); margin-top: 6px; }
+.counter-note { font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 6px; }
+
+/* SVG ring animation helpers */
+.counter-ring { transform: rotate(-90deg); transform-origin: 50% 50%; }
+.counter-ring circle { transition: stroke-dashoffset 1s cubic-bezier(.2,.9,.2,1); stroke-linecap: round; }
+
+/* tiny reset hint */
+.counter-reset { font-size: 11px; color: rgba(255,255,255,0.5); margin-top:6px; }
+
+/* responsive */
+@media (max-width: 600px) {
+  .site-counter { width: calc(100% - 32px); margin: 16px auto; gap:10px; padding: 10px; }
+  .counter-number { font-size: 18px; }
+}
   </style>
  </head>
  <body>
@@ -307,20 +339,106 @@
     </div>
   </main>
 
-                                  
-                                          
-                            
-  <!-- Site Counter (Bottom Left) -->
-  <div style="position: fixed; bottom: 10px; left: 10px; z-index: 1000; background: rgba(255, 255, 255, 0.9); padding: 5px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-    <!-- HitWebCounter Code (Free alternative to StatCounter) -->
-    <script type="text/javascript" src="https://hitwebcounter.com/counter/counter.php?page=21459528&style=0001&nbdigits=5&type=page&initCount=500"></script>
-    <noscript>
-      <a href="https://www.hitwebcounter.com/" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=21459528&style=0001&nbdigits=5&type=page&initCount=500" title="Free Tools" Alt="Free Tools"   border="0" /></a>                                    
-
-</noscript>
-    <!-- End of HitWebCounter Code -->
+  <!-- Public Site Counter (CountAPI: free, no signup required) -->
+  <div class="site-counter" aria-live="polite" aria-atomic="true" id="site-counter-card">
+    <div class="counter-graphic" aria-hidden="true">
+      <!-- SVG circular ring + planet icon -->
+      <svg width="78" height="78" viewBox="0 0 80 80" class="counter-ring" role="img" aria-label="visitor counter graphic">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1">
+            <stop offset="0" stop-color="#7c3aed"/>
+            <stop offset="1" stop-color="#06b6d4"/>
+          </linearGradient>
+        </defs>
+        <circle cx="40" cy="40" r="30" stroke="rgba(255,255,255,0.08)" stroke-width="8" fill="none"></circle>
+        <circle id="ring" cx="40" cy="40" r="30" stroke="url(#g1)" stroke-width="8" fill="none" stroke-dasharray="188.5 188.5" stroke-dashoffset="188.5"></circle>
+        <!-- small planet -->
+        <g transform="translate(40,40)">
+          <circle cx="0" cy="-6" r="8" fill="#fff" opacity="0.95"></circle>
+          <ellipse cx="-3" cy="-6" rx="11" ry="4" fill="rgba(255,255,255,0.12)"></ellipse>
+        </g>
+      </svg>
+    </div>
+    <div class="counter-info">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <div class="counter-number" id="counter-value">Loading…</div>
+          <div class="counter-label">Total visitors</div>
+        </div>
+        <div style="text-align:right;">
+          <div class="counter-note" id="counter-since">—</div>
+        </div>
+      </div>
+      <div class="counter-reset" id="counter-reset-hint">Double-click here to reset (admin)</div>
+    </div>
   </div>
+
+  <script>
+    (function(){
+      const namespace = 'astroupes'; // change if you want a different public counter
+      const key = 'visitors';
+      const hitUrl = `https://api.countapi.xyz/hit/${encodeURIComponent(namespace)}/${encodeURIComponent(key)}`;
+      const getUrl = `https://api.countapi.xyz/get/${encodeURIComponent(namespace)}/${encodeURIComponent(key)}`;
+      const setUrl = (v) => `https://api.countapi.xyz/set/${encodeURIComponent(namespace)}/${encodeURIComponent(key)}?value=${v}`;
+
+      const elValue = document.getElementById('counter-value');
+      const elSince = document.getElementById('counter-since');
+      const ring = document.getElementById('ring');
+
+      function formatNumber(n){
+        if (n >= 1e6) return (n/1e6).toFixed(1)+'M';
+        if (n >= 1e3) return (n/1e3).toFixed(1)+'k';
+        return String(n);
+      }
+
+      // Fetch the counter (increment on each page load)
+      fetch(hitUrl, {cache: 'no-store'})
+        .then(r => { if(!r.ok) throw r; return r.json(); })
+        .then(data => {
+          const v = data.value || 0;
+          elValue.textContent = formatNumber(v);
+          // show since if available (CountAPI doesn't store date; we set a 'since' timestamp locally once)
+          let since = localStorage.getItem('site_counter_since');
+          if (!since) {
+            since = new Date().toISOString();
+            localStorage.setItem('site_counter_since', since);
+          }
+          elSince.textContent = 'Since ' + new Date(since).toLocaleDateString();
+          // animate ring: map value to 0..1 using a soft scale (log) so low numbers still show movement
+          const max = 100000; // arbitrary reference for full ring
+          const pct = Math.min(v / max, 1);
+          const circumference = 2 * Math.PI * 30; // r=30
+          const offset = circumference * (1 - pct);
+          ring.style.strokeDasharray = `${circumference} ${circumference}`;
+          ring.style.strokeDashoffset = offset;
+        })
+        .catch(err => {
+          console.warn('CountAPI error', err);
+          // fallback: try to GET without increment
+          fetch(getUrl).then(r => r.ok ? r.json() : Promise.reject('get failed'))
+            .then(d => { elValue.textContent = formatNumber(d.value || 0); })
+            .catch(() => { elValue.textContent = 'Unavailable'; elSince.textContent = ''; });
+        });
+
+      // Double-click reset helper (convenience for admin). Removes local 'since' when resetting.
+      const card = document.getElementById('site-counter-card');
+      if (card) {
+        card.addEventListener('dblclick', function(){
+          if (!confirm('Reset public visitor counter to 0? This is public.')) return;
+          fetch(setUrl(0)).then(r => r.ok ? r.json() : Promise.reject('set failed'))
+            .then(d => {
+              elValue.textContent = formatNumber(d.value);
+              localStorage.removeItem('site_counter_since');
+              elSince.textContent = 'Since ' + new Date().toLocaleDateString();
+              // strongly animate ring to zero
+              const circumference = 2 * Math.PI * 30;
+              ring.style.strokeDashoffset = circumference;
+            })
+            .catch(e => alert('Reset failed: ' + e));
+        });
+      }
+    })();
+  </script>
 
   <!-- Slider JavaScript Logic -->
   <script defer>

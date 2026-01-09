@@ -246,7 +246,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <!-- <header>
     <div class="logo-left" style="position:absolute; top:0.7rem; left:1rem; z-index:3;"></div>
       <a href="https://astroupes.github.io/" target="_blank" rel="noopener" aria-label="UPES website">
         <img src="upes-logo.jpg" alt="UPES Logo" style="height:80px; max-width:220px; width:auto; object-fit:contain; display:block;">
@@ -259,7 +259,41 @@
     </div>
     <h1>Workshop on Data Science in Astronomy</h1>
     <p>February 24-26, 2026 · UPES, Dehradun · Sponsored by IUCAA</p>
-  </header>
+  </header> -->
+<header class="header">
+  <div class="logos">
+    <a href="https://astroupes.github.io/" target="_blank" rel="noopener" aria-label="UPES website">
+      <img src="upes-logo.jpg" alt="UPES Logo" class="logo">
+    </a>
+
+    <a href="https://www.iucaa.in/en/" target="_blank" rel="noopener" aria-label="IUCAA website">
+      <img src="assests/images/IUCCA_Logo.png" alt="IUCAA Logo" class="logo">
+    </a>
+  </div>
+
+  <h1>Workshop on Data Science in Astronomy</h1>
+  <p>February 24-26, 2026 · UPES, Dehradun · Sponsored by IUCAA</p>
+</header>
+
+<style>
+.header {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* space between logos */
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: 90px;   /* increase logo size */
+  width: auto;
+}
+  </style>
+
 
   <nav aria-label="Main navigation">
     <a href="#about"><img src="assests/workshop_images/about.png" alt="About icon" class="nav-icon">About</a>

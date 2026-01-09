@@ -246,15 +246,16 @@
   </style>
 </head>
 <body>
+
   <!-- <header>
-    <div class="logo-left" style="position:absolute; top:0.7rem; left:1rem; z-index:3;"></div>
+    <div class="logo-left" style="position:absolute; top:0.7rem; left:1rem; z-index:5;"></div>
       <a href="https://astroupes.github.io/" target="_blank" rel="noopener" aria-label="UPES website">
         <img src="upes-logo.jpg" alt="UPES Logo" style="height:80px; max-width:220px; width:auto; object-fit:contain; display:block;">
       </a>
     </div>
-    <div class="logo-right" style="position:absolute; top:0.7rem; right:1rem; z-index:3;"></div>
+    <div class="logo-right" style="position:absolute; top:0.7rem; right:1rem; z-index:5;"></div>
       <a href="https://www.iucaa.in/en/" target="_blank" rel="noopener" aria-label="IUCAA website">
-        <img src="assests/images/IUCCA_Logo.png" alt="IUCAA Logo" style="height:80px; max-width:220px; width:auto; object-fit:contain; display:block;">
+        <img src="assests/images/IUCCA_Logo.jpg" alt="IUCAA Logo" style="height:80px; max-width:220px; width:auto; object-fit:contain; display:block;">
       </a>
     </div>
     <h1>Workshop on Data Science in Astronomy</h1>
@@ -267,7 +268,7 @@
     </a>
 
     <a href="https://www.iucaa.in/en/" target="_blank" rel="noopener" aria-label="IUCAA website">
-      <img src="assests/images/IUCCA_Logo.png" alt="IUCAA Logo" class="logo">
+      <img src="assests/images/IUCCA_Logo.jpg" alt="IUCAA Logo" class="logo">
     </a>
   </div>
 
@@ -283,10 +284,15 @@
 
 .logos {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  gap: 1000px; /* space between logos */
-  margin-bottom: 15px;
+  gap: 180px; /* space between logos */
+  margin-bottom: 10px;
+  position: absolute;
+  top: 10px;
+  left: 60%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
 
 .logo {

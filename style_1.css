@@ -1,5 +1,20 @@
 /* General Styles */
 body {
+    /* Ensure logos and embedded content are responsive */
+    img.logo, .google-doc {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Ensure logos and embedded content are responsive */
+    img.logo, .google-doc {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Ensure logos and embedded content are responsive */
+    img.logo, .google-doc {
+        max-width: 100%;
+        height: auto;
+    }
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif; /* Updated font style */
     font-size: 20px; /* Increased font size */

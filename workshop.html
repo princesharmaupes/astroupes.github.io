@@ -243,6 +243,141 @@
       .date-card { padding: 1rem; }
       .date-card img { width: 40px; height: 40px; }
     }
+
+    .header {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 190px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 10px;
+  left: 60%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.logo {
+  height: 90px;
+  width: auto;
+}
+
+/* Responsive logos for tablets and mobile */
+@media (max-width: 900px) {
+  .logos {
+    gap: 100px;
+    top: 8px;
+  }
+  .logo {
+    height: 70px;
+  }
+}
+
+@media (max-width: 720px) {
+  .logos {
+    flex-direction: column;
+    gap: 3px;
+    left: 50%;
+    top: 5px;
+  }
+  .logo {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos {
+    gap: 2px;
+    top: 3px;
+  }
+  .logo {
+    height: 40px;
+  }
+}
+
+/* Responsive iframe container for Google Doc */
+.responsive-iframe-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.responsive-iframe-wrapper {
+  width: 90%;
+  max-width: 900px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.responsive-iframe-wrapper iframe {
+  width: 100%;
+  height: 1500px;
+  border: none;
+  display: block;
+}
+
+/* Adjust iframe height for smaller screens */
+@media (max-width: 900px) {
+  .responsive-iframe-wrapper iframe {
+    height: 1300px;
+  }
+}
+
+@media (max-width: 720px) {
+  .responsive-iframe-wrapper {
+    width: 95%;
+  }
+  .responsive-iframe-wrapper iframe {
+    height: 1100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-iframe-wrapper {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 4px;
+  }
+  .responsive-iframe-wrapper iframe {
+    height: 900px;
+  }
+}
+
+.download-btn {
+  display: inline-block;
+  background: #00bcd4;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #0097a7;
+  transform: translateY(-2px);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+.download-btn svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
   </style>
 </head>
 <body>
@@ -345,9 +480,20 @@
 
     <section id="program">
       <h2>Program Schedule</h2>
-      <!-- <p class="note">Format: Morning lectures by invited experts; Afternoon hands-on labs using real data; Telescope session on Day-1 evening (weather permitting).</p> -->
-      <div style="display: flex; justify-content: center;">
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vS_GfPj4DqgrpWh8KE9L5l_7QiNLXuMoiMTbomkJrxX56iMZ3qt3sZvb6VoQYr4MEuwIjQzxcnAG0k7/pub?embedded=true" width="90%" height="1500" style="border: 1px solid #ddd; border-radius: 8px; margin: 2rem 0; max-width: 900px;"></iframe>
+      <div>
+        <button class="download-btn" onclick="downloadSchedulePDF()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Schedule (PDF)
+        </button>
+      </div>
+      <div class="responsive-iframe-container">
+        <div class="responsive-iframe-wrapper">
+          <iframe id="schedule-iframe" src="https://docs.google.com/document/d/e/2PACX-1vS_GfPj4DqgrpWh8KE9L5l_7QiNLXuMoiMTbomkJrxX56iMZ3qt3sZvb6VoQYr4MEuwIjQzxcnAG0k7/pub?embedded=true"></iframe>
+        </div>
       </div>
       
       <!-- <div class="table-container">
@@ -593,15 +739,42 @@
         <p><strong>By Train:</strong> Dehradun Railway Station is approximately 20 km away. Local transport options include taxis and auto-rickshaws.</p>
         <p><strong>By Road:</strong> UPES is well-connected by national highways. Buses from major cities like Delhi (about 250 km) are frequent.</p>
         <p>For detailed directions, check Google Maps or contact the organizers.</p>
-      </div>
-      <div class="col-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d110106.50469671896!2d77.9021633!3d30.4126138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1757187843567!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
 
+
+
+
+
+
+  </section>    </div>      </div>        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d110106.50469671896!2d77.9021633!3d30.4126138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1757187843567!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      <div class="col-6">      </div>
   <footer>
     &copy; 2026 Workshop on Data Science in Astronomy · Organized by UPES &amp; IUCAA
   </footer>
+
+  <script>
+    // Add cache-busting parameter to iframe on page load
+    window.addEventListener('DOMContentLoaded', function() {
+      const iframe = document.getElementById('schedule-iframe');
+      const timestamp = new Date().getTime();
+      const currentSrc = iframe.src;
+      iframe.src = currentSrc + '&cachebust=' + timestamp;
+    });
+
+    function downloadSchedulePDF() {
+      // Extract document ID from the Google Doc link
+      const docId = '16FYVlk5YvHC8TOzewF8C_-2_r4TraPCHD9RYuUqF4dw';
+      
+      // Construct the PDF export URL
+      const pdfUrl = `https://docs.google.com/document/d/${docId}/export?format=pdf`;
+      
+      // Create a temporary link and trigger download
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = 'Workshop_Schedule_DataScience_Astronomy.pdf';
+      link.target = '_blank';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
 </body>
 </html>

@@ -32,15 +32,16 @@
     header {
       color: white;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       background: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format') center/cover no-repeat,
                  radial-gradient(1200px 500px at 20% -10%, #2f6fa0 0%, #0e2940 55%, #0a2033 100%);
       background-blend-mode: overlay;
       position: relative;
-      min-height: 300px;
+      min-height: 350px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
     header::before {
       content: '';
@@ -60,26 +61,48 @@
     header h1 { font-size: 2.5rem; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
     header p { opacity: 0.95; font-size: 1.1rem; }
 
-    /* Logo positioning in header corners */
-    .logo-left {
+    /* Professional Logo Container */
+    .header-logos-container {
       position: absolute;
-      top: 0.5rem;
-      left: 1rem;
-      z-index: 3;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      z-index: 5;
     }
-    .logo-left img {
-      height: 50px;
-      max-width: 150px;
+    
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .logo-right {
-      position: absolute;
-      top: 0.5rem;
-      right: 1rem;
-      z-index: 3;
+    
+    .logo-wrapper img {
+      height: 70px;
+      width: auto;
+      object-fit: contain;
+      filter: brightness(1.1);
+      transition: transform 0.3s ease, filter 0.3s ease;
     }
-    .logo-right img {
-      height: 50px;
-      max-width: 150px;
+    
+    .logo-wrapper a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    
+    .logo-wrapper a:hover {
+      opacity: 0.85;
+    }
+    
+    .logo-wrapper a:hover img {
+      transform: scale(1.05);
     }
 
     /* Navigation enhancements */
@@ -206,23 +229,41 @@
       .col-4 { grid-column: span 12; }
       .col-7 { grid-column: span 12; }
       .speaker-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+      
+      .header-logos-container {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+      }
+      
+      .logo-wrapper img {
+        height: 60px;
+      }
     }
     @media (max-width: 720px) {
-      header { padding: 2rem 1rem; min-height: 250px; }
+      header { padding: 2rem 1rem; min-height: 320px; }
       header h1 { font-size: 2rem; }
       nav { padding: 0.6rem; gap: 0.3rem 0.5rem; }
       nav a { font-size: 0.9rem; padding: 0.4rem 0.6rem; }
       .container { padding: 1.5rem 1rem; }
       section { padding: 1.5rem; }
-      .logo-left img, .logo-right img { height: 40px; max-width: 120px; }
       .speaker-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
       .date-card { min-width: 200px; }
+      
+      .header-logos-container {
+        padding: 1rem 0.5rem;
+        gap: 0.8rem;
+      }
+      
+      .logo-wrapper img {
+        height: 50px;
+      }
     }
     @media (max-width: 600px) {
       .dates-grid { flex-direction: column; }
       .date-card { min-width: auto; }
-      .logo-left { top: 0.5rem; left: 0.5rem; }
-      .logo-right { top: 0.5rem; right: 0.5rem; }
       header h1 { font-size: 1.8rem; }
       header p { font-size: 1rem; }
       .speaker-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
@@ -233,6 +274,17 @@
       .apply-btn { padding: 0.8rem 1.2rem; font-size: 0.9rem; }
       nav a { padding: 0.3rem 0.5rem; font-size: 0.85rem; }
       .nav-icon { width: 18px; height: 18px; }
+      
+      header { min-height: 300px; }
+      
+      .header-logos-container {
+        padding: 0.8rem 0.5rem;
+        gap: 0.6rem;
+      }
+      
+      .logo-wrapper img {
+        height: 45px;
+      }
     }
     @media (max-width: 480px) {
       .container { padding: 1rem 0.5rem; }
@@ -242,200 +294,75 @@
       .table-container { margin: 0 -1rem; }
       .date-card { padding: 1rem; }
       .date-card img { width: 40px; height: 40px; }
+      
+      header { min-height: 280px; padding: 1.5rem 0.5rem; }
+      header h1 { font-size: 1.6rem; }
+      header p { font-size: 0.9rem; }
+      
+      .header-logos-container {
+        padding: 0.6rem 0.3rem;
+        gap: 0.5rem;
+      }
+      
+      .logo-wrapper img {
+        height: 40px;
+      }
     }
 
-    .header {
-  text-align: center;
-}
+    .download-btn {
+      display: inline-block;
+      background: #00bcd4;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      transition: background 0.2s ease, transform 0.1s ease;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+    }
 
-.logos {
-  display: flex;
-  align-items: center;
-  gap: 190px;
-  margin-bottom: 10px;
-  position: absolute;
-  top: 10px;
-  left: 60%;
-  transform: translateX(-50%);
-  z-index: 1000;
-}
+    .download-btn:hover {
+      background: #0097a7;
+      transform: translateY(-2px);
+    }
 
-.logo {
-  height: 90px;
-  width: auto;
-}
+    .download-btn:active {
+      transform: translateY(0);
+    }
 
-/* Responsive logos for tablets and mobile */
-@media (max-width: 900px) {
-  .logos {
-    gap: 100px;
-    top: 8px;
-  }
-  .logo {
-    height: 70px;
-  }
-}
-
-@media (max-width: 720px) {
-  .logos {
-    flex-direction: column;
-    gap: 3px;
-    left: 50%;
-    top: 5px;
-  }
-  .logo {
-    height: 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logos {
-    gap: 2px;
-    top: 3px;
-  }
-  .logo {
-    height: 40px;
-  }
-}
-
-/* Responsive iframe container for Google Doc */
-.responsive-iframe-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 2rem 0;
-}
-
-.responsive-iframe-wrapper {
-  width: 90%;
-  max-width: 900px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.responsive-iframe-wrapper iframe {
-  width: 100%;
-  height: 1500px;
-  border: none;
-  display: block;
-}
-
-/* Adjust iframe height for smaller screens */
-@media (max-width: 900px) {
-  .responsive-iframe-wrapper iframe {
-    height: 1300px;
-  }
-}
-
-@media (max-width: 720px) {
-  .responsive-iframe-wrapper {
-    width: 95%;
-  }
-  .responsive-iframe-wrapper iframe {
-    height: 1100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .responsive-iframe-wrapper {
-    width: 100%;
-    margin: 1rem 0;
-    border-radius: 4px;
-  }
-  .responsive-iframe-wrapper iframe {
-    height: 900px;
-  }
-}
-
-.download-btn {
-  display: inline-block;
-  background: #00bcd4;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  transition: background 0.2s ease, transform 0.1s ease;
-  font-size: 0.95rem;
-  border: none;
-  cursor: pointer;
-}
-
-.download-btn:hover {
-  background: #0097a7;
-  transform: translateY(-2px);
-}
-
-.download-btn:active {
-  transform: translateY(0);
-}
-
-.download-btn svg {
-  width: 18px;
-  height: 18px;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
+    .download-btn svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
 
-  <!-- <header>
-    <div class="logo-left" style="position:absolute; top:0.7rem; left:1rem; z-index:5;"></div>
+<header>
+  <div class="header-logos-container">
+    <div class="logo-wrapper">
       <a href="https://astroupes.github.io/" target="_blank" rel="noopener" aria-label="UPES website">
-        <img src="upes-logo.jpg" alt="UPES Logo" style="height:80px; max-width:220px; width:auto; object-fit:contain; display:block;">
+        <img src="upes-logo.jpg" alt="UPES Logo">
       </a>
     </div>
-    <div class="logo-right" style="position:absolute; top:0.7rem; right:1rem; z-index:5;"></div>
+    
+    <div class="logo-wrapper">
       <a href="https://www.iucaa.in/en/" target="_blank" rel="noopener" aria-label="IUCAA website">
-        <img src="assests/images/IUCCA_Logo.jpg" alt="IUCAA Logo" style="height:80px; max-width:220px; width:auto; object-fit:contain; display:block;">
+        <img src="assests/images/IUCCA_Logo.jpg" alt="IUCAA Logo">
       </a>
     </div>
-    <h1>Workshop on Data Science in Astronomy</h1>
-    <p>February 24-26, 2026 · UPES, Dehradun · Sponsored by IUCAA</p>
-  </header> -->
-<header class="header">
-  <div class="logos" style="z-index: 1000; position: relative">
-    <a href="https://astroupes.github.io/" target="_blank" rel="noopener" aria-label="UPES website">
-      <img src="upes-logo.jpg" alt="UPES Logo" class="logo">
-    </a>
-
-    <a href="https://www.iucaa.in/en/" target="_blank" rel="noopener" aria-label="IUCAA website">
-      <img src="assests/images/IUCCA_Logo.jpg" alt="IUCAA Logo" class="logo">
-    </a>
   </div>
-
+  <br>
+  <br>
+  
   <h1>Workshop on Data Science in Astronomy</h1>
   <p>February 24-26, 2026 · UPES, Dehradun · Sponsored by IUCAA</p>
 </header>
-
-<style>
-.header {
-  text-align: center;
-}
-
-
-.logos {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 190px; /* space between logos */
-  margin-bottom: 10px;
-  position: absolute;
-  top: 10px;
-  left: 60%;
-  transform: translateX(-50%);
-  z-index: 1000;
-}
-
-.logo {
-  height: 90px;   /* increase logo size */
-  width: auto;
-}
-  </style>
-
 
   <nav aria-label="Main navigation">
     <a href="#about"><img src="assests/workshop_images/about.png" alt="About icon" class="nav-icon">About</a>
@@ -530,19 +457,7 @@
             <p class="speaker-name">Dr. Aasheesh Raturi</p>
             <p class="speaker-role"> Assistant Prof. <br> PG Dolphin Institute, Dehradun</p>
           </div>
-
-        <!-- <div class="speaker-card">
-          <img src="assests/images/Kanak_Saha.jpg" alt="Prof. Kanak Saha" class="speaker-img">
-          <div class="speaker-info">
-            <p class="speaker-name">Prof. Kanak Saha</p>
-            <p class="speaker-role">Scientist<br>IUCAA, Pune</p>
-          </div>
-        </div> -->
-
-
         </div>
-      
-      
       </div>
       <h3>Local Organizing Team</h3>
       <div class="speaker-grid">
@@ -587,9 +502,6 @@
     <section id="registration">
       <h2>Registration</h2>
       <div>
-        <!-- <p>
-          Selection will be based on academic background and a short statement of interest. There is <strong>no registration fee</strong>. Limited seats (~60) are available.
-        </p> -->
         <p>
           Selection will be based on academic background and a short statement of interest. There is <strong>no registration fee</strong>. Limited seats (~ 60) are available. <strong>Owing to limited funding, outstation participants will need to make their own arrangements for travel, accommodation, and meals outside the workshop.</strong>
         </p>  
@@ -636,7 +548,7 @@
       </div>
     </section>
 
-      <section id="program">
+    <section id="program">
       <h2>Program Schedule</h2>
       <div>
         <button class="download-btn" onclick="downloadSchedulePDF()">
@@ -649,8 +561,10 @@
         </button>
       </div>
       <div class="responsive-iframe-container">
-        <div class="responsive-iframe-wrapper">
-          <iframe id="schedule-iframe" src="https://docs.google.com/document/d/e/2PACX-1vS_GfPj4DqgrpWh8KE9L5l_7QiNLXuMoiMTbomkJrxX56iMZ3qt3sZvb6VoQYr4MEuwIjQzxcnAG0k7/pub?embedded=true"></iframe>
+        <div class="responsive-iframe-wrapper" style="width: 100%; height: 400px; border: none; box-shadow: 10 4px 15px var(--shadow); border-radius: 8px; overflow: hidden;">
+            <iframe id="schedule-iframe" style="width: 100%; height: 100%; align-items: center; border: none;" src="https://docs.google.com/document/d/e/2PACX-1vS_GfPj4DqgrpWh8KE9L5l_7QiNLXuMoiMTbomkJrxX56iMZ3qt3sZvb6VoQYr4MEuwIjQzxcnAG0k7/pub?embedded=true" 
+            ontouchstart="this.style.transform='scale(1.1)';" 
+            ontouchend="this.style.transform='scale(1)';"></iframe>
         </div>
       </div>
     </section>
@@ -689,13 +603,13 @@
         <p><strong>By Train:</strong> Dehradun Railway Station is approximately 20 km away. Local transport options include taxis and auto-rickshaws.</p>
         <p><strong>By Road:</strong> UPES is well-connected by national highways. Buses from major cities like Delhi (about 250 km) are frequent.</p>
         <p>For detailed directions, check Google Maps or contact the organizers.</p>
+      </div>
+      <div class="col-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d110106.50469671896!2d77.9021633!3d30.4126138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1757187843567!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
 
-
-
-
-
-
-  </section>    </div>      </div>        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d110106.50469671896!2d77.9021633!3d30.4126138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d4890d7c1735%3A0x22d3ae324c238e3c!2sUPES!5e0!3m2!1sen!2sin!4v1757187843567!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      <div class="col-6">      </div>
   <footer>
     &copy; 2026 Workshop on Data Science in Astronomy · Organized by UPES &amp; IUCAA
   </footer>

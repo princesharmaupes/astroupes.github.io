@@ -226,6 +226,7 @@ Whether you're drawn to unraveling black hole enigmas, advancing space explorati
 ## 🗞 Recent Highlights
 
 
+- 🌌 *April 2026:* Registrations and deadlines announced for **HiSTAR Summer School 2026**. [View event page](histar-summer-school-2026.html)
 - 🌠 *August 2025:* Public Lecture on the occasion of the 2nd National Space Day by *Prof. Varun Sheel* (Head, Planetary Science Division, PRL).
 - ✅ *April 2025:* Student visit to ARIES, Nainital.  
 - ➡️ See more in [Recent Activities](activities.md)

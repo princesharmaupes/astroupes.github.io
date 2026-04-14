@@ -65,7 +65,7 @@ title: Home
       <p style="margin:0; opacity:0.94; max-width:640px;">Choose your academic track and get a clear action plan for admission into B.Sc. and M.Sc. Physics programs with strong astronomy exposure, hands-on observations, and research mentorship.</p>
       <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
         <a href="https://admission.upes.ac.in/Login" target="_blank" rel="noopener noreferrer" style="background:#ffbe55; color:#1c1c1c; text-decoration:none; padding:10px 16px; border-radius:10px; font-weight:700;">Apply Now</a>
-        <a href="programs.md" style="background:rgba(255,255,255,0.14); color:#fff; text-decoration:none; padding:10px 16px; border-radius:10px; border:1px solid rgba(255,255,255,0.28); font-weight:700;">Explore Programs</a>
+        <a href="/programs.md" style="background:rgba(255,255,255,0.14); color:#fff; text-decoration:none; padding:10px 16px; border-radius:10px; border:1px solid rgba(255,255,255,0.28); font-weight:700;">Explore Programs</a>
         <a href="mailto:nitesh.kumar@ddn.upes.ac.in?subject=Admission%20Query%20for%20BSc%20or%20MSc%20Physics" style="background:rgba(255,255,255,0.14); color:#fff; text-decoration:none; padding:10px 16px; border-radius:10px; border:1px solid rgba(255,255,255,0.28); font-weight:700;">Talk to Faculty</a>
       </div>
     </div>

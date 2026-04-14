@@ -16,26 +16,34 @@
     html, body { max-width: 100%; overflow-x: hidden; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     img, picture, svg, video { max-width: 100%; height: auto; display: block; }
 
-    /* Enhanced color scheme and typography */
+    /* Enhanced color scheme and typography - Astronomy Theme */
     :root {
-      --ink: #1a5276;
-      --ink-d: #154360;
-      --bg: #f5f7fa;
-      --paper: #ffffff;
-      --muted: #2c3e50;
-      --accent: #eaf2f8;
-      --shadow: rgba(0, 0, 0, 0.1);
+      --ink: #4a235a;           /* Deep purple */
+      --ink-d: #2d1340;         /* Darker purple */
+      --bg: #f8f6fa;            /* Light lavender background */
+      --paper: #ffffff;         /* White cards */
+      --muted: #3d2645;         /* Dark purple text */
+      --accent: #f0e6ff;        /* Light purple highlight */
+      --gold: #d4af37;          /* Gold accent */
+      --teal: #20b2aa;          /* Teal accent */
+      --shadow: rgba(74, 35, 90, 0.12);
     }
-    body { background: var(--bg); color: var(--muted); line-height: 1.6; }
+    body { 
+      background: 
+        linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
+        url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=1200&auto=format') fixed center/cover,
+        var(--bg); 
+      color: var(--muted); 
+      line-height: 1.6; 
+    }
 
     /* Header improvements */
     header {
       color: white;
       text-align: center;
       padding: 2rem 1rem;
-      background: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format') center/cover no-repeat,
-                 radial-gradient(1200px 500px at 20% -10%, #2f6fa0 0%, #0e2940 55%, #0a2033 100%);
-      background-blend-mode: overlay;
+      background: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format') center/cover no-repeat;
+      background-size: cover;
       position: relative;
       min-height: 350px;
       display: flex;
@@ -50,7 +58,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(10, 32, 51, 0.7);
+      background: rgba(0, 0, 0, 0.35);
       z-index: 1;
     }
     header h1, header p {
@@ -129,7 +137,7 @@
       border-radius: 0.5rem;
       transition: background 0.2s ease, transform 0.1s ease;
     }
-    nav a:hover { background: rgba(255, 255, 255, 0.15); transform: translateY(-1px); }
+    nav a:hover { background: var(--gold); color: var(--ink-d); transform: translateY(-1px); border-radius: 4px; }
     .nav-icon { width: 20px; height: 20px; opacity: 0.9; }
 
     /* Container and sections */
@@ -143,9 +151,9 @@
     }
     h2 { color: var(--ink); margin: 0 0 1.5rem; font-size: 1.8rem; }
     .highlight {
-      background: var(--accent);
+      background: linear-gradient(135deg, var(--accent) 0%, rgba(212, 175, 55, 0.08) 100%);
       padding: 1.2rem;
-      border-left: 5px solid var(--ink);
+      border-left: 5px solid var(--gold);
       border-radius: 8px;
       margin: 1rem 0;
     }
@@ -311,32 +319,30 @@
 
     .download-btn {
       display: inline-block;
-      background: #00bcd4;
+      background: var(--teal);
       color: white;
-      padding: 0.8rem 1.2rem;
+      padding: 0.6rem 0.9rem;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
       margin-bottom: 1.5rem;
-      transition: background 0.2s ease, transform 0.1s ease;
-      font-size: 0.95rem;
+      transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+      font-size: 0.85rem;
       border: none;
       cursor: pointer;
+      box-shadow: 0 2px 8px rgba(32, 178, 170, 0.2);
     }
 
     .download-btn:hover {
-      background: #0097a7;
+      background: #1a9a8f;
       transform: translateY(-2px);
-    }
-
-    .download-btn:active {
-      transform: translateY(0);
+      box-shadow: 0 4px 15px rgba(32, 178, 170, 0.4);
     }
 
     .download-btn svg {
-      width: 18px;
-      height: 18px;
-      margin-right: 0.5rem;
+      width: 16px;
+      height: 16px;
+      margin-right: 0.4rem;
       vertical-align: middle;
     }
   </style>
@@ -381,29 +387,45 @@
       <div class="grid">
         <div class="col-6">
           <p>
-            The <strong>Workshop on Data Science in Astronomy</strong> introduces students to modern, data-driven techniques in astronomy through expert lectures and hands-on tutorials using real survey data (TESS, Kepler, Gaia). You'll learn time-series analysis, photometry, and Python workflows with libraries such as <em>Astropy</em> and <em>Lightkurve</em>.
+            The <strong>Workshop on Data Science in Astronomy</strong> is a three-day intensive program combining lectures and hands-on labs focused on modern, data-driven methods used across observational and theoretical astronomy. Participants will work with real survey data (TESS, Kepler, Gaia) and learn end-to-end workflows: data access, cleaning, visualization, time-series analysis, and reproducible Python-based analysis using libraries such as <em>Astropy</em>, <em>Lightkurve</em>, <em>numpy</em>, and <em>scipy</em>.
+          </p>
+          <p>
+            The workshop balances conceptual lectures from expert resource persons with practical sessions where you will apply techniques to actual datasets. Sessions will cover: data retrieval and formats, basic photometry and time-series tools, signal detection and classification, introduction to machine learning applied to astrophysical problems, and visualization best practices for publication-quality figures.
           </p>
           <div class="highlight">
-            Designed for <strong>Undergraduate (2nd &amp; 3rd year)</strong> and <strong>Postgraduate</strong> students in physics/astronomy/data-science.
+            Objectives: learn practical, reproducible data-science techniques; analyze real astronomical datasets; and prepare a short project or poster demonstrating your findings.
           </div>
-          <p class="tiny">Organized by UPES (Dehradun) in collaboration with IUCAA (Pune).</p>
+          <p class="tiny">Who should attend: motivated <strong>UG (2nd &amp; 3rd year)</strong> and <strong>PG</strong> students in Physics, Astronomy, Mathematics, Computer Science, or related fields.</p>
         </div>
         <div class="col-6">
           <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=800&auto=format" alt="Data Science in Astronomy" style="border-radius: 10px; box-shadow: 0 5px 15px var(--shadow);">
         </div>
+      </div>
+      <div style="margin-top:1rem">
+        <h3>Learning outcomes</h3>
+        <ul>
+          <li>Access and pre-process astronomical time-series and catalog data from public archives.</li>
+          <li>Perform basic photometric analysis and detect variability or transit-like signals.</li>
+          <li>Apply simple classification and clustering techniques to astrophysical datasets.</li>
+          <li>Produce reproducible Jupyter-based analyses and present results in short projects or posters.</li>
+        </ul>
       </div>
     </section>
 
     <section id="eligibility">
       <h2>Eligibility</h2>
       <div>
+        <p>This workshop is aimed at students who want hands-on experience in applying data-science methods to astronomical problems. Applicants should meet at least one of the following:</p>
         <ul>
-          <li>UG (2nd or 3rd year) students in Physics, Mathematics, Computer Science, or related fields.</li>
-          <li>PG (M.Sc./M.Tech) students in Physics/Astronomy/Data Science.</li>
-          <li>Basic programming familiarity recommended (Python/Jupyter).</li>
+          <li>Undergraduate students (2nd or 3rd year) in Physics, Astronomy, Mathematics, Computer Science, or related disciplines.</li>
+          <li>Postgraduate students in Physics, Astronomy, Data Science, or allied fields.</li>
+          <li>Early-career researchers and engineering students with a strong interest in astronomical data analysis.</li>
         </ul>
+        <p><strong>Recommended skills:</strong> basic familiarity with programming (Python/Jupyter), comfort with command-line tools, and a willingness to work with real datasets. Prior research experience is useful but not required.</p>
+        <p><strong>Selection criteria:</strong> applications are evaluated on academic background, statement of interest, and available seats. Preference may be given to candidates who demonstrate motivation to pursue a short project or poster during the workshop.</p>
+        <p class="note">Note: Seats are limited (~40). Participants must commit to attending all sessions to receive a certificate of participation.</p>
       </div>
-    </section>      
+    </section>
       
     <section id="speakers">
       <h2>Speakers / Resource Persons</h2>
@@ -514,12 +536,12 @@
     <section id="registration">
       <h2>Registration</h2>
       <div>
-        <p>
-          Selection will be based on academic background and a short statement of interest. There is <strong>no registration fee</strong>. Limited seats (~ 60) are available. <strong>Owing to limited funding, outstation participants will need to make their own arrangements for travel, accommodation, and meals outside the workshop.</strong>
-        </p>  
-        
-        <a class="apply-btn" target="_blank" href="https://forms.office.com/r/1gVvFCsk6s" aria-label="Apply for the workshop">Apply Now</a>
-        <p class="tiny">Tip: In your application, briefly describe your programming experience and motivation to attend.</p>
+      <p>
+        Selection will be based on academic background and a short statement of interest. There is <strong>no registration fee</strong>. Limited seats (~ 40) are available. <strong>Owing to limited funding, outstation participants will need to make their own arrangements for travel, accommodation, and meals outside the workshop.</strong>
+      </p>  
+      
+      <button class="apply-btn" disabled style="opacity: 0.6; cursor: not-allowed; background: #999;">Registration Closed</button>
+      <p class="tiny"><strong>Registration deadline has passed (January 10, 2026).</strong> Thank you for your interest!</p>
       </div>
     </section>
 
@@ -542,6 +564,11 @@
           <p>January 25, 2026</p>
         </div>
         <div class="date-card">
+          <img src="assests/workshop_images/register.png" alt="Registration deadline icon">
+          <p><strong>Last Date to Register (Shortlisted)</strong></p>
+          <p>February 5, 2026</p>
+        </div>
+        <div class="date-card">
           <img src="assests/workshop_images/training.png" alt="Workshop icon">
           <p><strong>Workshop</strong></p>
           <p>February 24-26, 2026</p>
@@ -549,15 +576,39 @@
       </div>
     </section>
 
+        <section id="selected-participants">
+      <h2>List of Participants</h2>
+      <p>Final list of participants can be accessed by downloading the PDF file below:</p>
+      <a class="download-btn" href="List of Candidates.pdf" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Final Participants List (PDF)
+      </a>
+      <div class="responsive-iframe-container">
+        <div class="responsive-iframe-wrapper" style="width: 100%; height: 500px; border: none; box-shadow: 0 4px 15px var(--shadow); border-radius: 8px; overflow: hidden;">
+            <iframe style="width: 100%; height: 100%; border: none;" src="List of Candidates.pdf"></iframe>
+        </div>
+      </div>
+    </section>
     <section id="prep">
       <h2>Pre-Workshop Setup</h2>
-      <div class="col-12">
-        <ul>
-          <li>Bring a laptop with <strong>Python&nbsp;3</strong> and <strong>Jupyter</strong> installed.</li>
-          <li>Install: <code>astropy</code>, <code>lightkurve</code>, <code>numpy</code>, <code>scipy</code>, <code>matplotlib</code>.</li>
-          <li>We will provide datasets (TESS/Kepler/Gaia) during the lab sessions.</li>
-        </ul>
+      <p>To make the best use of the workshop, please prepare your computing environment before the event. While we will guide you through software during the opening session, having your system ready in advance ensures you can focus on learning without delays.</p>
+      <div class="highlight">
+        <strong>Essential requirements:</strong> Bring a laptop with Python 3 and Jupyter installed. These are the primary tools you'll use throughout the workshop for all hands-on activities.
       </div>
+      <p><strong>Data science and astronomy libraries:</strong> Install key packages used for data processing and astronomical analysis. The workshop will rely on a standard scientific Python stack; we recommend using an environment manager (e.g., Conda or pip) to organize your packages and avoid conflicts.</p>
+      <p><strong>Datasets:</strong> We will provide the astronomical datasets (TESS, Kepler, Gaia) during lab sessions, either via download links or pre-loaded on workshop machines. You do not need to download these beforehand.</p>
+      <p><strong>Before Day 1:</strong></p>
+      <ul>
+        <li>Test that Python and Jupyter launch without errors on your laptop.</li>
+        <li>Verify that your preferred packages import correctly and are up-to-date.</li>
+        <li>Bring power adapters and any cables needed to connect to workshop displays or internet.</li>
+        <li>Check your internet connectivity; we will provide WiFi, but it's good to have a mobile hotspot as backup.</li>
+      </ul>
+      <p class="note">Note: Participants are responsible for maintaining their own backups of code and notes. We recommend using version control (Git) or cloud storage to save your work during the workshop.</p>
     </section>
 
     <section id="program">
@@ -581,12 +632,40 @@
       </div>
     </section>
 
+    <section id="poster-presentation">
+      <h2>Poster Presentation</h2>
+      <div class="highlight">
+        <img src="assests/workshop_images/conference-call.png" alt="Presentation icon" style="width: 60px; height: 60px; float: left; margin-right: 1rem; margin-bottom: 0.5rem;">
+        <p>Interested participants are invited to present posters on topics related to data-driven physics, astrophysics, astronomy, and allied areas. Posters may describe completed work, preliminary results, or well-motivated project ideas that use data-driven methods.</p>
+        <p><strong>Submission:</strong> Please prepare a short abstract (maximum 200 words) and a poster (PDF). Submit the abstract and the poster PDF to <a href="mailto:upesworkshop2026@gmail.com">upesworkshop2026@gmail.com</a> before <strong>February 17, 2026</strong>. All participants are required to bring a printed copy of their poster with them on the day of the event. A poster template is attached for reference; however, participants may use an alternative design as long as it follows the general layout and formatting guidelines.</p>
+        <p><strong>Download poster template:</strong></p>
+        <a class="download-btn" href="Poster Data Science in Astronomy.pptx" download>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Poster Template (PowerPoint)
+        </a>
+        <p><strong>Format & guidelines:</strong></p>
+        <ul>
+          <li>Poster file: PDF (recommended A0 portrait or A1 landscape).</li>
+          <li>Include a clear title, authors and affiliations, short abstract, figures, and conclusions.</li>
+          <li>Prepare a short 2-3 minute elevator pitch to present during the poster session.</li>
+        </ul>
+        <p><strong>Poster session:</strong> A dedicated poster session will be held during the workshop (Day 2). Authors will have time for short presentations and discussion with resource persons.</p>
+        <p><strong>Judging & prizes:</strong> Posters will be evaluated by a panel of judges on scientific merit, clarity, originality, and presentation. The top three posters will receive prizes and a certificate of recognition.</p>
+        <p class="tiny">For questions about poster submissions, contact the organizers at the emails above.</p>
+      </div>
+    </section>
+
     <section id="contact">
       <h2>Contact</h2>
       <div class="col-7">
-        <p>For queries, please reach out:</p>
+        <p>For queries, please reach out to the organizers.</p>
         <ul class="contact-list">
           <li><strong>Dr. Nitesh Kumar</strong> (UPES) — <a href="mailto:nitesh.kumar@ddn.upes.ac.in">nitesh.kumar@ddn.upes.ac.in</a> · +91-8742930496</li>
+          <li><strong>Dr. Prince Sharma</strong> (UPES) — <a href="mailto:prince.sharma@ddn.upes.ac.in">prince.sharma@ddn.upes.ac.in</a> · +91-9654158687</li>
           <li><strong>Dr. Anupam Bhardwaj</strong> (IUCAA) — <a href="mailto:anupam.bhardwaj@iucaa.in">anupam.bhardwaj@iucaa.in</a> · +91-9811650632</li>
         </ul>
       </div>
@@ -597,7 +676,7 @@
     <h2>About UPES and Dehradun</h2>
     <div class="grid">
       <div class="col-6">
-        <h3>University of Petroleum and Energy Studies (UPES)</h3>
+        <h3>UPES (Formerly University of Petroleum and Energy Studies)</h3>
         <p>Established in 2003, UPES is India's first energy-focused university, offering specialized programs in engineering, management, and sciences. It emphasizes innovation in petroleum, energy, and related fields, with a strong focus on research and industry collaboration.</p>
         <p><strong>Key Courses:</strong> B.Tech in Computer Science, Petroleum Engineering, Physics; M.Tech in Data Science, Renewable Energy; and interdisciplinary programs in astronomy and astrophysics.</p>
       </div>

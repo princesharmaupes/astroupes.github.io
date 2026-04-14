@@ -57,6 +57,89 @@ title: Home
 
 ### A Specialized Division within the Department of Physics, Applied Science Cluster, School of Advanced Engineering
 
+<section id="admissions-spotlight" style="margin: 22px 0 28px; border-radius: 18px; background: linear-gradient(140deg, #071a2e 0%, #133b63 48%, #17638a 100%); color: #fff; padding: 26px 20px; box-shadow: 0 12px 28px rgba(7,26,46,0.28);">
+  <div style="display:flex; flex-wrap:wrap; gap:18px; justify-content:space-between; align-items:flex-start;">
+    <div style="flex:1 1 420px; min-width:280px;">
+      <p style="margin:0; font-size:0.84rem; letter-spacing:0.8px; text-transform:uppercase; color:#ffd48f; font-weight:700;">Admissions 2026</p>
+      <h2 style="margin:8px 0 10px; color:#fff; font-size:2rem; line-height:1.2;">Build Your Future in Astronomy and Astrophysics</h2>
+      <p style="margin:0; opacity:0.94; max-width:640px;">Choose your academic track and get a clear action plan for admission into B.Sc. and M.Sc. Physics programs with strong astronomy exposure, hands-on observations, and research mentorship.</p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+        <a href="https://admission.upes.ac.in/Login" target="_blank" rel="noopener noreferrer" style="background:#ffbe55; color:#1c1c1c; text-decoration:none; padding:10px 16px; border-radius:10px; font-weight:700;">Apply Now</a>
+        <a href="programs.md" style="background:rgba(255,255,255,0.14); color:#fff; text-decoration:none; padding:10px 16px; border-radius:10px; border:1px solid rgba(255,255,255,0.28); font-weight:700;">Explore Programs</a>
+        <a href="mailto:nitesh.kumar@ddn.upes.ac.in?subject=Admission%20Query%20for%20BSc%20or%20MSc%20Physics" style="background:rgba(255,255,255,0.14); color:#fff; text-decoration:none; padding:10px 16px; border-radius:10px; border:1px solid rgba(255,255,255,0.28); font-weight:700;">Talk to Faculty</a>
+      </div>
+    </div>
+
+    <div style="flex:1 1 330px; min-width:280px; background:rgba(255,255,255,0.11); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:14px; backdrop-filter: blur(6px);">
+      <p style="margin:0 0 10px; font-weight:700;">Find your best-fit track</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
+        <button type="button" class="track-btn active" data-track="bsc" style="padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.35); background:#fff; color:#103458; font-weight:700; cursor:pointer;">B.Sc. (Hons.) Physics</button>
+        <button type="button" class="track-btn" data-track="msc" style="padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.35); background:transparent; color:#fff; font-weight:700; cursor:pointer;">M.Sc. Physics</button>
+      </div>
+
+      <div id="track-bsc" class="track-panel" style="display:block;">
+        <ul style="margin:0; padding-left:18px; line-height:1.55;">
+          <li>Strong foundation in core physics + astronomy electives.</li>
+          <li>Early exposure to telescope sessions and data analysis.</li>
+          <li>Best for students beginning their research journey.</li>
+        </ul>
+      </div>
+
+      <div id="track-msc" class="track-panel" style="display:none;">
+        <ul style="margin:0; padding-left:18px; line-height:1.55;">
+          <li>Advanced physics pathway with astrophysics-focused projects.</li>
+          <li>Research mentoring, seminars, and proposal-level training.</li>
+          <li>Best for higher studies, fellowships, and R&amp;D careers.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:16px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:12px;">
+    <p style="margin:0 0 8px; font-weight:700;">Admission FAQs</p>
+    <details style="padding:8px 0; border-top:1px solid rgba(255,255,255,0.18);">
+      <summary style="cursor:pointer; font-weight:600;">Do I need prior astronomy experience?</summary>
+      <p style="margin:8px 0 0; opacity:0.92;">No. A strong interest in physics and willingness to learn analytical tools is sufficient to start.</p>
+    </details>
+    <details style="padding:8px 0; border-top:1px solid rgba(255,255,255,0.18);">
+      <summary style="cursor:pointer; font-weight:600;">Will I get practical exposure?</summary>
+      <p style="margin:8px 0 0; opacity:0.92;">Yes. The curriculum includes workshops, observational activities, and computational analysis sessions.</p>
+    </details>
+    <details style="padding:8px 0; border-top:1px solid rgba(255,255,255,0.18);">
+      <summary style="cursor:pointer; font-weight:600;">How can I get admission guidance?</summary>
+      <p style="margin:8px 0 0; opacity:0.92;">Use the Apply Now link for formal admission steps or contact faculty through the mail link above for academic guidance.</p>
+    </details>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.track-btn');
+    const panels = {
+      bsc: document.getElementById('track-bsc'),
+      msc: document.getElementById('track-msc')
+    };
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const target = btn.getAttribute('data-track');
+        buttons.forEach((b) => {
+          b.classList.remove('active');
+          b.style.background = 'transparent';
+          b.style.color = '#fff';
+        });
+        btn.classList.add('active');
+        btn.style.background = '#fff';
+        btn.style.color = '#103458';
+
+        Object.keys(panels).forEach((key) => {
+          panels[key].style.display = key === target ? 'block' : 'none';
+        });
+      });
+    });
+  });
+</script>
+
 At UPES, our Astronomy and Astrophysics division stands as a vibrant center for students passionate about exploring the universe's mysteries. Rooted in fundamental physics and driven by the endless fascination of space, we offer a thorough educational experience that blends theoretical knowledge, observational skills, and innovative astrophysical research.
 
 We foster a setting where learners confront big questions, from the formation of stars and galaxies to the detection of gravitational waves and exoplanets. Our programs establish a strong base in both traditional and modern physics, while providing the hands-on tools and methods used by astronomers worldwide.
@@ -227,6 +310,8 @@ Whether you're drawn to unraveling black hole enigmas, advancing space explorati
 
 
 - 🌌 *April 2026:* Registrations and deadlines announced for **HiSTAR Summer School 2026**. [View event page](histar-summer-school-2026.html)
+- 🌟 *February 2026:* Workshop on Data Science in Astronomy successfully conducted with over 100 participants. [See highlights](workshop.html)
+- 🌙 *December 2025:* Night Sky Observation session conducted for hands-on telescope learning. [See activities](activities.md)
 - 🌠 *August 2025:* Public Lecture on the occasion of the 2nd National Space Day by *Prof. Varun Sheel* (Head, Planetary Science Division, PRL).
 - ✅ *April 2025:* Student visit to ARIES, Nainital.  
 - ➡️ See more in [Recent Activities](activities.md)

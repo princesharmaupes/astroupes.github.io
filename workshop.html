@@ -345,6 +345,68 @@
       margin-right: 0.4rem;
       vertical-align: middle;
     }
+
+    .success-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 1.2rem;
+      align-items: start;
+    }
+
+    .success-info {
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px var(--shadow);
+    }
+
+    .nwdsa-slideshow {
+      position: relative;
+      width: 100%;
+      min-height: 420px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #f1f5f9;
+      box-shadow: 0 2px 10px var(--shadow);
+    }
+
+    .nwdsa-slide {
+      width: 100%;
+      height: 420px;
+      object-fit: contain;
+      background: #0b1220;
+      display: block;
+      transition: opacity 0.6s;
+    }
+
+    .nwdsa-slide.layer {
+      position: absolute;
+      inset: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    .slide-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.45);
+      color: white;
+      border: none;
+      border-radius: 999px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .slide-nav-btn.prev { left: 12px; }
+    .slide-nav-btn.next { right: 12px; }
+
+    @media (max-width: 900px) {
+      .success-grid { grid-template-columns: 1fr; }
+      .nwdsa-slide { height: 300px; }
+      .nwdsa-slideshow { min-height: 300px; }
+    }
   </style>
 </head>
 <body>
@@ -377,6 +439,7 @@
     <a href="#speakers"><img src="assests/workshop_images/conference-call.png" alt="Speakers icon" class="nav-icon">Speakers</a>
     <a href="#registration"><img src="assests/workshop_images/sign-up.png" alt="Registration icon" class="nav-icon">Registration</a>
     <a href="#dates"><img src="assests/workshop_images/calendar-1.png" alt="Calendar icon showing a highlighted date, representing key workshop dates" class="nav-icon">Dates</a>
+    <a href="#highlights"><img src="assests/workshop_images/conference-call.png" alt="Highlights icon" class="nav-icon">Highlights</a>
     <a href="#prep"><img src="assests/workshop_images/training.png" alt="Preparation icon" class="nav-icon">Preparation</a>
     <a href="#contact"><img src="assests/workshop_images/phone-contact.png" alt="Contact icon" class="nav-icon">Contact</a>
   </nav>
@@ -411,6 +474,37 @@
         </ul>
       </div>
     </section>
+
+        <section id="highlights">
+      <h2>Workshop Success Highlights (NWDSA 2026)</h2>
+      <p>
+        The <strong>National Workshop on Data Science in Astronomy</strong> was successfully conducted from <strong>February 24-26, 2026</strong> at UPES, Dehradun.
+        The event brought together students, faculty, and experts for lectures, coding-based hands-on sessions, project interactions, and poster discussions.
+      </p>
+      <div class="success-grid">
+        <div class="success-info">
+          <h3 style="margin-top:0.2rem;">Key Outcomes</h3>
+          <ul>
+            <li>Strong participation from UG, PG, and early-career researchers.</li>
+            <li>Hands-on training with real astronomy datasets and Python tools.</li>
+            <li>Active mentor-participant interactions during project and poster sessions.</li>
+            <li>Improved research readiness in data-driven astronomy workflows.</li>
+          </ul>
+          <p class="note"><strong>Theme:</strong> Building practical data-science capability for modern astronomy research.</p>
+        </div>
+        <div>
+          <div class="nwdsa-slideshow">
+            <img id="nwdsa-slide-a" class="nwdsa-slide layer" src="assests/images/NWDSA/DSCF0007.JPG" alt="NWDSA Workshop Highlights" style="opacity:1;">
+            <img id="nwdsa-slide-b" class="nwdsa-slide layer" src="assests/images/NWDSA/DSCF0333.JPG" alt="NWDSA Workshop Highlights" style="opacity:0;">
+            <button type="button" class="slide-nav-btn prev" onclick="prevNwdsaSlide()" aria-label="Previous workshop image">&#8592;</button>
+            <button type="button" class="slide-nav-btn next" onclick="nextNwdsaSlide()" aria-label="Next workshop image">&#8594;</button>
+          </div>
+          <p class="tiny">A rotating gallery of moments from the National Workshop on Data Science in Astronomy.</p>
+        </div>
+      </div>
+    
+    </section>
+    
 
     <section id="eligibility">
       <h2>Eligibility</h2>
@@ -593,6 +687,8 @@
         </div>
       </div>
     </section>
+
+
     <section id="prep">
       <h2>Pre-Workshop Setup</h2>
       <p>To make the best use of the workshop, please prepare your computing environment before the event. While we will guide you through software during the opening session, having your system ready in advance ensures you can focus on learning without delays.</p>
@@ -709,10 +805,81 @@
     // Add cache-busting parameter to iframe on page load
     window.addEventListener('DOMContentLoaded', function() {
       const iframe = document.getElementById('schedule-iframe');
-      const timestamp = new Date().getTime();
-      const currentSrc = iframe.src;
-      iframe.src = currentSrc + '&cachebust=' + timestamp;
+      if (iframe) {
+        const timestamp = new Date().getTime();
+        const currentSrc = iframe.src;
+        iframe.src = currentSrc + '&cachebust=' + timestamp;
+      }
     });
+
+    const nwdsaImages = [
+      'assests/images/NWDSA/DSCF0007.JPG',
+      'assests/images/NWDSA/DSCF0333.JPG',
+      'assests/images/NWDSA/DSCF0590.JPG',
+      'assests/images/NWDSA/DSCF0643.JPG',
+      'assests/images/NWDSA/DSCF0704.JPG',
+      'assests/images/NWDSA/DSCF0963.JPG',
+      'assests/images/NWDSA/DSCF1124.JPG',
+      'assests/images/NWDSA/DSCF1203.JPG',
+      'assests/images/NWDSA/DSCF1240.JPG',
+      'assests/images/NWDSA/DSCF1397.JPG',
+      'assests/images/NWDSA/DSCF1432.JPG',
+      'assests/images/NWDSA/DSCF1451.JPG',
+      'assests/images/NWDSA/DSCF1457.JPG',
+      'assests/images/NWDSA/DSCF9589.JPG',
+      'assests/images/NWDSA/DSCF9620.JPG',
+      'assests/images/NWDSA/DSCF9680.JPG',
+      'assests/images/NWDSA/DSCF9918.JPG',
+      'assests/images/NWDSA/DSCF9922.JPG',
+      'assests/images/NWDSA/DSCF9982.JPG',
+      'assests/images/NWDSA/DSCF9994.JPG',
+      'assests/images/NWDSA/UPES-1.JPG',
+      'assests/images/NWDSA/UPES-2.JPG'
+    ];
+
+    let nwdsaIndex = 0;
+    let nwdsaActiveLayer = 'a';
+
+    function preloadImages(imageList) {
+      imageList.forEach(function(src) {
+        const img = new Image();
+        img.src = src;
+      });
+    }
+
+    function showNwdsaSlide(index) {
+      const slideA = document.getElementById('nwdsa-slide-a');
+      const slideB = document.getElementById('nwdsa-slide-b');
+      if (!slideA || !slideB) return;
+
+      const current = nwdsaActiveLayer === 'a' ? slideA : slideB;
+      const next = nwdsaActiveLayer === 'a' ? slideB : slideA;
+      next.src = nwdsaImages[index];
+
+      requestAnimationFrame(function() {
+        next.style.opacity = 1;
+        current.style.opacity = 0;
+        nwdsaActiveLayer = nwdsaActiveLayer === 'a' ? 'b' : 'a';
+      });
+    }
+
+    function prevNwdsaSlide() {
+      nwdsaIndex = (nwdsaIndex - 1 + nwdsaImages.length) % nwdsaImages.length;
+      showNwdsaSlide(nwdsaIndex);
+    }
+
+    function nextNwdsaSlide() {
+      nwdsaIndex = (nwdsaIndex + 1) % nwdsaImages.length;
+      showNwdsaSlide(nwdsaIndex);
+    }
+
+    preloadImages(nwdsaImages);
+
+    setInterval(function() {
+      if (document.getElementById('nwdsa-slide-a')) {
+        nextNwdsaSlide();
+      }
+    }, 4200);
 
     function downloadSchedulePDF() {
       // Extract document ID from the Google Doc link

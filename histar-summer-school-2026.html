@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HiSTAR Summer School 2026 | Himalayan School for Training in Astronomy Research</title>
-  <meta name="description" content="Official page for Himalayan School for Training in Astronomy Research (HiSTAR) Summer School 2026, June 8-12, at UPES Dehradun and Dolphin PG Institute." />
+  <meta name="description" content="Official page for Himalayan School for Training in Astronomy Research (HiSTAR) Summer School 2026, June 8 to 12, at UPES Dehradun and Dolphin PG Institute." />
   <meta name="keywords" content="HiSTAR, Summer School, Astronomy Research, UPES, IUCAA, Dolphin Institute, Uttarakhand" />
   <link rel="icon" href="assests/images/favicons/favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,9 +40,9 @@
       overflow: hidden;
       color: #fff;
       background:
-        linear-gradient(135deg, rgba(7, 16, 30, 0.86), rgba(15, 36, 61, 0.82)),
+        linear-gradient(135deg, rgba(7, 16, 30, 0.90), rgba(15, 36, 61, 0.85)),
         url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1600&auto=format") center/cover no-repeat;
-      padding: 1.6rem 1rem 3rem;
+      padding: 3rem 1rem 4rem;
     }
 
     .hero-wrap {
@@ -58,14 +58,14 @@
       align-items: center;
       gap: 1rem;
       flex-wrap: wrap;
-      margin-bottom: 1.3rem;
+      margin-bottom: 2rem;
     }
 
     .logos .left {
       display: flex;
       align-items: center;
       gap: 0.8rem;
-      padding: 0.35rem 0.7rem;
+      padding: 0.5rem 1rem;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.12);
       border: 1px solid rgba(255, 255, 255, 0.27);
@@ -84,7 +84,7 @@
       color: #ffffff;
       font-weight: 700;
       letter-spacing: 0.2px;
-      font-size: 0.82rem;
+      font-size: 0.9rem;
       text-align: center;
       line-height: 1.2;
     }
@@ -98,50 +98,62 @@
     .status-pill {
       background: linear-gradient(95deg, #ffd978, #ffb323);
       color: #553100;
-      font-size: 0.84rem;
+      font-size: 0.9rem;
       font-weight: 800;
       letter-spacing: 0.2px;
-      padding: 0.46rem 0.86rem;
+      padding: 0.5rem 1rem;
       border-radius: 999px;
+    }
+
+    .presents-line {
+      display: block;
+      color: var(--sun);
+      font-family: "Sora", sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
     }
 
     h1 {
       margin: 0;
       font-family: "Sora", sans-serif;
-      font-size: clamp(1.9rem, 4.3vw, 3.2rem);
-      max-width: 870px;
-      line-height: 1.12;
+      font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+      max-width: 950px;
+      line-height: 1.15;
     }
 
     .subtitle {
-      margin: 0.75rem 0 0;
+      margin: 1rem 0 0;
       max-width: 900px;
-      color: rgba(255, 255, 255, 0.93);
+      color: rgba(255, 255, 255, 0.95);
       line-height: 1.6;
-      font-size: 1.04rem;
+      font-size: 1.15rem;
     }
 
     .hero-actions {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       display: flex;
-      gap: 0.7rem;
+      gap: 0.8rem;
       flex-wrap: wrap;
     }
 
     .btn {
       border: 0;
       text-decoration: none;
-      padding: 0.72rem 1rem;
+      padding: 0.85rem 1.4rem;
       border-radius: 10px;
       font-weight: 700;
       display: inline-flex;
       align-items: center;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-size: 1rem;
     }
 
-    .btn.primary { background: linear-gradient(92deg, var(--mint), var(--sky)); color: #fff; }
+    .btn.primary { background: linear-gradient(92deg, var(--mint), var(--sky)); color: #fff; box-shadow: 0 4px 12px rgba(30, 162, 134, 0.3); }
     .btn.secondary { background: rgba(255, 255, 255, 0.14); color: #fff; border: 1px solid rgba(255, 255, 255, 0.28); }
-    .btn:hover { transform: translateY(-2px); }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); }
 
     .topnav {
       position: sticky;
@@ -155,9 +167,9 @@
     .topnav .wrap {
       max-width: 1160px;
       margin: 0 auto;
-      padding: 0.72rem 0.9rem;
+      padding: 0.8rem 1rem;
       display: flex;
-      gap: 0.55rem;
+      gap: 0.8rem;
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -166,10 +178,11 @@
       color: #fff;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.89rem;
-      padding: 0.36rem 0.78rem;
+      font-size: 0.95rem;
+      padding: 0.4rem 1rem;
       border: 1px solid rgba(255, 255, 255, 0.17);
       border-radius: 999px;
+      transition: all 0.2s ease;
     }
 
     .topnav a:hover { background: #fff; color: var(--ink); }
@@ -177,49 +190,53 @@
     .container {
       max-width: 1160px;
       margin: 0 auto;
-      padding: 1.2rem 0.95rem 2rem;
+      padding: 1.5rem 1rem 3rem;
     }
 
     .facts {
-      margin-top: -1.8rem;
+      margin-top: -3rem;
       position: relative;
       z-index: 3;
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0.75rem;
+      gap: 1rem;
     }
 
     .fact {
       background: var(--paper);
       border: 1px solid var(--faint);
       border-radius: 13px;
-      padding: 0.88rem;
+      padding: 1.2rem;
       box-shadow: var(--shadow);
+      text-align: center;
     }
 
     .fact p { margin: 0; }
-    .fact .k { font-size: 0.8rem; color: #4d6889; text-transform: uppercase; letter-spacing: 0.45px; }
-    .fact .v { margin-top: 0.35rem; font-weight: 800; font-family: "Sora", sans-serif; }
+    .fact .k { font-size: 0.85rem; color: #4d6889; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.4rem; }
+    .fact .v { font-weight: 800; font-family: "Sora", sans-serif; font-size: 1.1rem; color: var(--ink); }
 
     section {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       background: var(--paper);
       border: 1px solid var(--faint);
       border-radius: 16px;
       box-shadow: var(--shadow);
-      padding: 1.2rem;
+      padding: 2rem;
     }
 
     h2 {
-      margin: 0 0 0.7rem;
+      margin: 0 0 1rem;
       font-family: "Sora", sans-serif;
-      font-size: clamp(1.28rem, 2.8vw, 1.9rem);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      color: var(--ink);
     }
+
+    p { line-height: 1.7; font-size: 1.05rem; color: #354a63; margin-bottom: 1rem; }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 0.9rem;
+      gap: 1.5rem;
     }
 
     .col-8 { grid-column: span 8; }
@@ -231,72 +248,84 @@
       border: 1px solid #ffd591;
       background: linear-gradient(130deg, #fff7e4, #fffdfa);
       border-radius: 12px;
-      padding: 0.85rem;
+      padding: 1.2rem;
       color: #5f4300;
     }
 
-    .chips { display: flex; gap: 0.42rem; flex-wrap: wrap; margin-top: 0.75rem; }
-    .chip { background: #f1f7ff; border: 1px solid #d4e5fb; color: #25486e; border-radius: 999px; font-size: 0.8rem; padding: 0.32rem 0.64rem; font-weight: 600; }
+    .highlight strong { font-size: 1.1rem; display: block; margin-bottom: 0.5rem; }
+
+    .chips { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 1rem; }
+    .chip { background: #f1f7ff; border: 1px solid #d4e5fb; color: #25486e; border-radius: 999px; font-size: 0.9rem; padding: 0.4rem 0.8rem; font-weight: 600; }
 
     .list {
       margin: 0;
-      padding-left: 1rem;
-      line-height: 1.62;
+      padding-left: 1.2rem;
+      line-height: 1.7;
+      font-size: 1.05rem;
+      color: #354a63;
     }
+
+    .list li { margin-bottom: 0.4rem; }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 0.75rem;
-      margin-top: 0.65rem;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
     }
 
     .card {
       border: 1px solid var(--faint);
       border-radius: 12px;
-      padding: 0.8rem;
+      padding: 1.2rem;
       background: #fbfdff;
+      transition: box-shadow 0.2s ease;
     }
+
+    .card:hover { box-shadow: var(--shadow); }
 
     .card h3 {
       margin: 0;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      color: var(--ink);
     }
 
     .card p {
-      margin: 0.35rem 0 0;
-      font-size: 0.88rem;
+      margin: 0.4rem 0 0;
+      font-size: 0.95rem;
       color: #3f5a7a;
       line-height: 1.5;
     }
 
-    .tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.3rem; }
+    .tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
 
     .tab-btn {
       border: 1px solid #d3e4fb;
       background: #fff;
       color: var(--ink-soft);
-      padding: 0.42rem 0.9rem;
+      padding: 0.6rem 1.2rem;
       border-radius: 999px;
       font-weight: 700;
       cursor: pointer;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
     }
 
     .tab-btn.active { background: linear-gradient(90deg, var(--sky), var(--mint)); color: #fff; border-color: transparent; }
 
     .tab-panel {
       display: none;
-      margin-top: 0.7rem;
+      margin-top: 1rem;
       border: 1px solid var(--faint);
       border-radius: 12px;
-      padding: 0.8rem;
+      padding: 1.5rem;
       background: #fbfdff;
     }
 
     .tab-panel.active { display: block; }
 
     .timeline {
-      margin-top: 0.8rem;
+      margin-top: 0.5rem;
       border: 1px solid var(--faint);
       border-radius: 12px;
       overflow: hidden;
@@ -304,52 +333,53 @@
 
     .time-row {
       display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 0.7rem;
-      padding: 0.65rem 0.8rem;
+      grid-template-columns: 150px 1fr;
+      gap: 1rem;
+      padding: 1rem;
       border-top: 1px solid var(--faint);
       align-items: start;
     }
 
     .time-row:first-child { border-top: 0; }
-    .time-label { font-weight: 700; color: #2d4d73; }
-    .time-text { color: #1d3554; }
+    .time-label { font-weight: 700; color: #2d4d73; font-size: 1.05rem; }
+    .time-text { color: #1d3554; font-size: 1.05rem; }
 
     .countdown {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0.55rem;
-      margin-top: 0.75rem;
+      gap: 1rem;
+      margin-top: 1.5rem;
     }
 
     .count {
       border: 1px solid #cbe2fc;
-      border-radius: 10px;
+      border-radius: 12px;
       text-align: center;
-      padding: 0.55rem 0.3rem;
+      padding: 1rem;
       background: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
     }
 
-    .count strong { display: block; font-family: "Sora", sans-serif; font-size: 1.22rem; color: #125a9d; }
-    .count span { font-size: 0.73rem; color: #466486; text-transform: uppercase; letter-spacing: 0.35px; }
+    .count strong { display: block; font-family: "Sora", sans-serif; font-size: 2rem; color: #125a9d; margin-bottom: 0.2rem; }
+    .count span { font-size: 0.85rem; color: #466486; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
 
     .date-cards {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0.7rem;
-      margin-top: 0.75rem;
+      gap: 1rem;
+      margin-top: 1.5rem;
     }
 
     .date-card {
       border: 1px solid #d4e6fb;
       background: #f8fbff;
       border-radius: 12px;
-      padding: 0.8rem;
+      padding: 1.2rem;
     }
 
     .date-card h3 {
-      margin: 0 0 0.38rem;
-      font-size: 0.94rem;
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
       color: #1b4370;
     }
 
@@ -357,12 +387,13 @@
       margin: 0;
       font-weight: 700;
       color: #143555;
+      font-size: 1.1rem;
     }
 
     .reveal {
       opacity: 0;
-      transform: translateY(12px);
-      transition: opacity 0.4s ease, transform 0.4s ease;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
     }
 
     .reveal.show { opacity: 1; transform: translateY(0); }
@@ -370,22 +401,24 @@
     footer {
       text-align: center;
       color: #4d6485;
-      font-size: 0.9rem;
-      padding: 1rem 0 1.4rem;
+      font-size: 1rem;
+      padding: 2rem 0 3rem;
+      font-weight: 500;
     }
 
     @media (max-width: 930px) {
-      .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: -1.5rem; }
       .col-8, .col-6, .col-4 { grid-column: span 12; }
     }
 
     @media (max-width: 700px) {
       .logos img { height: 34px; }
-      .partner-badge { min-height: 34px; font-size: 0.74rem; }
-      .container { padding: 1rem 0.7rem 1.8rem; }
-      section { padding: 1rem; }
-      .topnav .wrap { justify-content: flex-start; overflow-x: auto; }
-      .time-row { grid-template-columns: 1fr; }
+      .partner-badge { min-height: 34px; font-size: 0.8rem; }
+      .container { padding: 1.5rem 1rem 2rem; }
+      section { padding: 1.5rem; }
+      h1 { font-size: 1.8rem; }
+      .topnav .wrap { justify-content: flex-start; overflow-x: auto; padding-bottom: 0.5rem; }
+      .time-row { grid-template-columns: 1fr; gap: 0.3rem; padding: 0.8rem; }
       .countdown { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .date-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
@@ -402,13 +435,14 @@
         </div>
         <div class="status-pill">New Event | Summer School 2026</div>
       </div>
+      <span class="presents-line">ICARD UPES in collaboration with PG Dolphin with support from IUCAA presents</span>
       <h1>Himalayan School for Training in Astronomy Research (HiSTAR)</h1>
       <p class="subtitle">
         A dedicated five-day astronomy training event with lectures, software labs, project work, and observational exposure.
-        This is a standalone event scheduled for June 8-12, 2026.
+        Scheduled for June 8 to 12, 2026.
       </p>
       <div class="hero-actions">
-        <a class="btn primary" href="#launch">Event Launch Details</a>
+        <a class="btn primary" href="#registration">Register Now</a>
         <a class="btn secondary" href="#schedule">Program Structure</a>
       </div>
     </div>
@@ -417,79 +451,22 @@
   <nav class="topnav" aria-label="Main page navigation">
     <div class="wrap">
       <a href="#overview">Overview</a>
-      <a href="#speakers">Speakers</a>
-      <a href="#coordinators">Coordinators</a>
-      <a href="#registration">Registration</a>
-      <a href="#dates">Deadlines</a>
+      <a href="#audience">Eligibility</a>
       <a href="#schedule">Schedule</a>
-      <a href="#launch">Launch</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#logistics">Logistics</a>
+      <a href="#guidelines">Guidelines</a>
+      <a href="#registration">Registration</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <main class="container">
     <section class="facts reveal" aria-label="Quick facts">
-      <article class="fact"><p class="k">Event dates</p><p class="v">8-12 June 2026</p></article>
+      <article class="fact"><p class="k">Event dates</p><p class="v">8 to 12 June 2026</p></article>
       <article class="fact"><p class="k">Primary venue</p><p class="v">UPES, Bidholi</p></article>
       <article class="fact"><p class="k">Partner venue</p><p class="v">Dolphin PG Institute</p></article>
-      <article class="fact"><p class="k">Expected participation</p><p class="v">~60 total</p></article>
-    </section>
-
-    <section id="registration" class="reveal">
-      <h2>Registration</h2>
-      <div class="grid">
-        <div class="col-8">
-          <p>
-            Participants are selected through an online registration process with a short statement of interest.
-            Priority is given to students from physics and astronomy backgrounds in the Himalayan region
-            (Uttarakhand, J&amp;K, Himachal, Ladakh) and neighboring northern states.
-          </p>
-          <div class="hero-actions" style="margin-top:0.75rem">
-            <a class="btn primary" href="mailto:nitesh.kumar@ddn.upes.ac.in?subject=HiSTAR%20Summer%20School%202026%20Registration&body=Name:%0AAffiliation:%0AProgram/Year:%0AState:%0AStatement%20of%20Interest%20(100-150%20words):%0A">Register by Email (UPES Coordinator)</a>
-            <a class="btn secondary" href="mailto:aasheeshraturi@dolphininstitute.in?subject=HiSTAR%20Summer%20School%202026%20Registration%20Query">Registration Query (Dolphin Coordinator)</a>
-          </div>
-          <p style="margin:0.8rem 0 0; color:#35557a; font-size:0.92rem;">
-            Note: No registration fee is listed. Outstation participants should be prepared for travel and stay logistics as per organizer communication.
-          </p>
-        </div>
-        <aside class="col-4">
-          <div class="highlight">
-            <strong>Quick access</strong>
-            <ul class="list">
-              <li><a href="#dates">See deadline timeline</a></li>
-              <li><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=HiSTAR+Summer+School+2026&dates=20260608T033000Z/20260612T113000Z&details=Himalayan+School+for+Training+in+Astronomy+Research+%28HiSTAR%29&location=UPES+Bidholi+Dehradun+and+Dolphin+PG+Institute" target="_blank" rel="noopener">Add event dates to Google Calendar</a></li>
-              <li><a href="#contact">Coordinator contact list</a></li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="dates" class="reveal">
-      <h2>Important Dates and Deadlines</h2>
-      <p>Timeline below is provided for participant planning and registration workflow visibility.</p>
-      <div class="date-cards">
-        <article class="date-card">
-          <h3>Registration Opens</h3>
-          <p>15 April 2026</p>
-        </article>
-        <article class="date-card">
-          <h3>Application Deadline</h3>
-          <p>31 May 2026</p>
-        </article>
-        <article class="date-card">
-          <h3>Selection Intimation</h3>
-          <p>3 June 2026</p>
-        </article>
-        <article class="date-card">
-          <h3>Summer School Dates</h3>
-          <p>8-12 June 2026</p>
-        </article>
-      </div>
-      <div class="hero-actions" style="margin-top:0.8rem">
-        <a class="btn primary" href="mailto:nitesh.kumar@ddn.upes.ac.in?subject=HiSTAR%20Summer%20School%202026%20Deadline%20Query">Deadline Query</a>
-        <a class="btn secondary" href="#registration">Go to Registration</a>
-      </div>
+      <article class="fact"><p class="k">Expected attendance</p><p class="v">60 Total</p></article>
     </section>
 
     <section id="overview" class="reveal">
@@ -498,14 +475,14 @@
         <div class="col-8">
           <p>
             HiSTAR Summer School 2026 is designed to strengthen astronomy education and research capacity in the Himalayan and adjoining regions.
-            The proposal describes a structured five-day format with science talks, hands-on projects, software sessions, and group activities.
+            The proposal describes a structured five-day format designed to train participants with modern skills essential for pursuing research careers.
           </p>
           <ul class="list">
             <li><strong>Title:</strong> Himalayan School for Training in Astronomy Research (HiSTAR)</li>
-            <li><strong>Dates:</strong> June 8-12, 2026</li>
-            <li><strong>Nature:</strong> Regional meeting/training school in astronomy</li>
-            <li><strong>Venues:</strong> Applied Science Cluster, School of Engineering, UPES (Bidholi, Dehradun) and Dolphin PG Institute, Dehradun</li>
-            <li><strong>Focus:</strong> observational, computational, and project-based astronomy training</li>
+            <li><strong>Dates:</strong> June 8 to 12, 2026</li>
+            <li><strong>Nature:</strong> Regional meeting and training school in astronomy</li>
+            <li><strong>Venues:</strong> Applied Science Cluster, School of Advanced Engineering, UPES (Dehradun) and Dolphin (PG) Institute of Biomedical & Natural Sciences (DIBNS)</li>
+            <li><strong>Focus:</strong> Observational techniques, basic data analysis, and advanced machine learning applications</li>
           </ul>
           <div class="chips">
             <span class="chip">Science Talks</span>
@@ -518,19 +495,112 @@
         <aside class="col-4">
           <div class="highlight">
             <strong>Expected participation breakdown</strong>
-            <ul class="list">
-              <li>Speakers and organizers: 10 (4 local + 6 outstation)</li>
-              <li>Student participants: 45 (20 local + 25 outstation)</li>
+            <ul class="list" style="font-size: 0.95rem;">
+              <li>Speakers and organizers: 10 (4 local, 6 outstation)</li>
+              <li>Student participants: 45 (20 local, 25 outstation)</li>
               <li>Faculty participants: 5 local</li>
+              <li>Total expected: 60</li>
             </ul>
           </div>
         </aside>
       </div>
     </section>
 
+    <section id="audience" class="reveal">
+      <h2>Target Audience & Eligibility</h2>
+      <div class="grid">
+        <div class="col-12">
+          <p>
+            The program is specifically intended for early-career researchers and students aiming to build foundational skills in astronomy and astrophysics. Priority will be given to students from physics and astronomy backgrounds from the Himalayan region (Uttarakhand, J&K, Himachal, Ladakh) as well as neighboring northern states.
+          </p>
+          <ul class="list">
+            <li>Final year BSc students (in Physics, Applied Physics, Electronics, Astronomy, or Applied Mathematics)</li>
+            <li>M.Sc. students (in Physics, Applied Physics, Mathematics, Applied Mathematics, Electronics, or Astronomy)</li>
+            <li>B.E. or B.Tech. (final year) and M.E. or M.Tech. students in physics or computer science</li>
+            <li>First-year University PhD. students</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="reveal">
+      <h2>Interactive Program Structure</h2>
+      <p>Use the tabs below to view the daily format and thematic sessions planned for the 5-day event.</p>
+      <div class="tabs" role="tablist" aria-label="Program tabs">
+        <button class="tab-btn active" data-panel="tab-daily" role="tab" aria-selected="true">Daily Timetable</button>
+        <button class="tab-btn" data-panel="tab-sessions" role="tab" aria-selected="false">Thematic Sessions</button>
+        <button class="tab-btn" data-panel="tab-close" role="tab" aria-selected="false">Closing Day</button>
+      </div>
+
+      <div id="tab-daily" class="tab-panel active" role="tabpanel">
+        <div class="timeline">
+          <div class="time-row"><div class="time-label">09:00 to 09:30</div><div class="time-text">Registration (First day only)</div></div>
+          <div class="time-row"><div class="time-label">09:30 to 10:15</div><div class="time-text">Inauguration (Day 1) / Science Talk</div></div>
+          <div class="time-row"><div class="time-label">10:15 to 11:00</div><div class="time-text">Science Talk</div></div>
+          <div class="time-row"><div class="time-label">11:00 to 11:30</div><div class="time-text">Tea Break</div></div>
+          <div class="time-row"><div class="time-label">11:30 to 13:00</div><div class="time-text">Science Talks</div></div>
+          <div class="time-row"><div class="time-label">13:00 to 14:00</div><div class="time-text">Lunch Break</div></div>
+          <div class="time-row"><div class="time-label">14:00 to 14:45</div><div class="time-text">Talks and Projects</div></div>
+          <div class="time-row"><div class="time-label">14:45 to 15:30</div><div class="time-text">Project and Softwares / hands-on-sessions</div></div>
+          <div class="time-row"><div class="time-label">15:30 to 16:00</div><div class="time-text">Tea Break</div></div>
+          <div class="time-row"><div class="time-label">16:00 to 17:30</div><div class="time-text">Individual and Group Projects</div></div>
+        </div>
+      </div>
+
+      <div id="tab-sessions" class="tab-panel" role="tabpanel">
+        <ul class="list">
+          <li><strong>Morning Lectures:</strong> Fundamentals of astronomy, The Sun, Stellar evolution, Compact Objects, Star clusters, Variable stars, Galaxies and ISM, Gravity and Cosmology, Multiwavelength Astronomy, Telescopes and Instrumentations.</li>
+          <li><strong>Afternoon Labs:</strong> Handling basic astronomical data, python basics, data mining, color-magnitude diagrams, light curves, galaxy morphology.</li>
+          <li><strong>Evenings:</strong> Handling telescopes, Amateur astronomy training and observation sessions.</li>
+        </ul>
+      </div>
+
+      <div id="tab-close" class="tab-panel" role="tabpanel">
+        <ul class="list">
+          <li>Lectures on Day 4 and Day 5 will commence at Dolphin Institute.</li>
+          <li>Final lectures and hands-on session in the morning.</li>
+          <li>Closing remarks and certificate distribution before lunch.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="logistics" class="reveal">
+      <h2>Logistics and Accommodation</h2>
+      <div class="grid">
+        <div class="col-6">
+          <h3 style="margin-top:0; color: var(--ink);">Accommodation</h3>
+          <ul class="list">
+            <li><strong>Resource Persons:</strong> Guest house accommodation will be provided by the host institute (UPES).</li>
+            <li><strong>Outstation Students:</strong> Subsidized accommodation will be arranged at the DINBS Hostels for outstation participants.</li>
+            <li><strong>Local Transport:</strong> Dedicated bus travel will be provided daily between DINBS and UPES for all student participants.</li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h3 style="margin-top:0; color: var(--ink);">Travel Support</h3>
+          <ul class="list">
+            <li>Travel allowances for outstation regional participants will be provided strictly as per IUCAA norms.</li>
+            <li>Resource persons and faculty will be provided local transport for airport and train station pick up and drops.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="guidelines" class="reveal">
+      <h2>Participant Guidelines</h2>
+      <div class="grid">
+        <div class="col-12">
+          <ul class="list">
+            <li><strong>Laptops Required:</strong> The workshop includes intensive data mining and computational sessions. All selected participants are expected to bring their own personal laptops.</li>
+            <li><strong>Software Prerequisites:</strong> Basic familiarity with Python is encouraged. Please ensure Python and related data science packages are installed prior to arrival.</li>
+            <li><strong>Certification:</strong> Full attendance across all 5 days is mandatory for successful completion and certificate distribution.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section id="speakers" class="reveal">
       <h2>Tentative Speakers and Resource Persons</h2>
-      <p>The following names are listed in the uploaded proposal as tentative speaker/resource person entries (subject to availability).</p>
+      <p>The following names are listed as tentative speaker and resource person entries (subject to availability). All resource persons are IUCAA associates.</p>
       <div class="cards">
         <article class="card"><h3>Prof. Hemwati Nandan</h3><p>GU</p></article>
         <article class="card"><h3>Prof. Hum Chand</h3><p>CUHP</p></article>
@@ -540,20 +610,46 @@
       </div>
     </section>
 
+    <section id="registration" class="reveal">
+      <h2>Registration & Deadlines</h2>
+      <div class="grid">
+        <div class="col-8">
+          <p>
+            Participants are selected through an online registration form that includes a short statement of interest. Ensure you fill out all fields accurately to be considered for selection and potential travel support.
+          </p>
+          <div class="hero-actions" style="margin-top:1rem">
+            <a class="btn primary" href="https://forms.google.com/" target="_blank" rel="noopener">Register via Google Form</a>
+            <a class="btn secondary" href="#contact">Contact for Queries</a>
+          </div>
+        </div>
+        <aside class="col-4">
+          <div class="highlight">
+            <strong>Key Timeline</strong>
+            <ul class="list" style="font-size: 0.95rem;">
+              <li><strong>April 15, 2026:</strong> Registration Opens</li>
+              <li><strong>May 31, 2026:</strong> Application Deadline</li>
+              <li><strong>June 3, 2026:</strong> Selection Intimation</li>
+              <li><strong>June 8 to 12, 2026:</strong> Summer School</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
     <section id="coordinators" class="reveal">
-      <h2>Coordinators and Organizers</h2>
+      <h2>Organizing Committee</h2>
       <div class="grid">
         <div class="col-6">
-          <h3 style="margin-top:0">Coordinators (as listed)</h3>
+          <h3 style="margin-top:0; color: var(--ink);">Main Coordinators</h3>
           <ul class="list">
-            <li><strong>Dr. Nitesh Kumar</strong> - UPES</li>
-            <li><strong>Dr. Asheesh Raturi</strong> - Dolphin PG Institute</li>
-            <li><strong>Prof. Hum Chand</strong> - CUHP</li>
-            <li><strong>Prof. Anupam Bhardwaj</strong> - IUCAA</li>
+            <li><strong>Dr. Nitesh Kumar</strong>, UPES</li>
+            <li><strong>Dr. Asheesh Raturi</strong>, Dolphin PG Institute</li>
+            <li><strong>Prof. Hum Chand</strong>, CUHP</li>
+            <li><strong>Prof. Anupam Bhardwaj</strong>, IUCAA</li>
           </ul>
         </div>
         <div class="col-6">
-          <h3 style="margin-top:0">Other organizers</h3>
+          <h3 style="margin-top:0; color: var(--ink);">Other Organizers</h3>
           <ul class="list">
             <li>Dr. Prince Sharma</li>
             <li>Dr. Balendra P. Singh</li>
@@ -564,69 +660,8 @@
       </div>
     </section>
 
-    <section id="schedule" class="reveal">
-      <h2>Interactive Program Structure</h2>
-      <p>Use tabs to view the daily format and the event rhythm captured in the proposal schedule.</p>
-      <div class="tabs" role="tablist" aria-label="Program tabs">
-        <button class="tab-btn active" data-panel="tab-daily" role="tab" aria-selected="true">Daily Flow</button>
-        <button class="tab-btn" data-panel="tab-sessions" role="tab" aria-selected="false">Session Types</button>
-        <button class="tab-btn" data-panel="tab-close" role="tab" aria-selected="false">Closing Day</button>
-      </div>
-
-      <div id="tab-daily" class="tab-panel active" role="tabpanel">
-        <div class="timeline">
-          <div class="time-row"><div class="time-label">09:00-09:30</div><div class="time-text">Registration (Day 1) / arrival and setup</div></div>
-          <div class="time-row"><div class="time-label">09:30-10:15</div><div class="time-text">Inauguration (Day 1) or science talk</div></div>
-          <div class="time-row"><div class="time-label">10:15-11:00</div><div class="time-text">Science talk</div></div>
-          <div class="time-row"><div class="time-label">11:00-11:30</div><div class="time-text">Tea break</div></div>
-          <div class="time-row"><div class="time-label">11:30-12:15</div><div class="time-text">Science talk</div></div>
-          <div class="time-row"><div class="time-label">12:15-13:00</div><div class="time-text">Science talk</div></div>
-          <div class="time-row"><div class="time-label">13:00-14:00</div><div class="time-text">Lunch break</div></div>
-          <div class="time-row"><div class="time-label">14:00-14:45</div><div class="time-text">Talks / projects</div></div>
-          <div class="time-row"><div class="time-label">14:45-15:30</div><div class="time-text">Project and software hands-on session</div></div>
-          <div class="time-row"><div class="time-label">15:30-16:00</div><div class="time-text">Tea break</div></div>
-          <div class="time-row"><div class="time-label">16:00-17:30</div><div class="time-text">Individual or group project work</div></div>
-        </div>
-      </div>
-
-      <div id="tab-sessions" class="tab-panel" role="tabpanel">
-        <ul class="list">
-          <li>Morning and afternoon lecture slots across all five days.</li>
-          <li>Project and software blocks each afternoon.</li>
-          <li>Evening telescope observation session on specific days.</li>
-          <li>Hands-on and mentorship emphasis for student participation.</li>
-        </ul>
-      </div>
-
-      <div id="tab-close" class="tab-panel" role="tabpanel">
-        <ul class="list">
-          <li>Final presentations and project interactions.</li>
-          <li>Valedictory with closing remarks.</li>
-          <li>Certificate distribution before lunch on closing day.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="launch" class="reveal">
-      <h2>Event Launch and Countdown</h2>
-      <p>
-        HiSTAR Summer School 2026 is presented as a new and independent event. Countdown below tracks the start at
-        09:00 IST on June 8, 2026.
-      </p>
-      <div class="countdown" aria-live="polite">
-        <div class="count"><strong id="d">00</strong><span>Days</span></div>
-        <div class="count"><strong id="h">00</strong><span>Hours</span></div>
-        <div class="count"><strong id="m">00</strong><span>Minutes</span></div>
-        <div class="count"><strong id="s">00</strong><span>Seconds</span></div>
-      </div>
-      <div class="hero-actions" style="margin-top:0.85rem">
-        <a class="btn primary" href="#registration">Proceed to Registration</a>
-        <a class="btn secondary" href="#contact">Contact Coordinators</a>
-      </div>
-    </section>
-
     <section id="contact" class="reveal">
-      <h2>Contact</h2>
+      <h2>Contact Information</h2>
       <ul class="list">
         <li><strong>Dr. Nitesh Kumar:</strong> nitesh.kumar@ddn.upes.ac.in | +91-8742930496</li>
         <li><strong>Dr. Asheesh Raturi:</strong> aasheeshraturi@dolphininstitute.in | +91-7302546025</li>
@@ -636,7 +671,7 @@
   </main>
 
   <footer>
-    HiSTAR Summer School 2026 | UPES Dehradun, Dolphin PG Institute, and IUCAA collaboration
+    HiSTAR Summer School 2026 | UPES Dehradun, Dolphin PG Institute, and IUCAA Collaboration
   </footer>
 
   <script>
@@ -669,10 +704,10 @@
       const diff = eventStart - now;
 
       if (diff <= 0) {
-        d.textContent = "00";
-        h.textContent = "00";
-        m.textContent = "00";
-        s.textContent = "00";
+        if(d) d.textContent = "00";
+        if(h) h.textContent = "00";
+        if(m) m.textContent = "00";
+        if(s) s.textContent = "00";
         return;
       }
 
@@ -681,10 +716,10 @@
       const mins = Math.floor((diff / (1000 * 60)) % 60);
       const secs = Math.floor((diff / 1000) % 60);
 
-      d.textContent = String(days).padStart(2, "0");
-      h.textContent = String(hours).padStart(2, "0");
-      m.textContent = String(mins).padStart(2, "0");
-      s.textContent = String(secs).padStart(2, "0");
+      if(d) d.textContent = String(days).padStart(2, "0");
+      if(h) h.textContent = String(hours).padStart(2, "0");
+      if(m) m.textContent = String(mins).padStart(2, "0");
+      if(s) s.textContent = String(secs).padStart(2, "0");
     }
 
     updateCountdown();

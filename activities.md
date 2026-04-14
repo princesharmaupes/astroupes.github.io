@@ -7,6 +7,197 @@ title: Activities
 
 ---
 
+## 🎓 February 2026: National Workshop on Data Science in Astronomy (Success Story)
+
+The **National Workshop on Data Science in Astronomy (NWDSA)** was successfully organized at **UPES, Dehradun** from **24-26 February 2026** with academic support from IUCAA and active participation from students, faculty, and early-career researchers.
+
+The workshop blended keynote lectures, guided hands-on labs, and participant-led project/presentation sessions. Participants worked with real astronomical datasets and strengthened practical skills in data handling, visualization, and time-series analysis.
+
+**Workshop impact and outcomes:**
+- Strong interdisciplinary participation from physics, astronomy, mathematics, and computer science backgrounds.
+- Successful completion of hands-on sessions using Python-based scientific tools.
+- Active poster and project discussions that encouraged collaborative learning.
+- Valuable research networking between participants, speakers, and organizing faculty.
+
+<div style="display: flex; gap: 24px; align-items: flex-start; margin-top: 24px; flex-wrap: wrap;">
+  <div style="flex: 0 0 30%; min-width: 250px; max-width: 360px; background: #f7f7f7; padding: 18px 12px; border-radius: 8px; font-size: 1em; box-sizing: border-box; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <strong>Event:</strong> National Workshop on Data Science in Astronomy<br>
+    <strong>Dates:</strong> 24th - 26th February 2026<br>
+    <strong>Venue:</strong> UPES, Dehradun<br>
+    <strong>Format:</strong> Talks + Hands-on + Project/Poster sessions<br>
+    <strong>Status:</strong> Successfully completed
+  </div>
+  <div style="flex: 1 1 520px; max-width: 700px;">
+    <div style="width: 100%; max-width: 620px; height: 380px; margin-left: auto; margin-right: auto; position: relative;">
+      <div id="nwdsaSlideshow" style="position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background: #f0f3f7;">
+        <img src="assests/images/NWDSA/DSCF0007.JPG" alt="NWDSA Workshop Glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #0b1220; display: block; transition: opacity 0.8s ease-in-out; opacity: 1;" id="nwdsaSlideA">
+        <img src="assests/images/NWDSA/DSCF0333.JPG" alt="NWDSA Workshop Glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #0b1220; display: block; transition: opacity 0.8s ease-in-out; opacity: 0;" id="nwdsaSlideB">
+        <button onclick="prevNwdsaSlide()" aria-label="Previous Slide" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer;">&#8592;</button>
+        <button onclick="nextNwdsaSlide()" aria-label="Next Slide" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer;">&#8594;</button>
+      </div>
+      <p style="text-align: center; font-size: 0.95em; color: #555; margin-top: 8px;">Highlights from the National Workshop on Data Science in Astronomy (NWDSA 2026).</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const nwdsaImages = [
+    "assests/images/NWDSA/DSCF0007.JPG",
+    "assests/images/NWDSA/DSCF0333.JPG",
+    "assests/images/NWDSA/DSCF0590.JPG",
+    "assests/images/NWDSA/DSCF0643.JPG",
+    "assests/images/NWDSA/DSCF0704.JPG",
+    "assests/images/NWDSA/DSCF0963.JPG",
+    "assests/images/NWDSA/DSCF1124.JPG",
+    "assests/images/NWDSA/DSCF1203.JPG",
+    "assests/images/NWDSA/DSCF1240.JPG",
+    "assests/images/NWDSA/DSCF1397.JPG",
+    "assests/images/NWDSA/DSCF1432.JPG",
+    "assests/images/NWDSA/DSCF1451.JPG",
+    "assests/images/NWDSA/DSCF1457.JPG",
+    "assests/images/NWDSA/DSCF9589.JPG",
+    "assests/images/NWDSA/DSCF9620.JPG",
+    "assests/images/NWDSA/DSCF9680.JPG",
+    "assests/images/NWDSA/DSCF9918.JPG",
+    "assests/images/NWDSA/DSCF9922.JPG",
+    "assests/images/NWDSA/DSCF9982.JPG",
+    "assests/images/NWDSA/DSCF9994.JPG",
+    "assests/images/NWDSA/UPES-1.JPG",
+    "assests/images/NWDSA/UPES-2.JPG"
+  ];
+
+  let nwdsaIndex = 0;
+  let nwdsaActiveLayer = 'A';
+
+  function preloadImages(imageList) {
+    imageList.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }
+
+  function showNwdsaSlide(idx) {
+    const slideA = document.getElementById('nwdsaSlideA');
+    const slideB = document.getElementById('nwdsaSlideB');
+    if (!slideA || !slideB) return;
+
+    const current = nwdsaActiveLayer === 'A' ? slideA : slideB;
+    const next = nwdsaActiveLayer === 'A' ? slideB : slideA;
+    next.src = nwdsaImages[idx];
+
+    requestAnimationFrame(() => {
+      next.style.opacity = 1;
+      current.style.opacity = 0;
+      nwdsaActiveLayer = nwdsaActiveLayer === 'A' ? 'B' : 'A';
+    });
+  }
+
+  function prevNwdsaSlide() {
+    nwdsaIndex = (nwdsaIndex - 1 + nwdsaImages.length) % nwdsaImages.length;
+    showNwdsaSlide(nwdsaIndex);
+  }
+
+  function nextNwdsaSlide() {
+    nwdsaIndex = (nwdsaIndex + 1) % nwdsaImages.length;
+    showNwdsaSlide(nwdsaIndex);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    preloadImages(nwdsaImages);
+  });
+
+  setInterval(() => {
+    nextNwdsaSlide();
+  }, 3800);
+</script>
+
+<br>
+
+---
+
+## 🌙 December 2025: Night Sky Observation (NSO) Event
+
+The **Night Sky Observation (NSO)** event was conducted on **2nd December 2025**, offering students and enthusiasts a direct observational astronomy experience under the evening sky.
+
+Participants observed key celestial targets through telescope-guided sessions and received live explanations on sky navigation, star identification, and observation practices. The event successfully connected classroom astronomy with real-sky exploration.
+
+**Event details:**
+- **Date:** 2nd December 2025
+- **Format:** Guided night observation + faculty interaction
+- **Focus:** Telescope orientation, constellation tracking, and practical sky awareness
+- **Outcome:** Strong student engagement and hands-on observational confidence
+
+<div style="width: 100%; max-width: 760px; margin: 20px auto 0; position: relative;">
+  <div id="nsoSlideshow" style="position: relative; width: 100%; height: 420px; overflow: hidden; border-radius: 10px; background: #0b1220; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+    <img src="assests/images/NSO/DSCF8471.jpg" alt="Night Sky Observation event glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity 0.8s ease-in-out; opacity: 1;" id="nsoSlideA">
+    <img src="assests/images/NSO/DSCF8474.jpg" alt="Night Sky Observation event glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity 0.8s ease-in-out; opacity: 0;" id="nsoSlideB">
+    <button onclick="prevNsoSlide()" aria-label="Previous NSO slide" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer;">&#8592;</button>
+    <button onclick="nextNsoSlide()" aria-label="Next NSO slide" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer;">&#8594;</button>
+  </div>
+  <p style="text-align: center; font-size: 0.95em; color: #555; margin-top: 8px;">Moments from the Night Sky Observation event at UPES.</p>
+</div>
+
+<script>
+  const nsoImages = [
+    "assests/images/NSO/DSCF8471.jpg",
+    "assests/images/NSO/DSCF8474.jpg",
+    "assests/images/NSO/DSCF8484.jpg",
+    "assests/images/NSO/DSCF8512.jpg",
+    "assests/images/NSO/DSCF8525.jpg",
+    "assests/images/NSO/DSCF8584.JPG",
+    "assests/images/NSO/DSCF8585.JPG",
+    "assests/images/NSO/DSCF8605.JPG",
+    "assests/images/NSO/DSCF8615.JPG",
+    "assests/images/NSO/DSCF8625.JPG",
+    "assests/images/NSO/DSCF8658.jpg",
+    "assests/images/NSO/DSCF8659.jpg",
+    "assests/images/NSO/DSCF8697.jpg",
+    "assests/images/NSO/DSCF8705.jpg",
+    "assests/images/NSO/DSCF8723.jpg"
+  ];
+
+  let nsoIndex = 0;
+  let nsoActiveLayer = 'A';
+
+  function showNsoSlide(idx) {
+    const slideA = document.getElementById('nsoSlideA');
+    const slideB = document.getElementById('nsoSlideB');
+    if (!slideA || !slideB) return;
+
+    const current = nsoActiveLayer === 'A' ? slideA : slideB;
+    const next = nsoActiveLayer === 'A' ? slideB : slideA;
+    next.src = nsoImages[idx];
+
+    requestAnimationFrame(() => {
+      next.style.opacity = 1;
+      current.style.opacity = 0;
+      nsoActiveLayer = nsoActiveLayer === 'A' ? 'B' : 'A';
+    });
+  }
+
+  function prevNsoSlide() {
+    nsoIndex = (nsoIndex - 1 + nsoImages.length) % nsoImages.length;
+    showNsoSlide(nsoIndex);
+  }
+
+  function nextNsoSlide() {
+    nsoIndex = (nsoIndex + 1) % nsoImages.length;
+    showNsoSlide(nsoIndex);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    preloadImages(nsoImages);
+  });
+
+  setInterval(() => {
+    nextNsoSlide();
+  }, 4000);
+</script>
+
+<br>
+
+---
+
 ## 🛰️ August 2025: National Space Day 2025 Event
 
 On the occasion of the 2nd National Space Day, **Prof. Varun Sheel** (Head, Planetary Science Division, PRL) delivered a special talk.

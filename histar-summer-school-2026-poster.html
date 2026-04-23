@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HiSTAR Summer School 2026 Poster</title>
+  <meta name="description" content="Poster for Himalayan School for Training in Astronomy Research (HiSTAR) Summer School 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #06152a;
+      --deep: #0c2f57;
+      --mid: #1f5c99;
+      --paper: #eef5ff;
+      --card: rgba(255, 255, 255, 0.9);
+      --line: rgba(6, 21, 42, 0.14);
+      --text: #f8fbff;
+      --accent: #ffbb12;
+      --accent-soft: #fff0c7;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Barlow", sans-serif;
+      background: linear-gradient(150deg, #d9e9ff, #eef5ff);
+      color: var(--ink);
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(6, 21, 42, 0.95);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 10px 14px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn.print {
+      background: var(--accent);
+      color: #4d3400;
+    }
+
+    .btn.form {
+      background: #ffffff;
+      color: #0b2a4e;
+    }
+
+    .page-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 18px;
+    }
+
+    .poster {
+      width: 210mm;
+      height: 297mm;
+      color: var(--text);
+      border: 1px solid #18406e;
+      background:
+        radial-gradient(circle at 18% 16%, rgba(255, 187, 18, 0.18), transparent 18%),
+        radial-gradient(circle at 84% 12%, rgba(115, 186, 255, 0.22), transparent 18%),
+        radial-gradient(circle at 72% 76%, rgba(74, 181, 255, 0.14), transparent 20%),
+        linear-gradient(155deg, #06152a 0%, #0b2848 48%, #153f6d 100%);
+      box-shadow: 0 22px 50px rgba(13, 31, 56, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .poster::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(255, 187, 18, 0.16), transparent 25%),
+        radial-gradient(circle at 86% 18%, rgba(123, 182, 255, 0.18), transparent 24%),
+        radial-gradient(circle at 8% 86%, rgba(255, 255, 255, 0.1) 0 1px, transparent 1.5px),
+        radial-gradient(circle at 18% 72%, rgba(255, 255, 255, 0.14) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 32% 14%, rgba(255, 255, 255, 0.1) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 57% 9%, rgba(255, 255, 255, 0.12) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 78% 28%, rgba(255, 255, 255, 0.12) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 88% 64%, rgba(255, 255, 255, 0.12) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 68% 88%, rgba(255, 255, 255, 0.12) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 44% 92%, rgba(255, 255, 255, 0.12) 0 1px, transparent 1.6px);
+      pointer-events: none;
+    }
+
+    .poster::after {
+      content: "";
+      position: absolute;
+      inset: auto -8% -10% auto;
+      width: 240mm;
+      height: 240mm;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow:
+        0 0 0 28mm rgba(255, 255, 255, 0.02),
+        0 0 0 56mm rgba(255, 255, 255, 0.02),
+        0 0 0 84mm rgba(255, 255, 255, 0.015);
+      transform: translate(28%, 32%);
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      padding: 12mm 10mm 9mm;
+      display: grid;
+      grid-template-rows: auto auto auto 1fr auto;
+      gap: 8px;
+    }
+
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-row img,
+    .logo-row .pill {
+      height: 34px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.16);
+      padding: 4px 10px;
+      display: inline-flex;
+      align-items: center;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .event-chip {
+      border-radius: 999px;
+      background: var(--accent);
+      color: #4a3200;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      padding: 8px 12px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Anton", sans-serif;
+      letter-spacing: 1px;
+      line-height: 1;
+      font-size: 58px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      margin: 4px 0 0;
+      font-size: 18px;
+      font-weight: 700;
+      color: #d8e9ff;
+    }
+
+    .intro {
+      margin: 8px 0 0;
+      max-width: 116mm;
+      font-size: 12.8px;
+      line-height: 1.35;
+      color: #dceaff;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 8px;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+      padding: 9px;
+      color: #06203c;
+      backdrop-filter: blur(3px);
+    }
+
+    .panel h2 {
+      margin: 0 0 8px;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      color: #1f4c7f;
+    }
+
+    .big {
+      font-size: 29px;
+      line-height: 1.04;
+      font-weight: 800;
+      color: #07244a;
+      margin: 0;
+    }
+
+    .lead {
+      margin: 7px 0 0;
+      font-size: 14px;
+      line-height: 1.35;
+      color: #12385f;
+    }
+
+    .venue-note {
+      margin-top: 8px;
+      border-radius: 10px;
+      padding: 8px 9px;
+      background: linear-gradient(135deg, rgba(11, 40, 72, 0.07), rgba(31, 92, 153, 0.14));
+      border: 1px solid rgba(17, 63, 108, 0.12);
+      color: #12385f;
+      font-size: 11.5px;
+      line-height: 1.35;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 9px;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+    }
+
+    .fact {
+      border-radius: 10px;
+      padding: 8px;
+      border: 1px solid rgba(6, 21, 42, 0.12);
+      background: rgba(255, 255, 255, 0.75);
+      color: #0c2f57;
+      font-size: 12px;
+      line-height: 1.3;
+    }
+
+    .fact strong {
+      display: block;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #1d548c;
+      margin-bottom: 2px;
+    }
+
+    .section-title {
+      margin: 0 0 5px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      color: #1a4a7d;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 14px;
+      line-height: 1.28;
+      color: #0a2d52;
+      font-size: 11px;
+    }
+
+    li + li { margin-top: 2px; }
+
+    .timeline li strong,
+    .contacts li strong {
+      color: #805700;
+    }
+
+    .two-cols {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .reg-wrap {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-items: center;
+      border-radius: 12px;
+      border: 1px dashed rgba(128, 87, 0, 0.5);
+      background: var(--accent-soft);
+      padding: 8px;
+      margin-top: 7px;
+    }
+
+    .reg-wrap h3 {
+      margin: 0 0 2px;
+      font-size: 14px;
+      color: #563900;
+      text-transform: uppercase;
+    }
+
+    .reg-wrap p {
+      margin: 0;
+      color: #563900;
+      font-size: 11px;
+      line-height: 1.3;
+    }
+
+    .reg-wrap a {
+      color: #3f2a00;
+      font-weight: 800;
+      font-size: 11px;
+      word-break: break-all;
+    }
+
+    .qr {
+      width: 92px;
+      height: 92px;
+      border: 4px solid #ffffff;
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .footer {
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 7px 9px;
+      background: rgba(6, 21, 42, 0.58);
+      color: #e6f0ff;
+      font-size: 10px;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .poster {
+        width: min(100%, 820px);
+        height: auto;
+        min-height: 297mm;
+      }
+
+      .hero,
+      .row,
+      .two-cols,
+      .reg-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      body {
+        background: #ffffff;
+      }
+
+      .toolbar,
+      .page-note {
+        display: none !important;
+      }
+
+      .page-wrap {
+        padding: 0;
+      }
+
+      .poster {
+        width: 210mm;
+        height: 297mm;
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar" aria-label="Poster actions">
+    <button class="btn print" onclick="window.print()">Download A4 Poster (PDF)</button>
+    <a class="btn form" href="https://forms.gle/x1LUj6wDYYB2L8tK7" target="_blank" rel="noopener">Open Registration Form</a>
+  </div>
+
+  <div class="page-wrap">
+    <main class="poster" role="article" aria-label="HiSTAR Summer School 2026 Poster">
+      <div class="content">
+        <div class="topline">
+          <div class="logo-row">
+            <img src="upes-logo.jpg" alt="UPES logo" />
+            <img src="assests/images/IUCCA_Logo.jpg" alt="IUCAA logo" />
+            <span class="pill">Dolphin PG Institute</span>
+          </div>
+          <span class="event-chip">Summer School 2026</span>
+        </div>
+
+        <header>
+          <h1>HiSTAR</h1>
+          <p class="subtitle">Himalayan School for Training in Astronomy Research</p>
+          <p class="intro">A five-day astronomy training school featuring lectures, software labs, group projects, and observational exposure for students and early-career researchers.</p>
+        </header>
+
+        <section class="hero">
+          <article class="panel">
+            <h2>Event Dates and Venue</h2>
+            <p class="big">8 to 12 June 2026</p>
+            <p class="lead">UPES, Dehradun and Dolphin (PG) Institute of Biomedical and Natural Sciences (DIBNS)</p>
+            <div class="venue-note">Priority will be given to students from the Himalayan region, including Uttarakhand, J&amp;K, Himachal, and Ladakh, along with neighboring northern states.</div>
+          </article>
+          <aside class="panel">
+            <h2>Participation</h2>
+            <ul>
+              <li>Student participants: 45</li>
+              <li>Faculty participants: 5</li>
+              <li>Speakers and organizers: 10</li>
+              <li><strong>Total expected: 60</strong></li>
+            </ul>
+            <div class="facts" style="margin-top: 7px;">
+              <div class="fact"><strong>Format</strong>5-day lectures, labs and projects</div>
+              <div class="fact"><strong>Focus</strong>Observational astronomy and data analysis</div>
+              <div class="fact"><strong>Priority</strong>Himalayan and neighboring northern states</div>
+              <div class="fact"><strong>Certification</strong>Full attendance required</div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="row">
+          <article class="panel">
+            <h3 class="section-title">Eligibility</h3>
+            <ul>
+              <li>Final year BSc students in Physics or allied fields</li>
+              <li>MSc students in Physics, Mathematics, Electronics, Astronomy</li>
+              <li>Final year BE/BTech and ME/MTech (Physics or Computer Science)</li>
+              <li>First-year university PhD students</li>
+            </ul>
+
+            <h3 class="section-title" style="margin-top: 7px;">Program Snapshot</h3>
+            <ul>
+              <li><strong>Morning:</strong> Fundamental astronomy, stellar evolution, compact objects, cosmology, instrumentation</li>
+              <li><strong>Afternoon:</strong> Python basics, data mining, CMDs, light curves, galaxy morphology</li>
+              <li><strong>Evening:</strong> Telescope handling and observational sessions</li>
+            </ul>
+
+            <div class="two-cols" style="margin-top: 8px;">
+              <div>
+                <h3 class="section-title">Logistics</h3>
+                <ul>
+                  <li>Accommodation for resource persons at UPES</li>
+                  <li>Subsidized hostel stay for outstation students at DIBNS</li>
+                  <li>Daily bus transport between DIBNS and UPES</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="section-title">Travel Support</h3>
+                <ul>
+                  <li>Regional outstation support as per IUCAA norms</li>
+                  <li>Local transport for invited speakers and faculty</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <h3 class="section-title">Registration Timeline</h3>
+            <ul class="timeline">
+              <li><strong>April 15, 2026:</strong> Registration opens</li>
+              <li><strong>May 10, 2026:</strong> Application deadline</li>
+              <li><strong>May 15, 2026:</strong> Participant selection and confirmation</li>
+              <li><strong>June 8 to 12, 2026:</strong> Summer School</li>
+            </ul>
+
+            <div class="reg-wrap">
+              <div>
+                <h3>Scan to Register</h3>
+                <p>Google Form</p>
+                <a href="https://forms.gle/x1LUj6wDYYB2L8tK7" target="_blank" rel="noopener">https://forms.gle/x1LUj6wDYYB2L8tK7</a>
+              </div>
+              <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fforms.gle%2Fx1LUj6wDYYB2L8tK7" alt="QR code for HiSTAR registration form" />
+            </div>
+
+            <h3 class="section-title" style="margin-top: 8px;">Tentative Speakers</h3>
+            <ul>
+              <li>Prof. Hemwati Nandan (GU)</li>
+              <li>Prof. Hum Chand (CUHP)</li>
+              <li>Prof. H. P. Singh (DU | IUCAA Associate)</li>
+              <li>Dr. Ramesh Chandra (KU)</li>
+              <li>Dr. Kaushal Sharma (FSL-UP | IUCAA Associate)</li>
+            </ul>
+
+            <h3 class="section-title" style="margin-top: 8px;">Contact</h3>
+            <ul class="contacts">
+              <li><strong>Dr. Nitesh Kumar:</strong> nitesh.kumar@ddn.upes.ac.in | +91-8742930496</li>
+              <li><strong>Dr. Asheesh Raturi:</strong> aasheeshraturi@dolphininstitute.in | +91-7302546025</li>
+              <li><strong>Dr. Anupam Bhardwaj:</strong> anupam.bhardwaj@iucaa.in | +91-9811650632</li>
+            </ul>
+          </article>
+        </section>
+
+        <div class="footer">
+          Organized by UPES and Dolphin PG Institute with support from IUCAA. Use the top "Download A4 Poster (PDF)" button to export this page as an A4 PDF.
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <p class="page-note" style="text-align:center; color:#35557a; font-size:13px; margin: 0 0 16px;">A4 poster page ready for print and PDF download.</p>
+</body>
+</html>

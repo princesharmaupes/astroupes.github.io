@@ -1,6 +1,6 @@
 # Astronomy & Astrophysics Department – UPES
 
-Welcome to the official GitHub repository for the **Astronomy and Astrophysics Department** at the **University of Petroleum and Energy Studies (UPES), Dehradun**.
+Welcome to the official GitHub repository for the **Astronomy and Astrophysics Department** at the **University of Tomorrow (UPES), Dehradun**.
 
 This repository hosts the source code and content for our department website:  
 🔗 [https://astroupes.github.io](https://astroupes.github.io)

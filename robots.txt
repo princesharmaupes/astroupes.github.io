@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# XML sitemap for faster discovery
+Sitemap: https://astroupes.github.io/sitemap.xml

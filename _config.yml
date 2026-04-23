@@ -27,6 +27,7 @@ header_pages:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # SEO and analytics
 google_analytics: UA-XXXXXXXXX-X  # Replace with your GA code

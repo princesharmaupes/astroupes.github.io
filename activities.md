@@ -30,8 +30,8 @@ The workshop blended keynote lectures, guided hands-on labs, and participant-led
   <div style="flex: 1 1 520px; max-width: 700px;">
     <div style="width: 100%; max-width: 620px; height: 380px; margin-left: auto; margin-right: auto; position: relative;">
       <div id="nwdsaSlideshow" style="position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background: #f0f3f7;">
-        <img src="assests/images/NWDSA/DSCF0007.JPG" alt="NWDSA Workshop Glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #0b1220; display: block; transition: opacity 0.8s ease-in-out; opacity: 1;" id="nwdsaSlideA">
-        <img src="assests/images/NWDSA/DSCF0333.JPG" alt="NWDSA Workshop Glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #0b1220; display: block; transition: opacity 0.8s ease-in-out; opacity: 0;" id="nwdsaSlideB">
+        <img src="assests/images/cache/NWDSA/DSCF0007.JPG" alt="NWDSA Workshop Glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #0b1220; display: block; transition: opacity 0.8s ease-in-out; opacity: 1;" id="nwdsaSlideA">
+        <img src="" alt="NWDSA Workshop Glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #0b1220; display: block; transition: opacity 0.8s ease-in-out; opacity: 0;" id="nwdsaSlideB">
         <button onclick="prevNwdsaSlide()" aria-label="Previous Slide" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer;">&#8592;</button>
         <button onclick="nextNwdsaSlide()" aria-label="Next Slide" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer;">&#8594;</button>
       </div>
@@ -42,39 +42,32 @@ The workshop blended keynote lectures, guided hands-on labs, and participant-led
 
 <script>
   const nwdsaImages = [
-    "assests/images/NWDSA/DSCF0007.JPG",
-    "assests/images/NWDSA/DSCF0333.JPG",
-    "assests/images/NWDSA/DSCF0590.JPG",
-    "assests/images/NWDSA/DSCF0643.JPG",
-    "assests/images/NWDSA/DSCF0704.JPG",
-    "assests/images/NWDSA/DSCF0963.JPG",
-    "assests/images/NWDSA/DSCF1124.JPG",
-    "assests/images/NWDSA/DSCF1203.JPG",
-    "assests/images/NWDSA/DSCF1240.JPG",
-    "assests/images/NWDSA/DSCF1397.JPG",
-    "assests/images/NWDSA/DSCF1432.JPG",
-    "assests/images/NWDSA/DSCF1451.JPG",
-    "assests/images/NWDSA/DSCF1457.JPG",
-    "assests/images/NWDSA/DSCF9589.JPG",
-    "assests/images/NWDSA/DSCF9620.JPG",
-    "assests/images/NWDSA/DSCF9680.JPG",
-    "assests/images/NWDSA/DSCF9918.JPG",
-    "assests/images/NWDSA/DSCF9922.JPG",
-    "assests/images/NWDSA/DSCF9982.JPG",
-    "assests/images/NWDSA/DSCF9994.JPG",
-    "assests/images/NWDSA/UPES-1.JPG",
-    "assests/images/NWDSA/UPES-2.JPG"
+    "assests/images/cache/NWDSA/DSCF0007.JPG",
+    "assests/images/cache/NWDSA/DSCF0333.JPG",
+    "assests/images/cache/NWDSA/DSCF0590.JPG",
+    "assests/images/cache/NWDSA/DSCF0643.JPG",
+    "assests/images/cache/NWDSA/DSCF0704.JPG",
+    "assests/images/cache/NWDSA/DSCF0963.JPG",
+    "assests/images/cache/NWDSA/DSCF1124.JPG",
+    "assests/images/cache/NWDSA/DSCF1203.JPG",
+    "assests/images/cache/NWDSA/DSCF1240.JPG",
+    "assests/images/cache/NWDSA/DSCF1397.JPG",
+    "assests/images/cache/NWDSA/DSCF1432.JPG",
+    "assests/images/cache/NWDSA/DSCF1451.JPG",
+    "assests/images/cache/NWDSA/DSCF1457.JPG",
+    "assests/images/cache/NWDSA/DSCF9589.JPG",
+    "assests/images/cache/NWDSA/DSCF9620.JPG",
+    "assests/images/cache/NWDSA/DSCF9680.JPG",
+    "assests/images/cache/NWDSA/DSCF9918.JPG",
+    "assests/images/cache/NWDSA/DSCF9922.JPG",
+    "assests/images/cache/NWDSA/DSCF9982.JPG",
+    "assests/images/cache/NWDSA/DSCF9994.JPG",
+    "assests/images/cache/NWDSA/UPES-1.JPG",
+    "assests/images/cache/NWDSA/UPES-2.JPG"
   ];
 
   let nwdsaIndex = 0;
   let nwdsaActiveLayer = 'A';
-
-  function preloadImages(imageList) {
-    imageList.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  }
 
   function showNwdsaSlide(idx) {
     const slideA = document.getElementById('nwdsaSlideA');
@@ -84,6 +77,10 @@ The workshop blended keynote lectures, guided hands-on labs, and participant-led
     const current = nwdsaActiveLayer === 'A' ? slideA : slideB;
     const next = nwdsaActiveLayer === 'A' ? slideB : slideA;
     next.src = nwdsaImages[idx];
+
+    // Preload the next image in sequence
+    const preloadImg = new Image();
+    preloadImg.src = nwdsaImages[(idx + 1) % nwdsaImages.length];
 
     requestAnimationFrame(() => {
       next.style.opacity = 1;
@@ -103,7 +100,11 @@ The workshop blended keynote lectures, guided hands-on labs, and participant-led
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    preloadImages(nwdsaImages);
+    // Preload only the second image initially
+    if (nwdsaImages.length > 1) {
+      const img = new Image();
+      img.src = nwdsaImages[1];
+    }
   });
 
   setInterval(() => {
@@ -129,8 +130,8 @@ Participants observed key celestial targets through telescope-guided sessions an
 
 <div style="width: 100%; max-width: 760px; margin: 20px auto 0; position: relative;">
   <div id="nsoSlideshow" style="position: relative; width: 100%; height: 420px; overflow: hidden; border-radius: 10px; background: #0b1220; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
-    <img src="assests/images/NSO/DSCF8471.jpg" alt="Night Sky Observation event glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity 0.8s ease-in-out; opacity: 1;" id="nsoSlideA">
-    <img src="assests/images/NSO/DSCF8474.jpg" alt="Night Sky Observation event glimpse" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity 0.8s ease-in-out; opacity: 0;" id="nsoSlideB">
+    <img src="assests/images/cache/NSO/DSCF8471.jpg" alt="Night Sky Observation event glimpse" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity 0.8s ease-in-out; opacity: 1;" id="nsoSlideA">
+    <img src="" alt="Night Sky Observation event glimpse" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity 0.8s ease-in-out; opacity: 0;" id="nsoSlideB">
     <button onclick="prevNsoSlide()" aria-label="Previous NSO slide" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer;">&#8592;</button>
     <button onclick="nextNsoSlide()" aria-label="Next NSO slide" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer;">&#8594;</button>
   </div>
@@ -139,21 +140,21 @@ Participants observed key celestial targets through telescope-guided sessions an
 
 <script>
   const nsoImages = [
-    "assests/images/NSO/DSCF8471.jpg",
-    "assests/images/NSO/DSCF8474.jpg",
-    "assests/images/NSO/DSCF8484.jpg",
-    "assests/images/NSO/DSCF8512.jpg",
-    "assests/images/NSO/DSCF8525.jpg",
-    "assests/images/NSO/DSCF8584.JPG",
-    "assests/images/NSO/DSCF8585.JPG",
-    "assests/images/NSO/DSCF8605.JPG",
-    "assests/images/NSO/DSCF8615.JPG",
-    "assests/images/NSO/DSCF8625.JPG",
-    "assests/images/NSO/DSCF8658.jpg",
-    "assests/images/NSO/DSCF8659.jpg",
-    "assests/images/NSO/DSCF8697.jpg",
-    "assests/images/NSO/DSCF8705.jpg",
-    "assests/images/NSO/DSCF8723.jpg"
+    "assests/images/cache/NSO/DSCF8471.jpg",
+    "assests/images/cache/NSO/DSCF8474.jpg",
+    "assests/images/cache/NSO/DSCF8484.jpg",
+    "assests/images/cache/NSO/DSCF8512.jpg",
+    "assests/images/cache/NSO/DSCF8525.jpg",
+    "assests/images/cache/NSO/DSCF8584.JPG",
+    "assests/images/cache/NSO/DSCF8585.JPG",
+    "assests/images/cache/NSO/DSCF8605.JPG",
+    "assests/images/cache/NSO/DSCF8615.JPG",
+    "assests/images/cache/NSO/DSCF8625.JPG",
+    "assests/images/cache/NSO/DSCF8658.jpg",
+    "assests/images/cache/NSO/DSCF8659.jpg",
+    "assests/images/cache/NSO/DSCF8697.jpg",
+    "assests/images/cache/NSO/DSCF8705.jpg",
+    "assests/images/cache/NSO/DSCF8723.jpg"
   ];
 
   let nsoIndex = 0;
@@ -167,6 +168,10 @@ Participants observed key celestial targets through telescope-guided sessions an
     const current = nsoActiveLayer === 'A' ? slideA : slideB;
     const next = nsoActiveLayer === 'A' ? slideB : slideA;
     next.src = nsoImages[idx];
+
+    // Preload the next image in sequence
+    const preloadImg = new Image();
+    preloadImg.src = nsoImages[(idx + 1) % nsoImages.length];
 
     requestAnimationFrame(() => {
       next.style.opacity = 1;
@@ -186,7 +191,11 @@ Participants observed key celestial targets through telescope-guided sessions an
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    preloadImages(nsoImages);
+    // Preload only the second image initially
+    if (nsoImages.length > 1) {
+      const img = new Image();
+      img.src = nsoImages[1];
+    }
   });
 
   setInterval(() => {
@@ -211,7 +220,7 @@ On the occasion of the 2nd National Space Day, **Prof. Varun Sheel** (Head, Plan
   <div style="flex: 0 0 70%; max-width: 70%;">
     <div style="width: 480px; height: 320px; margin-left: auto; margin-right: auto; position: relative;">
       <div id="varunTalkSlideshow" style="position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-        <img src="assests/images/varun_talk/slide1.jpg" alt="Varun Talk Slide 1" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.6s;" id="varunTalkSlide">
+        <img src="assests/images/cache/varun_talk/slide1.jpg" alt="Varun Talk Slide 1" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.6s;" id="varunTalkSlide">
         <button onclick="prevVarunTalkSlide()" aria-label="Previous Slide" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 32px; height: 32px; cursor: pointer;">&#8592;</button>
         <button onclick="nextVarunTalkSlide()" aria-label="Next Slide" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 32px; height: 32px; cursor: pointer;">&#8594;</button>
       </div>
@@ -222,10 +231,10 @@ On the occasion of the 2nd National Space Day, **Prof. Varun Sheel** (Head, Plan
 
 <script>
   const varunTalkImages = [
-    "assests/images/varun_talk/slide1.jpg",
-    "assests/images/varun_talk/slide2.jpg",
-    "assests/images/varun_talk/slide3.jpg",
-    "assests/images/varun_talk/slide4.jpg"
+    "assests/images/cache/varun_talk/slide1.jpg",
+    "assests/images/cache/varun_talk/slide2.jpg",
+    "assests/images/cache/varun_talk/slide3.jpg",
+    "assests/images/cache/varun_talk/slide4.jpg"
   ];
   let varunTalkIndex = 0;
   let varunTalkSlide = null;
@@ -237,6 +246,10 @@ On the occasion of the 2nd National Space Day, **Prof. Varun Sheel** (Head, Plan
       setTimeout(() => {
         varunTalkSlide.src = varunTalkImages[idx];
         varunTalkSlide.style.opacity = 1;
+
+        // Preload next image
+        const preloadImg = new Image();
+        preloadImg.src = varunTalkImages[(idx + 1) % varunTalkImages.length];
       }, 300);
     }
   }
@@ -278,19 +291,19 @@ The exposure to operational observatories and interactions with the scientific c
 
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; justify-content: center;">
   <a href="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.42_49bae8cc.jpg" target="_blank">
-    <img src="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.42_49bae8cc.jpg" alt="ARIES Trip 1" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.42_49bae8cc.jpg" alt="ARIES Trip 1" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
   <a href="assests/images/ARIES_TRIP_2025/IMG-20250413-WA0017.jpg" target="_blank">
-    <img src="assests/images/ARIES_TRIP_2025/IMG-20250413-WA0017.jpg" alt="ARIES Trip 2" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assests/images/cache/ARIES_TRIP_2025/IMG-20250413-WA0017.jpg" alt="ARIES Trip 2" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
   <a href="assests/images/ARIES_TRIP_2025/IMG-20250413-WA0051.jpg" target="_blank">
-    <img src="assests/images/ARIES_TRIP_2025/IMG-20250413-WA0051.jpg" alt="ARIES Trip 3" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assests/images/cache/ARIES_TRIP_2025/IMG-20250413-WA0051.jpg" alt="ARIES Trip 3" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
   <a href="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 15.30.12_ad61e5fc.jpg" target="_blank">
-    <img src="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 15.30.12_ad61e5fc.jpg" alt="ARIES Trip 4" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 15.30.12_ad61e5fc.jpg" alt="ARIES Trip 4" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
   <a href="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.56_b245eda9.jpg" target="_blank">
-    <img src="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.56_b245eda9.jpg" alt="ARIES Trip 5" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.56_b245eda9.jpg" alt="ARIES Trip 5" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
 </div>
 
@@ -315,7 +328,7 @@ The *Weekly Lecture Series on Astrophysics* is an ongoing initiative introducing
   <div style="flex: 0 0 70%; max-width: 70%;">
     <div style="width: 480px; height: 640px; margin-left: auto; margin-right: auto; position: relative;">
       <div id="lectureSeriesSlideshow" style="position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 10px; background: #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-        <img src="assests/images/LECTURE_SERIES_2025/nitesh_talk_poster.jpg" alt="Lecture Series Poster 2" style="width: 100%; height: 100%; object-fit: contain; display: block; transition: opacity 0.6s;" id="lectureSeriesSlide">
+        <img src="assests/images/cache/LECTURE_SERIES_2025/nitesh_talk_poster.jpg" alt="Lecture Series Poster 2" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; display: block; transition: opacity 0.6s;" id="lectureSeriesSlide">
         <button onclick="prevLectureSeriesSlide()" aria-label="Previous Slide" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 32px; height: 32px; cursor: pointer;">&#8592;</button>
         <button onclick="nextLectureSeriesSlide()" aria-label="Next Slide" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; border-radius: 50%; width: 32px; height: 32px; cursor: pointer;">&#8594;</button>
       </div>
@@ -326,19 +339,19 @@ The *Weekly Lecture Series on Astrophysics* is an ongoing initiative introducing
     <script>
       const lectureSeriesImages = [
         {
-          src: "assests/images/LECTURE_SERIES_2025/nitesh_talk_poster.jpg",
+          src: "assests/images/cache/LECTURE_SERIES_2025/nitesh_talk_poster.jpg",
           caption: 'Lecture 2 by Dr. Nitesh Kumar on "<em>Measuring the Universe: The Cosmic Ladder</em>"'
         },
         {
-          src: "assests/images/LECTURE_SERIES_2025/prince_talk.jpeg",
+          src: "assests/images/cache/LECTURE_SERIES_2025/prince_talk.jpeg",
           caption: 'Lecture 3 by Dr. Prince Sharma on "<em>Life Cycle of Stars</em>"'
         },
         {
-          src: "assests/images/LECTURE_SERIES_2025/suvankar.jpg",
+          src: "assests/images/cache/LECTURE_SERIES_2025/suvankar.jpg",
           caption: 'Lecture 5 by Dr. Suvankar R. Chowdhury on "<em>Inward Bound: From Rutherford to Large Hadron Collider</em>"'
         },
         {
-          src: "assests/images/LECTURE_SERIES_2025/raju_talk.png",
+          src: "assests/images/cache/LECTURE_SERIES_2025/raju_talk.png",
           caption: 'Lecture 6 by Dr. Raju Roychowdhury on "<em>The Einstein Window: A Voyage in Spacetime</em>"'
         }
       ];
@@ -355,6 +368,10 @@ The *Weekly Lecture Series on Astrophysics* is an ongoing initiative introducing
             lectureSeriesSlide.src = lectureSeriesImages[idx].src;
             lectureSeriesCaption.innerHTML = lectureSeriesImages[idx].caption;
             lectureSeriesSlide.style.opacity = 1;
+
+            // Preload next image
+            const preloadImg = new Image();
+            preloadImg.src = lectureSeriesImages[(idx + 1) % lectureSeriesImages.length].src;
           }, 300);
         }
       }
@@ -392,13 +409,13 @@ For many, this was their first direct glimpse at the Sun through a scientific in
 
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; justify-content: center;">
   <a href="assests/images/facilities/telescope.jpg" target="_blank">
-    <img src="assests/images/facilities/telescope.jpg" alt="Telescope 1" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assests/images/cache/facilities/telescope.jpg" alt="Telescope 1" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
   <a href="assests/images/facilities/sun.jpg" target="_blank">
-    <img src="assests/images/facilities/sun.jpg" alt="Sun Observation" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assests/images/cache/facilities/sun.jpg" alt="Sun Observation" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
   <a href="assests/images/facilities/telescope_roof.jpg" target="_blank">
-    <img src="assests/images/facilities/telescope_roof.jpg" alt="Telescope Setup on Roof" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    <img src="assests/images/cache/facilities/telescope_roof.jpg" alt="Telescope Setup on Roof" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
 </div>
 

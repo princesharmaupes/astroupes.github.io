@@ -57,9 +57,9 @@ title: Home
 
 ### A Specialized Division within the Department of Physics, Applied Science Cluster, School of Advanced Engineering
 
-<section id="admissions-spotlight" style="margin: 22px 0 28px; border-radius: 18px; background: linear-gradient(140deg, #071a2e 0%, #133b63 48%, #17638a 100%); color: #fff; padding: 26px 20px; box-shadow: 0 12px 28px rgba(7,26,46,0.28);">
+<section id="admissions-spotlight" style="margin: 22px 0 28px; border-radius: 18px; background: linear-gradient(140deg, #071a2e 0%, #133b63 48%, #17638a 100%); color: #fff; padding: 26px 20px; box-shadow: 0 12px 28px rgba(7,26,46,0.28); box-sizing: border-box; max-width: 100%; overflow: hidden;">
   <div style="display:flex; flex-wrap:wrap; gap:18px; justify-content:space-between; align-items:flex-start;">
-    <div style="flex:1 1 420px; min-width:280px;">
+    <div style="flex:1 1 420px; min-width:280px; max-width: 100%; box-sizing: border-box;">
       <p style="margin:0; font-size:0.84rem; letter-spacing:0.8px; text-transform:uppercase; color:#ffd48f; font-weight:700;">Admissions 2026</p>
       <h2 style="margin:8px 0 10px; color:#fff; font-size:2rem; line-height:1.2;">Build Your Future in Astronomy and Astrophysics</h2>
       <p style="margin:0; opacity:0.94; max-width:640px;">Choose your academic track and get a clear action plan for admission into B.Sc. and M.Sc. Physics programs with strong astronomy exposure, hands-on observations, and research mentorship.</p>
@@ -70,7 +70,7 @@ title: Home
       </div>
     </div>
 
-    <div style="flex:1 1 330px; min-width:280px; background:rgba(255,255,255,0.11); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:14px; backdrop-filter: blur(6px);">
+    <div style="flex:1 1 330px; min-width:280px; max-width: 100%; box-sizing: border-box; background:rgba(255,255,255,0.11); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:14px; backdrop-filter: blur(6px);">
       <p style="margin:0 0 10px; font-weight:700;">Find your best-fit track</p>
       <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
         <button type="button" class="track-btn active" data-track="bsc" style="padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.35); background:#fff; color:#103458; font-weight:700; cursor:pointer;">B.Sc. (Hons.) Physics</button>
@@ -177,7 +177,7 @@ Whether you're drawn to unraveling black hole enigmas, advancing space explorati
   <h2 style="text-align:center; font-size: 2em; color: #002855;">Leadership</h2>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 30px;">
     <!-- Cluster Head -->
-    <div style="background: #e9edf4; border-radius: 15px; width: 320px; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
+    <div style="background: #e9edf4; border-radius: 15px; width: 320px; max-width: 100%; box-sizing: border-box; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
       <img src="assests/images/ranjeet.png" alt="Prof. Ranjeet K. Brajpuriya" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 16px; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #002855;">Prof. Ranjeet Kumar Brajpuriya</h3>
       <p><strong>Cluster Head, Applied Science Cluster</strong></p>
@@ -185,14 +185,14 @@ Whether you're drawn to unraveling black hole enigmas, advancing space explorati
       <a href="faculty.html#RANJEET" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">View Profile →</a>
     </div>
     <!-- Program Lead -->
-    <div style="background: #e9edf4; border-radius: 15px; width: 320px; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
+    <div style="background: #e9edf4; border-radius: 15px; width: 320px; max-width: 100%; box-sizing: border-box; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
       <img src="assests/images/rajiv.png" alt="Prof. Rajiv Gupta" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 16px; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #002855;">Prof. Rajeev Gupta</h3>
       <p><strong>Program Lead, Department of Physics</strong></p>
       <p style="font-size: 0.95em;">Prof. Rajeev Gupta is a distinguished academician, member of several scientific and educational societies, and editor/reviewer for leading international journals. He has authored books on Nanoscience, Solar Photovoltaics, Electronics Engineering and Solid-State Devices.</p>
       <a href="faculty.html#RAJEEV" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">View Profile →</a>
     </div>
-    <div style="background: #e9edf4; border-radius: 15px; width: 320px; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
+    <div style="background: #e9edf4; border-radius: 15px; width: 320px; max-width: 100%; box-sizing: border-box; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
       <img src="assests/images/santosh.png" alt="Prof. Santosh Dubey" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 16px; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #33c99cff;">Prof. Santosh Dubey</h3>
       <p><strong>Former Lead, Department of Physics</strong></p>

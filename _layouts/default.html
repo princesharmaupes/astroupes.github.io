@@ -127,30 +127,36 @@
   z-index: 1;
 }
 
-/* .motto-box {
+
+.motto-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #fff;
-  padding: 40px;
+  padding: clamp(20px, 4vw, 40px);
   border-radius: 10px;
+  width: 90%;
   max-width: 700px;
   text-align: center;
   z-index: 2;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-sizing: border-box;
 }
 
 .motto-box h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: clamp(24px, 5vw, 48px);
+  margin-bottom: clamp(10px, 2vw, 20px);
 }
 
 .motto-box p {
-  font-size: 20px;
+  font-size: clamp(14px, 3vw, 20px);
   line-height: 1.6;
-} */
+}
+
 
 /* remove site-counter styles */
 /* .site-counter {

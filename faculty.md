@@ -3,6 +3,16 @@ layout: home
 title: Faculty
 ---
 
+<style>
+.faculty-grid-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.faculty-grid-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
+}
+</style>
+
 # Leadership Team
 
 <div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
@@ -58,7 +68,7 @@ title: Faculty
 ---
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; margin-top: 20px;">
-  <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <div class="faculty-grid-card" style="background: #fbfdff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 12px rgba(15, 36, 61, 0.06);">
    <img src="assests/images/rawat.png" alt="Dr. Prashant S. Rawat" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 15px; border: 3px solid #007bff;">
    <h3 id="PSRAWAT" style="text-align: center; color: #007bff; margin-bottom: 10px;">Dr. Prashant S. Rawat</h3>
    <p style="text-align: center; color: #007bff; margin-bottom: 10px;"><img src="assests/workshop_images/email-open.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;"> 
@@ -78,7 +88,7 @@ title: Faculty
    </div>
    </div>
 
-   <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+   <div class="faculty-grid-card" style="background: #fbfdff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 12px rgba(15, 36, 61, 0.06);">
    <img src="assests/images/balendra.jpeg" alt="Dr. Balendra Pratap Singh" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 15px; border: 3px solid #007bff;">
    <h3 id="BALENDRA" style="text-align: center; color: #007bff; margin-bottom: 10px;">Dr. Balendra Pratap Singh</h3>
    <p style="text-align: center; color: #007bff; margin-bottom: 10px;"><img src="assests/workshop_images/email-open.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;"><a href="mailto:balendrap.singh@ddn.upes.ac.in" style="color: #007bff; text-decoration: underline;">balendrap.singh@ddn.upes.ac.in</a></p>
@@ -98,7 +108,7 @@ title: Faculty
    </div>
    </div>
 
-   <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+   <div class="faculty-grid-card" style="background: #fbfdff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 12px rgba(15, 36, 61, 0.06);">
    <img src="assests/images/nitesh_1.jpg" alt="Dr. Nitesh Kumar" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 15px; border: 3px solid #007bff;">
    <h3 id="NITESH" style="text-align: center; color: #007bff; margin-bottom: 10px;"><a href="https://niteshchandra039.github.io/" target="_blank" style="color: #007bff; text-decoration: none;">Dr. Nitesh Kumar</a></h3>
    <p style="text-align: center; color: #007bff; margin-bottom: 10px;"><img src="assests/workshop_images/email-open.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;"><a href="mailto:nitesh.kumar@ddn.upes.ac.in" style="color: #007bff; text-decoration: underline;">nitesh.kumar@ddn.upes.ac.in</a></p>
@@ -121,7 +131,7 @@ title: Faculty
    </div>
    </div>
 
-   <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+   <div class="faculty-grid-card" style="background: #fbfdff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 12px rgba(15, 36, 61, 0.06);">
    <img src="assests/images/prince.png" alt="Dr. Prince Sharma" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 15px; border: 3px solid #007bff;">
    <h3 id="PRINCE" style="text-align: center; color: #007bff; margin-bottom: 10px;">Dr. Prince Sharma</h3>
    <p style="text-align: center; color: #007bff; margin-bottom: 10px;"><img src="assests/workshop_images/email-open.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;"><a href="mailto:prince.sharma@ddn.upes.ac.in" style="color: #007bff; text-decoration: underline;">prince.sharma@ddn.upes.ac.in</a></p>
@@ -145,7 +155,7 @@ title: Faculty
    </div>
    </div>
 
-   <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+   <div class="faculty-grid-card" style="background: #fbfdff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 12px rgba(15, 36, 61, 0.06);">
    <img src="assests/images/arka.jpeg" alt="Dr. Arka Chatterjee" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 15px; border: 3px solid #007bff;">
    <h3 id="ARKA" style="text-align: center; color: #007bff; margin-bottom: 10px;">Dr. Arka Chatterjee</h3>
    <p style="text-align: center; color: #007bff; margin-bottom: 10px;"><img src="assests/workshop_images/email-open.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;"><a href="mailto:arka.chatterjee@ddn.upes.ac.in" style="color: #007bff; text-decoration: underline;">arka.chatterjee@ddn.upes.ac.in</a></p>
@@ -165,7 +175,7 @@ title: Faculty
    </div>
    </div>
 
-   <!-- <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+   <!-- <div class="faculty-grid-card" style="background: #fbfdff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 12px rgba(15, 36, 61, 0.06);">
    <img src="assests/images/raju.png" alt="Dr. Raju Roychowdhury" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 15px; border: 3px solid #007bff;">
    <h3 id="RAJU" style="text-align: center; color: #007bff; margin-bottom: 10px;">Dr. Raju Roychowdhury</h3>
    <p style="text-align: center; color: #007bff; margin-bottom: 10px;"><img src="assests/workshop_images/email-open.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle;"><a href="mailto:raju.roychowdhury@ddn.upes.ac.in" style="color: #007bff; text-decoration: underline;">raju.roychowdhury@ddn.upes.ac.in</a></p>

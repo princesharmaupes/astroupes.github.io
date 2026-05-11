@@ -178,7 +178,7 @@ Whether you're drawn to unraveling black hole enigmas, advancing space explorati
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 30px;">
     <!-- Cluster Head -->
     <div style="background: #e9edf4; border-radius: 15px; width: 320px; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
-      <img src="assests/images/ranjeet.png" alt="Prof. Ranjeet K. Brajpuriya" style="width: 100%; border-radius: 10px;">
+      <img src="assests/images/ranjeet.png" alt="Prof. Ranjeet K. Brajpuriya" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 16px; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #002855;">Prof. Ranjeet Kumar Brajpuriya</h3>
       <p><strong>Cluster Head, Applied Science Cluster</strong></p>
       <p style="font-size: 0.95em;">Prof. Ranjeet has more than 20 years of research and teaching experience. Prof. Ranjeet has undertaken post-doctoral work both in India and abroad. He is a recipient of several national and international fellowships, including the esteemed ENEA & ICTP International Research Fellowships in Italy.</p>
@@ -186,14 +186,14 @@ Whether you're drawn to unraveling black hole enigmas, advancing space explorati
     </div>
     <!-- Program Lead -->
     <div style="background: #e9edf4; border-radius: 15px; width: 320px; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
-      <img src="assests/images/rajiv.png" alt="Prof. Rajiv Gupta" style="width: 100%; border-radius: 10px;">
+      <img src="assests/images/rajiv.png" alt="Prof. Rajiv Gupta" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 16px; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #002855;">Prof. Rajeev Gupta</h3>
       <p><strong>Program Lead, Department of Physics</strong></p>
       <p style="font-size: 0.95em;">Prof. Rajeev Gupta is a distinguished academician, member of several scientific and educational societies, and editor/reviewer for leading international journals. He has authored books on Nanoscience, Solar Photovoltaics, Electronics Engineering and Solid-State Devices.</p>
       <a href="faculty.html#RAJEEV" class="read-more-button" style="color:rgb(0, 0, 0); text-decoration: none; font-weight: bold;">View Profile →</a>
     </div>
     <div style="background: #e9edf4; border-radius: 15px; width: 320px; padding: 24px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.12);">
-      <img src="assests/images/santosh.png" alt="Prof. Santosh Dubey" style="width: 100%; border-radius: 10px;">
+      <img src="assests/images/santosh.png" alt="Prof. Santosh Dubey" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 16px; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
       <h3 style="color: #33c99cff;">Prof. Santosh Dubey</h3>
       <p><strong>Former Lead, Department of Physics</strong></p>
       <p style="font-size: 0.95em;">Prof. Santosh Dubey, former Program Lead, was instrumental in establishing Astronomy and Astrophysics as a core domain. He earned his MS and PhD in Computational Science (Materials Science) from Florida State University, USA, and is recognized for his pioneering work on radiation–materials interactions through modeling and experimentation.</p>
@@ -216,7 +216,7 @@ Whether you're drawn to unraveling black hole enigmas, advancing space explorati
       </div>
 
       <div class="faculty-card">
-        <img src="assests/images/balendra.jpeg" alt="Dr. Balendra P. Singh" class="faculty-img">
+        <img src="assests/images/HiSTAR/balendra.jpeg" alt="Dr. Balendra P. Singh" class="faculty-img">
         <h3>Dr. Balendra P. Singh</h3>
         <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Balendra P. Singh specializes in Astrophysics and Astronomy and received his PhD from the Center for Theoretical Physics...</p>
@@ -240,7 +240,7 @@ Whether you're drawn to unraveling black hole enigmas, advancing space explorati
       </div>
 
       <div class="faculty-card">
-        <img src="assests/images/arka.jpeg" alt="Dr. Arka Chatterjee" class="faculty-img">
+        <img src="assests/images/HiSTAR/arka.jpeg" alt="Dr. Arka Chatterjee" class="faculty-img">
         <h3>Dr. Arka Chatterjee</h3>
         <p><strong>Assistant Professor, Applied Science Cluster</strong></p>
         <p class="faculty-bio">Dr. Arka Chatterjee is an Astrophysicist with a PhD in Theoretical Physics from the University of Calcutta....</p>
@@ -330,3 +330,11 @@ Build your career in **Astronomy** and **Astrophysics**.
 
 > _"Somewhere, something incredible is waiting to be known."_  
 > — Carl Sagan
+
+<!-- Free Visitor Badge -->
+<div style="display: flex; justify-content: flex-end; margin-top: 40px; padding-bottom: 20px;">
+  <a href="https://hits.sh/astroupes.github.io/">
+    <img alt="Hits" src="https://hits.sh/astroupes.github.io.svg?style=for-the-badge&label=Visits&color=0ea5e9&labelColor=0f243d" style="display: block; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+  </a>
+</div>
+<!-- End of Visitor Badge -->

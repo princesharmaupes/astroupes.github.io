@@ -353,7 +353,7 @@ Welcome to our Astronomy & Astrophysics Gallery. Browse event-wise highlights an
   #lightbox-modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 999999;
     left: 0;
     top: 0;
     width: 100%;
@@ -393,7 +393,7 @@ Welcome to our Astronomy & Astrophysics Gallery. Browse event-wise highlights an
     cursor: pointer;
     background: transparent;
     border: none;
-    z-index: 1010;
+    z-index: 1000000;
     line-height: 1;
     transition: transform 0.2s ease, color 0.2s;
   }
@@ -420,7 +420,7 @@ Welcome to our Astronomy & Astrophysics Gallery. Browse event-wise highlights an
     align-items: center;
     justify-content: center;
     transition: background 0.3s ease, transform 0.2s ease;
-    z-index: 1010;
+    z-index: 1000000;
     backdrop-filter: blur(4px);
   }
 

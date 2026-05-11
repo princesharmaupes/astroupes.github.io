@@ -290,19 +290,19 @@ The exposure to operational observatories and interactions with the scientific c
 **A glance into the visit:**
 
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; justify-content: center;">
-  <a href="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.42_49bae8cc.jpg" target="_blank">
+  <a href="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.42_49bae8cc.jpg" target="_blank">
     <img src="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.42_49bae8cc.jpg" alt="ARIES Trip 1" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
-  <a href="assests/images/ARIES_TRIP_2025/IMG-20250413-WA0017.jpg" target="_blank">
+  <a href="assests/images/cache/ARIES_TRIP_2025/IMG-20250413-WA0017.jpg" target="_blank">
     <img src="assests/images/cache/ARIES_TRIP_2025/IMG-20250413-WA0017.jpg" alt="ARIES Trip 2" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
-  <a href="assests/images/ARIES_TRIP_2025/IMG-20250413-WA0051.jpg" target="_blank">
+  <a href="assests/images/cache/ARIES_TRIP_2025/IMG-20250413-WA0051.jpg" target="_blank">
     <img src="assests/images/cache/ARIES_TRIP_2025/IMG-20250413-WA0051.jpg" alt="ARIES Trip 3" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
-  <a href="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 15.30.12_ad61e5fc.jpg" target="_blank">
+  <a href="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 15.30.12_ad61e5fc.jpg" target="_blank">
     <img src="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 15.30.12_ad61e5fc.jpg" alt="ARIES Trip 4" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
-  <a href="assests/images/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.56_b245eda9.jpg" target="_blank">
+  <a href="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.56_b245eda9.jpg" target="_blank">
     <img src="assests/images/cache/ARIES_TRIP_2025/WhatsApp Image 2025-04-10 at 16.08.56_b245eda9.jpg" alt="ARIES Trip 5" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
 </div>
@@ -408,13 +408,13 @@ The event featured a guided solar observation session, where students safely vie
 For many, this was their first direct glimpse at the Sun through a scientific instrument, turning abstract concepts into vivid, observable reality.
 
 <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; justify-content: center;">
-  <a href="assests/images/facilities/telescope.jpg" target="_blank">
+  <a href="assests/images/cache/facilities/telescope.jpg" target="_blank">
     <img src="assests/images/cache/facilities/telescope.jpg" alt="Telescope 1" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
-  <a href="assests/images/facilities/sun.jpg" target="_blank">
+  <a href="assests/images/cache/facilities/sun.jpg" target="_blank">
     <img src="assests/images/cache/facilities/sun.jpg" alt="Sun Observation" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
-  <a href="assests/images/facilities/telescope_roof.jpg" target="_blank">
+  <a href="assests/images/cache/facilities/telescope_roof.jpg" target="_blank">
     <img src="assests/images/cache/facilities/telescope_roof.jpg" alt="Telescope Setup on Roof" loading="lazy" style="width: auto; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
   </a>
 </div>
@@ -441,3 +441,200 @@ For many, this was their first direct glimpse at the Sun through a scientific in
   #varunTalkSlideshow[style], #lectureSeriesSlideshow[style],
   div[style*="width: 480px"] { width: 100% !important; max-width: 480px; }
 </style>
+
+
+<!-- Lightbox Modal for Activities -->
+<style>
+  #lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    animation: modalFadeIn 0.3s ease;
+  }
+  .modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    animation: imageZoomIn 0.3s ease;
+    background: transparent;
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    z-index: 1000000;
+    line-height: 1;
+    transition: transform 0.2s ease, color 0.2s;
+  }
+  .close:hover {
+    transform: scale(1.1);
+    color: #ddd;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 1000000;
+    backdrop-filter: blur(4px);
+  }
+  .prev:hover,
+  .next:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-50%) scale(1.05);
+  }
+  .prev { left: 30px; }
+  .next { right: 30px; }
+  @keyframes modalFadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes modalFadeOut { from { opacity: 1; } to { opacity: 0; } }
+  @keyframes imageZoomIn { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  @media (max-width: 768px) {
+    .prev, .next { display: none; }
+    .close { top: 15px; right: 20px; font-size: 35px; }
+    .modal-img { max-width: 95%; max-height: 95vh; }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.createElement('div');
+    modal.id = 'lightbox-modal';
+    modal.innerHTML = `
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img class="modal-img" src="" alt="">
+        <button class="prev">&larr;</button>
+        <button class="next">&rarr;</button>
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    const modalImg = modal.querySelector('.modal-img');
+    const closeBtn = modal.querySelector('.close');
+    const prevBtn = modal.querySelector('.prev');
+    const nextBtn = modal.querySelector('.next');
+    let currentItems = [];
+    let currentIndex = 0;
+
+    function showModal(src) {
+      modalImg.src = src;
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      modal.style.animation = 'modalFadeIn 0.3s ease';
+    }
+
+    // Generic click handler for images inside <a> tags
+    document.querySelectorAll('a[href$=".jpg"], a[href$=".JPG"], a[href$=".jpeg"], a[href$=".png"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        const container = this.closest('div');
+        if (container) {
+          currentItems = Array.from(container.querySelectorAll('a[href$=".jpg"], a[href$=".JPG"], a[href$=".jpeg"], a[href$=".png"]')).map(el => el.href);
+        } else {
+          currentItems = [this.href];
+        }
+        currentIndex = currentItems.indexOf(this.href);
+        showModal(this.href);
+      });
+    });
+
+    // Slideshow click handlers
+    function attachSlideshowClick(id, imagesVar, indexVar, isObjArray) {
+      const container = document.getElementById(id);
+      if (container) {
+        container.style.cursor = 'pointer';
+        container.addEventListener('click', () => {
+          if (typeof window[imagesVar] !== 'undefined') {
+            currentItems = isObjArray ? window[imagesVar].map(obj => obj.src) : window[imagesVar];
+          } else {
+            currentItems = [];
+          }
+          currentIndex = typeof window[indexVar] !== 'undefined' ? window[indexVar] : 0;
+          if (currentItems.length > 0) showModal(currentItems[currentIndex]);
+        });
+      }
+    }
+
+    attachSlideshowClick('nwdsaSlideshow', 'nwdsaImages', 'nwdsaIndex', false);
+    attachSlideshowClick('nsoSlideshow', 'nsoImages', 'nsoIndex', false);
+    attachSlideshowClick('varunTalkSlideshow', 'varunTalkImages', 'varunTalkIndex', false);
+    attachSlideshowClick('lectureSeriesSlideshow', 'lectureSeriesImages', 'lectureSeriesIndex', true);
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target.classList.contains('modal-content')) closeBtn.click();
+    });
+
+    closeBtn.onclick = () => {
+      modal.style.animation = 'modalFadeOut 0.3s ease';
+      setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }, 300);
+    };
+
+    prevBtn.onclick = (e) => {
+      e.stopPropagation();
+      if(currentItems.length === 0) return;
+      currentIndex = (currentIndex - 1 + currentItems.length) % currentItems.length;
+      showModal(currentItems[currentIndex]);
+    };
+
+    nextBtn.onclick = (e) => {
+      e.stopPropagation();
+      if(currentItems.length === 0) return;
+      currentIndex = (currentIndex + 1) % currentItems.length;
+      showModal(currentItems[currentIndex]);
+    };
+
+    let startX = 0, endX = 0;
+    modal.addEventListener('touchstart', (e) => startX = e.touches[0].clientX);
+    modal.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      if (startX - endX > 50) nextBtn.click();
+      if (endX - startX > 50) prevBtn.click();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (modal.style.display === 'flex') {
+        if (e.key === 'Escape') closeBtn.click();
+        else if (e.key === 'ArrowLeft') prevBtn.click();
+        else if (e.key === 'ArrowRight') nextBtn.click();
+      }
+    });
+  });
+</script>

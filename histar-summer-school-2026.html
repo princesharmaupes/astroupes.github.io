@@ -342,6 +342,7 @@
       border-radius: 16px;
       box-shadow: var(--shadow);
       padding: 3rem;
+      scroll-margin-top: 6rem;
     }
 
     h2 {
@@ -626,6 +627,81 @@
       font-size: 1.1rem;
     }
 
+    .section-intro {
+      max-width: 920px;
+    }
+
+    .participant-block + .participant-block {
+      margin-top: 2rem;
+    }
+
+    .participant-block h3 {
+      margin: 0 0 0.9rem;
+      color: var(--ink);
+      font-size: 1.2rem;
+    }
+
+    .participant-meta {
+      margin: 0 0 1rem;
+      color: #4a6685;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--faint);
+      border-radius: 14px;
+      background: #fbfdff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 860px;
+    }
+
+    th,
+    td {
+      padding: 0.9rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #e1ecf8;
+      vertical-align: top;
+      color: #264463;
+      font-size: 0.97rem;
+      line-height: 1.5;
+    }
+
+    th {
+      background: linear-gradient(90deg, #edf5ff, #f6fbff);
+      color: #153a60;
+      font-family: "Sora", sans-serif;
+      font-size: 0.88rem;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f9fbfe;
+    }
+
+    tbody tr:hover {
+      background: #eef6ff;
+    }
+
+    td a {
+      color: var(--sky);
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
     .reveal {
       opacity: 0;
       transform: translateY(20px);
@@ -635,6 +711,60 @@
     .reveal.show {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    .announce-bar {
+      background: linear-gradient(92deg, #0b3a6e, #1265b8, #0b3a6e);
+      background-size: 200% 100%;
+      animation: shimmer-bg 4s linear infinite;
+      color: #fff;
+      text-align: center;
+      padding: 0.7rem 1rem;
+      font-size: 0.97rem;
+      font-weight: 600;
+      letter-spacing: 0.1px;
+      position: relative;
+      z-index: 50;
+    }
+
+    @keyframes shimmer-bg {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    .announce-bar a {
+      color: #ffde6e;
+      text-decoration: none;
+      font-weight: 800;
+      border-bottom: 2px solid rgba(255,222,110,0.45);
+      transition: border-color 0.2s;
+    }
+
+    .announce-bar a:hover {
+      border-color: #ffde6e;
+    }
+
+    .announce-pulse {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #ffde6e;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+      animation: pulse-dot 1.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50%       { transform: scale(1.6); opacity: 0.5; }
+    }
+
+    .btn.disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
+      filter: grayscale(0.4);
     }
 
     footer {
@@ -699,6 +829,12 @@
       .date-cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+
+      th,
+      td {
+        padding: 0.8rem;
+        font-size: 0.92rem;
+      }
     }
   </style>
 </head>
@@ -728,11 +864,17 @@
         Scheduled for June 8 to 12, 2026.
       </p>
       <div class="hero-actions">
-        <a class="btn primary" href="#registration">Register Now</a>
+        <span class="btn primary disabled" aria-disabled="true">Registrations Closed</span>
         <a class="btn secondary" href="#schedule">Program Structure</a>
       </div>
     </div>
   </header>
+
+  <div class="announce-bar" role="alert" aria-live="polite">
+    <span class="announce-pulse"></span>
+    Acceptance list is now live &mdash;
+    <a href="#participants">View selected &amp; waitlisted participants &rarr;</a>
+  </div>
 
   <nav class="topnav" aria-label="Main page navigation">
     <div class="wrap">
@@ -743,6 +885,7 @@
       <a href="#logistics">Logistics</a>
       <a href="#guidelines">Guidelines</a>
       <a href="#registration">Registration</a>
+      <a href="#participants">Participants</a>
       <a href="#about-upes">About UPES & DIBNS</a>
       <a href="#contact">Contact</a>
     </div>
@@ -978,6 +1121,137 @@
       </div>
     </section>
 
+    <section id="participants" class="reveal">
+      <h2>Selected and Waitlisted Participants</h2>
+      <p class="section-intro">
+        We received an overwhelming response to our call for applications, with over 300 applicants from across the Himalayan 
+        region and neighboring states. After a rigorous selection process, we are excited to announce the list of accepted 
+        participants for the HiSTAR Summer School 2026. Below is the list of accepted Local and Outstation participants, along with their affiliations and areas of study. We look forward to welcoming all selected participants to an enriching and engaging week of astronomy training and research!
+      </p>
+
+      <div class="participant-block">
+        <h3>Accepted Participants (Local)</h3>
+        <p class="participant-meta">20 participants</p>
+        <div class="table-wrap">
+          <table aria-label="Accepted local participants">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Institute</th>
+                <th scope="col">Course (Degree &amp; Major)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Abhishek Negi</td><td><a href="mailto:spacetime122002@gmail.com">spacetime122002@gmail.com</a></td><td>Dolphin PG Institute of Biomedical and Natural Sciences &amp; Graphic Era Deemed University</td><td>PhD (Astrophysics)</td></tr>
+              <tr><td>Aira</td><td><a href="mailto:aira49005@gmail.com">aira49005@gmail.com</a></td><td>Doon University, Dehradun</td><td>BSc (Physics Honors with Research)</td></tr>
+              <tr><td>Akanksha Patel</td><td><a href="mailto:a26145235@gmail.com">a26145235@gmail.com</a></td><td>Dolphin PG Institute of Biomedical and Natural Sciences</td><td>BSc (Microbiology)</td></tr>
+              <tr><td>Ashish Panwar</td><td><a href="mailto:astrohishphysicanwar123@gmail.com">astrohishphysicanwar123@gmail.com</a></td><td>University of Petroleum and Energy Studies, Dehradun</td><td>BSc (Astronomy)</td></tr>
+              <tr><td>Ayush Bhatt</td><td><a href="mailto:ab5924245@gmail.com">ab5924245@gmail.com</a></td><td>Doon University</td><td>MSc (Physics)</td></tr>
+              <tr><td>Chandni Negi</td><td><a href="mailto:chandninegi7201@gmail.com">chandninegi7201@gmail.com</a></td><td>UPES Dehradun</td><td>MSc (Astronomy and Astrophysics)</td></tr>
+              <tr><td>Chingkime Sangma</td><td><a href="mailto:chingkimesangma@gmail.com">chingkimesangma@gmail.com</a></td><td>Dolphin PG Institute of Biomedical and Natural Sciences</td><td>MSc (Physics)</td></tr>
+              <tr><td>Deepti Sundli</td><td><a href="mailto:sundlideepti2003@gmail.com">sundlideepti2003@gmail.com</a></td><td>Doon University</td><td>MSc (Physics)</td></tr>
+              <tr><td>Divya Krishna</td><td><a href="mailto:Divya.16280@stu.upes.ac.in">Divya.16280@stu.upes.ac.in</a></td><td>UPES, Dehradun</td><td>MSc (Astronomy)</td></tr>
+              <tr><td>Harishankar Nath Tiwari</td><td><a href="mailto:harishankarnath1@gmail.com">harishankarnath1@gmail.com</a></td><td>University of Petroleum and Energy Studies</td><td>MSc (Astronomy &amp; Astrophysics)</td></tr>
+              <tr><td>Kalpesh Nandkumar Tandel</td><td><a href="mailto:ktandel049@gmail.com">ktandel049@gmail.com</a></td><td>Dolphin PG Institute of Biomedical and Natural Sciences</td><td>MSc (Astronomy)</td></tr>
+              <tr><td>Kalpita Saini</td><td><a href="mailto:kalpita.117726@stu.upes.ac.in">kalpita.117726@stu.upes.ac.in</a></td><td>UPES</td><td>BSc (Physics)</td></tr>
+              <tr><td>Karthikeyan Mittal</td><td><a href="mailto:karthikeyan.124976@stu.upes.ac.in">karthikeyan.124976@stu.upes.ac.in</a></td><td>UPES</td><td>BSc (Physics)</td></tr>
+              <tr><td>Madhumita Singh</td><td><a href="mailto:madhumita.25722@stu.upes.ac.in">madhumita.25722@stu.upes.ac.in</a></td><td>UPES Dehradun</td><td>MSc (Astronomy and Astrophysics)</td></tr>
+              <tr><td>Raney Lama</td><td><a href="mailto:raneylama414@gmail.com">raneylama414@gmail.com</a></td><td>Dolphin PG Institute of Biomedical and Natural Sciences</td><td>MSc (Physics)</td></tr>
+              <tr><td>Sakshi Charde</td><td><a href="mailto:sakshicharde2999@gmail.com">sakshicharde2999@gmail.com</a></td><td>UPES</td><td>MSc (Astronomy and Astrophysics)</td></tr>
+              <tr><td>Sri Sai Senthil</td><td><a href="mailto:Sri.119804@stu.upes.ac.in">Sri.119804@stu.upes.ac.in</a></td><td>UPES</td><td>BSc (Physics)</td></tr>
+              <tr><td>Swati Rawat</td><td><a href="mailto:rawatswati005@gmail.com">rawatswati005@gmail.com</a></td><td>Doon University</td><td>MSc (Physics)</td></tr>
+              <tr><td>Swayam Negi</td><td><a href="mailto:negiswayam18@gmail.com">negiswayam18@gmail.com</a></td><td>Doon University</td><td>MSc (Physics)</td></tr>
+              <tr><td>Vishnu Rai</td><td><a href="mailto:raivishnu565@gmail.com">raivishnu565@gmail.com</a></td><td>Dolphin PG Institute of Biomedical and Natural Sciences</td><td>MSc (Physics)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="participant-block">
+        <h3>Accepted Participants (Outstation)</h3>
+        <p class="participant-meta">25 participants</p>
+        <div class="table-wrap">
+          <table aria-label="Accepted outstation participants">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Institute</th>
+                <th scope="col">Course (Degree &amp; Major)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Aanchal Joshi</td><td><a href="mailto:aanchaljoshi782@gmail.com">aanchaljoshi782@gmail.com</a></td><td>Sovan Singh Jeena University, Almora</td><td>BSc (Maths, Physics)</td></tr>
+              <tr><td>Ankit Saini</td><td><a href="mailto:thatankitsaini111@gmail.com">thatankitsaini111@gmail.com</a></td><td>Lovely Professional University, Jalandhar</td><td>BSc (Physics)</td></tr>
+              <tr><td>Anshul Kumar Sharma</td><td><a href="mailto:aksharma120102@gmail.com">aksharma120102@gmail.com</a></td><td>Central University of Himachal Pradesh</td><td>PhD (Astronomy)</td></tr>
+              <tr><td>Anushka Sharma</td><td><a href="mailto:sharmakuldeep5392@gmail.com">sharmakuldeep5392@gmail.com</a></td><td>DSB Campus, Kumaun University, Nainital</td><td>MSc (Astrophysics)</td></tr>
+              <tr><td>Deepika Dumaga</td><td><a href="mailto:dumagadeepika.30@gmail.com">dumagadeepika.30@gmail.com</a></td><td>Hemvati Nandan Bahuguna Garhwal University, Srinagar Garhwal</td><td>PhD (Physics, Astrophysics)</td></tr>
+              <tr><td>Dewangana</td><td><a href="mailto:dewanganathakur2@gmail.com">dewanganathakur2@gmail.com</a></td><td>Central University of Himachal Pradesh</td><td>MSc (Physics)</td></tr>
+              <tr><td>Gayatri Hegde</td><td><a href="mailto:gayatrihegde2002@gmail.com">gayatrihegde2002@gmail.com</a></td><td>NIT Hamirpur</td><td>MSc (Physics)</td></tr>
+              <tr><td>Karan Sharma</td><td><a href="mailto:karansharma0745@gmail.com">karansharma0745@gmail.com</a></td><td>Kumaun University</td><td>PhD (Variables and Transients in UV fields)</td></tr>
+              <tr><td>Megha Bisht</td><td><a href="mailto:meghabisht030@gmail.com">meghabisht030@gmail.com</a></td><td>L.S.M. Campus, Pithoragarh</td><td>PhD (Physics and Astronomy)</td></tr>
+              <tr><td>Mohit Chandra Pandey</td><td><a href="mailto:mohitchandrap414@gmail.com">mohitchandrap414@gmail.com</a></td><td>Soban Singh Jeena University Campus, Almora</td><td>BSc (Physics and Mathematics)</td></tr>
+              <tr><td>Mukund Thakur</td><td><a href="mailto:thakurmukund821@gmail.com">thakurmukund821@gmail.com</a></td><td>Government College Kullu, H.P.</td><td>BSc (Physics)</td></tr>
+              <tr><td>N Likhit Kumar</td><td><a href="mailto:kumarnlikhit@gmail.com">kumarnlikhit@gmail.com</a></td><td>Central University of Panjab</td><td>MSc (Physics)</td></tr>
+              <tr><td>Raghav Rai</td><td><a href="mailto:ccrai499700@gmail.com">ccrai499700@gmail.com</a></td><td>L.S.M Campus, Pithoragarh</td><td>BSc (Physics)</td></tr>
+              <tr><td>Arpna Mishra</td><td><a href="mailto:arpnamishra36@gmail.com">arpnamishra36@gmail.com</a></td><td>University of Lucknow</td><td>MSc (Physics)</td></tr>
+              <tr><td>Saba Shakeel</td><td><a href="mailto:shahsaba376@gmail.com">shahsaba376@gmail.com</a></td><td>Islamic University of Science and Technology</td><td>MSc (Physics)</td></tr>
+              <tr><td>Sachin Pandey</td><td><a href="mailto:25mph010@nith.ac.in">25mph010@nith.ac.in</a></td><td>National Institute of Technology Hamirpur</td><td>MSc (Physics)</td></tr>
+              <tr><td>Sandeep Saini</td><td><a href="mailto:sandeepsaini2764@gmail.com">sandeepsaini2764@gmail.com</a></td><td>MP Bhoj Open University</td><td>MSc (Physics)</td></tr>
+              <tr><td>Sayan Mitra</td><td><a href="mailto:sayanmitra2811@gmail.com">sayanmitra2811@gmail.com</a></td><td>Hemvati Nandan Bahuguna Garhwal University, Pauri (Garhwal)</td><td>MSc (Physics)</td></tr>
+              <tr><td>Sunil Kumar Saini</td><td><a href="mailto:physicsbysksir369@gmail.com">physicsbysksir369@gmail.com</a></td><td>University of Kashmir</td><td>PhD (Astronomy)</td></tr>
+              <tr><td>Priya Jaiswal</td><td><a href="mailto:jaiswalpriya9897@gmail.com">jaiswalpriya9897@gmail.com</a></td><td>St. Xavier College</td><td>BSc (Physics)</td></tr>
+              <tr><td>Sakshi Srivastava</td><td><a href="mailto:sakshisrivastavaa24@gmail.com">sakshisrivastavaa24@gmail.com</a></td><td>University of Lucknow</td><td>PhD (Cosmology)</td></tr>
+              <tr><td>Nijee</td><td><a href="mailto:nijee1313@gmail.com">nijee1313@gmail.com</a></td><td>Panjab University</td><td>MSc (Physics)</td></tr>
+              <tr><td>Keshav Sharma</td><td><a href="mailto:astro.sharmakeshav@gmail.com">astro.sharmakeshav@gmail.com</a></td><td>Rajdhani College, University of Delhi</td><td>BSc (Astronomy, Astrophysics, Cosmology)</td></tr>
+              <tr><td>Khushi Arora</td><td><a href="mailto:khushi3000stark@gmail.com">khushi3000stark@gmail.com</a></td><td>Central University of Haryana</td><td>MSc (Astrophysics)</td></tr>
+              <tr><td>Sonali</td><td><a href="mailto:jksonali0824@gmail.com">jksonali0824@gmail.com</a></td><td>Ramjas College, University of Delhi</td><td>BSc (Physics)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="participant-block">
+        <h3>Waitlisted Participants</h3>
+        <p>
+          Due to the overwhelming response and limited capacity, we have also compiled a waitlist of participants who
+          were not selected but may be considered if there are cancellations and additional slots become available.
+          We will communicate with waitlisted candidates in between 21st-25th May 2026.
+        </p>
+        <p class="participant-meta">15 participants</p>
+        <div class="table-wrap">
+          <table aria-label="Waitlisted participants">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Institute</th>
+                <th scope="col">Course (Degree &amp; Major)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Jaismee</td><td><a href="mailto:jaismeesci21@gmail.com">jaismeesci21@gmail.com</a></td><td>Hansraj College, University of Delhi</td><td>MSc (Physics)</td></tr>
+              <tr><td>Un. Mira</td><td><a href="mailto:mirashamira2020@gmail.com">mirashamira2020@gmail.com</a></td><td>Forestry</td><td>BSc (Forestry)</td></tr>
+              <tr><td>Jashanpreet Singh Dingra</td><td><a href="mailto:astrodingra@gmail.com">astrodingra@gmail.com</a></td><td>Guru Nanak Dev University, Amritsar</td><td>BSc (Physics &amp; Astronomy)</td></tr>
+              <tr><td>Parv Mangal</td><td><a href="mailto:parvmangal17@gmail.com">parvmangal17@gmail.com</a></td><td>Panjab University, Chandigarh</td><td>BSc (Physics)</td></tr>
+              <tr><td>Anurag Vishwakarma</td><td><a href="mailto:ish6393119570@gmail.com">ish6393119570@gmail.com</a></td><td>University of Delhi</td><td>BSc (Physics / Astronomy)</td></tr>
+              <tr><td>Sanidhya Uniyal</td><td><a href="mailto:sanidhya797@gmail.com">sanidhya797@gmail.com</a></td><td>Hansraj College, University of Delhi</td><td>BSc (Physics)</td></tr>
+              <tr><td>Pranjal Bhardwaj</td><td><a href="mailto:pranjalbhardwaj31@gmail.com">pranjalbhardwaj31@gmail.com</a></td><td>Fergusson College (Autonomous)</td><td>BSc (Physics)</td></tr>
+              <tr><td>Abhishek Kumar</td><td><a href="mailto:asinha9988@gmail.com">asinha9988@gmail.com</a></td><td>Banaras Hindu University</td><td>MSc (Physics)</td></tr>
+              <tr><td>Tanmay Tanaji Pujari</td><td><a href="mailto:tanmaytanajipujari@gmail.com">tanmaytanajipujari@gmail.com</a></td><td>Central University of Punjab</td><td>MSc (Physics)</td></tr>
+              <tr><td>Sarthak Vishwakarma</td><td><a href="mailto:sarthakphysics10@gmail.com">sarthakphysics10@gmail.com</a></td><td>Hindu College, University of Delhi</td><td>BSc (Physics)</td></tr>
+              <tr><td>Richa Shukla</td><td><a href="mailto:rshukla.lumin@gmail.com">rshukla.lumin@gmail.com</a></td><td>Lovely Professional University</td><td>BSc (Physics Hons)</td></tr>
+              <tr><td>Pranjali Arya</td><td><a href="mailto:pranjaliarya2004@gmail.com">pranjaliarya2004@gmail.com</a></td><td>University of Delhi</td><td>BSc (Physics)</td></tr>
+              <tr><td>Chehak</td><td><a href="mailto:siyasingh9968@gmail.com">siyasingh9968@gmail.com</a></td><td>Delhi Technological University</td><td>B.E./B.Tech (Engineering Physics)</td></tr>
+              <tr><td>Sandeep Panthri</td><td><a href="mailto:panthri.sandeep@gmail.com">panthri.sandeep@gmail.com</a></td><td>Uttarakhand Technical University</td><td>B.E./B.Tech (Electronics and Communication)</td></tr>
+              <tr><td>Himanshi Gulia</td><td><a href="mailto:himanshi.gulia.phd23@nsut.ac.in">himanshi.gulia.phd23@nsut.ac.in</a></td><td>Netaji Subhash University of Technology</td><td>PhD (Applied Mathematics)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section id="speakers" class="reveal">
       <h2>Resource Persons</h2>
       <p>The following names are listed as tentative speaker and resource person entries (subject to availability). All
@@ -987,11 +1261,6 @@
           <img src="assests/images/HiSTAR/kaushal.png" alt="Dr. Kaushal" loading="lazy" />
           <h3>Dr. Kaushal</h3>
           <p>FSL</p>
-        </article>
-        <article class="card">
-          <img src="assests/images/HiSTAR/BJoshi.jpg" alt="Prof. Bhuwan Joshi" loading="lazy" />
-          <h3>Prof. Bhuwan Joshi</h3>
-          <p>PRL</p>
         </article>
         <article class="card">
           <img src="assests/images/HiSTAR/susmita.png" alt="Dr. Susmita Das" loading="lazy" />
@@ -1012,11 +1281,6 @@
           <img src="assests/images/HiSTAR/Main_Pal.png" alt="Dr. Main Pal" loading="lazy" />
           <h3>Dr. Main Pal</h3>
           <p>DU</p>
-        </article>
-        <article class="card">
-          <img src="assests/images/HiSTAR/Anjan_Ananda_Sen.png" alt="Prof. Anjan Ananda Sen" loading="lazy" />
-          <h3>Prof. Anjan Ananda Sen</h3>
-          <p>CTP JMI</p>
         </article>
         <article class="card">
           <img src="assests/images/HiSTAR/Iqbal.png" alt="Prof. Iqbal" loading="lazy" />
@@ -1206,6 +1470,17 @@
     setInterval(updateCountdown, 1000);
 
     const revealItems = document.querySelectorAll(".reveal");
+    const showRevealTarget = () => {
+      if (!window.location.hash) return;
+
+      const target = document.querySelector(window.location.hash);
+      if (target && target.classList.contains("reveal")) {
+        target.classList.add("show");
+      }
+    };
+
+    showRevealTarget();
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -1216,6 +1491,7 @@
     }, { threshold: 0.15 });
 
     revealItems.forEach((item) => observer.observe(item));
+    window.addEventListener("hashchange", showRevealTarget);
   </script>
 <!-- Global Visitor Tracker --><img src="https://hits.sh/astroupes.github.io.svg" style="display: none;" />
 </body>
